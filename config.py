@@ -2,10 +2,30 @@
 Configurações do Agente de Web Scraping de Patentes.
 """
 
+import os
+
 # --- Ollama ---
-OLLAMA_BASE_URL = "http://localhost:11434"
-OLLAMA_MODEL = "gemma3:4b"
-OLLAMA_TIMEOUT = 600  # segundos
+OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
+OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "gemma3:27b")
+OLLAMA_TIMEOUT = int(os.getenv("OLLAMA_TIMEOUT", "600"))  # segundos
+OLLAMA_MAX_FAILURES_BEFORE_DEGRADE = 3
+OLLAMA_HEALTHCHECK_PROMPT = 'Responda apenas com {"status":"ok"}'
+SCREEN_INCLUDE_THRESHOLD = 7.0
+SCREEN_REVIEW_THRESHOLD = 4.5
+SCREEN_RERANK_MIN_SCORE = 5.5
+SCREEN_RERANK_MAX_SCORE = 8.0
+SCREEN_MAX_ITEMS_FOR_REVIEW = 20
+WHITESPACE_MAX_ADJACENT = 3
+REVIEW_PROTOCOL_VERSION = "1.0"
+MEMORY_SLOT_MAX_ITEMS = 5
+ENABLE_LLM_CACHE = True
+ROUTER_PRIORITY_CLUSTERS = [
+    "CO2 Cycle Configurations",
+    "Cryogenic Energy Systems",
+    "Phase Change Materials",
+    "Thermal Transfer Mechanisms",
+    "Economic Optimization",
+]
 
 # --- Scraper ---
 MAX_RESULTS = 10
@@ -27,4 +47,5 @@ GOOGLE_PATENTS_BASE_URL = "https://patents.google.com"
 GOOGLE_PATENTS_SEARCH_URL = f"{GOOGLE_PATENTS_BASE_URL}/xhr/query"
 
 # --- Output ---
-OUTPUT_DIR = "output"
+OUTPUT_DIR = os.getenv("OUTPUT_DIR", "output")
+LLM_CACHE_DIR = os.path.join(OUTPUT_DIR, "cache")

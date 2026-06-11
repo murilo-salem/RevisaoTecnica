@@ -1,0 +1,145 @@
+{
+  "status": "ok",
+  "query": "carbon dioxide thermal energy storage",
+  "corpus_summary": {
+    "considered_patents": 2,
+    "selected_patents": 2,
+    "core": 0,
+    "frontier": 1,
+    "adjacent": 1
+  },
+  "coverage_matrix": [
+    {
+      "patent_id": "WO2024040002A1",
+      "record_id": "rec_5383df610488",
+      "title": "System and method of co2 thermal swing adsorption with wet regeneration and hot drying",
+      "screening_decision": "review",
+      "screening_score": 5.0,
+      "relevance_score": 4.9,
+      "bucket": "frontier",
+      "technical_domain": "Separação e Captura de Gases",
+      "thematic_cluster": "Adsorção Térmica de CO2 com Regeneração Otimizada",
+      "co2_role": "capture_process_stream",
+      "storage_role": "implicit_or_support_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "thermal_swing_adsorption",
+      "heat_source_sink": "general_thermal_management",
+      "claim_focus": "process_integration",
+      "exclusion_category": "None"
+    },
+    {
+      "patent_id": "US20250122779A1",
+      "record_id": "rec_4fd359f22bee",
+      "title": "Multi-well pad storage of h2 and/or nh3 with simultaneous co2 sequestration",
+      "screening_decision": "exclude",
+      "screening_score": 2.8,
+      "relevance_score": 0.0,
+      "bucket": "adjacent",
+      "technical_domain": "Armazenamento Geológico, Produção de Hidrogênio",
+      "thematic_cluster": "Sequestro de CO2 e Armazenamento Subterrâneo de Hidrogênio",
+      "co2_role": "capture_process_stream",
+      "storage_role": "implicit_or_support_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "not_clear",
+      "claim_focus": "process_integration",
+      "exclusion_category": "industrial_heat_adjacent"
+    }
+  ],
+  "axes": {
+    "co2_role": {
+      "capture_process_stream": {
+        "core": [],
+        "frontier": [
+          "WO2024040002A1"
+        ],
+        "adjacent": [
+          "US20250122779A1"
+        ]
+      }
+    },
+    "storage_role": {
+      "implicit_or_support_storage": {
+        "core": [],
+        "frontier": [
+          "WO2024040002A1"
+        ],
+        "adjacent": [
+          "US20250122779A1"
+        ]
+      }
+    },
+    "system_boundary": {
+      "process_integration": {
+        "core": [],
+        "frontier": [
+          "WO2024040002A1"
+        ],
+        "adjacent": [
+          "US20250122779A1"
+        ]
+      }
+    },
+    "cycle_type": {
+      "thermal_swing_adsorption": {
+        "core": [],
+        "frontier": [
+          "WO2024040002A1"
+        ],
+        "adjacent": []
+      },
+      "not_clear": {
+        "core": [],
+        "frontier": [],
+        "adjacent": [
+          "US20250122779A1"
+        ]
+      }
+    },
+    "heat_source_sink": {
+      "general_thermal_management": {
+        "core": [],
+        "frontier": [
+          "WO2024040002A1"
+        ],
+        "adjacent": []
+      },
+      "not_clear": {
+        "core": [],
+        "frontier": [],
+        "adjacent": [
+          "US20250122779A1"
+        ]
+      }
+    },
+    "claim_focus": {
+      "process_integration": {
+        "core": [],
+        "frontier": [
+          "WO2024040002A1"
+        ],
+        "adjacent": [
+          "US20250122779A1"
+        ]
+      }
+    },
+    "exclusion_category": {
+      "None": {
+        "core": [],
+        "frontier": [
+          "WO2024040002A1"
+        ],
+        "adjacent": []
+      },
+      "industrial_heat_adjacent": {
+        "core": [],
+        "frontier": [],
+        "adjacent": [
+          "US20250122779A1"
+        ]
+      }
+    }
+  },
+  "whitespace_candidates": [],
+  "markdown_summary": "### 3. Whitespaces e Oportunidades\n\n- Gestao termica transiente, subresfriamento e acoplamentos com captura/reatores aparecem de forma lateral; isso sugere oportunidade em claims de controle, operacao multi-regime e integracao de processo ainda pouco amarradas ao armazenamento central [IDs: WO2024040002A1]\n- As patentes em review delimitam fronteiras tecnicas onde o papel do CO2 ainda esta ambiguo entre meio armazenado, fluido de trabalho e interface de troca termica; esse tipo de ambiguidade costuma ser um bom proxy para whitespace exploravel com recorte arquitetural mais especifico [IDs: WO2024040002A1, US20250122779A1]"
+}

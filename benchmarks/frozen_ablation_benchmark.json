@@ -1,0 +1,12 @@
+{
+  "name": "revisao_tecnica_patent_frozen_ablation",
+  "description": "Benchmark congelado offline para CI e regressão do pipeline.",
+  "cases": [
+    {
+      "name": "Frozen CO2 thermal storage",
+      "query": "carbon dioxide thermal energy storage",
+      "max_results": 5,
+      "fixture_file": "benchmarks/frozen_pipeline_fixture.json"
+    }
+  ]
+}

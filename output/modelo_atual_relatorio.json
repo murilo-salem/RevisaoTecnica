@@ -1,0 +1,2987 @@
+{
+  "metadata": {
+    "query": "carbon dioxide thermal energy storage",
+    "timestamp": "2026-04-02T22:53:39.108231",
+    "total_patents": 10,
+    "model": "gemma3:4b",
+    "average_relevance": 9.11111111111111,
+    "run_state": {
+      "query": "carbon dioxide thermal energy storage",
+      "max_results": 5,
+      "model": "gemma3:4b",
+      "output_dir": "/tmp/revisao_tecnica_current_output3",
+      "feature_flags": {
+        "require_evidence": true,
+        "enable_thematic_clusters": true,
+        "enable_prisma": true,
+        "enable_snapshot": true,
+        "enable_comparative_analysis": true,
+        "enable_manual_review_queue": true
+      },
+      "config_snapshot": {
+        "pipeline_version": "1.1",
+        "timestamp": "2026-04-02T22:52:19",
+        "query": "carbon dioxide thermal energy storage",
+        "max_results": 5,
+        "model": "gemma3:4b",
+        "output_dir": "/tmp/revisao_tecnica_current_output3",
+        "feature_flags": {
+          "require_evidence": true,
+          "enable_thematic_clusters": true,
+          "enable_prisma": true,
+          "enable_snapshot": true,
+          "enable_comparative_analysis": true,
+          "enable_manual_review_queue": true
+        },
+        "thresholds": {
+          "include": 7.0,
+          "review": 4.5,
+          "manual_review_limit": 20
+        },
+        "runtime": {
+          "ollama_base_url": "http://localhost:11434",
+          "ollama_timeout": 600
+        },
+        "sources": [
+          "Google Patents",
+          "Patentscope"
+        ]
+      },
+      "snapshot_hash": "474ddfae6bd00926754bb638729d77f6eacb033c839055f41f8d483e4d2e8033",
+      "protocol": {
+        "version": "1.0",
+        "query": "carbon dioxide thermal energy storage",
+        "sources": [
+          "Google Patents",
+          "Patentscope"
+        ],
+        "stages": [
+          "identification",
+          "deduplication",
+          "screening",
+          "manual_review",
+          "full_extraction",
+          "synthesis"
+        ],
+        "criteria": {
+          "include": [
+            "Alinhamento claro com a query ou seus sinônimos técnicos.",
+            "Documento com título, resumo ou snippet suficientes para análise.",
+            "Potencial técnico relevante para o domínio pesquisado."
+          ],
+          "exclude": [
+            "Documentos sem relação técnica com a query.",
+            "Duplicatas de outra fonte ou publicação equivalente.",
+            "Registro sem metadados mínimos para avaliação."
+          ]
+        },
+        "thresholds": {
+          "include_score": 7.0,
+          "review_score": 4.5,
+          "max_items_for_manual_review": 20
+        },
+        "limits": {
+          "max_results": 5
+        },
+        "model": "gemma3:4b"
+      },
+      "writing_context": {
+        "protocol": {
+          "version": "1.0",
+          "query": "carbon dioxide thermal energy storage",
+          "sources": [
+            "Google Patents",
+            "Patentscope"
+          ],
+          "stages": [
+            "identification",
+            "deduplication",
+            "screening",
+            "manual_review",
+            "full_extraction",
+            "synthesis"
+          ],
+          "criteria": {
+            "include": [
+              "Alinhamento claro com a query ou seus sinônimos técnicos.",
+              "Documento com título, resumo ou snippet suficientes para análise.",
+              "Potencial técnico relevante para o domínio pesquisado."
+            ],
+            "exclude": [
+              "Documentos sem relação técnica com a query.",
+              "Duplicatas de outra fonte ou publicação equivalente.",
+              "Registro sem metadados mínimos para avaliação."
+            ]
+          },
+          "thresholds": {
+            "include_score": 7.0,
+            "review_score": 4.5,
+            "max_items_for_manual_review": 20
+          },
+          "limits": {
+            "max_results": 5
+          },
+          "model": "gemma3:4b"
+        },
+        "coverage_metrics": {
+          "raw_scraped": 10,
+          "unique_patents": 10,
+          "duplicates_removed": 0,
+          "screened": 10,
+          "included": 8,
+          "review": 1,
+          "excluded": 1,
+          "manual_review_required": 1,
+          "manual_review_deferred": 0,
+          "full_extractions": 9,
+          "missing_abstract": 1,
+          "missing_id": 0
+        },
+        "top_patents": [
+          {
+            "patent_id": "AU244427549",
+            "title": "1. AU2019901965 - A System to Improve Performance of Transcritical Carbon Dioxide Cooling by Integration of Ice Thermal Storage for Subcooling",
+            "score": 10.0,
+            "screening_decision": "include",
+            "thematic_cluster": "CO2 Cycle Configurations",
+            "route": "deep_extraction",
+            "evidence_snippets": [
+              "A System to Improve Performance of Transcritical Carbon Dioxide Cooling by Integration of Ice Thermal Storage"
+            ]
+          },
+          {
+            "patent_id": "CN214660665U",
+            "title": "A photovoltaic power generation system equipped with electrothermal energy storage",
+            "score": 9.5,
+            "screening_decision": "include",
+            "thematic_cluster": "CO2 Cycle Configurations",
+            "route": "deep_extraction",
+            "evidence_snippets": [
+              "AbstractThe utility model discloses a photovoltaic power generation system with electric heat energy storage...",
+              "The system comprises a photovoltaic power generation system, an electric heating energy storage system and supercritical CO2Brayton cycle power generation system"
+            ]
+          },
+          {
+            "patent_id": "US20240339953A1",
+            "title": "System and Method for Complementarily Coupling and Orderly Converting Multi-energy",
+            "score": 9.5,
+            "screening_decision": "include",
+            "thematic_cluster": "Engenharia Química, Energia Renovável, Catálise",
+            "route": "deep_extraction",
+            "evidence_snippets": [
+              "AbstractA system includes: a reversible solid oxide cell, a gasification reaction chamber, synthesis reactor, and photo-thermal coupled catalytic reactor."
+            ]
+          },
+          {
+            "patent_id": "US433566429",
+            "title": "2. US20240229681 - Calcination system with thermal energy storage system",
+            "score": 9.5,
+            "screening_decision": "include",
+            "thematic_cluster": "Engenharia Térmica, Armazenamento de Energia, Processamento de Materiais",
+            "route": "deep_extraction",
+            "evidence_snippets": [
+              "An energystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C.",
+              "Heat from the solid medium is delivered continuously on demand."
+            ]
+          },
+          {
+            "patent_id": "US400261922",
+            "title": "3. US20230203968 - Methods for material activation with thermal energy storage system",
+            "score": 9.5,
+            "screening_decision": "include",
+            "thematic_cluster": "Armazenamento de Energia Térmica, Termodinâmica, Engenharia de Materiais",
+            "route": "deep_extraction",
+            "evidence_snippets": [
+              "An energystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C.",
+              "Heat from the solid medium is delivered continuously on demand."
+            ]
+          }
+        ],
+        "thematic_clusters": {
+          "clusters": [
+            {
+              "cluster": "CO2 Cycle Configurations",
+              "count": 2,
+              "patent_ids": [
+                "CN214660665U",
+                "AU244427549"
+              ],
+              "titles": [
+                "A photovoltaic power generation system equipped with electrothermal energy storage",
+                "1. AU2019901965 - A System to Improve Performance of Transcritical Carbon Dioxide Cooling by Integration of Ice Thermal Storage for Subcooling"
+              ],
+              "average_score": 9.75,
+              "average_confidence": 0.95,
+              "evidence_count": 3,
+              "top_patents": [],
+              "summary": ""
+            },
+            {
+              "cluster": "Engenharia Química, Energia Renovável, Catálise",
+              "count": 1,
+              "patent_ids": [
+                "US20240339953A1"
+              ],
+              "titles": [
+                "System and Method for Complementarily Coupling and Orderly Converting Multi-energy"
+              ],
+              "average_score": 9.5,
+              "average_confidence": 0.95,
+              "evidence_count": 1,
+              "top_patents": [],
+              "summary": ""
+            },
+            {
+              "cluster": "Engenharia Térmica, Armazenamento de Energia, Processamento de Materiais",
+              "count": 1,
+              "patent_ids": [
+                "US433566429"
+              ],
+              "titles": [
+                "2. US20240229681 - Calcination system with thermal energy storage system"
+              ],
+              "average_score": 9.5,
+              "average_confidence": 0.95,
+              "evidence_count": 2,
+              "top_patents": [],
+              "summary": ""
+            },
+            {
+              "cluster": "Armazenamento de Energia Térmica, Termodinâmica, Engenharia de Materiais",
+              "count": 1,
+              "patent_ids": [
+                "US400261922"
+              ],
+              "titles": [
+                "3. US20230203968 - Methods for material activation with thermal energy storage system"
+              ],
+              "average_score": 9.5,
+              "average_confidence": 0.95,
+              "evidence_count": 2,
+              "top_patents": [],
+              "summary": ""
+            },
+            {
+              "cluster": "Engenharia Térmica, Armazenamento de Energia, Conversão de Energia",
+              "count": 1,
+              "patent_ids": [
+                "US433566430"
+              ],
+              "titles": [
+                "4. US20240229682 - Methods for material activation with thermal energy storage system"
+              ],
+              "average_score": 9.5,
+              "average_confidence": 0.95,
+              "evidence_count": 2,
+              "top_patents": [],
+              "summary": ""
+            },
+            {
+              "cluster": "Armazenamento de Energia Térmica, Termodinâmica, Engenharia de Energia, Dióxido de Carbono",
+              "count": 1,
+              "patent_ids": [
+                "US373267798"
+              ],
+              "titles": [
+                "5. US20220282638 - Material activation system with thermal energy storage system"
+              ],
+              "average_score": 9.5,
+              "average_confidence": 0.95,
+              "evidence_count": 2,
+              "top_patents": [],
+              "summary": ""
+            },
+            {
+              "cluster": "Células de Combustível, Armazenamento de Energia, Termodinâmica",
+              "count": 1,
+              "patent_ids": [
+                "KR101978330B1"
+              ],
+              "titles": [
+                "Fuel Supply System For Fuel Cell"
+              ],
+              "average_score": 9.0,
+              "average_confidence": 0.95,
+              "evidence_count": 2,
+              "top_patents": [],
+              "summary": ""
+            },
+            {
+              "cluster": "Thermal Transfer Mechanisms",
+              "count": 1,
+              "patent_ids": [
+                "US8549857B2"
+              ],
+              "titles": [
+                "Methods and/or systems for magnetobaric assisted generation of power from low temperature heat"
+              ],
+              "average_score": 6.0,
+              "average_confidence": 0.7,
+              "evidence_count": 1,
+              "top_patents": [],
+              "summary": ""
+            }
+          ],
+          "total_clusters": 8
+        },
+        "route_summary": {
+          "deep_extraction": 8,
+          "manual_review": 1,
+          "screen_only": 1
+        },
+        "feature_flags": {
+          "require_evidence": true,
+          "enable_thematic_clusters": true,
+          "enable_prisma": true,
+          "enable_snapshot": true,
+          "enable_comparative_analysis": true,
+          "enable_manual_review_queue": true
+        },
+        "snapshot_hash": "474ddfae6bd00926754bb638729d77f6eacb033c839055f41f8d483e4d2e8033"
+      },
+      "memory_sidecar": {
+        "run_id": "20260402_225219",
+        "max_items_per_slot": 5,
+        "slots": {
+          "writer": [
+            {
+              "top_patents": [
+                {
+                  "patent_id": "AU244427549",
+                  "title": "1. AU2019901965 - A System to Improve Performance of Transcritical Carbon Dioxide Cooling by Integration of Ice Thermal Storage for Subcooling",
+                  "score": 10.0,
+                  "screening_decision": "include",
+                  "thematic_cluster": "CO2 Cycle Configurations",
+                  "route": "deep_extraction",
+                  "evidence_snippets": [
+                    "A System to Improve Performance of Transcritical Carbon Dioxide Cooling by Integration of Ice Thermal Storage"
+                  ]
+                },
+                {
+                  "patent_id": "CN214660665U",
+                  "title": "A photovoltaic power generation system equipped with electrothermal energy storage",
+                  "score": 9.5,
+                  "screening_decision": "include",
+                  "thematic_cluster": "CO2 Cycle Configurations",
+                  "route": "deep_extraction",
+                  "evidence_snippets": [
+                    "AbstractThe utility model discloses a photovoltaic power generation system with electric heat energy storage...",
+                    "The system comprises a photovoltaic power generation system, an electric heating energy storage system and supercritical CO2Brayton cycle power generation system"
+                  ]
+                },
+                {
+                  "patent_id": "US20240339953A1",
+                  "title": "System and Method for Complementarily Coupling and Orderly Converting Multi-energy",
+                  "score": 9.5,
+                  "screening_decision": "include",
+                  "thematic_cluster": "Engenharia Química, Energia Renovável, Catálise",
+                  "route": "deep_extraction",
+                  "evidence_snippets": [
+                    "AbstractA system includes: a reversible solid oxide cell, a gasification reaction chamber, synthesis reactor, and photo-thermal coupled catalytic reactor."
+                  ]
+                },
+                {
+                  "patent_id": "US433566429",
+                  "title": "2. US20240229681 - Calcination system with thermal energy storage system",
+                  "score": 9.5,
+                  "screening_decision": "include",
+                  "thematic_cluster": "Engenharia Térmica, Armazenamento de Energia, Processamento de Materiais",
+                  "route": "deep_extraction",
+                  "evidence_snippets": [
+                    "An energystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C.",
+                    "Heat from the solid medium is delivered continuously on demand."
+                  ]
+                },
+                {
+                  "patent_id": "US400261922",
+                  "title": "3. US20230203968 - Methods for material activation with thermal energy storage system",
+                  "score": 9.5,
+                  "screening_decision": "include",
+                  "thematic_cluster": "Armazenamento de Energia Térmica, Termodinâmica, Engenharia de Materiais",
+                  "route": "deep_extraction",
+                  "evidence_snippets": [
+                    "An energystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C.",
+                    "Heat from the solid medium is delivered continuously on demand."
+                  ]
+                }
+              ],
+              "route_summary": {
+                "deep_extraction": 8,
+                "manual_review": 1,
+                "screen_only": 1
+              }
+            }
+          ],
+          "review": [
+            {
+              "patent_id": "US8549857B2",
+              "title": "Methods and/or systems for magnetobaric assisted generation of power from low temperature heat",
+              "route": "manual_review",
+              "score": 7.0
+            }
+          ],
+          "screening": [
+            {
+              "patent_id": "KR101648976B1",
+              "title": "Process and equipment for converting carbon dioxide in flue gas into natural gas by using dump power energy",
+              "route": "screen_only",
+              "score": 0.0
+            }
+          ]
+        },
+        "journal": [
+          {
+            "timestamp": "2026-04-02T22:52:19",
+            "stage": "setup",
+            "event": "llm_check",
+            "detail": "Verificação de disponibilidade do Ollama concluída.",
+            "payload": {
+              "llm_available": true,
+              "model": "gemma3:4b"
+            }
+          },
+          {
+            "timestamp": "2026-04-02T22:52:34",
+            "stage": "identification",
+            "event": "scrape_completed",
+            "detail": "GooglePatents retornou patentes.",
+            "payload": {
+              "source": "GooglePatents",
+              "count": 5
+            }
+          },
+          {
+            "timestamp": "2026-04-02T22:52:59",
+            "stage": "identification",
+            "event": "scrape_completed",
+            "detail": "Patentscope retornou patentes.",
+            "payload": {
+              "source": "Patentscope",
+              "count": 5
+            }
+          },
+          {
+            "timestamp": "2026-04-02T22:53:01",
+            "stage": "screening",
+            "event": "screening_completed",
+            "detail": "KR101978330B1 roteada para deep_extraction.",
+            "payload": {
+              "patent_id": "KR101978330B1",
+              "decision": "include",
+              "score": 8.0,
+              "route": {
+                "route": "deep_extraction",
+                "reason": "Há evidência suficiente para extração detalhada.",
+                "slot": "writer"
+              }
+            }
+          },
+          {
+            "timestamp": "2026-04-02T22:53:02",
+            "stage": "screening",
+            "event": "screening_completed",
+            "detail": "CN214660665U roteada para deep_extraction.",
+            "payload": {
+              "patent_id": "CN214660665U",
+              "decision": "include",
+              "score": 9.0,
+              "route": {
+                "route": "deep_extraction",
+                "reason": "Há evidência suficiente para extração detalhada.",
+                "slot": "writer"
+              }
+            }
+          },
+          {
+            "timestamp": "2026-04-02T22:53:03",
+            "stage": "screening",
+            "event": "screening_completed",
+            "detail": "US20240339953A1 roteada para deep_extraction.",
+            "payload": {
+              "patent_id": "US20240339953A1",
+              "decision": "include",
+              "score": 8.0,
+              "route": {
+                "route": "deep_extraction",
+                "reason": "Há evidência suficiente para extração detalhada.",
+                "slot": "writer"
+              }
+            }
+          },
+          {
+            "timestamp": "2026-04-02T22:53:04",
+            "stage": "screening",
+            "event": "screening_completed",
+            "detail": "US8549857B2 roteada para manual_review.",
+            "payload": {
+              "patent_id": "US8549857B2",
+              "decision": "review",
+              "score": 7.0,
+              "route": {
+                "route": "manual_review",
+                "reason": "Triagem indicou revisão humana.",
+                "slot": "review"
+              }
+            }
+          },
+          {
+            "timestamp": "2026-04-02T22:53:08",
+            "stage": "screening",
+            "event": "screening_completed",
+            "detail": "KR101648976B1 roteada para screen_only.",
+            "payload": {
+              "patent_id": "KR101648976B1",
+              "decision": "exclude",
+              "score": 0.0,
+              "route": {
+                "route": "screen_only",
+                "reason": "Patente excluída na triagem.",
+                "slot": "screening"
+              }
+            }
+          },
+          {
+            "timestamp": "2026-04-02T22:53:09",
+            "stage": "screening",
+            "event": "screening_completed",
+            "detail": "AU244427549 roteada para deep_extraction.",
+            "payload": {
+              "patent_id": "AU244427549",
+              "decision": "include",
+              "score": 9.0,
+              "route": {
+                "route": "deep_extraction",
+                "reason": "Há evidência suficiente para extração detalhada.",
+                "slot": "writer"
+              }
+            }
+          },
+          {
+            "timestamp": "2026-04-02T22:53:10",
+            "stage": "screening",
+            "event": "screening_completed",
+            "detail": "US433566429 roteada para deep_extraction.",
+            "payload": {
+              "patent_id": "US433566429",
+              "decision": "include",
+              "score": 9.0,
+              "route": {
+                "route": "deep_extraction",
+                "reason": "Há evidência suficiente para extração detalhada.",
+                "slot": "writer"
+              }
+            }
+          },
+          {
+            "timestamp": "2026-04-02T22:53:11",
+            "stage": "screening",
+            "event": "screening_completed",
+            "detail": "US400261922 roteada para deep_extraction.",
+            "payload": {
+              "patent_id": "US400261922",
+              "decision": "include",
+              "score": 9.0,
+              "route": {
+                "route": "deep_extraction",
+                "reason": "Há evidência suficiente para extração detalhada.",
+                "slot": "writer"
+              }
+            }
+          },
+          {
+            "timestamp": "2026-04-02T22:53:12",
+            "stage": "screening",
+            "event": "screening_completed",
+            "detail": "US433566430 roteada para deep_extraction.",
+            "payload": {
+              "patent_id": "US433566430",
+              "decision": "include",
+              "score": 9.0,
+              "route": {
+                "route": "deep_extraction",
+                "reason": "Há evidência suficiente para extração detalhada.",
+                "slot": "writer"
+              }
+            }
+          },
+          {
+            "timestamp": "2026-04-02T22:53:14",
+            "stage": "screening",
+            "event": "screening_completed",
+            "detail": "US373267798 roteada para deep_extraction.",
+            "payload": {
+              "patent_id": "US373267798",
+              "decision": "include",
+              "score": 9.0,
+              "route": {
+                "route": "deep_extraction",
+                "reason": "Há evidência suficiente para extração detalhada.",
+                "slot": "writer"
+              }
+            }
+          },
+          {
+            "timestamp": "2026-04-02T22:53:17",
+            "stage": "extraction",
+            "event": "detailed_evaluation_completed",
+            "detail": "KR101978330B1 recebeu extração detalhada.",
+            "payload": {
+              "patent_id": "KR101978330B1",
+              "route": "deep_extraction",
+              "confidence": 0.95
+            }
+          },
+          {
+            "timestamp": "2026-04-02T22:53:20",
+            "stage": "extraction",
+            "event": "detailed_evaluation_completed",
+            "detail": "CN214660665U recebeu extração detalhada.",
+            "payload": {
+              "patent_id": "CN214660665U",
+              "route": "deep_extraction",
+              "confidence": 0.95
+            }
+          },
+          {
+            "timestamp": "2026-04-02T22:53:22",
+            "stage": "extraction",
+            "event": "detailed_evaluation_completed",
+            "detail": "US20240339953A1 recebeu extração detalhada.",
+            "payload": {
+              "patent_id": "US20240339953A1",
+              "route": "deep_extraction",
+              "confidence": 0.95
+            }
+          },
+          {
+            "timestamp": "2026-04-02T22:53:25",
+            "stage": "extraction",
+            "event": "detailed_evaluation_completed",
+            "detail": "US8549857B2 recebeu extração detalhada.",
+            "payload": {
+              "patent_id": "US8549857B2",
+              "route": "manual_review",
+              "confidence": 0.7
+            }
+          },
+          {
+            "timestamp": "2026-04-02T22:53:25",
+            "stage": "extraction",
+            "event": "screening_only",
+            "detail": "KR101648976B1 permaneceu apenas na triagem.",
+            "payload": {
+              "patent_id": "KR101648976B1",
+              "route": "screen_only"
+            }
+          },
+          {
+            "timestamp": "2026-04-02T22:53:27",
+            "stage": "extraction",
+            "event": "detailed_evaluation_completed",
+            "detail": "AU244427549 recebeu extração detalhada.",
+            "payload": {
+              "patent_id": "AU244427549",
+              "route": "deep_extraction",
+              "confidence": 0.95
+            }
+          },
+          {
+            "timestamp": "2026-04-02T22:53:30",
+            "stage": "extraction",
+            "event": "detailed_evaluation_completed",
+            "detail": "US433566429 recebeu extração detalhada.",
+            "payload": {
+              "patent_id": "US433566429",
+              "route": "deep_extraction",
+              "confidence": 0.95
+            }
+          },
+          {
+            "timestamp": "2026-04-02T22:53:33",
+            "stage": "extraction",
+            "event": "detailed_evaluation_completed",
+            "detail": "US400261922 recebeu extração detalhada.",
+            "payload": {
+              "patent_id": "US400261922",
+              "route": "deep_extraction",
+              "confidence": 0.95
+            }
+          },
+          {
+            "timestamp": "2026-04-02T22:53:35",
+            "stage": "extraction",
+            "event": "detailed_evaluation_completed",
+            "detail": "US433566430 recebeu extração detalhada.",
+            "payload": {
+              "patent_id": "US433566430",
+              "route": "deep_extraction",
+              "confidence": 0.95
+            }
+          },
+          {
+            "timestamp": "2026-04-02T22:53:38",
+            "stage": "extraction",
+            "event": "detailed_evaluation_completed",
+            "detail": "US373267798 recebeu extração detalhada.",
+            "payload": {
+              "patent_id": "US373267798",
+              "route": "deep_extraction",
+              "confidence": 0.95
+            }
+          },
+          {
+            "timestamp": "2026-04-02T22:53:38",
+            "stage": "synthesis",
+            "event": "coverage_computed",
+            "detail": "Cobertura e seleção consolidadas após triagem.",
+            "payload": {
+              "raw_scraped": 10,
+              "unique_patents": 10,
+              "duplicates_removed": 0,
+              "screened": 10,
+              "included": 8,
+              "review": 1,
+              "excluded": 1,
+              "manual_review_required": 1,
+              "manual_review_deferred": 0,
+              "full_extractions": 9,
+              "missing_abstract": 1,
+              "missing_id": 0
+            }
+          },
+          {
+            "timestamp": "2026-04-02T22:53:39",
+            "stage": "writer",
+            "event": "context_prepared",
+            "detail": "Contexto compartilhado preparado para o writer.",
+            "payload": {
+              "top_patents": 5,
+              "route_summary": {
+                "deep_extraction": 8,
+                "manual_review": 1,
+                "screen_only": 1
+              }
+            }
+          }
+        ]
+      },
+      "memory_journal": [
+        {
+          "timestamp": "2026-04-02T22:52:19",
+          "stage": "setup",
+          "event": "llm_check",
+          "detail": "Verificação de disponibilidade do Ollama concluída.",
+          "payload": {
+            "llm_available": true,
+            "model": "gemma3:4b"
+          }
+        },
+        {
+          "timestamp": "2026-04-02T22:52:34",
+          "stage": "identification",
+          "event": "scrape_completed",
+          "detail": "GooglePatents retornou patentes.",
+          "payload": {
+            "source": "GooglePatents",
+            "count": 5
+          }
+        },
+        {
+          "timestamp": "2026-04-02T22:52:59",
+          "stage": "identification",
+          "event": "scrape_completed",
+          "detail": "Patentscope retornou patentes.",
+          "payload": {
+            "source": "Patentscope",
+            "count": 5
+          }
+        },
+        {
+          "timestamp": "2026-04-02T22:53:01",
+          "stage": "screening",
+          "event": "screening_completed",
+          "detail": "KR101978330B1 roteada para deep_extraction.",
+          "payload": {
+            "patent_id": "KR101978330B1",
+            "decision": "include",
+            "score": 8.0,
+            "route": {
+              "route": "deep_extraction",
+              "reason": "Há evidência suficiente para extração detalhada.",
+              "slot": "writer"
+            }
+          }
+        },
+        {
+          "timestamp": "2026-04-02T22:53:02",
+          "stage": "screening",
+          "event": "screening_completed",
+          "detail": "CN214660665U roteada para deep_extraction.",
+          "payload": {
+            "patent_id": "CN214660665U",
+            "decision": "include",
+            "score": 9.0,
+            "route": {
+              "route": "deep_extraction",
+              "reason": "Há evidência suficiente para extração detalhada.",
+              "slot": "writer"
+            }
+          }
+        },
+        {
+          "timestamp": "2026-04-02T22:53:03",
+          "stage": "screening",
+          "event": "screening_completed",
+          "detail": "US20240339953A1 roteada para deep_extraction.",
+          "payload": {
+            "patent_id": "US20240339953A1",
+            "decision": "include",
+            "score": 8.0,
+            "route": {
+              "route": "deep_extraction",
+              "reason": "Há evidência suficiente para extração detalhada.",
+              "slot": "writer"
+            }
+          }
+        },
+        {
+          "timestamp": "2026-04-02T22:53:04",
+          "stage": "screening",
+          "event": "screening_completed",
+          "detail": "US8549857B2 roteada para manual_review.",
+          "payload": {
+            "patent_id": "US8549857B2",
+            "decision": "review",
+            "score": 7.0,
+            "route": {
+              "route": "manual_review",
+              "reason": "Triagem indicou revisão humana.",
+              "slot": "review"
+            }
+          }
+        },
+        {
+          "timestamp": "2026-04-02T22:53:08",
+          "stage": "screening",
+          "event": "screening_completed",
+          "detail": "KR101648976B1 roteada para screen_only.",
+          "payload": {
+            "patent_id": "KR101648976B1",
+            "decision": "exclude",
+            "score": 0.0,
+            "route": {
+              "route": "screen_only",
+              "reason": "Patente excluída na triagem.",
+              "slot": "screening"
+            }
+          }
+        },
+        {
+          "timestamp": "2026-04-02T22:53:09",
+          "stage": "screening",
+          "event": "screening_completed",
+          "detail": "AU244427549 roteada para deep_extraction.",
+          "payload": {
+            "patent_id": "AU244427549",
+            "decision": "include",
+            "score": 9.0,
+            "route": {
+              "route": "deep_extraction",
+              "reason": "Há evidência suficiente para extração detalhada.",
+              "slot": "writer"
+            }
+          }
+        },
+        {
+          "timestamp": "2026-04-02T22:53:10",
+          "stage": "screening",
+          "event": "screening_completed",
+          "detail": "US433566429 roteada para deep_extraction.",
+          "payload": {
+            "patent_id": "US433566429",
+            "decision": "include",
+            "score": 9.0,
+            "route": {
+              "route": "deep_extraction",
+              "reason": "Há evidência suficiente para extração detalhada.",
+              "slot": "writer"
+            }
+          }
+        },
+        {
+          "timestamp": "2026-04-02T22:53:11",
+          "stage": "screening",
+          "event": "screening_completed",
+          "detail": "US400261922 roteada para deep_extraction.",
+          "payload": {
+            "patent_id": "US400261922",
+            "decision": "include",
+            "score": 9.0,
+            "route": {
+              "route": "deep_extraction",
+              "reason": "Há evidência suficiente para extração detalhada.",
+              "slot": "writer"
+            }
+          }
+        },
+        {
+          "timestamp": "2026-04-02T22:53:12",
+          "stage": "screening",
+          "event": "screening_completed",
+          "detail": "US433566430 roteada para deep_extraction.",
+          "payload": {
+            "patent_id": "US433566430",
+            "decision": "include",
+            "score": 9.0,
+            "route": {
+              "route": "deep_extraction",
+              "reason": "Há evidência suficiente para extração detalhada.",
+              "slot": "writer"
+            }
+          }
+        },
+        {
+          "timestamp": "2026-04-02T22:53:14",
+          "stage": "screening",
+          "event": "screening_completed",
+          "detail": "US373267798 roteada para deep_extraction.",
+          "payload": {
+            "patent_id": "US373267798",
+            "decision": "include",
+            "score": 9.0,
+            "route": {
+              "route": "deep_extraction",
+              "reason": "Há evidência suficiente para extração detalhada.",
+              "slot": "writer"
+            }
+          }
+        },
+        {
+          "timestamp": "2026-04-02T22:53:17",
+          "stage": "extraction",
+          "event": "detailed_evaluation_completed",
+          "detail": "KR101978330B1 recebeu extração detalhada.",
+          "payload": {
+            "patent_id": "KR101978330B1",
+            "route": "deep_extraction",
+            "confidence": 0.95
+          }
+        },
+        {
+          "timestamp": "2026-04-02T22:53:20",
+          "stage": "extraction",
+          "event": "detailed_evaluation_completed",
+          "detail": "CN214660665U recebeu extração detalhada.",
+          "payload": {
+            "patent_id": "CN214660665U",
+            "route": "deep_extraction",
+            "confidence": 0.95
+          }
+        },
+        {
+          "timestamp": "2026-04-02T22:53:22",
+          "stage": "extraction",
+          "event": "detailed_evaluation_completed",
+          "detail": "US20240339953A1 recebeu extração detalhada.",
+          "payload": {
+            "patent_id": "US20240339953A1",
+            "route": "deep_extraction",
+            "confidence": 0.95
+          }
+        },
+        {
+          "timestamp": "2026-04-02T22:53:25",
+          "stage": "extraction",
+          "event": "detailed_evaluation_completed",
+          "detail": "US8549857B2 recebeu extração detalhada.",
+          "payload": {
+            "patent_id": "US8549857B2",
+            "route": "manual_review",
+            "confidence": 0.7
+          }
+        },
+        {
+          "timestamp": "2026-04-02T22:53:25",
+          "stage": "extraction",
+          "event": "screening_only",
+          "detail": "KR101648976B1 permaneceu apenas na triagem.",
+          "payload": {
+            "patent_id": "KR101648976B1",
+            "route": "screen_only"
+          }
+        },
+        {
+          "timestamp": "2026-04-02T22:53:27",
+          "stage": "extraction",
+          "event": "detailed_evaluation_completed",
+          "detail": "AU244427549 recebeu extração detalhada.",
+          "payload": {
+            "patent_id": "AU244427549",
+            "route": "deep_extraction",
+            "confidence": 0.95
+          }
+        },
+        {
+          "timestamp": "2026-04-02T22:53:30",
+          "stage": "extraction",
+          "event": "detailed_evaluation_completed",
+          "detail": "US433566429 recebeu extração detalhada.",
+          "payload": {
+            "patent_id": "US433566429",
+            "route": "deep_extraction",
+            "confidence": 0.95
+          }
+        },
+        {
+          "timestamp": "2026-04-02T22:53:33",
+          "stage": "extraction",
+          "event": "detailed_evaluation_completed",
+          "detail": "US400261922 recebeu extração detalhada.",
+          "payload": {
+            "patent_id": "US400261922",
+            "route": "deep_extraction",
+            "confidence": 0.95
+          }
+        },
+        {
+          "timestamp": "2026-04-02T22:53:35",
+          "stage": "extraction",
+          "event": "detailed_evaluation_completed",
+          "detail": "US433566430 recebeu extração detalhada.",
+          "payload": {
+            "patent_id": "US433566430",
+            "route": "deep_extraction",
+            "confidence": 0.95
+          }
+        },
+        {
+          "timestamp": "2026-04-02T22:53:38",
+          "stage": "extraction",
+          "event": "detailed_evaluation_completed",
+          "detail": "US373267798 recebeu extração detalhada.",
+          "payload": {
+            "patent_id": "US373267798",
+            "route": "deep_extraction",
+            "confidence": 0.95
+          }
+        },
+        {
+          "timestamp": "2026-04-02T22:53:38",
+          "stage": "synthesis",
+          "event": "coverage_computed",
+          "detail": "Cobertura e seleção consolidadas após triagem.",
+          "payload": {
+            "raw_scraped": 10,
+            "unique_patents": 10,
+            "duplicates_removed": 0,
+            "screened": 10,
+            "included": 8,
+            "review": 1,
+            "excluded": 1,
+            "manual_review_required": 1,
+            "manual_review_deferred": 0,
+            "full_extractions": 9,
+            "missing_abstract": 1,
+            "missing_id": 0
+          }
+        },
+        {
+          "timestamp": "2026-04-02T22:53:39",
+          "stage": "writer",
+          "event": "context_prepared",
+          "detail": "Contexto compartilhado preparado para o writer.",
+          "payload": {
+            "top_patents": 5,
+            "route_summary": {
+              "deep_extraction": 8,
+              "manual_review": 1,
+              "screen_only": 1
+            }
+          }
+        }
+      ],
+      "stage_metrics": [
+        {
+          "stage": "setup",
+          "status": "ok",
+          "duration_seconds": 0.002,
+          "items_processed": 1,
+          "detail": "Verificação do modelo Ollama"
+        },
+        {
+          "stage": "search",
+          "status": "ok",
+          "duration_seconds": 40.269,
+          "items_processed": 10,
+          "detail": "10 patentes únicas após dedupe"
+        },
+        {
+          "stage": "screening",
+          "status": "ok",
+          "duration_seconds": 39.208,
+          "items_processed": 10,
+          "detail": "8 incluídas, 1 revisão"
+        },
+        {
+          "stage": "comparative_analysis",
+          "status": "ok",
+          "duration_seconds": 0.169,
+          "items_processed": 10,
+          "detail": "Síntese comparativa"
+        }
+      ],
+      "llm_cache_stats": {
+        "hits": 0,
+        "misses": 39,
+        "entries": 19
+      },
+      "run_id": "20260402_225219",
+      "started_at": "2026-04-02T22:52:19",
+      "finished_at": "",
+      "status": "running",
+      "llm_available": true,
+      "patents": [
+        {
+          "title": "Fuel Supply System For Fuel Cell",
+          "patent_id": "KR101978330B1",
+          "abstract": "AbstractTranslated fromKoreanì°ë£ì ì§ì ì°ë£ ê³µê¸ ìì¤íì´ ê°ìëë¤. ë³¸ ë°ëªì ì°ë£ì ì§ì ì°ë£ ê³µê¸ ìì¤íì, ì°ë£ì ì§ê° íì¬ë ì»¨íì´ë ì ë°ìì ì°ë£ì ì§ì ì°ë£ ê³µê¸ ìì¤íì ìì´ì, LNGê° ì ì¥ëë LNG ì ì¥í±í¬; ì²ì°ê°ì¤ë¥¼ ê³µê¸ë°ì ê°ì§íì¬ ë°ì íë ì°ë£ì ì§ ì ë; ë° LNG ì ì¥í±í¬ì ì ì¥ë LNGë¥¼ ê¸°íìì¼ ì°ë£ì ì§ ì ëì¼ë¡ ê³µê¸íë ê¸°í ê³µê¸ë¶ë¥¼ í¬í¨íë, ê¸°í ê³µê¸ë¶ë ì°ë£ì ì§ ì ëìì ë°ìíë ë°°ê¸°ê°ì¤ë¥¼ ì´ìì¼ë¡ LNGë¥¼ ê¸°íìí¤ë ê²ì í¹ì§ì¼ë¡ íë¤.A fuel supply system for a fuel cell is disclosed. A fuel supply system of a fuel cell of the present invention is a fuel supply system for a fuel cell in a container ship on which a fuel cell is mounted, comprising: an LNG storage tank storing LNG; A fuel cell unit that is supplied with natural gas and is reformed and developed; And a vaporizer for vaporizing the LNG stored in the LNG storage tank and supplying the vaporized LNG to the fuel cell unit, wherein the vaporizer supplies the exhaust gas generated from the fuel cell unit as a heat source to vaporize the LNG.",
+          "inventors": [
+            "ì¤ì¤",
+            "ë³ì¤ì²",
+            "ì ì¹êµ"
+          ],
+          "assignee": "ëì°ì¡°ì í´ì ì£¼ìíì¬",
+          "filing_date": "2012-11-20",
+          "publication_date": "2019-05-14",
+          "url": "https://patents.google.com/patent/KR101978330B1/en",
+          "snippet": "",
+          "source": "Google Patents"
+        },
+        {
+          "title": "A photovoltaic power generation system equipped with electrothermal energy storage",
+          "patent_id": "CN214660665U",
+          "abstract": "AbstractThe utility model discloses a photovoltaic power generation system with electric heat energy storage, this system includes supercritical CO2Brayton cycle power generation system and transcritical CO2The system comprises a heat pump system, a cold storage and cooling system, an electric heating and molten salt heat storage system and a photovoltaic power generation system. The system comprises a photovoltaic power generation system, an electric heating energy storage system and supercritical CO2Brayton cycle power generation systemThe combination of the photovoltaic power generation system with low cost and relatively high technical maturity and the combination of the thermal energy storage and the thermal power generation system as the regulation and supplement power supply system of the photovoltaic power generation can not only maintain relatively low investment cost of the power generation system, but also realize the stability of power output, and simultaneously, the heat pump technology is also adopted to combine the photovoltaic power generation system and the supercritical CO2The heat released by the Brayton cycle power generation system is recovered, and the comprehensive overall power generation efficiency is further improved.",
+          "inventors": [
+            "æçº¢æº",
+            "é«ç",
+            "å§æå®",
+            "ææ¨ç§",
+            "æ¨ç",
+            "æ¨æµ¦"
+          ],
+          "assignee": "Xian Thermal Power Research Institute Co Ltd",
+          "filing_date": "2021-05-27",
+          "publication_date": "2021-11-09",
+          "url": "https://patents.google.com/patent/CN214660665U/en",
+          "snippet": "",
+          "source": "Google Patents"
+        },
+        {
+          "title": "System and Method for Complementarily Coupling and Orderly Converting Multi-energy",
+          "patent_id": "US20240339953A1",
+          "abstract": "AbstractA system and method for complementarily coupling and orderly converting multi-energy. The system includes: a reversible solid oxide cell, a gasification reaction chamber, synthesis reactor, and photo-thermal coupled catalytic reactor. Gasification of biomass/coal provides synthesis gas of a first source; feedstock gas is electrolyzed to produce synthesis gas of a second source; the synthesis gas of a first source and the synthesis gas of a second source react in the synthesis reactor to produce hydrocarbon fuel; during power generation, the synthesis gas enters a fuel electrode to react, and gas flowing out of the fuel electrode passes through the photo-thermal coupling catalytic reactor to react to produce hydrocarbon fuel; a heat source and light source required for gasification, electrolysis, power generation and photo-thermal coupled catalysis are provided by solar energy, and electrical energy for electrolysis is provided by power of unstable renewable energy from abandoned wind and light.",
+          "inventors": [
+            "Gang Xiao",
+            "Anwei Sun",
+            "Haoran Xu"
+          ],
+          "assignee": "Zhejiang University ZJU",
+          "filing_date": "2022-07-06",
+          "publication_date": "2024-10-10",
+          "url": "https://patents.google.com/patent/US20240339953A1/en",
+          "snippet": "",
+          "source": "Google Patents"
+        },
+        {
+          "title": "Methods and/or systems for magnetobaric assisted generation of power from low temperature heat",
+          "patent_id": "US8549857B2",
+          "abstract": "AbstractMethods and/or systems using magnetically assisted pressurization of a gas for the generation of useful power from heat transfer using heat sources at lower temperatures in a manner that does not require the emission of CO2.",
+          "inventors": [
+            "Christopher J. Papile"
+          ],
+          "assignee": "Individual",
+          "filing_date": "2007-12-14",
+          "publication_date": "2013-10-08",
+          "url": "https://patents.google.com/patent/US8549857B2/en",
+          "snippet": "",
+          "source": "Google Patents"
+        },
+        {
+          "title": "Process and equipment for converting carbon dioxide in flue gas into natural gas by using dump power energy",
+          "patent_id": "KR101648976B1",
+          "abstract": "AbstractTranslated fromKoreanë¤í¼ ìëì§ë¥¼ ì¬ì©íì¬ ì°ë ê°ì¤ë¥¼ ì²ì° ê°ì¤ë¡ ë³ííê¸° ìí ê³µì .ê³µì ì ë¤í ìëì§ë¥¼ ì¬ì©íì¬ ë¬¼ì ì ê¸°ë¶í´ íì¬ ìì ê°ì¤ë¥¼ ìì±íê³ ; ìì ê°ì¤ì ì°ë ê°ì¤ë¡ë¶í° í¬ì§ë ì´ì°ííìë ë©í ìì± ë°ìì ë¸ì¶ëê³ ; ë©í ìì± ë°ìì¼ë¡ë¶í° ìì±ë ì´ì ë¬¼ì ê°ì´ê°ì¬ ê³¼ì´ë ìì¦ê¸°ë¥¼ ìì±íì¬ ì¤í í°ë¹ì êµ¬ëíê¸° ìí´ íìë¥¼ ìì±íê³  ì ë ¥ ìëì§ë¥¼ ë¬¼ ì ê¸°ë¶í´ë¥¼ ìí´ ë³´ì¶©íì¬, í©ì±ì ìí´ ì²ì° ê°ì¤ê° ì»ì´ì§ë¤. ì²ì° ê°ì¤ì í©ì±ì ì¬ì©ëë ì¥ë¹ê° ì ê³µëë¤. ì¥ë¹ë ê¸°ë³¸ì ì¼ë¡ ë³í ì ë¥ ì¥ì¹(1), ì í´ì¡°(2), ì¤í í°ë¹(4), ì´ì°ííì íí°(21), ì ì´ë 2ë¨ì ê³ ì ì¸µ ë°ìê¸°ë¤(11)(13), ë¤ìí ê°ì  ì´êµíê¸°ë¤, ì¤í ëë¼(12), ì²ì° ê°ì¤ ìì¶ê¸°(8), ë° ê³µì ì íì´íë¼ì¸(3)ì ê²°í©ì ìí´ íì±ëë¤.A process for converting flue gas to natural gas using damper energy.The process uses dump energy to electrolyze the water to produce a solids gas; Carbon dioxide captured from hydrogen gas and flue gas is exposed to the methanogenic reaction; The heat generated from the methanogenic reaction is obtained by heating the water to generate superheated water vapor to generate power to drive the steam turbine, and supplementing the power energy for water electrolysis to synthesize the natural gas. Equipment for the synthesis of natural gas is provided. The equipment basically comprises a conversion rectifier 1, an electrolyzer 2, a steam turbine 4, a carbon dioxide heater 21, at least two fixed bed reactors 11 and 13, various indirect heat exchangers, (12), a natural gas condenser (8), and a process water pipeline (3).",
+          "inventors": [
+            "ìí­ ì¥",
+            "ì´ë¡± ì²¸",
+            "ì§ë¡± ì",
+            "ì¥ì§ì í¡",
+            "ì±ì¹´ì´ ì ±"
+          ],
+          "assignee": "ì°í ì¹´ì´ë ìì§ëì´ë§ íí¬ëë¡ì§ ë¦¬ìì¹ ì¸ì¤í°íí¸  ì½ì¤í¼ë ì´ì ìí°ë.",
+          "filing_date": "2013-04-16",
+          "publication_date": "2016-08-17",
+          "url": "https://patents.google.com/patent/KR101648976B1/en",
+          "snippet": "",
+          "source": "Google Patents"
+        },
+        {
+          "title": "1. AU2019901965 - A System to Improve Performance of Transcritical Carbon Dioxide Cooling by Integration of Ice Thermal Storage for Subcooling",
+          "patent_id": "AU244427549",
+          "abstract": "",
+          "inventors": [],
+          "assignee": "IceCap; Thermal; Energy; Pty Ltd; KALDORBULL PTY LTD",
+          "filing_date": "",
+          "publication_date": "20.06.2019",
+          "url": "https://patentscope.wipo.int/search/en/detail.jsf;jsessionid=18D125D39675BD75A74CB94904F1BAF0.wapp1nC?docId=AU244427549&_cid=P12-MNI90Y-93610-1",
+          "snippet": "",
+          "source": "Patentscope"
+        },
+        {
+          "title": "2. US20240229681 - Calcination system with thermal energy storage system",
+          "patent_id": "US433566429",
+          "abstract": "(EN)Anenergystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C. Intermittent electricalenergyheats a solid medium. Heat from the solid medium is delivered continuously on demand. An array of bricks incorporating internal radiation cavities is directly heated bythermalradiation. The cavities facilitate rapid, uniform heating via reradiation. Heat delivery via flowing gas establishes a thermocline which maintains high outlet temperature throughout discharge. Gas flows through structured pathways within the array, delivering heat which may be used for processes including calcination, hydrogen electrolysis, steam generation, andthermalpower generation and cogeneration. Groups ofthermalstoragearrays may be controlled and operated at high temperatures withoutthermalrunaway via deep-discharge sequencing. Forecast-based control enables continuous, year-round heat supply using current and advance information of weather and VRE availability. High-voltage DC power conversion and distribution circuitry improves the efficiency of VRE power transfer into the system.",
+          "inventors": [
+            "John Setel O'Donnell",
+            "Peter Emery von Behrens",
+            "Chiaki Treynor",
+            "Matthieu Jonemann",
+            "Robert Ratz",
+            "Yusef Desjardins Ferhani"
+          ],
+          "assignee": "Rondo; Energy; , Inc.",
+          "filing_date": "",
+          "publication_date": "11.07.2024",
+          "url": "https://patentscope.wipo.int/search/en/detail.jsf;jsessionid=18D125D39675BD75A74CB94904F1BAF0.wapp1nC?docId=US433566429&_cid=P12-MNI90Y-93610-1",
+          "snippet": "",
+          "source": "Patentscope"
+        },
+        {
+          "title": "3. US20230203968 - Methods for material activation with thermal energy storage system",
+          "patent_id": "US400261922",
+          "abstract": "(EN)Anenergystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C. Intermittent electricalenergyheats a solid medium. Heat from the solid medium is delivered continuously on demand. An array of bricks incorporating internal radiation cavities is directly heated bythermalradiation. The cavities facilitate rapid, uniform heating via reradiation. Heat delivery via flowing gas establishes a thermocline which maintains high outlet temperature throughout discharge. Gas flows through structured pathways within the array, delivering heat which may be used for processes including calcination, hydrogen electrolysis, steam generation, andthermalpower generation and cogeneration. Groups ofthermalstoragearrays may be controlled and operated at high temperatures withoutthermalrunaway via deep-discharge sequencing. Forecast-based control enables continuous, year-round heat supply using current and advance information of weather and VRE availability. High-voltage DC power conversion and distribution circuitry improves the efficiency of VRE power transfer into the system.",
+          "inventors": [
+            "John Setel O'Donnell",
+            "Peter Emery von Behrens",
+            "Chiaki Treynor",
+            "Jeremy Quentin Keller",
+            "Matthieu Jonemann",
+            "Robert Ratz",
+            "Yusef Desjardins Ferhani"
+          ],
+          "assignee": "Rondo; Energy; , Inc.",
+          "filing_date": "",
+          "publication_date": "29.06.2023",
+          "url": "https://patentscope.wipo.int/search/en/detail.jsf;jsessionid=18D125D39675BD75A74CB94904F1BAF0.wapp1nC?docId=US400261922&_cid=P12-MNI90Y-93610-1",
+          "snippet": "",
+          "source": "Patentscope"
+        },
+        {
+          "title": "4. US20240229682 - Methods for material activation with thermal energy storage system",
+          "patent_id": "US433566430",
+          "abstract": "(EN)Anenergystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C. Intermittent electricalenergyheats a solid medium. Heat from the solid medium is delivered continuously on demand. An array of bricks incorporating internal radiation cavities is directly heated bythermalradiation. The cavities facilitate rapid, uniform heating via reradiation. Heat delivery via flowing gas establishes a thermocline which maintains high outlet temperature throughout discharge. Gas flows through structured pathways within the array, delivering heat which may be used for processes including calcination, hydrogen electrolysis, steam generation, andthermalpower generation and cogeneration. Groups ofthermalstoragearrays may be controlled and operated at high temperatures withoutthermalrunaway via deep-discharge sequencing. Forecast-based control enables continuous, year-round heat supply using current and advance information of weather and VRE availability. High-voltage DC power conversion and distribution circuitry improves the efficiency of VRE power transfer into the system.",
+          "inventors": [
+            "John Setel O'Donnell",
+            "Peter Emery von Behrens",
+            "Matthieu Jonemann",
+            "Yusef Desjardins Ferhani"
+          ],
+          "assignee": "Rondo; Energy; , Inc.",
+          "filing_date": "",
+          "publication_date": "11.07.2024",
+          "url": "https://patentscope.wipo.int/search/en/detail.jsf;jsessionid=18D125D39675BD75A74CB94904F1BAF0.wapp1nC?docId=US433566430&_cid=P12-MNI90Y-93610-1",
+          "snippet": "",
+          "source": "Patentscope"
+        },
+        {
+          "title": "5. US20220282638 - Material activation system with thermal energy storage system",
+          "patent_id": "US373267798",
+          "abstract": "(EN)Anenergystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C. Intermittent electricalenergyheats a solid medium. Heat from the solid medium is delivered continuously on demand. An array of bricks incorporating internal radiation cavities is directly heated bythermalradiation. The cavities facilitate rapid, uniform heating via reradiation. Heat delivery via flowing gas establishes a thermocline which maintains high outlet temperature throughout discharge. Gas flows through structured pathways within the array, delivering heat which may be used for processes including calcination, hydrogen electrolysis, steam generation, andthermalpower generation and cogeneration. Groups ofthermalstoragearrays may be controlled and operated at high temperatures withoutthermalrunaway via deep-discharge sequencing. Forecast-based control enables continuous, year-round heat supply using current and advance information of weather and VRE availability. High-voltage DC power conversion and distribution circuitry improves the efficiency of VRE power transfer into the system.",
+          "inventors": [
+            "John Setel O'Donnell",
+            "Peter Emery von Behrens",
+            "Chiaki Treynor",
+            "Jeremy Quentin Keller",
+            "Matthieu Jonemann",
+            "Robert Ratz",
+            "Yusef Desjardins Ferhani"
+          ],
+          "assignee": "Rondo; Energy; , Inc.",
+          "filing_date": "",
+          "publication_date": "08.09.2022",
+          "url": "https://patentscope.wipo.int/search/en/detail.jsf;jsessionid=18D125D39675BD75A74CB94904F1BAF0.wapp1nC?docId=US373267798&_cid=P12-MNI90Y-93610-1",
+          "snippet": "",
+          "source": "Patentscope"
+        }
+      ],
+      "evaluations": [
+        {
+          "patent_id": "KR101978330B1",
+          "analysis_route": "deep_extraction",
+          "route_reason": "Há evidência suficiente para extração detalhada.",
+          "screening_score": 8.0,
+          "screening_decision": "include",
+          "screening_reason": "O resumo descreve um sistema de fornecimento de combustível para uma célula de combustível, incluindo o uso de LNG (gás natural liquefeito) como combustível e a utilização do calor gerado pela célula de combustível para vaporizar o LNG, o que se alinha diretamente com a busca por 'carbon dioxide thermal energy storage'.",
+          "evidence_snippets": [
+            "ë³¸ ë°ëªì ì°ë£ì ì§ì ì°ë£ ê³µê¸ ìì¤íì´ ê°ìëë¤.",
+            "LNGê° ì ì¥ëë LNG ì ì¥í±í¬; ì²ì°ê°ì¤ë¥¼ ê³µê¸ë°ì ê°ì§íì¬ ë°ì íë ì°ë£ì ì§ ì ë"
+          ],
+          "thematic_cluster": "Células de Combustível, Armazenamento de Energia, Termodinâmica",
+          "relevance_score": 9.0,
+          "summary": "Esta patente descreve um sistema de fornecimento de combustível para uma célula de combustível que utiliza LNG vaporizado como combustível. O sistema utiliza o calor gerado pela célula de combustível para vaporizar o LNG, e o exaustão da célula de combustível é usado como fonte de calor. A patente aborda a necessidade de um sistema de fornecimento de combustível eficiente para células de combustível em aplicações específicas.",
+          "key_findings": [
+            "Utilização de LNG como combustível, vaporizado com o calor da célula de combustível.",
+            "Utilização do exaustão da célula de combustível como fonte de calor para vaporização do LNG.",
+            "Implementação do sistema em um navio de carga, demonstrando aplicabilidade em ambientes específicos."
+          ],
+          "potential_applications": [
+            "Células de combustível em navios de carga.",
+            "Sistemas de armazenamento de energia térmica.",
+            "Geração de energia em ambientes marinhos."
+          ],
+          "technical_domain": "Células de Combustível, Armazenamento de Energia, Termodinâmica",
+          "innovation_level": "Incremental",
+          "problem_statement": "O problema abordado é a necessidade de um sistema de fornecimento de combustível eficiente para células de combustível, particularmente em ambientes onde o calor gerado pela célula pode ser reutilizado.",
+          "solution_summary": "A solução proposta é um sistema que utiliza o calor gerado pela célula de combustível para vaporizar LNG, que é então fornecido à célula de combustível. O exaustão da célula de combustível é usado como fonte de calor para vaporização.",
+          "claimed_advantages": [
+            "Eficiência no uso do calor gerado pela célula de combustível.",
+            "Redução de perdas de energia.",
+            "Potencial para aplicações em ambientes marítimos."
+          ],
+          "limitations": [
+            "Dependência da temperatura da célula de combustível para a vaporização do LNG.",
+            "Possíveis desafios na gestão e armazenamento do LNG."
+          ],
+          "maturity_level": "Intermediária",
+          "confidence": 0.95,
+          "manual_review_required": false
+        },
+        {
+          "patent_id": "CN214660665U",
+          "analysis_route": "deep_extraction",
+          "route_reason": "Há evidência suficiente para extração detalhada.",
+          "screening_score": 9.0,
+          "screening_decision": "include",
+          "screening_reason": "A patente trata de um sistema de geração de energia fotovoltaica com armazenamento de energia térmica, especificamente utilizando CO2 e ciclos Brayton, que se encaixa diretamente na busca por 'carbon dioxide thermal energy storage'.",
+          "evidence_snippets": [
+            "AbstractThe utility model discloses a photovoltaic power generation system with electric heat energy storage...",
+            "The system comprises a photovoltaic power generation system, an electric heating energy storage system and supercritical CO2Brayton cycle power generation system"
+          ],
+          "thematic_cluster": "CO2 Cycle Configurations",
+          "relevance_score": 9.5,
+          "summary": "Esta patente descreve um sistema de geração de energia fotovoltaica que integra armazenamento de energia térmica utilizando CO2 em um ciclo Brayton. O sistema combina a geração de energia fotovoltaica com um sistema de armazenamento de energia térmica, utilizando um sistema de aquecimento elétrico e armazenamento de calor em sal fundido, com o objetivo de otimizar a eficiência da geração de energia e estabilizar a produção de energia.",
+          "key_findings": [
+            "O sistema incorpora um ciclo Brayton com CO2, permitindo o armazenamento de energia térmica.",
+            "A patente combina a geração de energia fotovoltaica com um sistema de aquecimento elétrico e armazenamento de calor em sal fundido.",
+            "O sistema recupera o calor liberado pelo ciclo Brayton, melhorando a eficiência geral."
+          ],
+          "potential_applications": [
+            "Sistemas de geração de energia fotovoltaica",
+            "Armazenamento de energia térmica em larga escala",
+            "Geração de energia combinada (CHP)"
+          ],
+          "technical_domain": "Geração de Energia, Armazenamento de Energia Térmica",
+          "innovation_level": "Incremental",
+          "problem_statement": "O problema abordado é a necessidade de estabilizar a produção de energia de sistemas fotovoltaicos, que são inerentemente variáveis, e otimizar a eficiência da geração de energia.",
+          "solution_summary": "A solução proposta é um sistema que utiliza um ciclo Brayton com CO2 para armazenar o calor gerado pela energia fotovoltaica, combinado com um sistema de aquecimento elétrico e armazenamento de calor em sal fundido, permitindo a utilização do calor residual para regular e complementar a produção de energia fotovoltaica.",
+          "claimed_advantages": [
+            "Custo de investimento relativamente baixo",
+            "Estabilização da produção de energia de fotovoltaica",
+            "Melhoria da eficiência da geração de energia"
+          ],
+          "limitations": [
+            "A patente não detalha especificamente a capacidade de armazenamento de calor ou a eficiência do ciclo Brayton.",
+            "A dependência da disponibilidade de energia solar para acionar o sistema."
+          ],
+          "maturity_level": "Intermediária",
+          "confidence": 0.95,
+          "manual_review_required": false
+        },
+        {
+          "patent_id": "US20240339953A1",
+          "analysis_route": "deep_extraction",
+          "route_reason": "Há evidência suficiente para extração detalhada.",
+          "screening_score": 8.0,
+          "screening_decision": "include",
+          "screening_reason": "A patente descreve um sistema que utiliza diversas fontes de energia (biomassa, eletricidade, solar) para produzir combustível, incluindo a conversão de dióxido de carbono, o que se alinha diretamente com a busca por 'carbon dioxide thermal energy storage'.",
+          "evidence_snippets": [
+            "AbstractA system includes: a reversible solid oxide cell, a gasification reaction chamber, synthesis reactor, and photo-thermal coupled catalytic reactor."
+          ],
+          "thematic_cluster": "Engenharia Química, Energia Renovável, Catálise",
+          "relevance_score": 9.5,
+          "summary": "Esta patente descreve um sistema para a conversão complementar de múltiplas fontes de energia, incluindo a utilização de dióxido de carbono, para a produção de combustível. O sistema emprega uma célula de óxido sólido reversível e reatores catalíticos para transformar gás de síntese em hidrocarbonetos, utilizando energia solar e fontes de energia renovável intermitentes. O foco principal é a utilização térmica do dióxido de carbono como parte do processo de conversão de energia.",
+          "key_findings": [
+            "Utilização de uma célula de óxido sólido reversível para conversão de gás de síntese em combustível.",
+            "Integração de fontes de energia solar e renováveis intermitentes (vento e luz) para alimentar o processo de conversão."
+          ],
+          "potential_applications": [
+            "Produção de combustível a partir de resíduos e dióxido de carbono.",
+            "Armazenamento de energia em larga escala, utilizando dióxido de carbono como um meio de armazenamento térmico."
+          ],
+          "technical_domain": "Engenharia Química, Energia Renovável, Catálise",
+          "innovation_level": "Significativa",
+          "problem_statement": "O problema abordado é a necessidade de uma solução eficiente para o armazenamento e utilização de energia, especialmente a partir de fontes intermitentes, e a conversão de dióxido de carbono em produtos de valor agregado.",
+          "solution_summary": "A solução proposta é um sistema integrado que combina a gasificação de biomassa/carvão, eletrólise de gás de síntese e reações catalíticas, utilizando energia solar e fontes de energia renováveis para converter dióxido de carbono em combustível, com um componente chave sendo um reator catalítico acoplado termicamente.",
+          "claimed_advantages": [
+            "Utilização de múltiplas fontes de energia, aumentando a eficiência e a resiliência do sistema.",
+            "Conversão de dióxido de carbono em combustível, contribuindo para a mitigação das emissões de carbono."
+          ],
+          "limitations": [
+            "A patente não detalha a eficiência específica dos reatores catalíticos ou a viabilidade econômica da implementação em larga escala.",
+            "A dependência de fontes de energia renováveis intermitentes pode exigir sistemas de armazenamento de energia adicionais."
+          ],
+          "maturity_level": "Inicial",
+          "confidence": 0.95,
+          "manual_review_required": false
+        },
+        {
+          "patent_id": "US8549857B2",
+          "analysis_route": "manual_review",
+          "route_reason": "Triagem indicou revisão humana.",
+          "screening_score": 7.0,
+          "screening_decision": "review",
+          "screening_reason": "O resumo menciona a utilização de gases e pressurização para geração de energia a partir de calor, o que se relaciona com o armazenamento de energia térmica de CO2, mas a tecnologia é diferente da busca original. Requer análise mais aprofundada para determinar a relevância.",
+          "evidence_snippets": [
+            "AbstractMethods and/or systems using magnetically assisted pressurization of a gas for the generation of useful power from heat transfer using heat sources at lower temperatures in a manner that does not require the emission of CO2."
+          ],
+          "thematic_cluster": "Thermal Transfer Mechanisms",
+          "relevance_score": 6.0,
+          "summary": "Esta patente descreve um sistema que utiliza magnetobaric pressurização de um gás para geração de energia a partir de calor, evitando a emissão de CO2. A tecnologia se concentra em fontes de calor de baixa temperatura, mas não aborda diretamente o armazenamento de energia térmica de CO2.",
+          "key_findings": [
+            "Utiliza magnetobaric pressurização de um gás para geração de energia.",
+            "Foca em fontes de calor de baixa temperatura."
+          ],
+          "potential_applications": [
+            "Geração de energia a partir de fontes de calor residuais.",
+            "Sistemas de energia de baixa temperatura."
+          ],
+          "technical_domain": "Termodinâmica, Geração de Energia",
+          "innovation_level": "Incremental",
+          "problem_statement": "O sistema visa gerar energia útil a partir de calor de baixa temperatura sem a necessidade de emissão de CO2.",
+          "solution_summary": "A solução emprega magnetobaric pressurização de um gás para converter calor em energia, utilizando um sistema que não requer a emissão de CO2.",
+          "claimed_advantages": [
+            "Evita a emissão de CO2.",
+            "Permite a geração de energia a partir de calor de baixa temperatura."
+          ],
+          "limitations": [
+            "Não aborda diretamente o armazenamento de energia térmica de CO2.",
+            "Depende de magnetobaric pressurização, que pode ter desafios de implementação."
+          ],
+          "maturity_level": "Inicial",
+          "confidence": 0.7,
+          "manual_review_required": true
+        },
+        {
+          "patent_id": "KR101648976B1",
+          "analysis_route": "screen_only",
+          "route_reason": "Patente excluída na triagem.",
+          "screening_score": 0.0,
+          "screening_decision": "exclude",
+          "screening_reason": "",
+          "evidence_snippets": [
+            "AbstractTranslated fromKoreanë¤í¼ ìëì§ë¥¼ ì¬ì©íì¬ ì°ë ê°ì¤ë¥¼ ì²ì° ê°ì¤ë¡ ë³ííê¸° ìí ê³µì .ê³µì ì ë¤í ìëì§ë¥¼ ì¬ì©íì¬ ë¬¼ì ì ê¸°ë¶í´ íì¬ ìì ê°ì¤ë¥¼ ìì±íê³ ; ìì ê°ì¤ì"
+          ],
+          "thematic_cluster": "",
+          "relevance_score": 0.0,
+          "summary": "",
+          "key_findings": [],
+          "potential_applications": [],
+          "technical_domain": "",
+          "innovation_level": "",
+          "problem_statement": "",
+          "solution_summary": "",
+          "claimed_advantages": [],
+          "limitations": [],
+          "maturity_level": "",
+          "confidence": 0.0,
+          "manual_review_required": false
+        },
+        {
+          "patent_id": "AU244427549",
+          "analysis_route": "deep_extraction",
+          "route_reason": "Há evidência suficiente para extração detalhada.",
+          "screening_score": 9.0,
+          "screening_decision": "include",
+          "screening_reason": "A patente trata explicitamente de armazenamento de energia térmica de dióxido de carbono, o que corresponde diretamente à busca do usuário.",
+          "evidence_snippets": [
+            "A System to Improve Performance of Transcritical Carbon Dioxide Cooling by Integration of Ice Thermal Storage"
+          ],
+          "thematic_cluster": "CO2 Cycle Configurations",
+          "relevance_score": 10.0,
+          "summary": "Esta patente descreve um sistema para melhorar o desempenho de resfriamento de dióxido de carbono transcrítico através da integração de armazenamento térmico de gelo para sub-resfriamento. O sistema utiliza dióxido de carbono para transferência de calor e incorpora armazenamento de energia térmica para otimizar o processo. A patente foca na eficiência do ciclo de resfriamento de CO2.",
+          "key_findings": [
+            "Utilização de armazenamento térmico de gelo para sub-resfriamento do dióxido de carbono.",
+            "Integração com um sistema de resfriamento transcrítico de dióxido de carbono."
+          ],
+          "potential_applications": [
+            "Sistemas de refrigeração industrial.",
+            "Sistemas de ar condicionado de alta eficiência.",
+            "Armazenamento de energia térmica em geral."
+          ],
+          "technical_domain": "Engenharia Térmica, Termodinâmica, Sistemas de Refrigeração",
+          "innovation_level": "Incremental",
+          "problem_statement": "O sistema busca otimizar o desempenho de ciclos de resfriamento de dióxido de carbono transcrítico, onde a eficiência é limitada pela necessidade de sub-resfriamento do refrigerante.",
+          "solution_summary": "A solução proposta é integrar um sistema de armazenamento térmico de gelo para manter a temperatura do dióxido de carbono, permitindo um sub-resfriamento mais eficiente e, consequentemente, um melhor desempenho do ciclo de resfriamento.",
+          "claimed_advantages": [
+            "Melhora no desempenho do ciclo de resfriamento de dióxido de carbono transcrítico.",
+            "Aumento da eficiência do sistema de resfriamento."
+          ],
+          "limitations": [
+            "Dependência da temperatura ambiente para o funcionamento do sistema de armazenamento de gelo.",
+            "Potenciais custos de implementação e manutenção do sistema de armazenamento de gelo."
+          ],
+          "maturity_level": "Intermediária",
+          "confidence": 0.95,
+          "manual_review_required": false
+        },
+        {
+          "patent_id": "US433566429",
+          "analysis_route": "deep_extraction",
+          "route_reason": "Há evidência suficiente para extração detalhada.",
+          "screening_score": 9.0,
+          "screening_decision": "include",
+          "screening_reason": "A patente descreve um sistema de armazenamento de energia térmica que utiliza calor para processos como calcinação, utilizando um meio sólido e controle de temperatura, diretamente relacionado ao termo 'carbon dioxide thermal energy storage'.",
+          "evidence_snippets": [
+            "An energystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C.",
+            "Heat from the solid medium is delivered continuously on demand."
+          ],
+          "thematic_cluster": "Engenharia Térmica, Armazenamento de Energia, Processamento de Materiais",
+          "relevance_score": 9.5,
+          "summary": "Esta patente descreve um sistema de armazenamento de energia térmica que utiliza calor para processos como calcinação, utilizando um meio sólido e controle de temperatura. O sistema converte energia elétrica variável em calor contínuo, utilizando um meio sólido aquecido por radiação e um fluxo de gás controlado. O controle baseado em previsão permite o fornecimento contínuo de calor ao longo do ano.",
+          "key_findings": [
+            "O sistema utiliza um meio sólido e controle de temperatura para armazenamento de energia térmica.",
+            "O sistema incorpora cavidades de radiação para aquecimento rápido e uniforme, facilitando a transferência de calor."
+          ],
+          "potential_applications": [
+            "Calcinação",
+            "Produção de hidrogênio",
+            "Geração de vapor",
+            "Geração de energia e cogeração"
+          ],
+          "technical_domain": "Engenharia Térmica, Armazenamento de Energia, Processamento de Materiais",
+          "innovation_level": "Significativa",
+          "problem_statement": "O problema abordado é a necessidade de um sistema de armazenamento de energia térmica eficiente e flexível para processos de alta temperatura, como calcinação, que requerem calor contínuo e sob demanda.",
+          "solution_summary": "A solução proposta é um sistema de armazenamento de energia térmica que utiliza um array de 'bricks' com cavidades de radiação para aquecer um meio sólido, com um fluxo de gás controlando a temperatura e fornecendo calor sob demanda. O controle baseado em previsão otimiza o fornecimento de calor.",
+          "claimed_advantages": [
+            "Contínuo fornecimento de calor sob demanda.",
+            "Controle de temperatura e prevenção de 'thermal runaway'."
+          ],
+          "limitations": [
+            "A patente não detalha especificamente a composição do meio sólido.",
+            "A eficiência do sistema depende da otimização do fluxo de gás e do design das cavidades de radiação."
+          ],
+          "maturity_level": "Inicial",
+          "confidence": 0.95,
+          "manual_review_required": false
+        },
+        {
+          "patent_id": "US400261922",
+          "analysis_route": "deep_extraction",
+          "route_reason": "Há evidência suficiente para extração detalhada.",
+          "screening_score": 9.0,
+          "screening_decision": "include",
+          "screening_reason": "A patente descreve um sistema de armazenamento de energia térmica que utiliza calor para ativar materiais, incluindo aplicações como calcinação e produção de hidrogênio, o que se alinha diretamente com a busca por 'carbon dioxide thermal energy storage'.",
+          "evidence_snippets": [
+            "An energystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C.",
+            "Heat from the solid medium is delivered continuously on demand."
+          ],
+          "thematic_cluster": "Armazenamento de Energia Térmica, Termodinâmica, Engenharia de Materiais",
+          "relevance_score": 9.5,
+          "summary": "Esta patente descreve um sistema de armazenamento de energia térmica que utiliza calor de alta temperatura (acima de 1000°C) para ativar materiais, incluindo processos como calcinação e produção de hidrogênio. O sistema emprega uma matriz de 'blocos' com cavidades de radiação para aquecimento uniforme e controle de temperatura, utilizando um fluxo de gás para entrega de calor sob demanda. O sistema também incorpora controle baseado em previsão para otimizar o fornecimento contínuo de calor.",
+          "key_findings": [
+            "O sistema utiliza cavidades de radiação para aquecimento rápido e uniforme dos materiais.",
+            "O controle baseado em previsão permite o fornecimento contínuo de calor, independentemente da disponibilidade de energia renovável."
+          ],
+          "potential_applications": [
+            "Calcinação de materiais.",
+            "Produção de hidrogênio.",
+            "Geração de vapor.",
+            "Geração de energia e cogeração."
+          ],
+          "technical_domain": "Armazenamento de Energia Térmica, Termodinâmica, Engenharia de Materiais",
+          "innovation_level": "Significativa",
+          "problem_statement": "O problema abordado é a necessidade de um sistema de armazenamento de energia térmica eficiente e flexível para aproveitar fontes de energia renovável intermitentes, permitindo o fornecimento contínuo de calor para diversas aplicações.",
+          "solution_summary": "A solução proposta é um sistema de armazenamento de energia térmica que utiliza radiação e um fluxo de gás controlado para entregar calor continuamente sob demanda, permitindo o uso de calor para processos como calcinação, produção de hidrogênio e geração de energia.",
+          "claimed_advantages": [
+            "Fornecimento contínuo de calor sob demanda.",
+            "Aquecimento rápido e uniforme dos materiais.",
+            "Eficiência aprimorada na transferência de energia renovável."
+          ],
+          "limitations": [
+            "Requer altas temperaturas de operação (acima de 1000°C).",
+            "A complexidade do sistema de controle baseado em previsão pode aumentar os custos de implementação."
+          ],
+          "maturity_level": "Intermediária",
+          "confidence": 0.95,
+          "manual_review_required": false
+        },
+        {
+          "patent_id": "US433566430",
+          "analysis_route": "deep_extraction",
+          "route_reason": "Há evidência suficiente para extração detalhada.",
+          "screening_score": 9.0,
+          "screening_decision": "include",
+          "screening_reason": "A patente trata explicitamente de um sistema de armazenamento de energia térmica que utiliza calor para ativar materiais, incluindo aplicações como calcinação e produção de hidrogênio, diretamente relacionadas ao armazenamento de dióxido de carbono. O resumo descreve um sistema que converte energia elétrica variável em calor contínuo a altas temperaturas, utilizando um meio sólido e fluxo de gás, o que se encaixa perfeitamente na busca.",
+          "evidence_snippets": [
+            "An energystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C.",
+            "Heat from the solid medium is delivered continuously on demand."
+          ],
+          "thematic_cluster": "Engenharia Térmica, Armazenamento de Energia, Conversão de Energia",
+          "relevance_score": 9.5,
+          "summary": "Esta patente descreve um sistema de armazenamento de energia térmica que utiliza calor de energia elétrica variável para aquecer um meio sólido, idealmente para processos como calcinação e produção de hidrogênio. O sistema emprega um design de matriz de tijolos com cavidades de radiação para aquecimento uniforme e rápido, controlando a temperatura através de fluxo de gás. O controle preditivo e a conversão de alta tensão otimizam a eficiência da transferência de energia.",
+          "key_findings": [
+            "O sistema utiliza um meio sólido e fluxo de gás para transferir calor, permitindo um controle preciso da temperatura e uniformidade do aquecimento.",
+            "O design da matriz de tijolos com cavidades de radiação facilita o aquecimento rápido e uniforme, minimizando o risco de thermal runaway."
+          ],
+          "potential_applications": [
+            "Calcinação de materiais.",
+            "Produção de hidrogênio.",
+            "Geração de energia térmica e cogeração.",
+            "Aquecimento industrial."
+          ],
+          "technical_domain": "Engenharia Térmica, Armazenamento de Energia, Conversão de Energia",
+          "innovation_level": "Significativa",
+          "problem_statement": "O desafio é fornecer uma fonte de calor contínuo e de alta temperatura para processos que requerem energia, como calcinação e produção de hidrogênio, utilizando fontes de energia renovável intermitentes.",
+          "solution_summary": "A patente propõe um sistema que converte energia elétrica variável em calor contínuo a altas temperaturas, utilizando um meio sólido e fluxo de gás, permitindo o controle preciso da temperatura e a operação contínua do processo.",
+          "claimed_advantages": [
+            "Aquecimento rápido e uniforme devido à radiação.",
+            "Controle preciso da temperatura através do fluxo de gás.",
+            "Operação contínua e confiável em altas temperaturas."
+          ],
+          "limitations": [
+            "A eficiência do sistema depende da capacidade de otimizar o fluxo de gás e a transferência de calor.",
+            "O custo inicial do sistema pode ser elevado devido ao uso de materiais de alta temperatura e componentes de conversão de energia."
+          ],
+          "maturity_level": "Inicial",
+          "confidence": 0.95,
+          "manual_review_required": false
+        },
+        {
+          "patent_id": "US373267798",
+          "analysis_route": "deep_extraction",
+          "route_reason": "Há evidência suficiente para extração detalhada.",
+          "screening_score": 9.0,
+          "screening_decision": "include",
+          "screening_reason": "A patente trata explicitamente de um sistema de armazenamento de energia térmica que utiliza calor para converter energia, especificamente energia elétrica renovável, e inclui elementos chave como aquecimento de um meio sólido, transferência de calor por gás e controle de temperatura, todos relacionados à 'carbon dioxide thermal energy storage'.",
+          "evidence_snippets": [
+            "An energystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C.",
+            "Heat from the solid medium is delivered continuously on demand."
+          ],
+          "thematic_cluster": "Armazenamento de Energia Térmica, Termodinâmica, Engenharia de Energia, Dióxido de Carbono",
+          "relevance_score": 9.5,
+          "summary": "Esta patente descreve um sistema de armazenamento de energia térmica que utiliza dióxido de carbono para transferir calor de forma contínua, ideal para converter energia elétrica renovável variável em calor. O sistema emprega aquecimento de um meio sólido, transferência de calor por gás e controle de temperatura para otimizar a eficiência e a capacidade de resposta. O controle baseado em previsão permite o fornecimento contínuo de calor ao longo do ano.",
+          "key_findings": [
+            "O sistema utiliza um meio sólido aquecido por radiação para transferir calor continuamente.",
+            "O fluxo de gás através de caminhos estruturados dentro do arranjo ajuda a manter a temperatura de saída alta e evita o superaquecimento."
+          ],
+          "potential_applications": [
+            "Armazenamento de calor para processos de calcinação.",
+            "Produção de hidrogênio por eletrólise.",
+            "Geração de vapor para cogeração de energia.",
+            "Geração de energia térmica a partir de fontes renováveis."
+          ],
+          "technical_domain": "Armazenamento de Energia Térmica, Termodinâmica, Engenharia de Energia, Dióxido de Carbono",
+          "innovation_level": "Significativa",
+          "problem_statement": "O problema abordado é a necessidade de um sistema de armazenamento de energia térmica eficiente e escalável para aproveitar a energia elétrica renovável intermitente, especialmente em aplicações que exigem calor sob demanda.",
+          "solution_summary": "A solução proposta é um sistema de armazenamento de energia térmica que utiliza um arranjo de tijolos com câmaras de radiação interna para aquecimento rápido e uniforme, com fluxo de gás para manter a temperatura de saída alta. O controle baseado em previsão otimiza o desempenho do sistema.",
+          "claimed_advantages": [
+            "Eficiência na conversão de energia elétrica renovável em calor.",
+            "Controle de temperatura preciso e prevenção de 'thermal runaway' através de sequenciamento de descarga profunda.",
+            "Capacidade de fornecer calor contínuo e sob demanda, utilizando previsões meteorológicas e de disponibilidade de energia renovável."
+          ],
+          "limitations": [
+            "A patente não detalha especificamente os materiais utilizados para o meio sólido ou o gás de transferência de calor.",
+            "A eficiência do sistema pode ser afetada pela perda de calor para o ambiente."
+          ],
+          "maturity_level": "Intermediária",
+          "confidence": 0.95,
+          "manual_review_required": false
+        }
+      ],
+      "patents_by_source": {
+        "GooglePatents": 5,
+        "Patentscope": 5
+      },
+      "coverage_metrics": {
+        "raw_scraped": 10,
+        "unique_patents": 10,
+        "duplicates_removed": 0,
+        "screened": 10,
+        "included": 8,
+        "review": 1,
+        "excluded": 1,
+        "manual_review_required": 1,
+        "manual_review_deferred": 0,
+        "full_extractions": 9,
+        "missing_abstract": 1,
+        "missing_id": 0
+      },
+      "manual_review_queue": [
+        "US8549857B2"
+      ],
+      "prisma_flow": {
+        "flow": {
+          "identification": {
+            "raw_records": 10,
+            "unique_records": 10,
+            "duplicates_removed": 0
+          },
+          "screening": {
+            "screened": 10,
+            "included": 8,
+            "review": 1,
+            "excluded": 1
+          },
+          "eligibility": {
+            "full_extractions": 9,
+            "manual_review_required": 1,
+            "manual_review_deferred": 0
+          },
+          "coverage": {
+            "missing_abstract": 1,
+            "missing_id": 0
+          },
+          "synthesis": {
+            "analyzed_records": 9,
+            "comparative_analysis_generated": false
+          }
+        },
+        "criteria": {
+          "include": [
+            "Alinhamento claro com a query ou seus sinônimos técnicos.",
+            "Documento com título, resumo ou snippet suficientes para análise.",
+            "Potencial técnico relevante para o domínio pesquisado."
+          ],
+          "exclude": [
+            "Documentos sem relação técnica com a query.",
+            "Duplicatas de outra fonte ou publicação equivalente.",
+            "Registro sem metadados mínimos para avaliação."
+          ]
+        },
+        "thresholds": {
+          "include_score": 7.0,
+          "review_score": 4.5,
+          "max_items_for_manual_review": 20
+        },
+        "version": "1.0"
+      },
+      "thematic_clusters": {
+        "clusters": [
+          {
+            "cluster": "CO2 Cycle Configurations",
+            "count": 2,
+            "patent_ids": [
+              "CN214660665U",
+              "AU244427549"
+            ],
+            "titles": [
+              "A photovoltaic power generation system equipped with electrothermal energy storage",
+              "1. AU2019901965 - A System to Improve Performance of Transcritical Carbon Dioxide Cooling by Integration of Ice Thermal Storage for Subcooling"
+            ],
+            "average_score": 9.75,
+            "average_confidence": 0.95,
+            "evidence_count": 3,
+            "top_patents": [],
+            "summary": ""
+          },
+          {
+            "cluster": "Engenharia Química, Energia Renovável, Catálise",
+            "count": 1,
+            "patent_ids": [
+              "US20240339953A1"
+            ],
+            "titles": [
+              "System and Method for Complementarily Coupling and Orderly Converting Multi-energy"
+            ],
+            "average_score": 9.5,
+            "average_confidence": 0.95,
+            "evidence_count": 1,
+            "top_patents": [],
+            "summary": ""
+          },
+          {
+            "cluster": "Engenharia Térmica, Armazenamento de Energia, Processamento de Materiais",
+            "count": 1,
+            "patent_ids": [
+              "US433566429"
+            ],
+            "titles": [
+              "2. US20240229681 - Calcination system with thermal energy storage system"
+            ],
+            "average_score": 9.5,
+            "average_confidence": 0.95,
+            "evidence_count": 2,
+            "top_patents": [],
+            "summary": ""
+          },
+          {
+            "cluster": "Armazenamento de Energia Térmica, Termodinâmica, Engenharia de Materiais",
+            "count": 1,
+            "patent_ids": [
+              "US400261922"
+            ],
+            "titles": [
+              "3. US20230203968 - Methods for material activation with thermal energy storage system"
+            ],
+            "average_score": 9.5,
+            "average_confidence": 0.95,
+            "evidence_count": 2,
+            "top_patents": [],
+            "summary": ""
+          },
+          {
+            "cluster": "Engenharia Térmica, Armazenamento de Energia, Conversão de Energia",
+            "count": 1,
+            "patent_ids": [
+              "US433566430"
+            ],
+            "titles": [
+              "4. US20240229682 - Methods for material activation with thermal energy storage system"
+            ],
+            "average_score": 9.5,
+            "average_confidence": 0.95,
+            "evidence_count": 2,
+            "top_patents": [],
+            "summary": ""
+          },
+          {
+            "cluster": "Armazenamento de Energia Térmica, Termodinâmica, Engenharia de Energia, Dióxido de Carbono",
+            "count": 1,
+            "patent_ids": [
+              "US373267798"
+            ],
+            "titles": [
+              "5. US20220282638 - Material activation system with thermal energy storage system"
+            ],
+            "average_score": 9.5,
+            "average_confidence": 0.95,
+            "evidence_count": 2,
+            "top_patents": [],
+            "summary": ""
+          },
+          {
+            "cluster": "Células de Combustível, Armazenamento de Energia, Termodinâmica",
+            "count": 1,
+            "patent_ids": [
+              "KR101978330B1"
+            ],
+            "titles": [
+              "Fuel Supply System For Fuel Cell"
+            ],
+            "average_score": 9.0,
+            "average_confidence": 0.95,
+            "evidence_count": 2,
+            "top_patents": [],
+            "summary": ""
+          },
+          {
+            "cluster": "Thermal Transfer Mechanisms",
+            "count": 1,
+            "patent_ids": [
+              "US8549857B2"
+            ],
+            "titles": [
+              "Methods and/or systems for magnetobaric assisted generation of power from low temperature heat"
+            ],
+            "average_score": 6.0,
+            "average_confidence": 0.7,
+            "evidence_count": 1,
+            "top_patents": [],
+            "summary": ""
+          }
+        ],
+        "total_clusters": 8
+      },
+      "scraper_durations": {
+        "GooglePatents": 15.457,
+        "Patentscope": 24.811
+      },
+      "evaluation_duration_seconds": 24.824,
+      "comparative_analysis_duration_seconds": 0.169,
+      "total_duration_seconds": 0.0,
+      "comparative_analysis": "⚠️ Não foi possível gerar a análise comparativa.",
+      "output_paths": {},
+      "errors": []
+    },
+    "feature_flags": {
+      "require_evidence": true,
+      "enable_thematic_clusters": true,
+      "enable_prisma": true,
+      "enable_snapshot": true,
+      "enable_comparative_analysis": true,
+      "enable_manual_review_queue": true
+    },
+    "writing_context": {
+      "protocol": {
+        "version": "1.0",
+        "query": "carbon dioxide thermal energy storage",
+        "sources": [
+          "Google Patents",
+          "Patentscope"
+        ],
+        "stages": [
+          "identification",
+          "deduplication",
+          "screening",
+          "manual_review",
+          "full_extraction",
+          "synthesis"
+        ],
+        "criteria": {
+          "include": [
+            "Alinhamento claro com a query ou seus sinônimos técnicos.",
+            "Documento com título, resumo ou snippet suficientes para análise.",
+            "Potencial técnico relevante para o domínio pesquisado."
+          ],
+          "exclude": [
+            "Documentos sem relação técnica com a query.",
+            "Duplicatas de outra fonte ou publicação equivalente.",
+            "Registro sem metadados mínimos para avaliação."
+          ]
+        },
+        "thresholds": {
+          "include_score": 7.0,
+          "review_score": 4.5,
+          "max_items_for_manual_review": 20
+        },
+        "limits": {
+          "max_results": 5
+        },
+        "model": "gemma3:4b"
+      },
+      "coverage_metrics": {
+        "raw_scraped": 10,
+        "unique_patents": 10,
+        "duplicates_removed": 0,
+        "screened": 10,
+        "included": 8,
+        "review": 1,
+        "excluded": 1,
+        "manual_review_required": 1,
+        "manual_review_deferred": 0,
+        "full_extractions": 9,
+        "missing_abstract": 1,
+        "missing_id": 0
+      },
+      "top_patents": [
+        {
+          "patent_id": "AU244427549",
+          "title": "1. AU2019901965 - A System to Improve Performance of Transcritical Carbon Dioxide Cooling by Integration of Ice Thermal Storage for Subcooling",
+          "score": 10.0,
+          "screening_decision": "include",
+          "thematic_cluster": "CO2 Cycle Configurations",
+          "route": "deep_extraction",
+          "evidence_snippets": [
+            "A System to Improve Performance of Transcritical Carbon Dioxide Cooling by Integration of Ice Thermal Storage"
+          ]
+        },
+        {
+          "patent_id": "CN214660665U",
+          "title": "A photovoltaic power generation system equipped with electrothermal energy storage",
+          "score": 9.5,
+          "screening_decision": "include",
+          "thematic_cluster": "CO2 Cycle Configurations",
+          "route": "deep_extraction",
+          "evidence_snippets": [
+            "AbstractThe utility model discloses a photovoltaic power generation system with electric heat energy storage...",
+            "The system comprises a photovoltaic power generation system, an electric heating energy storage system and supercritical CO2Brayton cycle power generation system"
+          ]
+        },
+        {
+          "patent_id": "US20240339953A1",
+          "title": "System and Method for Complementarily Coupling and Orderly Converting Multi-energy",
+          "score": 9.5,
+          "screening_decision": "include",
+          "thematic_cluster": "Engenharia Química, Energia Renovável, Catálise",
+          "route": "deep_extraction",
+          "evidence_snippets": [
+            "AbstractA system includes: a reversible solid oxide cell, a gasification reaction chamber, synthesis reactor, and photo-thermal coupled catalytic reactor."
+          ]
+        },
+        {
+          "patent_id": "US433566429",
+          "title": "2. US20240229681 - Calcination system with thermal energy storage system",
+          "score": 9.5,
+          "screening_decision": "include",
+          "thematic_cluster": "Engenharia Térmica, Armazenamento de Energia, Processamento de Materiais",
+          "route": "deep_extraction",
+          "evidence_snippets": [
+            "An energystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C.",
+            "Heat from the solid medium is delivered continuously on demand."
+          ]
+        },
+        {
+          "patent_id": "US400261922",
+          "title": "3. US20230203968 - Methods for material activation with thermal energy storage system",
+          "score": 9.5,
+          "screening_decision": "include",
+          "thematic_cluster": "Armazenamento de Energia Térmica, Termodinâmica, Engenharia de Materiais",
+          "route": "deep_extraction",
+          "evidence_snippets": [
+            "An energystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C.",
+            "Heat from the solid medium is delivered continuously on demand."
+          ]
+        }
+      ],
+      "thematic_clusters": {
+        "clusters": [
+          {
+            "cluster": "CO2 Cycle Configurations",
+            "count": 2,
+            "patent_ids": [
+              "CN214660665U",
+              "AU244427549"
+            ],
+            "titles": [
+              "A photovoltaic power generation system equipped with electrothermal energy storage",
+              "1. AU2019901965 - A System to Improve Performance of Transcritical Carbon Dioxide Cooling by Integration of Ice Thermal Storage for Subcooling"
+            ],
+            "average_score": 9.75,
+            "average_confidence": 0.95,
+            "evidence_count": 3,
+            "top_patents": [],
+            "summary": ""
+          },
+          {
+            "cluster": "Engenharia Química, Energia Renovável, Catálise",
+            "count": 1,
+            "patent_ids": [
+              "US20240339953A1"
+            ],
+            "titles": [
+              "System and Method for Complementarily Coupling and Orderly Converting Multi-energy"
+            ],
+            "average_score": 9.5,
+            "average_confidence": 0.95,
+            "evidence_count": 1,
+            "top_patents": [],
+            "summary": ""
+          },
+          {
+            "cluster": "Engenharia Térmica, Armazenamento de Energia, Processamento de Materiais",
+            "count": 1,
+            "patent_ids": [
+              "US433566429"
+            ],
+            "titles": [
+              "2. US20240229681 - Calcination system with thermal energy storage system"
+            ],
+            "average_score": 9.5,
+            "average_confidence": 0.95,
+            "evidence_count": 2,
+            "top_patents": [],
+            "summary": ""
+          },
+          {
+            "cluster": "Armazenamento de Energia Térmica, Termodinâmica, Engenharia de Materiais",
+            "count": 1,
+            "patent_ids": [
+              "US400261922"
+            ],
+            "titles": [
+              "3. US20230203968 - Methods for material activation with thermal energy storage system"
+            ],
+            "average_score": 9.5,
+            "average_confidence": 0.95,
+            "evidence_count": 2,
+            "top_patents": [],
+            "summary": ""
+          },
+          {
+            "cluster": "Engenharia Térmica, Armazenamento de Energia, Conversão de Energia",
+            "count": 1,
+            "patent_ids": [
+              "US433566430"
+            ],
+            "titles": [
+              "4. US20240229682 - Methods for material activation with thermal energy storage system"
+            ],
+            "average_score": 9.5,
+            "average_confidence": 0.95,
+            "evidence_count": 2,
+            "top_patents": [],
+            "summary": ""
+          },
+          {
+            "cluster": "Armazenamento de Energia Térmica, Termodinâmica, Engenharia de Energia, Dióxido de Carbono",
+            "count": 1,
+            "patent_ids": [
+              "US373267798"
+            ],
+            "titles": [
+              "5. US20220282638 - Material activation system with thermal energy storage system"
+            ],
+            "average_score": 9.5,
+            "average_confidence": 0.95,
+            "evidence_count": 2,
+            "top_patents": [],
+            "summary": ""
+          },
+          {
+            "cluster": "Células de Combustível, Armazenamento de Energia, Termodinâmica",
+            "count": 1,
+            "patent_ids": [
+              "KR101978330B1"
+            ],
+            "titles": [
+              "Fuel Supply System For Fuel Cell"
+            ],
+            "average_score": 9.0,
+            "average_confidence": 0.95,
+            "evidence_count": 2,
+            "top_patents": [],
+            "summary": ""
+          },
+          {
+            "cluster": "Thermal Transfer Mechanisms",
+            "count": 1,
+            "patent_ids": [
+              "US8549857B2"
+            ],
+            "titles": [
+              "Methods and/or systems for magnetobaric assisted generation of power from low temperature heat"
+            ],
+            "average_score": 6.0,
+            "average_confidence": 0.7,
+            "evidence_count": 1,
+            "top_patents": [],
+            "summary": ""
+          }
+        ],
+        "total_clusters": 8
+      },
+      "route_summary": {
+        "deep_extraction": 8,
+        "manual_review": 1,
+        "screen_only": 1
+      },
+      "feature_flags": {
+        "require_evidence": true,
+        "enable_thematic_clusters": true,
+        "enable_prisma": true,
+        "enable_snapshot": true,
+        "enable_comparative_analysis": true,
+        "enable_manual_review_queue": true
+      },
+      "snapshot_hash": "474ddfae6bd00926754bb638729d77f6eacb033c839055f41f8d483e4d2e8033"
+    },
+    "stage_metrics": [
+      {
+        "stage": "setup",
+        "status": "ok",
+        "duration_seconds": 0.002,
+        "items_processed": 1,
+        "detail": "Verificação do modelo Ollama"
+      },
+      {
+        "stage": "search",
+        "status": "ok",
+        "duration_seconds": 40.269,
+        "items_processed": 10,
+        "detail": "10 patentes únicas após dedupe"
+      },
+      {
+        "stage": "screening",
+        "status": "ok",
+        "duration_seconds": 39.208,
+        "items_processed": 10,
+        "detail": "8 incluídas, 1 revisão"
+      },
+      {
+        "stage": "comparative_analysis",
+        "status": "ok",
+        "duration_seconds": 0.169,
+        "items_processed": 10,
+        "detail": "Síntese comparativa"
+      }
+    ],
+    "llm_cache_stats": {
+      "hits": 0,
+      "misses": 39,
+      "entries": 19
+    },
+    "prisma_flow": {
+      "flow": {
+        "identification": {
+          "raw_records": 10,
+          "unique_records": 10,
+          "duplicates_removed": 0
+        },
+        "screening": {
+          "screened": 10,
+          "included": 8,
+          "review": 1,
+          "excluded": 1
+        },
+        "eligibility": {
+          "full_extractions": 9,
+          "manual_review_required": 1,
+          "manual_review_deferred": 0
+        },
+        "coverage": {
+          "missing_abstract": 1,
+          "missing_id": 0
+        },
+        "synthesis": {
+          "analyzed_records": 9,
+          "comparative_analysis_generated": false
+        }
+      },
+      "criteria": {
+        "include": [
+          "Alinhamento claro com a query ou seus sinônimos técnicos.",
+          "Documento com título, resumo ou snippet suficientes para análise.",
+          "Potencial técnico relevante para o domínio pesquisado."
+        ],
+        "exclude": [
+          "Documentos sem relação técnica com a query.",
+          "Duplicatas de outra fonte ou publicação equivalente.",
+          "Registro sem metadados mínimos para avaliação."
+        ]
+      },
+      "thresholds": {
+        "include_score": 7.0,
+        "review_score": 4.5,
+        "max_items_for_manual_review": 20
+      },
+      "version": "1.0"
+    },
+    "thematic_clusters": {
+      "clusters": [
+        {
+          "cluster": "CO2 Cycle Configurations",
+          "count": 2,
+          "patent_ids": [
+            "CN214660665U",
+            "AU244427549"
+          ],
+          "titles": [
+            "A photovoltaic power generation system equipped with electrothermal energy storage",
+            "1. AU2019901965 - A System to Improve Performance of Transcritical Carbon Dioxide Cooling by Integration of Ice Thermal Storage for Subcooling"
+          ],
+          "average_score": 9.75,
+          "average_confidence": 0.95,
+          "evidence_count": 3,
+          "top_patents": [],
+          "summary": ""
+        },
+        {
+          "cluster": "Engenharia Química, Energia Renovável, Catálise",
+          "count": 1,
+          "patent_ids": [
+            "US20240339953A1"
+          ],
+          "titles": [
+            "System and Method for Complementarily Coupling and Orderly Converting Multi-energy"
+          ],
+          "average_score": 9.5,
+          "average_confidence": 0.95,
+          "evidence_count": 1,
+          "top_patents": [],
+          "summary": ""
+        },
+        {
+          "cluster": "Engenharia Térmica, Armazenamento de Energia, Processamento de Materiais",
+          "count": 1,
+          "patent_ids": [
+            "US433566429"
+          ],
+          "titles": [
+            "2. US20240229681 - Calcination system with thermal energy storage system"
+          ],
+          "average_score": 9.5,
+          "average_confidence": 0.95,
+          "evidence_count": 2,
+          "top_patents": [],
+          "summary": ""
+        },
+        {
+          "cluster": "Armazenamento de Energia Térmica, Termodinâmica, Engenharia de Materiais",
+          "count": 1,
+          "patent_ids": [
+            "US400261922"
+          ],
+          "titles": [
+            "3. US20230203968 - Methods for material activation with thermal energy storage system"
+          ],
+          "average_score": 9.5,
+          "average_confidence": 0.95,
+          "evidence_count": 2,
+          "top_patents": [],
+          "summary": ""
+        },
+        {
+          "cluster": "Engenharia Térmica, Armazenamento de Energia, Conversão de Energia",
+          "count": 1,
+          "patent_ids": [
+            "US433566430"
+          ],
+          "titles": [
+            "4. US20240229682 - Methods for material activation with thermal energy storage system"
+          ],
+          "average_score": 9.5,
+          "average_confidence": 0.95,
+          "evidence_count": 2,
+          "top_patents": [],
+          "summary": ""
+        },
+        {
+          "cluster": "Armazenamento de Energia Térmica, Termodinâmica, Engenharia de Energia, Dióxido de Carbono",
+          "count": 1,
+          "patent_ids": [
+            "US373267798"
+          ],
+          "titles": [
+            "5. US20220282638 - Material activation system with thermal energy storage system"
+          ],
+          "average_score": 9.5,
+          "average_confidence": 0.95,
+          "evidence_count": 2,
+          "top_patents": [],
+          "summary": ""
+        },
+        {
+          "cluster": "Células de Combustível, Armazenamento de Energia, Termodinâmica",
+          "count": 1,
+          "patent_ids": [
+            "KR101978330B1"
+          ],
+          "titles": [
+            "Fuel Supply System For Fuel Cell"
+          ],
+          "average_score": 9.0,
+          "average_confidence": 0.95,
+          "evidence_count": 2,
+          "top_patents": [],
+          "summary": ""
+        },
+        {
+          "cluster": "Thermal Transfer Mechanisms",
+          "count": 1,
+          "patent_ids": [
+            "US8549857B2"
+          ],
+          "titles": [
+            "Methods and/or systems for magnetobaric assisted generation of power from low temperature heat"
+          ],
+          "average_score": 6.0,
+          "average_confidence": 0.7,
+          "evidence_count": 1,
+          "top_patents": [],
+          "summary": ""
+        }
+      ],
+      "total_clusters": 8
+    },
+    "config_snapshot": {
+      "pipeline_version": "1.1",
+      "timestamp": "2026-04-02T22:52:19",
+      "query": "carbon dioxide thermal energy storage",
+      "max_results": 5,
+      "model": "gemma3:4b",
+      "output_dir": "/tmp/revisao_tecnica_current_output3",
+      "feature_flags": {
+        "require_evidence": true,
+        "enable_thematic_clusters": true,
+        "enable_prisma": true,
+        "enable_snapshot": true,
+        "enable_comparative_analysis": true,
+        "enable_manual_review_queue": true
+      },
+      "thresholds": {
+        "include": 7.0,
+        "review": 4.5,
+        "manual_review_limit": 20
+      },
+      "runtime": {
+        "ollama_base_url": "http://localhost:11434",
+        "ollama_timeout": 600
+      },
+      "sources": [
+        "Google Patents",
+        "Patentscope"
+      ]
+    },
+    "snapshot_hash": "474ddfae6bd00926754bb638729d77f6eacb033c839055f41f8d483e4d2e8033",
+    "draft_status": {
+      "status": "ready",
+      "warnings": [],
+      "substantive_patents": 9
+    }
+  },
+  "results": [
+    {
+      "patent": {
+        "title": "1. AU2019901965 - A System to Improve Performance of Transcritical Carbon Dioxide Cooling by Integration of Ice Thermal Storage for Subcooling",
+        "patent_id": "AU244427549",
+        "abstract": "",
+        "inventors": [],
+        "assignee": "IceCap; Thermal; Energy; Pty Ltd; KALDORBULL PTY LTD",
+        "filing_date": "",
+        "publication_date": "20.06.2019",
+        "url": "https://patentscope.wipo.int/search/en/detail.jsf;jsessionid=18D125D39675BD75A74CB94904F1BAF0.wapp1nC?docId=AU244427549&_cid=P12-MNI90Y-93610-1",
+        "snippet": "",
+        "source": "Patentscope"
+      },
+      "evaluation": {
+        "patent_id": "AU244427549",
+        "analysis_route": "deep_extraction",
+        "route_reason": "Há evidência suficiente para extração detalhada.",
+        "screening_score": 9.0,
+        "screening_decision": "include",
+        "screening_reason": "A patente trata explicitamente de armazenamento de energia térmica de dióxido de carbono, o que corresponde diretamente à busca do usuário.",
+        "evidence_snippets": [
+          "A System to Improve Performance of Transcritical Carbon Dioxide Cooling by Integration of Ice Thermal Storage"
+        ],
+        "thematic_cluster": "CO2 Cycle Configurations",
+        "relevance_score": 10.0,
+        "summary": "Esta patente descreve um sistema para melhorar o desempenho de resfriamento de dióxido de carbono transcrítico através da integração de armazenamento térmico de gelo para sub-resfriamento. O sistema utiliza dióxido de carbono para transferência de calor e incorpora armazenamento de energia térmica para otimizar o processo. A patente foca na eficiência do ciclo de resfriamento de CO2.",
+        "key_findings": [
+          "Utilização de armazenamento térmico de gelo para sub-resfriamento do dióxido de carbono.",
+          "Integração com um sistema de resfriamento transcrítico de dióxido de carbono."
+        ],
+        "potential_applications": [
+          "Sistemas de refrigeração industrial.",
+          "Sistemas de ar condicionado de alta eficiência.",
+          "Armazenamento de energia térmica em geral."
+        ],
+        "technical_domain": "Engenharia Térmica, Termodinâmica, Sistemas de Refrigeração",
+        "innovation_level": "Incremental",
+        "problem_statement": "O sistema busca otimizar o desempenho de ciclos de resfriamento de dióxido de carbono transcrítico, onde a eficiência é limitada pela necessidade de sub-resfriamento do refrigerante.",
+        "solution_summary": "A solução proposta é integrar um sistema de armazenamento térmico de gelo para manter a temperatura do dióxido de carbono, permitindo um sub-resfriamento mais eficiente e, consequentemente, um melhor desempenho do ciclo de resfriamento.",
+        "claimed_advantages": [
+          "Melhora no desempenho do ciclo de resfriamento de dióxido de carbono transcrítico.",
+          "Aumento da eficiência do sistema de resfriamento."
+        ],
+        "limitations": [
+          "Dependência da temperatura ambiente para o funcionamento do sistema de armazenamento de gelo.",
+          "Potenciais custos de implementação e manutenção do sistema de armazenamento de gelo."
+        ],
+        "maturity_level": "Intermediária",
+        "confidence": 0.95,
+        "manual_review_required": false
+      }
+    },
+    {
+      "patent": {
+        "title": "A photovoltaic power generation system equipped with electrothermal energy storage",
+        "patent_id": "CN214660665U",
+        "abstract": "AbstractThe utility model discloses a photovoltaic power generation system with electric heat energy storage, this system includes supercritical CO2Brayton cycle power generation system and transcritical CO2The system comprises a heat pump system, a cold storage and cooling system, an electric heating and molten salt heat storage system and a photovoltaic power generation system. The system comprises a photovoltaic power generation system, an electric heating energy storage system and supercritical CO2Brayton cycle power generation systemThe combination of the photovoltaic power generation system with low cost and relatively high technical maturity and the combination of the thermal energy storage and the thermal power generation system as the regulation and supplement power supply system of the photovoltaic power generation can not only maintain relatively low investment cost of the power generation system, but also realize the stability of power output, and simultaneously, the heat pump technology is also adopted to combine the photovoltaic power generation system and the supercritical CO2The heat released by the Brayton cycle power generation system is recovered, and the comprehensive overall power generation efficiency is further improved.",
+        "inventors": [
+          "æçº¢æº",
+          "é«ç",
+          "å§æå®",
+          "ææ¨ç§",
+          "æ¨ç",
+          "æ¨æµ¦"
+        ],
+        "assignee": "Xian Thermal Power Research Institute Co Ltd",
+        "filing_date": "2021-05-27",
+        "publication_date": "2021-11-09",
+        "url": "https://patents.google.com/patent/CN214660665U/en",
+        "snippet": "",
+        "source": "Google Patents"
+      },
+      "evaluation": {
+        "patent_id": "CN214660665U",
+        "analysis_route": "deep_extraction",
+        "route_reason": "Há evidência suficiente para extração detalhada.",
+        "screening_score": 9.0,
+        "screening_decision": "include",
+        "screening_reason": "A patente trata de um sistema de geração de energia fotovoltaica com armazenamento de energia térmica, especificamente utilizando CO2 e ciclos Brayton, que se encaixa diretamente na busca por 'carbon dioxide thermal energy storage'.",
+        "evidence_snippets": [
+          "AbstractThe utility model discloses a photovoltaic power generation system with electric heat energy storage...",
+          "The system comprises a photovoltaic power generation system, an electric heating energy storage system and supercritical CO2Brayton cycle power generation system"
+        ],
+        "thematic_cluster": "CO2 Cycle Configurations",
+        "relevance_score": 9.5,
+        "summary": "Esta patente descreve um sistema de geração de energia fotovoltaica que integra armazenamento de energia térmica utilizando CO2 em um ciclo Brayton. O sistema combina a geração de energia fotovoltaica com um sistema de armazenamento de energia térmica, utilizando um sistema de aquecimento elétrico e armazenamento de calor em sal fundido, com o objetivo de otimizar a eficiência da geração de energia e estabilizar a produção de energia.",
+        "key_findings": [
+          "O sistema incorpora um ciclo Brayton com CO2, permitindo o armazenamento de energia térmica.",
+          "A patente combina a geração de energia fotovoltaica com um sistema de aquecimento elétrico e armazenamento de calor em sal fundido.",
+          "O sistema recupera o calor liberado pelo ciclo Brayton, melhorando a eficiência geral."
+        ],
+        "potential_applications": [
+          "Sistemas de geração de energia fotovoltaica",
+          "Armazenamento de energia térmica em larga escala",
+          "Geração de energia combinada (CHP)"
+        ],
+        "technical_domain": "Geração de Energia, Armazenamento de Energia Térmica",
+        "innovation_level": "Incremental",
+        "problem_statement": "O problema abordado é a necessidade de estabilizar a produção de energia de sistemas fotovoltaicos, que são inerentemente variáveis, e otimizar a eficiência da geração de energia.",
+        "solution_summary": "A solução proposta é um sistema que utiliza um ciclo Brayton com CO2 para armazenar o calor gerado pela energia fotovoltaica, combinado com um sistema de aquecimento elétrico e armazenamento de calor em sal fundido, permitindo a utilização do calor residual para regular e complementar a produção de energia fotovoltaica.",
+        "claimed_advantages": [
+          "Custo de investimento relativamente baixo",
+          "Estabilização da produção de energia de fotovoltaica",
+          "Melhoria da eficiência da geração de energia"
+        ],
+        "limitations": [
+          "A patente não detalha especificamente a capacidade de armazenamento de calor ou a eficiência do ciclo Brayton.",
+          "A dependência da disponibilidade de energia solar para acionar o sistema."
+        ],
+        "maturity_level": "Intermediária",
+        "confidence": 0.95,
+        "manual_review_required": false
+      }
+    },
+    {
+      "patent": {
+        "title": "System and Method for Complementarily Coupling and Orderly Converting Multi-energy",
+        "patent_id": "US20240339953A1",
+        "abstract": "AbstractA system and method for complementarily coupling and orderly converting multi-energy. The system includes: a reversible solid oxide cell, a gasification reaction chamber, synthesis reactor, and photo-thermal coupled catalytic reactor. Gasification of biomass/coal provides synthesis gas of a first source; feedstock gas is electrolyzed to produce synthesis gas of a second source; the synthesis gas of a first source and the synthesis gas of a second source react in the synthesis reactor to produce hydrocarbon fuel; during power generation, the synthesis gas enters a fuel electrode to react, and gas flowing out of the fuel electrode passes through the photo-thermal coupling catalytic reactor to react to produce hydrocarbon fuel; a heat source and light source required for gasification, electrolysis, power generation and photo-thermal coupled catalysis are provided by solar energy, and electrical energy for electrolysis is provided by power of unstable renewable energy from abandoned wind and light.",
+        "inventors": [
+          "Gang Xiao",
+          "Anwei Sun",
+          "Haoran Xu"
+        ],
+        "assignee": "Zhejiang University ZJU",
+        "filing_date": "2022-07-06",
+        "publication_date": "2024-10-10",
+        "url": "https://patents.google.com/patent/US20240339953A1/en",
+        "snippet": "",
+        "source": "Google Patents"
+      },
+      "evaluation": {
+        "patent_id": "US20240339953A1",
+        "analysis_route": "deep_extraction",
+        "route_reason": "Há evidência suficiente para extração detalhada.",
+        "screening_score": 8.0,
+        "screening_decision": "include",
+        "screening_reason": "A patente descreve um sistema que utiliza diversas fontes de energia (biomassa, eletricidade, solar) para produzir combustível, incluindo a conversão de dióxido de carbono, o que se alinha diretamente com a busca por 'carbon dioxide thermal energy storage'.",
+        "evidence_snippets": [
+          "AbstractA system includes: a reversible solid oxide cell, a gasification reaction chamber, synthesis reactor, and photo-thermal coupled catalytic reactor."
+        ],
+        "thematic_cluster": "Engenharia Química, Energia Renovável, Catálise",
+        "relevance_score": 9.5,
+        "summary": "Esta patente descreve um sistema para a conversão complementar de múltiplas fontes de energia, incluindo a utilização de dióxido de carbono, para a produção de combustível. O sistema emprega uma célula de óxido sólido reversível e reatores catalíticos para transformar gás de síntese em hidrocarbonetos, utilizando energia solar e fontes de energia renovável intermitentes. O foco principal é a utilização térmica do dióxido de carbono como parte do processo de conversão de energia.",
+        "key_findings": [
+          "Utilização de uma célula de óxido sólido reversível para conversão de gás de síntese em combustível.",
+          "Integração de fontes de energia solar e renováveis intermitentes (vento e luz) para alimentar o processo de conversão."
+        ],
+        "potential_applications": [
+          "Produção de combustível a partir de resíduos e dióxido de carbono.",
+          "Armazenamento de energia em larga escala, utilizando dióxido de carbono como um meio de armazenamento térmico."
+        ],
+        "technical_domain": "Engenharia Química, Energia Renovável, Catálise",
+        "innovation_level": "Significativa",
+        "problem_statement": "O problema abordado é a necessidade de uma solução eficiente para o armazenamento e utilização de energia, especialmente a partir de fontes intermitentes, e a conversão de dióxido de carbono em produtos de valor agregado.",
+        "solution_summary": "A solução proposta é um sistema integrado que combina a gasificação de biomassa/carvão, eletrólise de gás de síntese e reações catalíticas, utilizando energia solar e fontes de energia renováveis para converter dióxido de carbono em combustível, com um componente chave sendo um reator catalítico acoplado termicamente.",
+        "claimed_advantages": [
+          "Utilização de múltiplas fontes de energia, aumentando a eficiência e a resiliência do sistema.",
+          "Conversão de dióxido de carbono em combustível, contribuindo para a mitigação das emissões de carbono."
+        ],
+        "limitations": [
+          "A patente não detalha a eficiência específica dos reatores catalíticos ou a viabilidade econômica da implementação em larga escala.",
+          "A dependência de fontes de energia renováveis intermitentes pode exigir sistemas de armazenamento de energia adicionais."
+        ],
+        "maturity_level": "Inicial",
+        "confidence": 0.95,
+        "manual_review_required": false
+      }
+    },
+    {
+      "patent": {
+        "title": "2. US20240229681 - Calcination system with thermal energy storage system",
+        "patent_id": "US433566429",
+        "abstract": "(EN)Anenergystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C. Intermittent electricalenergyheats a solid medium. Heat from the solid medium is delivered continuously on demand. An array of bricks incorporating internal radiation cavities is directly heated bythermalradiation. The cavities facilitate rapid, uniform heating via reradiation. Heat delivery via flowing gas establishes a thermocline which maintains high outlet temperature throughout discharge. Gas flows through structured pathways within the array, delivering heat which may be used for processes including calcination, hydrogen electrolysis, steam generation, andthermalpower generation and cogeneration. Groups ofthermalstoragearrays may be controlled and operated at high temperatures withoutthermalrunaway via deep-discharge sequencing. Forecast-based control enables continuous, year-round heat supply using current and advance information of weather and VRE availability. High-voltage DC power conversion and distribution circuitry improves the efficiency of VRE power transfer into the system.",
+        "inventors": [
+          "John Setel O'Donnell",
+          "Peter Emery von Behrens",
+          "Chiaki Treynor",
+          "Matthieu Jonemann",
+          "Robert Ratz",
+          "Yusef Desjardins Ferhani"
+        ],
+        "assignee": "Rondo; Energy; , Inc.",
+        "filing_date": "",
+        "publication_date": "11.07.2024",
+        "url": "https://patentscope.wipo.int/search/en/detail.jsf;jsessionid=18D125D39675BD75A74CB94904F1BAF0.wapp1nC?docId=US433566429&_cid=P12-MNI90Y-93610-1",
+        "snippet": "",
+        "source": "Patentscope"
+      },
+      "evaluation": {
+        "patent_id": "US433566429",
+        "analysis_route": "deep_extraction",
+        "route_reason": "Há evidência suficiente para extração detalhada.",
+        "screening_score": 9.0,
+        "screening_decision": "include",
+        "screening_reason": "A patente descreve um sistema de armazenamento de energia térmica que utiliza calor para processos como calcinação, utilizando um meio sólido e controle de temperatura, diretamente relacionado ao termo 'carbon dioxide thermal energy storage'.",
+        "evidence_snippets": [
+          "An energystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C.",
+          "Heat from the solid medium is delivered continuously on demand."
+        ],
+        "thematic_cluster": "Engenharia Térmica, Armazenamento de Energia, Processamento de Materiais",
+        "relevance_score": 9.5,
+        "summary": "Esta patente descreve um sistema de armazenamento de energia térmica que utiliza calor para processos como calcinação, utilizando um meio sólido e controle de temperatura. O sistema converte energia elétrica variável em calor contínuo, utilizando um meio sólido aquecido por radiação e um fluxo de gás controlado. O controle baseado em previsão permite o fornecimento contínuo de calor ao longo do ano.",
+        "key_findings": [
+          "O sistema utiliza um meio sólido e controle de temperatura para armazenamento de energia térmica.",
+          "O sistema incorpora cavidades de radiação para aquecimento rápido e uniforme, facilitando a transferência de calor."
+        ],
+        "potential_applications": [
+          "Calcinação",
+          "Produção de hidrogênio",
+          "Geração de vapor",
+          "Geração de energia e cogeração"
+        ],
+        "technical_domain": "Engenharia Térmica, Armazenamento de Energia, Processamento de Materiais",
+        "innovation_level": "Significativa",
+        "problem_statement": "O problema abordado é a necessidade de um sistema de armazenamento de energia térmica eficiente e flexível para processos de alta temperatura, como calcinação, que requerem calor contínuo e sob demanda.",
+        "solution_summary": "A solução proposta é um sistema de armazenamento de energia térmica que utiliza um array de 'bricks' com cavidades de radiação para aquecer um meio sólido, com um fluxo de gás controlando a temperatura e fornecendo calor sob demanda. O controle baseado em previsão otimiza o fornecimento de calor.",
+        "claimed_advantages": [
+          "Contínuo fornecimento de calor sob demanda.",
+          "Controle de temperatura e prevenção de 'thermal runaway'."
+        ],
+        "limitations": [
+          "A patente não detalha especificamente a composição do meio sólido.",
+          "A eficiência do sistema depende da otimização do fluxo de gás e do design das cavidades de radiação."
+        ],
+        "maturity_level": "Inicial",
+        "confidence": 0.95,
+        "manual_review_required": false
+      }
+    },
+    {
+      "patent": {
+        "title": "3. US20230203968 - Methods for material activation with thermal energy storage system",
+        "patent_id": "US400261922",
+        "abstract": "(EN)Anenergystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C. Intermittent electricalenergyheats a solid medium. Heat from the solid medium is delivered continuously on demand. An array of bricks incorporating internal radiation cavities is directly heated bythermalradiation. The cavities facilitate rapid, uniform heating via reradiation. Heat delivery via flowing gas establishes a thermocline which maintains high outlet temperature throughout discharge. Gas flows through structured pathways within the array, delivering heat which may be used for processes including calcination, hydrogen electrolysis, steam generation, andthermalpower generation and cogeneration. Groups ofthermalstoragearrays may be controlled and operated at high temperatures withoutthermalrunaway via deep-discharge sequencing. Forecast-based control enables continuous, year-round heat supply using current and advance information of weather and VRE availability. High-voltage DC power conversion and distribution circuitry improves the efficiency of VRE power transfer into the system.",
+        "inventors": [
+          "John Setel O'Donnell",
+          "Peter Emery von Behrens",
+          "Chiaki Treynor",
+          "Jeremy Quentin Keller",
+          "Matthieu Jonemann",
+          "Robert Ratz",
+          "Yusef Desjardins Ferhani"
+        ],
+        "assignee": "Rondo; Energy; , Inc.",
+        "filing_date": "",
+        "publication_date": "29.06.2023",
+        "url": "https://patentscope.wipo.int/search/en/detail.jsf;jsessionid=18D125D39675BD75A74CB94904F1BAF0.wapp1nC?docId=US400261922&_cid=P12-MNI90Y-93610-1",
+        "snippet": "",
+        "source": "Patentscope"
+      },
+      "evaluation": {
+        "patent_id": "US400261922",
+        "analysis_route": "deep_extraction",
+        "route_reason": "Há evidência suficiente para extração detalhada.",
+        "screening_score": 9.0,
+        "screening_decision": "include",
+        "screening_reason": "A patente descreve um sistema de armazenamento de energia térmica que utiliza calor para ativar materiais, incluindo aplicações como calcinação e produção de hidrogênio, o que se alinha diretamente com a busca por 'carbon dioxide thermal energy storage'.",
+        "evidence_snippets": [
+          "An energystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C.",
+          "Heat from the solid medium is delivered continuously on demand."
+        ],
+        "thematic_cluster": "Armazenamento de Energia Térmica, Termodinâmica, Engenharia de Materiais",
+        "relevance_score": 9.5,
+        "summary": "Esta patente descreve um sistema de armazenamento de energia térmica que utiliza calor de alta temperatura (acima de 1000°C) para ativar materiais, incluindo processos como calcinação e produção de hidrogênio. O sistema emprega uma matriz de 'blocos' com cavidades de radiação para aquecimento uniforme e controle de temperatura, utilizando um fluxo de gás para entrega de calor sob demanda. O sistema também incorpora controle baseado em previsão para otimizar o fornecimento contínuo de calor.",
+        "key_findings": [
+          "O sistema utiliza cavidades de radiação para aquecimento rápido e uniforme dos materiais.",
+          "O controle baseado em previsão permite o fornecimento contínuo de calor, independentemente da disponibilidade de energia renovável."
+        ],
+        "potential_applications": [
+          "Calcinação de materiais.",
+          "Produção de hidrogênio.",
+          "Geração de vapor.",
+          "Geração de energia e cogeração."
+        ],
+        "technical_domain": "Armazenamento de Energia Térmica, Termodinâmica, Engenharia de Materiais",
+        "innovation_level": "Significativa",
+        "problem_statement": "O problema abordado é a necessidade de um sistema de armazenamento de energia térmica eficiente e flexível para aproveitar fontes de energia renovável intermitentes, permitindo o fornecimento contínuo de calor para diversas aplicações.",
+        "solution_summary": "A solução proposta é um sistema de armazenamento de energia térmica que utiliza radiação e um fluxo de gás controlado para entregar calor continuamente sob demanda, permitindo o uso de calor para processos como calcinação, produção de hidrogênio e geração de energia.",
+        "claimed_advantages": [
+          "Fornecimento contínuo de calor sob demanda.",
+          "Aquecimento rápido e uniforme dos materiais.",
+          "Eficiência aprimorada na transferência de energia renovável."
+        ],
+        "limitations": [
+          "Requer altas temperaturas de operação (acima de 1000°C).",
+          "A complexidade do sistema de controle baseado em previsão pode aumentar os custos de implementação."
+        ],
+        "maturity_level": "Intermediária",
+        "confidence": 0.95,
+        "manual_review_required": false
+      }
+    },
+    {
+      "patent": {
+        "title": "4. US20240229682 - Methods for material activation with thermal energy storage system",
+        "patent_id": "US433566430",
+        "abstract": "(EN)Anenergystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C. Intermittent electricalenergyheats a solid medium. Heat from the solid medium is delivered continuously on demand. An array of bricks incorporating internal radiation cavities is directly heated bythermalradiation. The cavities facilitate rapid, uniform heating via reradiation. Heat delivery via flowing gas establishes a thermocline which maintains high outlet temperature throughout discharge. Gas flows through structured pathways within the array, delivering heat which may be used for processes including calcination, hydrogen electrolysis, steam generation, andthermalpower generation and cogeneration. Groups ofthermalstoragearrays may be controlled and operated at high temperatures withoutthermalrunaway via deep-discharge sequencing. Forecast-based control enables continuous, year-round heat supply using current and advance information of weather and VRE availability. High-voltage DC power conversion and distribution circuitry improves the efficiency of VRE power transfer into the system.",
+        "inventors": [
+          "John Setel O'Donnell",
+          "Peter Emery von Behrens",
+          "Matthieu Jonemann",
+          "Yusef Desjardins Ferhani"
+        ],
+        "assignee": "Rondo; Energy; , Inc.",
+        "filing_date": "",
+        "publication_date": "11.07.2024",
+        "url": "https://patentscope.wipo.int/search/en/detail.jsf;jsessionid=18D125D39675BD75A74CB94904F1BAF0.wapp1nC?docId=US433566430&_cid=P12-MNI90Y-93610-1",
+        "snippet": "",
+        "source": "Patentscope"
+      },
+      "evaluation": {
+        "patent_id": "US433566430",
+        "analysis_route": "deep_extraction",
+        "route_reason": "Há evidência suficiente para extração detalhada.",
+        "screening_score": 9.0,
+        "screening_decision": "include",
+        "screening_reason": "A patente trata explicitamente de um sistema de armazenamento de energia térmica que utiliza calor para ativar materiais, incluindo aplicações como calcinação e produção de hidrogênio, diretamente relacionadas ao armazenamento de dióxido de carbono. O resumo descreve um sistema que converte energia elétrica variável em calor contínuo a altas temperaturas, utilizando um meio sólido e fluxo de gás, o que se encaixa perfeitamente na busca.",
+        "evidence_snippets": [
+          "An energystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C.",
+          "Heat from the solid medium is delivered continuously on demand."
+        ],
+        "thematic_cluster": "Engenharia Térmica, Armazenamento de Energia, Conversão de Energia",
+        "relevance_score": 9.5,
+        "summary": "Esta patente descreve um sistema de armazenamento de energia térmica que utiliza calor de energia elétrica variável para aquecer um meio sólido, idealmente para processos como calcinação e produção de hidrogênio. O sistema emprega um design de matriz de tijolos com cavidades de radiação para aquecimento uniforme e rápido, controlando a temperatura através de fluxo de gás. O controle preditivo e a conversão de alta tensão otimizam a eficiência da transferência de energia.",
+        "key_findings": [
+          "O sistema utiliza um meio sólido e fluxo de gás para transferir calor, permitindo um controle preciso da temperatura e uniformidade do aquecimento.",
+          "O design da matriz de tijolos com cavidades de radiação facilita o aquecimento rápido e uniforme, minimizando o risco de thermal runaway."
+        ],
+        "potential_applications": [
+          "Calcinação de materiais.",
+          "Produção de hidrogênio.",
+          "Geração de energia térmica e cogeração.",
+          "Aquecimento industrial."
+        ],
+        "technical_domain": "Engenharia Térmica, Armazenamento de Energia, Conversão de Energia",
+        "innovation_level": "Significativa",
+        "problem_statement": "O desafio é fornecer uma fonte de calor contínuo e de alta temperatura para processos que requerem energia, como calcinação e produção de hidrogênio, utilizando fontes de energia renovável intermitentes.",
+        "solution_summary": "A patente propõe um sistema que converte energia elétrica variável em calor contínuo a altas temperaturas, utilizando um meio sólido e fluxo de gás, permitindo o controle preciso da temperatura e a operação contínua do processo.",
+        "claimed_advantages": [
+          "Aquecimento rápido e uniforme devido à radiação.",
+          "Controle preciso da temperatura através do fluxo de gás.",
+          "Operação contínua e confiável em altas temperaturas."
+        ],
+        "limitations": [
+          "A eficiência do sistema depende da capacidade de otimizar o fluxo de gás e a transferência de calor.",
+          "O custo inicial do sistema pode ser elevado devido ao uso de materiais de alta temperatura e componentes de conversão de energia."
+        ],
+        "maturity_level": "Inicial",
+        "confidence": 0.95,
+        "manual_review_required": false
+      }
+    },
+    {
+      "patent": {
+        "title": "5. US20220282638 - Material activation system with thermal energy storage system",
+        "patent_id": "US373267798",
+        "abstract": "(EN)Anenergystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C. Intermittent electricalenergyheats a solid medium. Heat from the solid medium is delivered continuously on demand. An array of bricks incorporating internal radiation cavities is directly heated bythermalradiation. The cavities facilitate rapid, uniform heating via reradiation. Heat delivery via flowing gas establishes a thermocline which maintains high outlet temperature throughout discharge. Gas flows through structured pathways within the array, delivering heat which may be used for processes including calcination, hydrogen electrolysis, steam generation, andthermalpower generation and cogeneration. Groups ofthermalstoragearrays may be controlled and operated at high temperatures withoutthermalrunaway via deep-discharge sequencing. Forecast-based control enables continuous, year-round heat supply using current and advance information of weather and VRE availability. High-voltage DC power conversion and distribution circuitry improves the efficiency of VRE power transfer into the system.",
+        "inventors": [
+          "John Setel O'Donnell",
+          "Peter Emery von Behrens",
+          "Chiaki Treynor",
+          "Jeremy Quentin Keller",
+          "Matthieu Jonemann",
+          "Robert Ratz",
+          "Yusef Desjardins Ferhani"
+        ],
+        "assignee": "Rondo; Energy; , Inc.",
+        "filing_date": "",
+        "publication_date": "08.09.2022",
+        "url": "https://patentscope.wipo.int/search/en/detail.jsf;jsessionid=18D125D39675BD75A74CB94904F1BAF0.wapp1nC?docId=US373267798&_cid=P12-MNI90Y-93610-1",
+        "snippet": "",
+        "source": "Patentscope"
+      },
+      "evaluation": {
+        "patent_id": "US373267798",
+        "analysis_route": "deep_extraction",
+        "route_reason": "Há evidência suficiente para extração detalhada.",
+        "screening_score": 9.0,
+        "screening_decision": "include",
+        "screening_reason": "A patente trata explicitamente de um sistema de armazenamento de energia térmica que utiliza calor para converter energia, especificamente energia elétrica renovável, e inclui elementos chave como aquecimento de um meio sólido, transferência de calor por gás e controle de temperatura, todos relacionados à 'carbon dioxide thermal energy storage'.",
+        "evidence_snippets": [
+          "An energystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C.",
+          "Heat from the solid medium is delivered continuously on demand."
+        ],
+        "thematic_cluster": "Armazenamento de Energia Térmica, Termodinâmica, Engenharia de Energia, Dióxido de Carbono",
+        "relevance_score": 9.5,
+        "summary": "Esta patente descreve um sistema de armazenamento de energia térmica que utiliza dióxido de carbono para transferir calor de forma contínua, ideal para converter energia elétrica renovável variável em calor. O sistema emprega aquecimento de um meio sólido, transferência de calor por gás e controle de temperatura para otimizar a eficiência e a capacidade de resposta. O controle baseado em previsão permite o fornecimento contínuo de calor ao longo do ano.",
+        "key_findings": [
+          "O sistema utiliza um meio sólido aquecido por radiação para transferir calor continuamente.",
+          "O fluxo de gás através de caminhos estruturados dentro do arranjo ajuda a manter a temperatura de saída alta e evita o superaquecimento."
+        ],
+        "potential_applications": [
+          "Armazenamento de calor para processos de calcinação.",
+          "Produção de hidrogênio por eletrólise.",
+          "Geração de vapor para cogeração de energia.",
+          "Geração de energia térmica a partir de fontes renováveis."
+        ],
+        "technical_domain": "Armazenamento de Energia Térmica, Termodinâmica, Engenharia de Energia, Dióxido de Carbono",
+        "innovation_level": "Significativa",
+        "problem_statement": "O problema abordado é a necessidade de um sistema de armazenamento de energia térmica eficiente e escalável para aproveitar a energia elétrica renovável intermitente, especialmente em aplicações que exigem calor sob demanda.",
+        "solution_summary": "A solução proposta é um sistema de armazenamento de energia térmica que utiliza um arranjo de tijolos com câmaras de radiação interna para aquecimento rápido e uniforme, com fluxo de gás para manter a temperatura de saída alta. O controle baseado em previsão otimiza o desempenho do sistema.",
+        "claimed_advantages": [
+          "Eficiência na conversão de energia elétrica renovável em calor.",
+          "Controle de temperatura preciso e prevenção de 'thermal runaway' através de sequenciamento de descarga profunda.",
+          "Capacidade de fornecer calor contínuo e sob demanda, utilizando previsões meteorológicas e de disponibilidade de energia renovável."
+        ],
+        "limitations": [
+          "A patente não detalha especificamente os materiais utilizados para o meio sólido ou o gás de transferência de calor.",
+          "A eficiência do sistema pode ser afetada pela perda de calor para o ambiente."
+        ],
+        "maturity_level": "Intermediária",
+        "confidence": 0.95,
+        "manual_review_required": false
+      }
+    },
+    {
+      "patent": {
+        "title": "Fuel Supply System For Fuel Cell",
+        "patent_id": "KR101978330B1",
+        "abstract": "AbstractTranslated fromKoreanì°ë£ì ì§ì ì°ë£ ê³µê¸ ìì¤íì´ ê°ìëë¤. ë³¸ ë°ëªì ì°ë£ì ì§ì ì°ë£ ê³µê¸ ìì¤íì, ì°ë£ì ì§ê° íì¬ë ì»¨íì´ë ì ë°ìì ì°ë£ì ì§ì ì°ë£ ê³µê¸ ìì¤íì ìì´ì, LNGê° ì ì¥ëë LNG ì ì¥í±í¬; ì²ì°ê°ì¤ë¥¼ ê³µê¸ë°ì ê°ì§íì¬ ë°ì íë ì°ë£ì ì§ ì ë; ë° LNG ì ì¥í±í¬ì ì ì¥ë LNGë¥¼ ê¸°íìì¼ ì°ë£ì ì§ ì ëì¼ë¡ ê³µê¸íë ê¸°í ê³µê¸ë¶ë¥¼ í¬í¨íë, ê¸°í ê³µê¸ë¶ë ì°ë£ì ì§ ì ëìì ë°ìíë ë°°ê¸°ê°ì¤ë¥¼ ì´ìì¼ë¡ LNGë¥¼ ê¸°íìí¤ë ê²ì í¹ì§ì¼ë¡ íë¤.A fuel supply system for a fuel cell is disclosed. A fuel supply system of a fuel cell of the present invention is a fuel supply system for a fuel cell in a container ship on which a fuel cell is mounted, comprising: an LNG storage tank storing LNG; A fuel cell unit that is supplied with natural gas and is reformed and developed; And a vaporizer for vaporizing the LNG stored in the LNG storage tank and supplying the vaporized LNG to the fuel cell unit, wherein the vaporizer supplies the exhaust gas generated from the fuel cell unit as a heat source to vaporize the LNG.",
+        "inventors": [
+          "ì¤ì¤",
+          "ë³ì¤ì²",
+          "ì ì¹êµ"
+        ],
+        "assignee": "ëì°ì¡°ì í´ì ì£¼ìíì¬",
+        "filing_date": "2012-11-20",
+        "publication_date": "2019-05-14",
+        "url": "https://patents.google.com/patent/KR101978330B1/en",
+        "snippet": "",
+        "source": "Google Patents"
+      },
+      "evaluation": {
+        "patent_id": "KR101978330B1",
+        "analysis_route": "deep_extraction",
+        "route_reason": "Há evidência suficiente para extração detalhada.",
+        "screening_score": 8.0,
+        "screening_decision": "include",
+        "screening_reason": "O resumo descreve um sistema de fornecimento de combustível para uma célula de combustível, incluindo o uso de LNG (gás natural liquefeito) como combustível e a utilização do calor gerado pela célula de combustível para vaporizar o LNG, o que se alinha diretamente com a busca por 'carbon dioxide thermal energy storage'.",
+        "evidence_snippets": [
+          "ë³¸ ë°ëªì ì°ë£ì ì§ì ì°ë£ ê³µê¸ ìì¤íì´ ê°ìëë¤.",
+          "LNGê° ì ì¥ëë LNG ì ì¥í±í¬; ì²ì°ê°ì¤ë¥¼ ê³µê¸ë°ì ê°ì§íì¬ ë°ì íë ì°ë£ì ì§ ì ë"
+        ],
+        "thematic_cluster": "Células de Combustível, Armazenamento de Energia, Termodinâmica",
+        "relevance_score": 9.0,
+        "summary": "Esta patente descreve um sistema de fornecimento de combustível para uma célula de combustível que utiliza LNG vaporizado como combustível. O sistema utiliza o calor gerado pela célula de combustível para vaporizar o LNG, e o exaustão da célula de combustível é usado como fonte de calor. A patente aborda a necessidade de um sistema de fornecimento de combustível eficiente para células de combustível em aplicações específicas.",
+        "key_findings": [
+          "Utilização de LNG como combustível, vaporizado com o calor da célula de combustível.",
+          "Utilização do exaustão da célula de combustível como fonte de calor para vaporização do LNG.",
+          "Implementação do sistema em um navio de carga, demonstrando aplicabilidade em ambientes específicos."
+        ],
+        "potential_applications": [
+          "Células de combustível em navios de carga.",
+          "Sistemas de armazenamento de energia térmica.",
+          "Geração de energia em ambientes marinhos."
+        ],
+        "technical_domain": "Células de Combustível, Armazenamento de Energia, Termodinâmica",
+        "innovation_level": "Incremental",
+        "problem_statement": "O problema abordado é a necessidade de um sistema de fornecimento de combustível eficiente para células de combustível, particularmente em ambientes onde o calor gerado pela célula pode ser reutilizado.",
+        "solution_summary": "A solução proposta é um sistema que utiliza o calor gerado pela célula de combustível para vaporizar LNG, que é então fornecido à célula de combustível. O exaustão da célula de combustível é usado como fonte de calor para vaporização.",
+        "claimed_advantages": [
+          "Eficiência no uso do calor gerado pela célula de combustível.",
+          "Redução de perdas de energia.",
+          "Potencial para aplicações em ambientes marítimos."
+        ],
+        "limitations": [
+          "Dependência da temperatura da célula de combustível para a vaporização do LNG.",
+          "Possíveis desafios na gestão e armazenamento do LNG."
+        ],
+        "maturity_level": "Intermediária",
+        "confidence": 0.95,
+        "manual_review_required": false
+      }
+    },
+    {
+      "patent": {
+        "title": "Methods and/or systems for magnetobaric assisted generation of power from low temperature heat",
+        "patent_id": "US8549857B2",
+        "abstract": "AbstractMethods and/or systems using magnetically assisted pressurization of a gas for the generation of useful power from heat transfer using heat sources at lower temperatures in a manner that does not require the emission of CO2.",
+        "inventors": [
+          "Christopher J. Papile"
+        ],
+        "assignee": "Individual",
+        "filing_date": "2007-12-14",
+        "publication_date": "2013-10-08",
+        "url": "https://patents.google.com/patent/US8549857B2/en",
+        "snippet": "",
+        "source": "Google Patents"
+      },
+      "evaluation": {
+        "patent_id": "US8549857B2",
+        "analysis_route": "manual_review",
+        "route_reason": "Triagem indicou revisão humana.",
+        "screening_score": 7.0,
+        "screening_decision": "review",
+        "screening_reason": "O resumo menciona a utilização de gases e pressurização para geração de energia a partir de calor, o que se relaciona com o armazenamento de energia térmica de CO2, mas a tecnologia é diferente da busca original. Requer análise mais aprofundada para determinar a relevância.",
+        "evidence_snippets": [
+          "AbstractMethods and/or systems using magnetically assisted pressurization of a gas for the generation of useful power from heat transfer using heat sources at lower temperatures in a manner that does not require the emission of CO2."
+        ],
+        "thematic_cluster": "Thermal Transfer Mechanisms",
+        "relevance_score": 6.0,
+        "summary": "Esta patente descreve um sistema que utiliza magnetobaric pressurização de um gás para geração de energia a partir de calor, evitando a emissão de CO2. A tecnologia se concentra em fontes de calor de baixa temperatura, mas não aborda diretamente o armazenamento de energia térmica de CO2.",
+        "key_findings": [
+          "Utiliza magnetobaric pressurização de um gás para geração de energia.",
+          "Foca em fontes de calor de baixa temperatura."
+        ],
+        "potential_applications": [
+          "Geração de energia a partir de fontes de calor residuais.",
+          "Sistemas de energia de baixa temperatura."
+        ],
+        "technical_domain": "Termodinâmica, Geração de Energia",
+        "innovation_level": "Incremental",
+        "problem_statement": "O sistema visa gerar energia útil a partir de calor de baixa temperatura sem a necessidade de emissão de CO2.",
+        "solution_summary": "A solução emprega magnetobaric pressurização de um gás para converter calor em energia, utilizando um sistema que não requer a emissão de CO2.",
+        "claimed_advantages": [
+          "Evita a emissão de CO2.",
+          "Permite a geração de energia a partir de calor de baixa temperatura."
+        ],
+        "limitations": [
+          "Não aborda diretamente o armazenamento de energia térmica de CO2.",
+          "Depende de magnetobaric pressurização, que pode ter desafios de implementação."
+        ],
+        "maturity_level": "Inicial",
+        "confidence": 0.7,
+        "manual_review_required": true
+      }
+    },
+    {
+      "patent": {
+        "title": "Process and equipment for converting carbon dioxide in flue gas into natural gas by using dump power energy",
+        "patent_id": "KR101648976B1",
+        "abstract": "AbstractTranslated fromKoreanë¤í¼ ìëì§ë¥¼ ì¬ì©íì¬ ì°ë ê°ì¤ë¥¼ ì²ì° ê°ì¤ë¡ ë³ííê¸° ìí ê³µì .ê³µì ì ë¤í ìëì§ë¥¼ ì¬ì©íì¬ ë¬¼ì ì ê¸°ë¶í´ íì¬ ìì ê°ì¤ë¥¼ ìì±íê³ ; ìì ê°ì¤ì ì°ë ê°ì¤ë¡ë¶í° í¬ì§ë ì´ì°ííìë ë©í ìì± ë°ìì ë¸ì¶ëê³ ; ë©í ìì± ë°ìì¼ë¡ë¶í° ìì±ë ì´ì ë¬¼ì ê°ì´ê°ì¬ ê³¼ì´ë ìì¦ê¸°ë¥¼ ìì±íì¬ ì¤í í°ë¹ì êµ¬ëíê¸° ìí´ íìë¥¼ ìì±íê³  ì ë ¥ ìëì§ë¥¼ ë¬¼ ì ê¸°ë¶í´ë¥¼ ìí´ ë³´ì¶©íì¬, í©ì±ì ìí´ ì²ì° ê°ì¤ê° ì»ì´ì§ë¤. ì²ì° ê°ì¤ì í©ì±ì ì¬ì©ëë ì¥ë¹ê° ì ê³µëë¤. ì¥ë¹ë ê¸°ë³¸ì ì¼ë¡ ë³í ì ë¥ ì¥ì¹(1), ì í´ì¡°(2), ì¤í í°ë¹(4), ì´ì°ííì íí°(21), ì ì´ë 2ë¨ì ê³ ì ì¸µ ë°ìê¸°ë¤(11)(13), ë¤ìí ê°ì  ì´êµíê¸°ë¤, ì¤í ëë¼(12), ì²ì° ê°ì¤ ìì¶ê¸°(8), ë° ê³µì ì íì´íë¼ì¸(3)ì ê²°í©ì ìí´ íì±ëë¤.A process for converting flue gas to natural gas using damper energy.The process uses dump energy to electrolyze the water to produce a solids gas; Carbon dioxide captured from hydrogen gas and flue gas is exposed to the methanogenic reaction; The heat generated from the methanogenic reaction is obtained by heating the water to generate superheated water vapor to generate power to drive the steam turbine, and supplementing the power energy for water electrolysis to synthesize the natural gas. Equipment for the synthesis of natural gas is provided. The equipment basically comprises a conversion rectifier 1, an electrolyzer 2, a steam turbine 4, a carbon dioxide heater 21, at least two fixed bed reactors 11 and 13, various indirect heat exchangers, (12), a natural gas condenser (8), and a process water pipeline (3).",
+        "inventors": [
+          "ìí­ ì¥",
+          "ì´ë¡± ì²¸",
+          "ì§ë¡± ì",
+          "ì¥ì§ì í¡",
+          "ì±ì¹´ì´ ì ±"
+        ],
+        "assignee": "ì°í ì¹´ì´ë ìì§ëì´ë§ íí¬ëë¡ì§ ë¦¬ìì¹ ì¸ì¤í°íí¸  ì½ì¤í¼ë ì´ì ìí°ë.",
+        "filing_date": "2013-04-16",
+        "publication_date": "2016-08-17",
+        "url": "https://patents.google.com/patent/KR101648976B1/en",
+        "snippet": "",
+        "source": "Google Patents"
+      },
+      "evaluation": {
+        "patent_id": "KR101648976B1",
+        "analysis_route": "screen_only",
+        "route_reason": "Patente excluída na triagem.",
+        "screening_score": 0.0,
+        "screening_decision": "exclude",
+        "screening_reason": "",
+        "evidence_snippets": [
+          "AbstractTranslated fromKoreanë¤í¼ ìëì§ë¥¼ ì¬ì©íì¬ ì°ë ê°ì¤ë¥¼ ì²ì° ê°ì¤ë¡ ë³ííê¸° ìí ê³µì .ê³µì ì ë¤í ìëì§ë¥¼ ì¬ì©íì¬ ë¬¼ì ì ê¸°ë¶í´ íì¬ ìì ê°ì¤ë¥¼ ìì±íê³ ; ìì ê°ì¤ì"
+        ],
+        "thematic_cluster": "",
+        "relevance_score": 0.0,
+        "summary": "",
+        "key_findings": [],
+        "potential_applications": [],
+        "technical_domain": "",
+        "innovation_level": "",
+        "problem_statement": "",
+        "solution_summary": "",
+        "claimed_advantages": [],
+        "limitations": [],
+        "maturity_level": "",
+        "confidence": 0.0,
+        "manual_review_required": false
+      }
+    }
+  ],
+  "comparative_analysis": "⚠️ Não foi possível gerar a análise comparativa."
+}

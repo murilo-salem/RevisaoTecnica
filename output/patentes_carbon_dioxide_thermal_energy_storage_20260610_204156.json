@@ -1,0 +1,1983 @@
+{
+  "metadata": {
+    "query": "carbon dioxide thermal energy storage",
+    "timestamp": "2026-06-10T20:41:56.840526",
+    "total_patents": 2,
+    "model": "gemma3:27b",
+    "average_relevance": 0,
+    "run_state": {
+      "query": "carbon dioxide thermal energy storage",
+      "max_results": 2,
+      "model": "gemma3:27b",
+      "output_dir": "output",
+      "feature_flags": {
+        "require_evidence": true,
+        "enable_thematic_clusters": true,
+        "enable_structural_roles": true,
+        "enable_screening_rerank": true,
+        "enable_prisma": true,
+        "enable_snapshot": true,
+        "enable_comparative_analysis": true,
+        "enable_whitespace_analysis": true,
+        "enable_manual_review_queue": true
+      },
+      "config_snapshot": {
+        "pipeline_version": "1.1",
+        "timestamp": "2026-06-10T20:20:47",
+        "query": "carbon dioxide thermal energy storage",
+        "max_results": 2,
+        "model": "gemma3:27b",
+        "output_dir": "output",
+        "feature_flags": {
+          "require_evidence": true,
+          "enable_thematic_clusters": true,
+          "enable_structural_roles": true,
+          "enable_screening_rerank": true,
+          "enable_prisma": true,
+          "enable_snapshot": true,
+          "enable_comparative_analysis": true,
+          "enable_whitespace_analysis": true,
+          "enable_manual_review_queue": true
+        },
+        "thresholds": {
+          "include": 7.0,
+          "review": 4.5,
+          "manual_review_limit": 20
+        },
+        "runtime": {
+          "ollama_base_url": "http://localhost:11434",
+          "ollama_timeout": 600
+        },
+        "sources": [
+          "Google Patents",
+          "Patentscope"
+        ]
+      },
+      "snapshot_hash": "a7167985873b4e2d3f21cdc1113b2a89f79eb0b1cbb69da78a2d655e0b39b7d2",
+      "protocol": {
+        "version": "1.0",
+        "query": "carbon dioxide thermal energy storage",
+        "sources": [
+          "Google Patents",
+          "Patentscope"
+        ],
+        "stages": [
+          "identification",
+          "deduplication",
+          "screening",
+          "manual_review",
+          "full_extraction",
+          "synthesis"
+        ],
+        "criteria": {
+          "include": [
+            "Alinhamento claro com a query ou seus sinônimos técnicos.",
+            "Documento com título, resumo ou snippet suficientes para análise.",
+            "Potencial técnico relevante para o domínio pesquisado."
+          ],
+          "exclude": [
+            "Documentos sem relação técnica com a query.",
+            "Duplicatas de outra fonte ou publicação equivalente.",
+            "Registro sem metadados mínimos para avaliação."
+          ]
+        },
+        "thresholds": {
+          "include_score": 7.0,
+          "review_score": 4.5,
+          "max_items_for_manual_review": 20
+        },
+        "limits": {
+          "max_results": 2
+        },
+        "model": "gemma3:27b"
+      },
+      "writing_context": {
+        "protocol": {
+          "version": "1.0",
+          "query": "carbon dioxide thermal energy storage",
+          "sources": [
+            "Google Patents",
+            "Patentscope"
+          ],
+          "stages": [
+            "identification",
+            "deduplication",
+            "screening",
+            "manual_review",
+            "full_extraction",
+            "synthesis"
+          ],
+          "criteria": {
+            "include": [
+              "Alinhamento claro com a query ou seus sinônimos técnicos.",
+              "Documento com título, resumo ou snippet suficientes para análise.",
+              "Potencial técnico relevante para o domínio pesquisado."
+            ],
+            "exclude": [
+              "Documentos sem relação técnica com a query.",
+              "Duplicatas de outra fonte ou publicação equivalente.",
+              "Registro sem metadados mínimos para avaliação."
+            ]
+          },
+          "thresholds": {
+            "include_score": 7.0,
+            "review_score": 4.5,
+            "max_items_for_manual_review": 20
+          },
+          "limits": {
+            "max_results": 2
+          },
+          "model": "gemma3:27b"
+        },
+        "coverage_metrics": {
+          "raw_scraped": 2,
+          "unique_patents": 2,
+          "duplicates_removed": 0,
+          "screened": 2,
+          "included": 0,
+          "review": 1,
+          "excluded": 1,
+          "manual_review_required": 1,
+          "manual_review_deferred": 0,
+          "full_extractions": 1,
+          "missing_abstract": 0,
+          "missing_id": 0,
+          "records_with_content_identity": 0,
+          "records_with_fallback_identity": 0,
+          "family_duplicates_removed": 0,
+          "llm_screening_failures": 0,
+          "llm_total_failures": 0
+        },
+        "top_patents": [],
+        "thematic_clusters": {
+          "clusters": [],
+          "total_clusters": 0
+        },
+        "route_summary": {
+          "screen_only": 1,
+          "manual_review": 1
+        },
+        "feature_flags": {
+          "require_evidence": true,
+          "enable_thematic_clusters": true,
+          "enable_structural_roles": true,
+          "enable_screening_rerank": true,
+          "enable_prisma": true,
+          "enable_snapshot": true,
+          "enable_comparative_analysis": true,
+          "enable_whitespace_analysis": true,
+          "enable_manual_review_queue": true
+        },
+        "snapshot_hash": "a7167985873b4e2d3f21cdc1113b2a89f79eb0b1cbb69da78a2d655e0b39b7d2"
+      },
+      "memory_sidecar": {
+        "run_id": "20260610_202047",
+        "max_items_per_slot": 5,
+        "slots": {
+          "screening": [
+            {
+              "record_id": "rec_4fd359f22bee",
+              "patent_id": "US20250122779A1",
+              "title": "Multi-well pad storage of h2 and/or nh3 with simultaneous co2 sequestration",
+              "route": "screen_only",
+              "score": 2.8
+            }
+          ],
+          "review": [
+            {
+              "record_id": "rec_5383df610488",
+              "patent_id": "WO2024040002A1",
+              "title": "System and method of co2 thermal swing adsorption with wet regeneration and hot drying",
+              "route": "manual_review",
+              "score": 5.0
+            }
+          ],
+          "writer": [
+            {
+              "top_patents": [],
+              "route_summary": {
+                "screen_only": 1,
+                "manual_review": 1
+              }
+            }
+          ]
+        },
+        "journal": [
+          {
+            "timestamp": "2026-06-10T20:20:54",
+            "stage": "setup",
+            "event": "llm_check",
+            "detail": "Verificação de disponibilidade do Ollama concluída.",
+            "payload": {
+              "llm_available": true,
+              "model": "gemma3:27b"
+            }
+          },
+          {
+            "timestamp": "2026-06-10T20:21:00",
+            "stage": "identification",
+            "event": "scrape_completed",
+            "detail": "GooglePatents retornou patentes.",
+            "payload": {
+              "source": "GooglePatents",
+              "count": 2,
+              "diagnostics": []
+            }
+          },
+          {
+            "timestamp": "2026-06-10T20:21:27",
+            "stage": "identification",
+            "event": "scrape_completed",
+            "detail": "Patentscope retornou patentes.",
+            "payload": {
+              "source": "Patentscope",
+              "count": 0,
+              "diagnostics": [
+                {
+                  "kind": "discovery_empty",
+                  "detail": "DuckDuckGo não retornou links para Patentscope.",
+                  "url": "https://html.duckduckgo.com/html/"
+                },
+                {
+                  "kind": "layout_break",
+                  "detail": "Não foi possível extrair o título da página de detalhe do Patentscope.",
+                  "url": "https://patentscope.wipo.int/search/en/detail.jsf;jsessionid=CD58DDB7F0D1D78D981AE9A5DDA2EC95.wapp1nB?docId=AU244427549&_cid=P11-MQ8OZT-00319-1"
+                },
+                {
+                  "kind": "layout_break",
+                  "detail": "Não foi possível extrair o título da página de detalhe do Patentscope.",
+                  "url": "https://patentscope.wipo.int/search/en/detail.jsf;jsessionid=CD58DDB7F0D1D78D981AE9A5DDA2EC95.wapp1nB?docId=US433566429&_cid=P11-MQ8OZT-00319-1"
+                }
+              ]
+            }
+          },
+          {
+            "timestamp": "2026-06-10T20:23:54",
+            "stage": "screening",
+            "event": "screening_completed",
+            "detail": "US20250122779A1 roteada para screen_only.",
+            "payload": {
+              "record_id": "rec_4fd359f22bee",
+              "patent_id": "US20250122779A1",
+              "decision": "exclude",
+              "score": 2.8,
+              "route": {
+                "route": "screen_only",
+                "reason": "Patente excluída na triagem.",
+                "slot": "screening"
+              },
+              "llm_error": ""
+            }
+          },
+          {
+            "timestamp": "2026-06-10T20:28:43",
+            "stage": "screening",
+            "event": "screening_completed",
+            "detail": "WO2024040002A1 roteada para manual_review.",
+            "payload": {
+              "record_id": "rec_5383df610488",
+              "patent_id": "WO2024040002A1",
+              "decision": "review",
+              "score": 5.0,
+              "route": {
+                "route": "manual_review",
+                "reason": "Triagem indicou revisão humana.",
+                "slot": "review"
+              },
+              "llm_error": ""
+            }
+          },
+          {
+            "timestamp": "2026-06-10T20:28:43",
+            "stage": "extraction",
+            "event": "screening_only",
+            "detail": "US20250122779A1 permaneceu apenas na triagem.",
+            "payload": {
+              "record_id": "rec_4fd359f22bee",
+              "patent_id": "US20250122779A1",
+              "route": "screen_only"
+            }
+          },
+          {
+            "timestamp": "2026-06-10T20:33:33",
+            "stage": "extraction",
+            "event": "detailed_evaluation_completed",
+            "detail": "WO2024040002A1 recebeu extração detalhada.",
+            "payload": {
+              "record_id": "rec_5383df610488",
+              "patent_id": "WO2024040002A1",
+              "route": "manual_review",
+              "confidence": 0.65
+            }
+          },
+          {
+            "timestamp": "2026-06-10T20:33:33",
+            "stage": "synthesis",
+            "event": "coverage_computed",
+            "detail": "Cobertura e seleção consolidadas após triagem.",
+            "payload": {
+              "raw_scraped": 2,
+              "unique_patents": 2,
+              "duplicates_removed": 0,
+              "screened": 2,
+              "included": 0,
+              "review": 1,
+              "excluded": 1,
+              "manual_review_required": 1,
+              "manual_review_deferred": 0,
+              "full_extractions": 1,
+              "missing_abstract": 0,
+              "missing_id": 0,
+              "records_with_content_identity": 0,
+              "records_with_fallback_identity": 0,
+              "family_duplicates_removed": 0,
+              "llm_screening_failures": 0,
+              "llm_total_failures": 0
+            }
+          },
+          {
+            "timestamp": "2026-06-10T20:41:56",
+            "stage": "synthesis",
+            "event": "comparative_analysis_completed",
+            "detail": "Síntese comparativa gerada via Ollama.",
+            "payload": {
+              "patents_compared": 2
+            }
+          },
+          {
+            "timestamp": "2026-06-10T20:41:56",
+            "stage": "synthesis",
+            "event": "whitespace_analysis_completed",
+            "detail": "Matriz estruturada de whitespace gerada.",
+            "payload": {
+              "selected_patents": 2,
+              "candidates": 0
+            }
+          },
+          {
+            "timestamp": "2026-06-10T20:41:56",
+            "stage": "writer",
+            "event": "context_prepared",
+            "detail": "Contexto compartilhado preparado para o writer.",
+            "payload": {
+              "top_patents": 0,
+              "route_summary": {
+                "screen_only": 1,
+                "manual_review": 1
+              }
+            }
+          },
+          {
+            "timestamp": "2026-06-10T20:41:56",
+            "stage": "finalization",
+            "event": "report_generated",
+            "detail": "Relatórios finais gerados com sucesso.",
+            "payload": {
+              "markdown": "output/patentes_carbon_dioxide_thermal_energy_storage_20260610_204156.md",
+              "json": "output/patentes_carbon_dioxide_thermal_energy_storage_20260610_204156.json"
+            }
+          }
+        ]
+      },
+      "memory_journal": [
+        {
+          "timestamp": "2026-06-10T20:20:54",
+          "stage": "setup",
+          "event": "llm_check",
+          "detail": "Verificação de disponibilidade do Ollama concluída.",
+          "payload": {
+            "llm_available": true,
+            "model": "gemma3:27b"
+          }
+        },
+        {
+          "timestamp": "2026-06-10T20:21:00",
+          "stage": "identification",
+          "event": "scrape_completed",
+          "detail": "GooglePatents retornou patentes.",
+          "payload": {
+            "source": "GooglePatents",
+            "count": 2,
+            "diagnostics": []
+          }
+        },
+        {
+          "timestamp": "2026-06-10T20:21:27",
+          "stage": "identification",
+          "event": "scrape_completed",
+          "detail": "Patentscope retornou patentes.",
+          "payload": {
+            "source": "Patentscope",
+            "count": 0,
+            "diagnostics": [
+              {
+                "kind": "discovery_empty",
+                "detail": "DuckDuckGo não retornou links para Patentscope.",
+                "url": "https://html.duckduckgo.com/html/"
+              },
+              {
+                "kind": "layout_break",
+                "detail": "Não foi possível extrair o título da página de detalhe do Patentscope.",
+                "url": "https://patentscope.wipo.int/search/en/detail.jsf;jsessionid=CD58DDB7F0D1D78D981AE9A5DDA2EC95.wapp1nB?docId=AU244427549&_cid=P11-MQ8OZT-00319-1"
+              },
+              {
+                "kind": "layout_break",
+                "detail": "Não foi possível extrair o título da página de detalhe do Patentscope.",
+                "url": "https://patentscope.wipo.int/search/en/detail.jsf;jsessionid=CD58DDB7F0D1D78D981AE9A5DDA2EC95.wapp1nB?docId=US433566429&_cid=P11-MQ8OZT-00319-1"
+              }
+            ]
+          }
+        },
+        {
+          "timestamp": "2026-06-10T20:23:54",
+          "stage": "screening",
+          "event": "screening_completed",
+          "detail": "US20250122779A1 roteada para screen_only.",
+          "payload": {
+            "record_id": "rec_4fd359f22bee",
+            "patent_id": "US20250122779A1",
+            "decision": "exclude",
+            "score": 2.8,
+            "route": {
+              "route": "screen_only",
+              "reason": "Patente excluída na triagem.",
+              "slot": "screening"
+            },
+            "llm_error": ""
+          }
+        },
+        {
+          "timestamp": "2026-06-10T20:28:43",
+          "stage": "screening",
+          "event": "screening_completed",
+          "detail": "WO2024040002A1 roteada para manual_review.",
+          "payload": {
+            "record_id": "rec_5383df610488",
+            "patent_id": "WO2024040002A1",
+            "decision": "review",
+            "score": 5.0,
+            "route": {
+              "route": "manual_review",
+              "reason": "Triagem indicou revisão humana.",
+              "slot": "review"
+            },
+            "llm_error": ""
+          }
+        },
+        {
+          "timestamp": "2026-06-10T20:28:43",
+          "stage": "extraction",
+          "event": "screening_only",
+          "detail": "US20250122779A1 permaneceu apenas na triagem.",
+          "payload": {
+            "record_id": "rec_4fd359f22bee",
+            "patent_id": "US20250122779A1",
+            "route": "screen_only"
+          }
+        },
+        {
+          "timestamp": "2026-06-10T20:33:33",
+          "stage": "extraction",
+          "event": "detailed_evaluation_completed",
+          "detail": "WO2024040002A1 recebeu extração detalhada.",
+          "payload": {
+            "record_id": "rec_5383df610488",
+            "patent_id": "WO2024040002A1",
+            "route": "manual_review",
+            "confidence": 0.65
+          }
+        },
+        {
+          "timestamp": "2026-06-10T20:33:33",
+          "stage": "synthesis",
+          "event": "coverage_computed",
+          "detail": "Cobertura e seleção consolidadas após triagem.",
+          "payload": {
+            "raw_scraped": 2,
+            "unique_patents": 2,
+            "duplicates_removed": 0,
+            "screened": 2,
+            "included": 0,
+            "review": 1,
+            "excluded": 1,
+            "manual_review_required": 1,
+            "manual_review_deferred": 0,
+            "full_extractions": 1,
+            "missing_abstract": 0,
+            "missing_id": 0,
+            "records_with_content_identity": 0,
+            "records_with_fallback_identity": 0,
+            "family_duplicates_removed": 0,
+            "llm_screening_failures": 0,
+            "llm_total_failures": 0
+          }
+        },
+        {
+          "timestamp": "2026-06-10T20:41:56",
+          "stage": "synthesis",
+          "event": "comparative_analysis_completed",
+          "detail": "Síntese comparativa gerada via Ollama.",
+          "payload": {
+            "patents_compared": 2
+          }
+        },
+        {
+          "timestamp": "2026-06-10T20:41:56",
+          "stage": "synthesis",
+          "event": "whitespace_analysis_completed",
+          "detail": "Matriz estruturada de whitespace gerada.",
+          "payload": {
+            "selected_patents": 2,
+            "candidates": 0
+          }
+        },
+        {
+          "timestamp": "2026-06-10T20:41:56",
+          "stage": "writer",
+          "event": "context_prepared",
+          "detail": "Contexto compartilhado preparado para o writer.",
+          "payload": {
+            "top_patents": 0,
+            "route_summary": {
+              "screen_only": 1,
+              "manual_review": 1
+            }
+          }
+        },
+        {
+          "timestamp": "2026-06-10T20:41:56",
+          "stage": "finalization",
+          "event": "report_generated",
+          "detail": "Relatórios finais gerados com sucesso.",
+          "payload": {
+            "markdown": "output/patentes_carbon_dioxide_thermal_energy_storage_20260610_204156.md",
+            "json": "output/patentes_carbon_dioxide_thermal_energy_storage_20260610_204156.json"
+          }
+        }
+      ],
+      "stage_metrics": [
+        {
+          "stage": "setup",
+          "status": "ok",
+          "duration_seconds": 6.663,
+          "items_processed": 1,
+          "detail": "Verificação do modelo Ollama"
+        },
+        {
+          "stage": "search",
+          "status": "ok",
+          "duration_seconds": 33.014,
+          "items_processed": 2,
+          "detail": "2 patentes únicas após dedupe"
+        },
+        {
+          "stage": "screening",
+          "status": "ok",
+          "duration_seconds": 726.394,
+          "items_processed": 2,
+          "detail": "0 incluídas, 1 revisão"
+        },
+        {
+          "stage": "comparative_analysis",
+          "status": "ok",
+          "duration_seconds": 503.251,
+          "items_processed": 2,
+          "detail": "Síntese comparativa gerada"
+        },
+        {
+          "stage": "whitespace_analysis",
+          "status": "ok",
+          "duration_seconds": 0.001,
+          "items_processed": 2,
+          "detail": "Whitespace analysis estruturada gerada"
+        },
+        {
+          "stage": "reporting",
+          "status": "ok",
+          "duration_seconds": 0.002,
+          "items_processed": 2,
+          "detail": "Relatórios Markdown e JSON"
+        },
+        {
+          "stage": "finalization",
+          "status": "ok",
+          "duration_seconds": 0.001,
+          "items_processed": 8,
+          "detail": "Persistência de artefatos e estado"
+        }
+      ],
+      "llm_cache_stats": {
+        "hits": 0,
+        "misses": 5,
+        "entries": 5
+      },
+      "llm_telemetry": {
+        "degraded": false,
+        "total_failures": 0,
+        "consecutive_failures": 0,
+        "recent_errors": [],
+        "operations": {
+          "healthcheck": {
+            "calls": 1,
+            "successes": 1,
+            "failures": 0,
+            "retries": 0,
+            "cache_hits": 0,
+            "degraded_skips": 0,
+            "prompt_chars": 35,
+            "response_chars": 15,
+            "total_duration_seconds": 6.66,
+            "max_duration_seconds": 6.66,
+            "average_duration_seconds": 6.66
+          },
+          "screening": {
+            "calls": 2,
+            "successes": 2,
+            "failures": 0,
+            "retries": 0,
+            "cache_hits": 0,
+            "degraded_skips": 0,
+            "prompt_chars": 6629,
+            "response_chars": 2310,
+            "total_duration_seconds": 309.427,
+            "max_duration_seconds": 162.386,
+            "average_duration_seconds": 154.714
+          },
+          "rerank": {
+            "calls": 1,
+            "successes": 1,
+            "failures": 0,
+            "retries": 0,
+            "cache_hits": 0,
+            "degraded_skips": 0,
+            "prompt_chars": 3638,
+            "response_chars": 1087,
+            "total_duration_seconds": 127.135,
+            "max_duration_seconds": 127.135,
+            "average_duration_seconds": 127.135
+          },
+          "evaluation": {
+            "calls": 1,
+            "successes": 1,
+            "failures": 0,
+            "retries": 0,
+            "cache_hits": 0,
+            "degraded_skips": 0,
+            "prompt_chars": 3692,
+            "response_chars": 2597,
+            "total_duration_seconds": 289.829,
+            "max_duration_seconds": 289.829,
+            "average_duration_seconds": 289.829
+          },
+          "comparative": {
+            "calls": 1,
+            "successes": 1,
+            "failures": 0,
+            "retries": 0,
+            "cache_hits": 0,
+            "degraded_skips": 0,
+            "prompt_chars": 4215,
+            "response_chars": 3691,
+            "total_duration_seconds": 503.25,
+            "max_duration_seconds": 503.25,
+            "average_duration_seconds": 503.25
+          }
+        }
+      },
+      "observability_metrics": {
+        "routes": {
+          "manual_review": {
+            "count": 1,
+            "include": 0,
+            "review": 1,
+            "exclude": 0,
+            "llm_errors": 0
+          },
+          "screen_only": {
+            "count": 1,
+            "include": 0,
+            "review": 0,
+            "exclude": 1,
+            "llm_errors": 0
+          }
+        },
+        "sources": {
+          "GooglePatents": {
+            "raw_results": 2,
+            "duration_seconds": 6.656,
+            "diagnostic_counts": {}
+          },
+          "Patentscope": {
+            "raw_results": 0,
+            "duration_seconds": 26.357,
+            "diagnostic_counts": {
+              "discovery_empty": 1,
+              "layout_break": 2
+            }
+          }
+        },
+        "failures": {
+          "run_errors": 0,
+          "records_with_llm_error": 0,
+          "llm_total_failures": 0,
+          "llm_by_operation": {
+            "healthcheck": {
+              "calls": 1,
+              "failures": 0,
+              "retries": 0,
+              "degraded_skips": 0
+            },
+            "screening": {
+              "calls": 2,
+              "failures": 0,
+              "retries": 0,
+              "degraded_skips": 0
+            },
+            "rerank": {
+              "calls": 1,
+              "failures": 0,
+              "retries": 0,
+              "degraded_skips": 0
+            },
+            "evaluation": {
+              "calls": 1,
+              "failures": 0,
+              "retries": 0,
+              "degraded_skips": 0
+            },
+            "comparative": {
+              "calls": 1,
+              "failures": 0,
+              "retries": 0,
+              "degraded_skips": 0
+            }
+          },
+          "scraper_diagnostics_by_kind": {
+            "discovery_empty": 1,
+            "layout_break": 2
+          }
+        }
+      },
+      "run_id": "20260610_202047",
+      "started_at": "2026-06-10T20:20:47",
+      "finished_at": "2026-06-10T20:41:56",
+      "status": "completed",
+      "llm_available": true,
+      "patents": [
+        {
+          "record_id": "rec_4fd359f22bee",
+          "family_id": "family:2a17b7a90959b2781bfcd521c9358339a9e2c1a7",
+          "title": "Multi-well pad storage of h2 and/or nh3 with simultaneous co2 sequestration",
+          "patent_id": "US20250122779A1",
+          "abstract": "AbstractDisclosed herein are systems and methods of gas sequestration of carbon dioxide from a fossil-fueled hydrogen production plant. The method includes producing at least hydrogen and carbon dioxide above ground from a fossil-fueled hydrogen production plant, injecting at least a portion of the hydrogen and carbon dioxide produced from the fossil-fueled hydrogen production plant into a geological hydrogen storage unit and a geological carbon dioxide storage unit, respectively, wherein the portion of the carbon dioxide is injected concurrently with the portion of the hydrogen. The injection of the portion of carbon dioxide and hydrogen underground are performed through carbon dioxide injection well(s) and hydrogen injection well(s), respectively, wherein a hydrogen injection wellhead(s) and a carbon dioxide injection wellhead(s) are located on a multi-well pad proximate the fossil-fueled hydrogen production plant.",
+          "inventors": [
+            "Mariel Taylor Schottenfeld"
+          ],
+          "assignee": "Air Products and Chemicals Inc",
+          "filing_date": "2023-10-11",
+          "publication_date": "2025-04-17",
+          "url": "https://patents.google.com/patent/US20250122779A1/en",
+          "snippet": "",
+          "source": "Google Patents"
+        },
+        {
+          "record_id": "rec_5383df610488",
+          "family_id": "family:a031c3f758b89c7bee7020508162b0caf2dead4e",
+          "title": "System and method of co2 thermal swing adsorption with wet regeneration and hot drying",
+          "patent_id": "WO2024040002A1",
+          "abstract": "AbstractA capture vessel is provided that is configured to capture carbon dioxide (CO2) according to a thermal swing adsorption (TSA) process. The capture vessel includes capture media that are configured to adsorb CO2from an exhaust gas during a CO2capture stage to produce a first N2gas that exits the capture vessel, receive a mixed stream of CO2and water vapor during a wet regeneration stage, adsorb water from the mixed stream of CO2and water vapor and release adsorbed CO2during the wet regeneration stage to produce a CO2stream, receive a first heated N2gas and release adsorbed water due to evaporation caused by the first heated N2gas during a drying stage, and receive a cooled gas during a cooling stage such that an absorption capacity of the capture media for CO2capture is increased for a next CO2capture stage.",
+          "inventors": [
+            "Paul M. Dunn"
+          ],
+          "assignee": "Enhanced Energy Group LLC",
+          "filing_date": "2023-08-11",
+          "publication_date": "2024-02-22",
+          "url": "https://patents.google.com/patent/WO2024040002A1/en",
+          "snippet": "",
+          "source": "Google Patents"
+        }
+      ],
+      "evaluations": [
+        {
+          "record_id": "rec_4fd359f22bee",
+          "patent_id": "US20250122779A1",
+          "analysis_route": "screen_only",
+          "route_reason": "Patente excluída na triagem.",
+          "screening_score": 2.8,
+          "screening_decision": "exclude",
+          "screening_reason": "A patente menciona sequestro de CO2, mas o foco principal é o armazenamento de hidrogênio. Há uma conexão tangencial com o armazenamento de CO2, mas não como armazenamento de energia térmica.",
+          "evidence_snippets": [
+            "“producing at least hydrogen and carbon dioxide above ground from a fossil-fueled hydrogen production plant”",
+            "“injecting at least a portion of the hydrogen and carbon dioxide produced from the fossil-fueled hydrogen production plant into a geological hydrogen storage unit and a geological carbon dioxide storage unit, respectively”"
+          ],
+          "thematic_cluster": "Sequestro de CO2 e Armazenamento Subterrâneo de Hidrogênio",
+          "relevance_score": 0.0,
+          "summary": "",
+          "key_findings": [],
+          "potential_applications": [],
+          "technical_domain": "Armazenamento Geológico, Produção de Hidrogênio",
+          "innovation_level": "",
+          "co2_role": "capture_process_stream",
+          "storage_role": "implicit_or_support_storage",
+          "system_boundary": "process_integration",
+          "cycle_type": "not_clear",
+          "heat_source_sink": "not_clear",
+          "claim_focus": "process_integration",
+          "exclusion_category": "industrial_heat_adjacent",
+          "problem_statement": "",
+          "solution_summary": "",
+          "claimed_advantages": [],
+          "limitations": [],
+          "maturity_level": "",
+          "confidence": 0.73,
+          "rerank_applied": false,
+          "rerank_reason": "",
+          "manual_review_required": false,
+          "llm_error": ""
+        },
+        {
+          "record_id": "rec_5383df610488",
+          "patent_id": "WO2024040002A1",
+          "analysis_route": "manual_review",
+          "route_reason": "Triagem indicou revisão humana.",
+          "screening_score": 5.0,
+          "screening_decision": "review",
+          "screening_reason": "While the patent utilizes CO2 and involves thermal swings, the primary focus remains on CO2 capture and regeneration, not dedicated thermal energy storage. The thermal aspects are supportive of the capture process, not c",
+          "evidence_snippets": [
+            "“capture media that are configured to adsorb CO2from an exhaust gas during a CO2capture stage”",
+            "“receive a mixed stream of CO2and water vapor during a wet regeneration stage, adsorb water from the mixed stream of CO2and water vapor and release adsorbed CO2during the wet regeneration stage”"
+          ],
+          "thematic_cluster": "Adsorção Térmica de CO2 com Regeneração Otimizada",
+          "relevance_score": 4.9,
+          "summary": "Esta patente descreve um sistema e método de adsorção térmica de CO2 (TSA) com regeneração úmida e secagem a quente. O sistema utiliza um leito de captura para adsorver CO2 de um gás de exaustão, regenerando o material adsorvente através de um processo que envolve etapas úmidas e secas com diferentes temperaturas.",
+          "key_findings": [
+            "O uso de regeneração úmida permite a adsorção de água do fluxo de CO2, liberando CO2 e reduzindo a carga térmica na etapa de secagem.",
+            "A secagem com gás N2 aquecido evapora a água adsorvida, regenerando o material adsorvente.",
+            "O resfriamento do leito de captura aumenta a capacidade de absorção de CO2 para o próximo ciclo."
+          ],
+          "potential_applications": [
+            "Captura de CO2 de fontes industriais.",
+            "Remoção de CO2 de gases de combustão.",
+            "Sistemas de purificação de gás."
+          ],
+          "technical_domain": "Separação e Captura de Gases",
+          "innovation_level": "Incremental",
+          "co2_role": "capture_process_stream",
+          "storage_role": "implicit_or_support_storage",
+          "system_boundary": "process_integration",
+          "cycle_type": "thermal_swing_adsorption",
+          "heat_source_sink": "general_thermal_management",
+          "claim_focus": "process_integration",
+          "exclusion_category": "None",
+          "problem_statement": "A eficiência da captura de CO2 por adsorção térmica é limitada pela necessidade de regenerar o material adsorvente, o que requer energia e pode levar à degradação do material.",
+          "solution_summary": "A patente propõe um processo TSA que combina regeneração úmida e secagem a quente para otimizar a regeneração do material adsorvente, reduzir o consumo de energia e aumentar a capacidade de absorção de CO2.",
+          "claimed_advantages": [
+            "Maior eficiência na captura de CO2.",
+            "Redução do consumo de energia no processo de regeneração.",
+            "Aumento da capacidade de absorção do material adsorvente."
+          ],
+          "limitations": [
+            "O sistema pode ser complexo devido à necessidade de controlar diferentes etapas de temperatura e umidade.",
+            "A eficiência do processo pode depender das características do gás de exaustão e do material adsorvente."
+          ],
+          "maturity_level": "Intermediária",
+          "confidence": 0.65,
+          "rerank_applied": true,
+          "rerank_reason": "reranked:decision_confirmed",
+          "manual_review_required": true,
+          "llm_error": ""
+        }
+      ],
+      "patents_by_source": {
+        "GooglePatents": 2,
+        "Patentscope": 0
+      },
+      "scraper_diagnostics": {
+        "GooglePatents": [],
+        "Patentscope": [
+          {
+            "kind": "discovery_empty",
+            "detail": "DuckDuckGo não retornou links para Patentscope.",
+            "url": "https://html.duckduckgo.com/html/"
+          },
+          {
+            "kind": "layout_break",
+            "detail": "Não foi possível extrair o título da página de detalhe do Patentscope.",
+            "url": "https://patentscope.wipo.int/search/en/detail.jsf;jsessionid=CD58DDB7F0D1D78D981AE9A5DDA2EC95.wapp1nB?docId=AU244427549&_cid=P11-MQ8OZT-00319-1"
+          },
+          {
+            "kind": "layout_break",
+            "detail": "Não foi possível extrair o título da página de detalhe do Patentscope.",
+            "url": "https://patentscope.wipo.int/search/en/detail.jsf;jsessionid=CD58DDB7F0D1D78D981AE9A5DDA2EC95.wapp1nB?docId=US433566429&_cid=P11-MQ8OZT-00319-1"
+          }
+        ]
+      },
+      "coverage_metrics": {
+        "raw_scraped": 2,
+        "unique_patents": 2,
+        "duplicates_removed": 0,
+        "screened": 2,
+        "included": 0,
+        "review": 1,
+        "excluded": 1,
+        "manual_review_required": 1,
+        "manual_review_deferred": 0,
+        "full_extractions": 1,
+        "missing_abstract": 0,
+        "missing_id": 0,
+        "records_with_content_identity": 0,
+        "records_with_fallback_identity": 0,
+        "family_duplicates_removed": 0,
+        "llm_screening_failures": 0,
+        "llm_total_failures": 0
+      },
+      "manual_review_queue": [
+        {
+          "record_id": "rec_5383df610488",
+          "patent_id": "WO2024040002A1",
+          "family_id": "family:a031c3f758b89c7bee7020508162b0caf2dead4e",
+          "title": "System and method of co2 thermal swing adsorption with wet regeneration and hot drying",
+          "reason": "Triagem indicou revisão humana.",
+          "route": "manual_review",
+          "screening_score": 5.0,
+          "screening_decision": "review",
+          "llm_error": ""
+        }
+      ],
+      "prisma_flow": {
+        "flow": {
+          "identification": {
+            "raw_records": 2,
+            "unique_records": 2,
+            "duplicates_removed": 0
+          },
+          "screening": {
+            "screened": 2,
+            "included": 0,
+            "review": 1,
+            "excluded": 1
+          },
+          "eligibility": {
+            "full_extractions": 1,
+            "manual_review_required": 1,
+            "manual_review_deferred": 0
+          },
+          "coverage": {
+            "missing_abstract": 0,
+            "missing_id": 0
+          },
+          "synthesis": {
+            "analyzed_records": 1,
+            "comparative_analysis_generated": true
+          }
+        },
+        "criteria": {
+          "include": [
+            "Alinhamento claro com a query ou seus sinônimos técnicos.",
+            "Documento com título, resumo ou snippet suficientes para análise.",
+            "Potencial técnico relevante para o domínio pesquisado."
+          ],
+          "exclude": [
+            "Documentos sem relação técnica com a query.",
+            "Duplicatas de outra fonte ou publicação equivalente.",
+            "Registro sem metadados mínimos para avaliação."
+          ]
+        },
+        "thresholds": {
+          "include_score": 7.0,
+          "review_score": 4.5,
+          "max_items_for_manual_review": 20
+        },
+        "version": "1.0"
+      },
+      "thematic_clusters": {
+        "clusters": [],
+        "total_clusters": 0
+      },
+      "whitespace_analysis": {
+        "status": "ok",
+        "query": "carbon dioxide thermal energy storage",
+        "corpus_summary": {
+          "considered_patents": 2,
+          "selected_patents": 2,
+          "core": 0,
+          "frontier": 1,
+          "adjacent": 1
+        },
+        "coverage_matrix": [
+          {
+            "patent_id": "WO2024040002A1",
+            "record_id": "rec_5383df610488",
+            "title": "System and method of co2 thermal swing adsorption with wet regeneration and hot drying",
+            "screening_decision": "review",
+            "screening_score": 5.0,
+            "relevance_score": 4.9,
+            "bucket": "frontier",
+            "technical_domain": "Separação e Captura de Gases",
+            "thematic_cluster": "Adsorção Térmica de CO2 com Regeneração Otimizada",
+            "co2_role": "capture_process_stream",
+            "storage_role": "implicit_or_support_storage",
+            "system_boundary": "process_integration",
+            "cycle_type": "thermal_swing_adsorption",
+            "heat_source_sink": "general_thermal_management",
+            "claim_focus": "process_integration",
+            "exclusion_category": "None"
+          },
+          {
+            "patent_id": "US20250122779A1",
+            "record_id": "rec_4fd359f22bee",
+            "title": "Multi-well pad storage of h2 and/or nh3 with simultaneous co2 sequestration",
+            "screening_decision": "exclude",
+            "screening_score": 2.8,
+            "relevance_score": 0.0,
+            "bucket": "adjacent",
+            "technical_domain": "Armazenamento Geológico, Produção de Hidrogênio",
+            "thematic_cluster": "Sequestro de CO2 e Armazenamento Subterrâneo de Hidrogênio",
+            "co2_role": "capture_process_stream",
+            "storage_role": "implicit_or_support_storage",
+            "system_boundary": "process_integration",
+            "cycle_type": "not_clear",
+            "heat_source_sink": "not_clear",
+            "claim_focus": "process_integration",
+            "exclusion_category": "industrial_heat_adjacent"
+          }
+        ],
+        "axes": {
+          "co2_role": {
+            "capture_process_stream": {
+              "core": [],
+              "frontier": [
+                "WO2024040002A1"
+              ],
+              "adjacent": [
+                "US20250122779A1"
+              ]
+            }
+          },
+          "storage_role": {
+            "implicit_or_support_storage": {
+              "core": [],
+              "frontier": [
+                "WO2024040002A1"
+              ],
+              "adjacent": [
+                "US20250122779A1"
+              ]
+            }
+          },
+          "system_boundary": {
+            "process_integration": {
+              "core": [],
+              "frontier": [
+                "WO2024040002A1"
+              ],
+              "adjacent": [
+                "US20250122779A1"
+              ]
+            }
+          },
+          "cycle_type": {
+            "thermal_swing_adsorption": {
+              "core": [],
+              "frontier": [
+                "WO2024040002A1"
+              ],
+              "adjacent": []
+            },
+            "not_clear": {
+              "core": [],
+              "frontier": [],
+              "adjacent": [
+                "US20250122779A1"
+              ]
+            }
+          },
+          "heat_source_sink": {
+            "general_thermal_management": {
+              "core": [],
+              "frontier": [
+                "WO2024040002A1"
+              ],
+              "adjacent": []
+            },
+            "not_clear": {
+              "core": [],
+              "frontier": [],
+              "adjacent": [
+                "US20250122779A1"
+              ]
+            }
+          },
+          "claim_focus": {
+            "process_integration": {
+              "core": [],
+              "frontier": [
+                "WO2024040002A1"
+              ],
+              "adjacent": [
+                "US20250122779A1"
+              ]
+            }
+          },
+          "exclusion_category": {
+            "None": {
+              "core": [],
+              "frontier": [
+                "WO2024040002A1"
+              ],
+              "adjacent": []
+            },
+            "industrial_heat_adjacent": {
+              "core": [],
+              "frontier": [],
+              "adjacent": [
+                "US20250122779A1"
+              ]
+            }
+          }
+        },
+        "whitespace_candidates": [],
+        "markdown_summary": "### 3. Whitespaces e Oportunidades\n\n- Gestao termica transiente, subresfriamento e acoplamentos com captura/reatores aparecem de forma lateral; isso sugere oportunidade em claims de controle, operacao multi-regime e integracao de processo ainda pouco amarradas ao armazenamento central [IDs: WO2024040002A1]\n- As patentes em review delimitam fronteiras tecnicas onde o papel do CO2 ainda esta ambiguo entre meio armazenado, fluido de trabalho e interface de troca termica; esse tipo de ambiguidade costuma ser um bom proxy para whitespace exploravel com recorte arquitetural mais especifico [IDs: WO2024040002A1, US20250122779A1]"
+      },
+      "scraper_durations": {
+        "GooglePatents": 6.656,
+        "Patentscope": 26.357
+      },
+      "evaluation_duration_seconds": 289.83,
+      "rerank_duration_seconds": 127.135,
+      "comparative_analysis_duration_seconds": 503.251,
+      "total_duration_seconds": 1269.325,
+      "comparative_analysis": "### 1. Panorama Geral\n\n- O conjunto comparativo agrega 2 patente(s) e nao deve ser tratado como bloco homogeneo: ha um nucleo direto, fronteiras tecnicas em revisao e adjacencias uteis apenas para delimitar whitespace [IDs: WO2024040002A1, US20250122779A1]\n- O subgrupo mais diretamente alinhado ao núcleo da query é WO2024040002A1, com foco em armazenamento de CO2, compressão/expansão e controle termodinâmico do meio armazenado [IDs: WO2024040002A1]\n- WO2024040002A1 formam a fronteira tecnica: sao casos proximos do problema, mas ainda ambiguos quanto ao papel exato do CO2 no armazenamento ou na funcao arquitetural central [IDs: WO2024040002A1]\n- WO2024040002A1, US20250122779A1 entram como adjacencia exploratoria: tratam CO2 principalmente como fluido de trabalho em transferencia termica ou distribuicao de energia, de modo que ajudam a delimitar combinacoes pouco cobertas sem virar evidencia de cobertura consolidada [IDs: WO2024040002A1, US20250122779A1]\n- A mencao a armazenamento subterraneo ou subaquatico aparece apenas em US20250122779A1 e nao deve ser generalizada para todo o conjunto comparativo [IDs: US20250122779A1]\n\n## Análise Comparativa de Patentes: Armazenamento de Energia Térmica com Dióxido de Carbono\n\n### 2. Tendências Identificadas\n\n*   Integração de CO2 em processos de captura e regeneração com ciclos térmicos, visando otimizar a eficiência energética. [IDs: WO2024040002A1]\n*   Utilização de CO2 como subproduto em sistemas de armazenamento de hidrogênio, com foco no sequestro e não no armazenamento térmico. [IDs: US20250122779A1]\n*   Ênfase em sistemas de processamento integrados, onde o CO2 desempenha um papel em múltiplos estágios do processo. [IDs: WO2024040002A1, US20250122779A1]\n\n### 3. Whitespaces e Oportunidades\n\n- Gestao termica transiente, subresfriamento e acoplamentos com captura/reatores aparecem de forma lateral; isso sugere oportunidade em claims de controle, operacao multi-regime e integracao de processo ainda pouco amarradas ao armazenamento central [IDs: WO2024040002A1]\n- As patentes em review delimitam fronteiras tecnicas onde o papel do CO2 ainda esta ambiguo entre meio armazenado, fluido de trabalho e interface de troca termica; esse tipo de ambiguidade costuma ser um bom proxy para whitespace exploravel com recorte arquitetural mais especifico [IDs: WO2024040002A1, US20250122779A1]\n\n### 4. Recomendações\n\n- Priorizar arquiteturas centradas em armazenamento explícito de CO2 e controle termodinâmico rigoroso [IDs: WO2024040002A1]\n\n### 5. Ranking Final\n\n1. **WO2024040002A1** — armazenamento aparece mais como subsistema de apoio; ênfase em refrigeração/sub-resfriamento, mais adjacente ao núcleo da query; score 4.9/10 [IDs: WO2024040002A1]\n2. **US20250122779A1** — armazenamento aparece mais como subsistema de apoio; armazenamento subterrâneo aparece como subsistema de suporte; score 0.0/10 [IDs: US20250122779A1]\n\n### 6. Mapa de Evidências por ID\n\n- **Adsorção Térmica de CO2 com Regeneração Otimizada** [IDs: WO2024040002A1]\n- **Sequestro de CO2 e Armazenamento Subterrâneo de Hidrogênio** [IDs: US20250122779A1]\n\n### 7. Ranking por ID\n\n1. **WO2024040002A1** — score 4.9/10 [IDs: WO2024040002A1]\n2. **US20250122779A1** — score 0.0/10 [IDs: US20250122779A1]",
+      "output_paths": {
+        "markdown": "/home/murilo/Documentos/RevisaoTecnica/output/patentes_carbon_dioxide_thermal_energy_storage_20260610_204156.md",
+        "json": "/home/murilo/Documentos/RevisaoTecnica/output/patentes_carbon_dioxide_thermal_energy_storage_20260610_204156.json",
+        "state": "/home/murilo/Documentos/RevisaoTecnica/output/run_state_20260610_202047.json",
+        "prisma": "/home/murilo/Documentos/RevisaoTecnica/output/prisma_flow_20260610_202047.json",
+        "snapshot": "/home/murilo/Documentos/RevisaoTecnica/output/config_snapshot_20260610_202047.json",
+        "whitespace_json": "/home/murilo/Documentos/RevisaoTecnica/output/whitespace_analysis_20260610_202047.json",
+        "memory_journal": "/home/murilo/Documentos/RevisaoTecnica/output/memory_journal_20260610_202047.json",
+        "memory_sidecar": "/home/murilo/Documentos/RevisaoTecnica/output/memory_sidecar_20260610_202047.json"
+      },
+      "errors": []
+    },
+    "feature_flags": {
+      "require_evidence": true,
+      "enable_thematic_clusters": true,
+      "enable_structural_roles": true,
+      "enable_screening_rerank": true,
+      "enable_prisma": true,
+      "enable_snapshot": true,
+      "enable_comparative_analysis": true,
+      "enable_whitespace_analysis": true,
+      "enable_manual_review_queue": true
+    },
+    "writing_context": {
+      "protocol": {
+        "version": "1.0",
+        "query": "carbon dioxide thermal energy storage",
+        "sources": [
+          "Google Patents",
+          "Patentscope"
+        ],
+        "stages": [
+          "identification",
+          "deduplication",
+          "screening",
+          "manual_review",
+          "full_extraction",
+          "synthesis"
+        ],
+        "criteria": {
+          "include": [
+            "Alinhamento claro com a query ou seus sinônimos técnicos.",
+            "Documento com título, resumo ou snippet suficientes para análise.",
+            "Potencial técnico relevante para o domínio pesquisado."
+          ],
+          "exclude": [
+            "Documentos sem relação técnica com a query.",
+            "Duplicatas de outra fonte ou publicação equivalente.",
+            "Registro sem metadados mínimos para avaliação."
+          ]
+        },
+        "thresholds": {
+          "include_score": 7.0,
+          "review_score": 4.5,
+          "max_items_for_manual_review": 20
+        },
+        "limits": {
+          "max_results": 2
+        },
+        "model": "gemma3:27b"
+      },
+      "coverage_metrics": {
+        "raw_scraped": 2,
+        "unique_patents": 2,
+        "duplicates_removed": 0,
+        "screened": 2,
+        "included": 0,
+        "review": 1,
+        "excluded": 1,
+        "manual_review_required": 1,
+        "manual_review_deferred": 0,
+        "full_extractions": 1,
+        "missing_abstract": 0,
+        "missing_id": 0,
+        "records_with_content_identity": 0,
+        "records_with_fallback_identity": 0,
+        "family_duplicates_removed": 0,
+        "llm_screening_failures": 0,
+        "llm_total_failures": 0
+      },
+      "top_patents": [],
+      "thematic_clusters": {
+        "clusters": [],
+        "total_clusters": 0
+      },
+      "route_summary": {
+        "screen_only": 1,
+        "manual_review": 1
+      },
+      "feature_flags": {
+        "require_evidence": true,
+        "enable_thematic_clusters": true,
+        "enable_structural_roles": true,
+        "enable_screening_rerank": true,
+        "enable_prisma": true,
+        "enable_snapshot": true,
+        "enable_comparative_analysis": true,
+        "enable_whitespace_analysis": true,
+        "enable_manual_review_queue": true
+      },
+      "snapshot_hash": "a7167985873b4e2d3f21cdc1113b2a89f79eb0b1cbb69da78a2d655e0b39b7d2"
+    },
+    "stage_metrics": [
+      {
+        "stage": "setup",
+        "status": "ok",
+        "duration_seconds": 6.663,
+        "items_processed": 1,
+        "detail": "Verificação do modelo Ollama"
+      },
+      {
+        "stage": "search",
+        "status": "ok",
+        "duration_seconds": 33.014,
+        "items_processed": 2,
+        "detail": "2 patentes únicas após dedupe"
+      },
+      {
+        "stage": "screening",
+        "status": "ok",
+        "duration_seconds": 726.394,
+        "items_processed": 2,
+        "detail": "0 incluídas, 1 revisão"
+      },
+      {
+        "stage": "comparative_analysis",
+        "status": "ok",
+        "duration_seconds": 503.251,
+        "items_processed": 2,
+        "detail": "Síntese comparativa gerada"
+      },
+      {
+        "stage": "whitespace_analysis",
+        "status": "ok",
+        "duration_seconds": 0.001,
+        "items_processed": 2,
+        "detail": "Whitespace analysis estruturada gerada"
+      },
+      {
+        "stage": "reporting",
+        "status": "ok",
+        "duration_seconds": 0.002,
+        "items_processed": 2,
+        "detail": "Relatórios Markdown e JSON"
+      },
+      {
+        "stage": "finalization",
+        "status": "ok",
+        "duration_seconds": 0.001,
+        "items_processed": 8,
+        "detail": "Persistência de artefatos e estado"
+      }
+    ],
+    "llm_cache_stats": {
+      "hits": 0,
+      "misses": 5,
+      "entries": 5
+    },
+    "llm_telemetry": {
+      "degraded": false,
+      "total_failures": 0,
+      "consecutive_failures": 0,
+      "recent_errors": [],
+      "operations": {
+        "healthcheck": {
+          "calls": 1,
+          "successes": 1,
+          "failures": 0,
+          "retries": 0,
+          "cache_hits": 0,
+          "degraded_skips": 0,
+          "prompt_chars": 35,
+          "response_chars": 15,
+          "total_duration_seconds": 6.66,
+          "max_duration_seconds": 6.66,
+          "average_duration_seconds": 6.66
+        },
+        "screening": {
+          "calls": 2,
+          "successes": 2,
+          "failures": 0,
+          "retries": 0,
+          "cache_hits": 0,
+          "degraded_skips": 0,
+          "prompt_chars": 6629,
+          "response_chars": 2310,
+          "total_duration_seconds": 309.427,
+          "max_duration_seconds": 162.386,
+          "average_duration_seconds": 154.714
+        },
+        "rerank": {
+          "calls": 1,
+          "successes": 1,
+          "failures": 0,
+          "retries": 0,
+          "cache_hits": 0,
+          "degraded_skips": 0,
+          "prompt_chars": 3638,
+          "response_chars": 1087,
+          "total_duration_seconds": 127.135,
+          "max_duration_seconds": 127.135,
+          "average_duration_seconds": 127.135
+        },
+        "evaluation": {
+          "calls": 1,
+          "successes": 1,
+          "failures": 0,
+          "retries": 0,
+          "cache_hits": 0,
+          "degraded_skips": 0,
+          "prompt_chars": 3692,
+          "response_chars": 2597,
+          "total_duration_seconds": 289.829,
+          "max_duration_seconds": 289.829,
+          "average_duration_seconds": 289.829
+        },
+        "comparative": {
+          "calls": 1,
+          "successes": 1,
+          "failures": 0,
+          "retries": 0,
+          "cache_hits": 0,
+          "degraded_skips": 0,
+          "prompt_chars": 4215,
+          "response_chars": 3691,
+          "total_duration_seconds": 503.25,
+          "max_duration_seconds": 503.25,
+          "average_duration_seconds": 503.25
+        }
+      }
+    },
+    "observability_metrics": {
+      "routes": {
+        "manual_review": {
+          "count": 1,
+          "include": 0,
+          "review": 1,
+          "exclude": 0,
+          "llm_errors": 0
+        },
+        "screen_only": {
+          "count": 1,
+          "include": 0,
+          "review": 0,
+          "exclude": 1,
+          "llm_errors": 0
+        }
+      },
+      "sources": {
+        "GooglePatents": {
+          "raw_results": 2,
+          "duration_seconds": 6.656,
+          "diagnostic_counts": {}
+        },
+        "Patentscope": {
+          "raw_results": 0,
+          "duration_seconds": 26.357,
+          "diagnostic_counts": {
+            "discovery_empty": 1,
+            "layout_break": 2
+          }
+        }
+      },
+      "failures": {
+        "run_errors": 0,
+        "records_with_llm_error": 0,
+        "llm_total_failures": 0,
+        "llm_by_operation": {
+          "healthcheck": {
+            "calls": 1,
+            "failures": 0,
+            "retries": 0,
+            "degraded_skips": 0
+          },
+          "screening": {
+            "calls": 2,
+            "failures": 0,
+            "retries": 0,
+            "degraded_skips": 0
+          },
+          "rerank": {
+            "calls": 1,
+            "failures": 0,
+            "retries": 0,
+            "degraded_skips": 0
+          },
+          "evaluation": {
+            "calls": 1,
+            "failures": 0,
+            "retries": 0,
+            "degraded_skips": 0
+          },
+          "comparative": {
+            "calls": 1,
+            "failures": 0,
+            "retries": 0,
+            "degraded_skips": 0
+          }
+        },
+        "scraper_diagnostics_by_kind": {
+          "discovery_empty": 1,
+          "layout_break": 2
+        }
+      }
+    },
+    "whitespace_analysis": {
+      "status": "ok",
+      "query": "carbon dioxide thermal energy storage",
+      "corpus_summary": {
+        "considered_patents": 2,
+        "selected_patents": 2,
+        "core": 0,
+        "frontier": 1,
+        "adjacent": 1
+      },
+      "coverage_matrix": [
+        {
+          "patent_id": "WO2024040002A1",
+          "record_id": "rec_5383df610488",
+          "title": "System and method of co2 thermal swing adsorption with wet regeneration and hot drying",
+          "screening_decision": "review",
+          "screening_score": 5.0,
+          "relevance_score": 4.9,
+          "bucket": "frontier",
+          "technical_domain": "Separação e Captura de Gases",
+          "thematic_cluster": "Adsorção Térmica de CO2 com Regeneração Otimizada",
+          "co2_role": "capture_process_stream",
+          "storage_role": "implicit_or_support_storage",
+          "system_boundary": "process_integration",
+          "cycle_type": "thermal_swing_adsorption",
+          "heat_source_sink": "general_thermal_management",
+          "claim_focus": "process_integration",
+          "exclusion_category": "None"
+        },
+        {
+          "patent_id": "US20250122779A1",
+          "record_id": "rec_4fd359f22bee",
+          "title": "Multi-well pad storage of h2 and/or nh3 with simultaneous co2 sequestration",
+          "screening_decision": "exclude",
+          "screening_score": 2.8,
+          "relevance_score": 0.0,
+          "bucket": "adjacent",
+          "technical_domain": "Armazenamento Geológico, Produção de Hidrogênio",
+          "thematic_cluster": "Sequestro de CO2 e Armazenamento Subterrâneo de Hidrogênio",
+          "co2_role": "capture_process_stream",
+          "storage_role": "implicit_or_support_storage",
+          "system_boundary": "process_integration",
+          "cycle_type": "not_clear",
+          "heat_source_sink": "not_clear",
+          "claim_focus": "process_integration",
+          "exclusion_category": "industrial_heat_adjacent"
+        }
+      ],
+      "axes": {
+        "co2_role": {
+          "capture_process_stream": {
+            "core": [],
+            "frontier": [
+              "WO2024040002A1"
+            ],
+            "adjacent": [
+              "US20250122779A1"
+            ]
+          }
+        },
+        "storage_role": {
+          "implicit_or_support_storage": {
+            "core": [],
+            "frontier": [
+              "WO2024040002A1"
+            ],
+            "adjacent": [
+              "US20250122779A1"
+            ]
+          }
+        },
+        "system_boundary": {
+          "process_integration": {
+            "core": [],
+            "frontier": [
+              "WO2024040002A1"
+            ],
+            "adjacent": [
+              "US20250122779A1"
+            ]
+          }
+        },
+        "cycle_type": {
+          "thermal_swing_adsorption": {
+            "core": [],
+            "frontier": [
+              "WO2024040002A1"
+            ],
+            "adjacent": []
+          },
+          "not_clear": {
+            "core": [],
+            "frontier": [],
+            "adjacent": [
+              "US20250122779A1"
+            ]
+          }
+        },
+        "heat_source_sink": {
+          "general_thermal_management": {
+            "core": [],
+            "frontier": [
+              "WO2024040002A1"
+            ],
+            "adjacent": []
+          },
+          "not_clear": {
+            "core": [],
+            "frontier": [],
+            "adjacent": [
+              "US20250122779A1"
+            ]
+          }
+        },
+        "claim_focus": {
+          "process_integration": {
+            "core": [],
+            "frontier": [
+              "WO2024040002A1"
+            ],
+            "adjacent": [
+              "US20250122779A1"
+            ]
+          }
+        },
+        "exclusion_category": {
+          "None": {
+            "core": [],
+            "frontier": [
+              "WO2024040002A1"
+            ],
+            "adjacent": []
+          },
+          "industrial_heat_adjacent": {
+            "core": [],
+            "frontier": [],
+            "adjacent": [
+              "US20250122779A1"
+            ]
+          }
+        }
+      },
+      "whitespace_candidates": [],
+      "markdown_summary": "### 3. Whitespaces e Oportunidades\n\n- Gestao termica transiente, subresfriamento e acoplamentos com captura/reatores aparecem de forma lateral; isso sugere oportunidade em claims de controle, operacao multi-regime e integracao de processo ainda pouco amarradas ao armazenamento central [IDs: WO2024040002A1]\n- As patentes em review delimitam fronteiras tecnicas onde o papel do CO2 ainda esta ambiguo entre meio armazenado, fluido de trabalho e interface de troca termica; esse tipo de ambiguidade costuma ser um bom proxy para whitespace exploravel com recorte arquitetural mais especifico [IDs: WO2024040002A1, US20250122779A1]"
+    },
+    "scraper_diagnostics": {
+      "GooglePatents": [],
+      "Patentscope": [
+        {
+          "kind": "discovery_empty",
+          "detail": "DuckDuckGo não retornou links para Patentscope.",
+          "url": "https://html.duckduckgo.com/html/"
+        },
+        {
+          "kind": "layout_break",
+          "detail": "Não foi possível extrair o título da página de detalhe do Patentscope.",
+          "url": "https://patentscope.wipo.int/search/en/detail.jsf;jsessionid=CD58DDB7F0D1D78D981AE9A5DDA2EC95.wapp1nB?docId=AU244427549&_cid=P11-MQ8OZT-00319-1"
+        },
+        {
+          "kind": "layout_break",
+          "detail": "Não foi possível extrair o título da página de detalhe do Patentscope.",
+          "url": "https://patentscope.wipo.int/search/en/detail.jsf;jsessionid=CD58DDB7F0D1D78D981AE9A5DDA2EC95.wapp1nB?docId=US433566429&_cid=P11-MQ8OZT-00319-1"
+        }
+      ]
+    },
+    "prisma_flow": {
+      "flow": {
+        "identification": {
+          "raw_records": 2,
+          "unique_records": 2,
+          "duplicates_removed": 0
+        },
+        "screening": {
+          "screened": 2,
+          "included": 0,
+          "review": 1,
+          "excluded": 1
+        },
+        "eligibility": {
+          "full_extractions": 1,
+          "manual_review_required": 1,
+          "manual_review_deferred": 0
+        },
+        "coverage": {
+          "missing_abstract": 0,
+          "missing_id": 0
+        },
+        "synthesis": {
+          "analyzed_records": 1,
+          "comparative_analysis_generated": true
+        }
+      },
+      "criteria": {
+        "include": [
+          "Alinhamento claro com a query ou seus sinônimos técnicos.",
+          "Documento com título, resumo ou snippet suficientes para análise.",
+          "Potencial técnico relevante para o domínio pesquisado."
+        ],
+        "exclude": [
+          "Documentos sem relação técnica com a query.",
+          "Duplicatas de outra fonte ou publicação equivalente.",
+          "Registro sem metadados mínimos para avaliação."
+        ]
+      },
+      "thresholds": {
+        "include_score": 7.0,
+        "review_score": 4.5,
+        "max_items_for_manual_review": 20
+      },
+      "version": "1.0"
+    },
+    "thematic_clusters": {
+      "clusters": [],
+      "total_clusters": 0
+    },
+    "config_snapshot": {
+      "pipeline_version": "1.1",
+      "timestamp": "2026-06-10T20:20:47",
+      "query": "carbon dioxide thermal energy storage",
+      "max_results": 2,
+      "model": "gemma3:27b",
+      "output_dir": "output",
+      "feature_flags": {
+        "require_evidence": true,
+        "enable_thematic_clusters": true,
+        "enable_structural_roles": true,
+        "enable_screening_rerank": true,
+        "enable_prisma": true,
+        "enable_snapshot": true,
+        "enable_comparative_analysis": true,
+        "enable_whitespace_analysis": true,
+        "enable_manual_review_queue": true
+      },
+      "thresholds": {
+        "include": 7.0,
+        "review": 4.5,
+        "manual_review_limit": 20
+      },
+      "runtime": {
+        "ollama_base_url": "http://localhost:11434",
+        "ollama_timeout": 600
+      },
+      "sources": [
+        "Google Patents",
+        "Patentscope"
+      ]
+    },
+    "snapshot_hash": "a7167985873b4e2d3f21cdc1113b2a89f79eb0b1cbb69da78a2d655e0b39b7d2",
+    "draft_status": {
+      "status": "ready",
+      "warnings": [],
+      "substantive_patents": 0
+    }
+  },
+  "results": [
+    {
+      "patent": {
+        "record_id": "rec_5383df610488",
+        "family_id": "family:a031c3f758b89c7bee7020508162b0caf2dead4e",
+        "title": "System and method of co2 thermal swing adsorption with wet regeneration and hot drying",
+        "patent_id": "WO2024040002A1",
+        "abstract": "AbstractA capture vessel is provided that is configured to capture carbon dioxide (CO2) according to a thermal swing adsorption (TSA) process. The capture vessel includes capture media that are configured to adsorb CO2from an exhaust gas during a CO2capture stage to produce a first N2gas that exits the capture vessel, receive a mixed stream of CO2and water vapor during a wet regeneration stage, adsorb water from the mixed stream of CO2and water vapor and release adsorbed CO2during the wet regeneration stage to produce a CO2stream, receive a first heated N2gas and release adsorbed water due to evaporation caused by the first heated N2gas during a drying stage, and receive a cooled gas during a cooling stage such that an absorption capacity of the capture media for CO2capture is increased for a next CO2capture stage.",
+        "inventors": [
+          "Paul M. Dunn"
+        ],
+        "assignee": "Enhanced Energy Group LLC",
+        "filing_date": "2023-08-11",
+        "publication_date": "2024-02-22",
+        "url": "https://patents.google.com/patent/WO2024040002A1/en",
+        "snippet": "",
+        "source": "Google Patents"
+      },
+      "evaluation": {
+        "record_id": "rec_5383df610488",
+        "patent_id": "WO2024040002A1",
+        "analysis_route": "manual_review",
+        "route_reason": "Triagem indicou revisão humana.",
+        "screening_score": 5.0,
+        "screening_decision": "review",
+        "screening_reason": "While the patent utilizes CO2 and involves thermal swings, the primary focus remains on CO2 capture and regeneration, not dedicated thermal energy storage. The thermal aspects are supportive of the capture process, not c",
+        "evidence_snippets": [
+          "“capture media that are configured to adsorb CO2from an exhaust gas during a CO2capture stage”",
+          "“receive a mixed stream of CO2and water vapor during a wet regeneration stage, adsorb water from the mixed stream of CO2and water vapor and release adsorbed CO2during the wet regeneration stage”"
+        ],
+        "thematic_cluster": "Adsorção Térmica de CO2 com Regeneração Otimizada",
+        "relevance_score": 4.9,
+        "summary": "Esta patente descreve um sistema e método de adsorção térmica de CO2 (TSA) com regeneração úmida e secagem a quente. O sistema utiliza um leito de captura para adsorver CO2 de um gás de exaustão, regenerando o material adsorvente através de um processo que envolve etapas úmidas e secas com diferentes temperaturas.",
+        "key_findings": [
+          "O uso de regeneração úmida permite a adsorção de água do fluxo de CO2, liberando CO2 e reduzindo a carga térmica na etapa de secagem.",
+          "A secagem com gás N2 aquecido evapora a água adsorvida, regenerando o material adsorvente.",
+          "O resfriamento do leito de captura aumenta a capacidade de absorção de CO2 para o próximo ciclo."
+        ],
+        "potential_applications": [
+          "Captura de CO2 de fontes industriais.",
+          "Remoção de CO2 de gases de combustão.",
+          "Sistemas de purificação de gás."
+        ],
+        "technical_domain": "Separação e Captura de Gases",
+        "innovation_level": "Incremental",
+        "co2_role": "capture_process_stream",
+        "storage_role": "implicit_or_support_storage",
+        "system_boundary": "process_integration",
+        "cycle_type": "thermal_swing_adsorption",
+        "heat_source_sink": "general_thermal_management",
+        "claim_focus": "process_integration",
+        "exclusion_category": "None",
+        "problem_statement": "A eficiência da captura de CO2 por adsorção térmica é limitada pela necessidade de regenerar o material adsorvente, o que requer energia e pode levar à degradação do material.",
+        "solution_summary": "A patente propõe um processo TSA que combina regeneração úmida e secagem a quente para otimizar a regeneração do material adsorvente, reduzir o consumo de energia e aumentar a capacidade de absorção de CO2.",
+        "claimed_advantages": [
+          "Maior eficiência na captura de CO2.",
+          "Redução do consumo de energia no processo de regeneração.",
+          "Aumento da capacidade de absorção do material adsorvente."
+        ],
+        "limitations": [
+          "O sistema pode ser complexo devido à necessidade de controlar diferentes etapas de temperatura e umidade.",
+          "A eficiência do processo pode depender das características do gás de exaustão e do material adsorvente."
+        ],
+        "maturity_level": "Intermediária",
+        "confidence": 0.65,
+        "rerank_applied": true,
+        "rerank_reason": "reranked:decision_confirmed",
+        "manual_review_required": true,
+        "llm_error": ""
+      }
+    },
+    {
+      "patent": {
+        "record_id": "rec_4fd359f22bee",
+        "family_id": "family:2a17b7a90959b2781bfcd521c9358339a9e2c1a7",
+        "title": "Multi-well pad storage of h2 and/or nh3 with simultaneous co2 sequestration",
+        "patent_id": "US20250122779A1",
+        "abstract": "AbstractDisclosed herein are systems and methods of gas sequestration of carbon dioxide from a fossil-fueled hydrogen production plant. The method includes producing at least hydrogen and carbon dioxide above ground from a fossil-fueled hydrogen production plant, injecting at least a portion of the hydrogen and carbon dioxide produced from the fossil-fueled hydrogen production plant into a geological hydrogen storage unit and a geological carbon dioxide storage unit, respectively, wherein the portion of the carbon dioxide is injected concurrently with the portion of the hydrogen. The injection of the portion of carbon dioxide and hydrogen underground are performed through carbon dioxide injection well(s) and hydrogen injection well(s), respectively, wherein a hydrogen injection wellhead(s) and a carbon dioxide injection wellhead(s) are located on a multi-well pad proximate the fossil-fueled hydrogen production plant.",
+        "inventors": [
+          "Mariel Taylor Schottenfeld"
+        ],
+        "assignee": "Air Products and Chemicals Inc",
+        "filing_date": "2023-10-11",
+        "publication_date": "2025-04-17",
+        "url": "https://patents.google.com/patent/US20250122779A1/en",
+        "snippet": "",
+        "source": "Google Patents"
+      },
+      "evaluation": {
+        "record_id": "rec_4fd359f22bee",
+        "patent_id": "US20250122779A1",
+        "analysis_route": "screen_only",
+        "route_reason": "Patente excluída na triagem.",
+        "screening_score": 2.8,
+        "screening_decision": "exclude",
+        "screening_reason": "A patente menciona sequestro de CO2, mas o foco principal é o armazenamento de hidrogênio. Há uma conexão tangencial com o armazenamento de CO2, mas não como armazenamento de energia térmica.",
+        "evidence_snippets": [
+          "“producing at least hydrogen and carbon dioxide above ground from a fossil-fueled hydrogen production plant”",
+          "“injecting at least a portion of the hydrogen and carbon dioxide produced from the fossil-fueled hydrogen production plant into a geological hydrogen storage unit and a geological carbon dioxide storage unit, respectively”"
+        ],
+        "thematic_cluster": "Sequestro de CO2 e Armazenamento Subterrâneo de Hidrogênio",
+        "relevance_score": 0.0,
+        "summary": "",
+        "key_findings": [],
+        "potential_applications": [],
+        "technical_domain": "Armazenamento Geológico, Produção de Hidrogênio",
+        "innovation_level": "",
+        "co2_role": "capture_process_stream",
+        "storage_role": "implicit_or_support_storage",
+        "system_boundary": "process_integration",
+        "cycle_type": "not_clear",
+        "heat_source_sink": "not_clear",
+        "claim_focus": "process_integration",
+        "exclusion_category": "industrial_heat_adjacent",
+        "problem_statement": "",
+        "solution_summary": "",
+        "claimed_advantages": [],
+        "limitations": [],
+        "maturity_level": "",
+        "confidence": 0.73,
+        "rerank_applied": false,
+        "rerank_reason": "",
+        "manual_review_required": false,
+        "llm_error": ""
+      }
+    }
+  ],
+  "comparative_analysis": "### 1. Panorama Geral\n\n- O conjunto comparativo agrega 2 patente(s) e nao deve ser tratado como bloco homogeneo: ha um nucleo direto, fronteiras tecnicas em revisao e adjacencias uteis apenas para delimitar whitespace [IDs: WO2024040002A1, US20250122779A1]\n- O subgrupo mais diretamente alinhado ao núcleo da query é WO2024040002A1, com foco em armazenamento de CO2, compressão/expansão e controle termodinâmico do meio armazenado [IDs: WO2024040002A1]\n- WO2024040002A1 formam a fronteira tecnica: sao casos proximos do problema, mas ainda ambiguos quanto ao papel exato do CO2 no armazenamento ou na funcao arquitetural central [IDs: WO2024040002A1]\n- WO2024040002A1, US20250122779A1 entram como adjacencia exploratoria: tratam CO2 principalmente como fluido de trabalho em transferencia termica ou distribuicao de energia, de modo que ajudam a delimitar combinacoes pouco cobertas sem virar evidencia de cobertura consolidada [IDs: WO2024040002A1, US20250122779A1]\n- A mencao a armazenamento subterraneo ou subaquatico aparece apenas em US20250122779A1 e nao deve ser generalizada para todo o conjunto comparativo [IDs: US20250122779A1]\n\n## Análise Comparativa de Patentes: Armazenamento de Energia Térmica com Dióxido de Carbono\n\n### 2. Tendências Identificadas\n\n*   Integração de CO2 em processos de captura e regeneração com ciclos térmicos, visando otimizar a eficiência energética. [IDs: WO2024040002A1]\n*   Utilização de CO2 como subproduto em sistemas de armazenamento de hidrogênio, com foco no sequestro e não no armazenamento térmico. [IDs: US20250122779A1]\n*   Ênfase em sistemas de processamento integrados, onde o CO2 desempenha um papel em múltiplos estágios do processo. [IDs: WO2024040002A1, US20250122779A1]\n\n### 3. Whitespaces e Oportunidades\n\n- Gestao termica transiente, subresfriamento e acoplamentos com captura/reatores aparecem de forma lateral; isso sugere oportunidade em claims de controle, operacao multi-regime e integracao de processo ainda pouco amarradas ao armazenamento central [IDs: WO2024040002A1]\n- As patentes em review delimitam fronteiras tecnicas onde o papel do CO2 ainda esta ambiguo entre meio armazenado, fluido de trabalho e interface de troca termica; esse tipo de ambiguidade costuma ser um bom proxy para whitespace exploravel com recorte arquitetural mais especifico [IDs: WO2024040002A1, US20250122779A1]\n\n### 4. Recomendações\n\n- Priorizar arquiteturas centradas em armazenamento explícito de CO2 e controle termodinâmico rigoroso [IDs: WO2024040002A1]\n\n### 5. Ranking Final\n\n1. **WO2024040002A1** — armazenamento aparece mais como subsistema de apoio; ênfase em refrigeração/sub-resfriamento, mais adjacente ao núcleo da query; score 4.9/10 [IDs: WO2024040002A1]\n2. **US20250122779A1** — armazenamento aparece mais como subsistema de apoio; armazenamento subterrâneo aparece como subsistema de suporte; score 0.0/10 [IDs: US20250122779A1]\n\n### 6. Mapa de Evidências por ID\n\n- **Adsorção Térmica de CO2 com Regeneração Otimizada** [IDs: WO2024040002A1]\n- **Sequestro de CO2 e Armazenamento Subterrâneo de Hidrogênio** [IDs: US20250122779A1]\n\n### 7. Ranking por ID\n\n1. **WO2024040002A1** — score 4.9/10 [IDs: WO2024040002A1]\n2. **US20250122779A1** — score 0.0/10 [IDs: US20250122779A1]",
+  "whitespace_analysis": {
+    "status": "ok",
+    "query": "carbon dioxide thermal energy storage",
+    "corpus_summary": {
+      "considered_patents": 2,
+      "selected_patents": 2,
+      "core": 0,
+      "frontier": 1,
+      "adjacent": 1
+    },
+    "coverage_matrix": [
+      {
+        "patent_id": "WO2024040002A1",
+        "record_id": "rec_5383df610488",
+        "title": "System and method of co2 thermal swing adsorption with wet regeneration and hot drying",
+        "screening_decision": "review",
+        "screening_score": 5.0,
+        "relevance_score": 4.9,
+        "bucket": "frontier",
+        "technical_domain": "Separação e Captura de Gases",
+        "thematic_cluster": "Adsorção Térmica de CO2 com Regeneração Otimizada",
+        "co2_role": "capture_process_stream",
+        "storage_role": "implicit_or_support_storage",
+        "system_boundary": "process_integration",
+        "cycle_type": "thermal_swing_adsorption",
+        "heat_source_sink": "general_thermal_management",
+        "claim_focus": "process_integration",
+        "exclusion_category": "None"
+      },
+      {
+        "patent_id": "US20250122779A1",
+        "record_id": "rec_4fd359f22bee",
+        "title": "Multi-well pad storage of h2 and/or nh3 with simultaneous co2 sequestration",
+        "screening_decision": "exclude",
+        "screening_score": 2.8,
+        "relevance_score": 0.0,
+        "bucket": "adjacent",
+        "technical_domain": "Armazenamento Geológico, Produção de Hidrogênio",
+        "thematic_cluster": "Sequestro de CO2 e Armazenamento Subterrâneo de Hidrogênio",
+        "co2_role": "capture_process_stream",
+        "storage_role": "implicit_or_support_storage",
+        "system_boundary": "process_integration",
+        "cycle_type": "not_clear",
+        "heat_source_sink": "not_clear",
+        "claim_focus": "process_integration",
+        "exclusion_category": "industrial_heat_adjacent"
+      }
+    ],
+    "axes": {
+      "co2_role": {
+        "capture_process_stream": {
+          "core": [],
+          "frontier": [
+            "WO2024040002A1"
+          ],
+          "adjacent": [
+            "US20250122779A1"
+          ]
+        }
+      },
+      "storage_role": {
+        "implicit_or_support_storage": {
+          "core": [],
+          "frontier": [
+            "WO2024040002A1"
+          ],
+          "adjacent": [
+            "US20250122779A1"
+          ]
+        }
+      },
+      "system_boundary": {
+        "process_integration": {
+          "core": [],
+          "frontier": [
+            "WO2024040002A1"
+          ],
+          "adjacent": [
+            "US20250122779A1"
+          ]
+        }
+      },
+      "cycle_type": {
+        "thermal_swing_adsorption": {
+          "core": [],
+          "frontier": [
+            "WO2024040002A1"
+          ],
+          "adjacent": []
+        },
+        "not_clear": {
+          "core": [],
+          "frontier": [],
+          "adjacent": [
+            "US20250122779A1"
+          ]
+        }
+      },
+      "heat_source_sink": {
+        "general_thermal_management": {
+          "core": [],
+          "frontier": [
+            "WO2024040002A1"
+          ],
+          "adjacent": []
+        },
+        "not_clear": {
+          "core": [],
+          "frontier": [],
+          "adjacent": [
+            "US20250122779A1"
+          ]
+        }
+      },
+      "claim_focus": {
+        "process_integration": {
+          "core": [],
+          "frontier": [
+            "WO2024040002A1"
+          ],
+          "adjacent": [
+            "US20250122779A1"
+          ]
+        }
+      },
+      "exclusion_category": {
+        "None": {
+          "core": [],
+          "frontier": [
+            "WO2024040002A1"
+          ],
+          "adjacent": []
+        },
+        "industrial_heat_adjacent": {
+          "core": [],
+          "frontier": [],
+          "adjacent": [
+            "US20250122779A1"
+          ]
+        }
+      }
+    },
+    "whitespace_candidates": [],
+    "markdown_summary": "### 3. Whitespaces e Oportunidades\n\n- Gestao termica transiente, subresfriamento e acoplamentos com captura/reatores aparecem de forma lateral; isso sugere oportunidade em claims de controle, operacao multi-regime e integracao de processo ainda pouco amarradas ao armazenamento central [IDs: WO2024040002A1]\n- As patentes em review delimitam fronteiras tecnicas onde o papel do CO2 ainda esta ambiguo entre meio armazenado, fluido de trabalho e interface de troca termica; esse tipo de ambiguidade costuma ser um bom proxy para whitespace exploravel com recorte arquitetural mais especifico [IDs: WO2024040002A1, US20250122779A1]"
+  }
+}

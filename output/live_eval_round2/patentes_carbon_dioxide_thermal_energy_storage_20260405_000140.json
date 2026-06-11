@@ -1,0 +1,2997 @@
+{
+  "metadata": {
+    "query": "carbon dioxide thermal energy storage",
+    "timestamp": "2026-04-05T00:01:40.783135",
+    "total_patents": 10,
+    "model": "gemma3:4b",
+    "average_relevance": 9.2,
+    "run_state": {
+      "query": "carbon dioxide thermal energy storage",
+      "max_results": 5,
+      "model": "gemma3:4b",
+      "output_dir": "output/live_eval_round2",
+      "feature_flags": {
+        "require_evidence": true,
+        "enable_thematic_clusters": true,
+        "enable_prisma": true,
+        "enable_snapshot": true,
+        "enable_comparative_analysis": true,
+        "enable_manual_review_queue": true
+      },
+      "config_snapshot": {
+        "pipeline_version": "1.1",
+        "timestamp": "2026-04-05T00:00:13",
+        "query": "carbon dioxide thermal energy storage",
+        "max_results": 5,
+        "model": "gemma3:4b",
+        "output_dir": "output/live_eval_round2",
+        "feature_flags": {
+          "require_evidence": true,
+          "enable_thematic_clusters": true,
+          "enable_prisma": true,
+          "enable_snapshot": true,
+          "enable_comparative_analysis": true,
+          "enable_manual_review_queue": true
+        },
+        "thresholds": {
+          "include": 7.0,
+          "review": 4.5,
+          "manual_review_limit": 20
+        },
+        "runtime": {
+          "ollama_base_url": "http://localhost:11434",
+          "ollama_timeout": 600
+        },
+        "sources": [
+          "Google Patents",
+          "Patentscope"
+        ]
+      },
+      "snapshot_hash": "f31330f1c62c8cfc4ee04fb3b8479e6b2b6b349e9de5cfe5c71db4608ec9d164",
+      "protocol": {
+        "version": "1.0",
+        "query": "carbon dioxide thermal energy storage",
+        "sources": [
+          "Google Patents",
+          "Patentscope"
+        ],
+        "stages": [
+          "identification",
+          "deduplication",
+          "screening",
+          "manual_review",
+          "full_extraction",
+          "synthesis"
+        ],
+        "criteria": {
+          "include": [
+            "Alinhamento claro com a query ou seus sinônimos técnicos.",
+            "Documento com título, resumo ou snippet suficientes para análise.",
+            "Potencial técnico relevante para o domínio pesquisado."
+          ],
+          "exclude": [
+            "Documentos sem relação técnica com a query.",
+            "Duplicatas de outra fonte ou publicação equivalente.",
+            "Registro sem metadados mínimos para avaliação."
+          ]
+        },
+        "thresholds": {
+          "include_score": 7.0,
+          "review_score": 4.5,
+          "max_items_for_manual_review": 20
+        },
+        "limits": {
+          "max_results": 5
+        },
+        "model": "gemma3:4b"
+      },
+      "writing_context": {
+        "protocol": {
+          "version": "1.0",
+          "query": "carbon dioxide thermal energy storage",
+          "sources": [
+            "Google Patents",
+            "Patentscope"
+          ],
+          "stages": [
+            "identification",
+            "deduplication",
+            "screening",
+            "manual_review",
+            "full_extraction",
+            "synthesis"
+          ],
+          "criteria": {
+            "include": [
+              "Alinhamento claro com a query ou seus sinônimos técnicos.",
+              "Documento com título, resumo ou snippet suficientes para análise.",
+              "Potencial técnico relevante para o domínio pesquisado."
+            ],
+            "exclude": [
+              "Documentos sem relação técnica com a query.",
+              "Duplicatas de outra fonte ou publicação equivalente.",
+              "Registro sem metadados mínimos para avaliação."
+            ]
+          },
+          "thresholds": {
+            "include_score": 7.0,
+            "review_score": 4.5,
+            "max_items_for_manual_review": 20
+          },
+          "limits": {
+            "max_results": 5
+          },
+          "model": "gemma3:4b"
+        },
+        "coverage_metrics": {
+          "raw_scraped": 10,
+          "unique_patents": 10,
+          "duplicates_removed": 0,
+          "screened": 10,
+          "included": 3,
+          "review": 3,
+          "excluded": 4,
+          "manual_review_required": 3,
+          "manual_review_deferred": 0,
+          "full_extractions": 6,
+          "missing_abstract": 1,
+          "missing_id": 0,
+          "records_with_content_identity": 0,
+          "records_with_fallback_identity": 0,
+          "family_duplicates_removed": 0,
+          "llm_screening_failures": 0,
+          "llm_total_failures": 0
+        },
+        "top_patents": [
+          {
+            "record_id": "rec_e9bfd6ecaee9",
+            "family_id": "family:93e61d9efb570bcdd84ea6254a70ea2c9b769d40",
+            "patent_id": "CN118934113A",
+            "title": "An isothermal and isobaric supercritical compressed carbon dioxide energy storage system",
+            "score": 9.2,
+            "screening_decision": "include",
+            "thematic_cluster": "CO2 Cycle Configurations",
+            "route": "deep_extraction",
+            "evidence_snippets": [
+              "æ¬åææ¶åè¶ä¸´çåç¼©äºæ°§åç¢³å¨è½ææ¯é¢åï¼ç­æ¸©ç­åçè¶ä¸´çåç¼©äºæ°§åç¢³å¨è½ç³»ç»ï¼",
+              "åæ¬ï¼åç¼©æºç»ï¼å©ç¨çµåå°ä½æ¸©ä½åçè¶ä¸´çäºæ°§åç¢³åç¼©ä¸ºé«æ¸©é«åçè¶ä¸´çäºæ°§åç¢³ï¼è¨èæºç»"
+            ]
+          },
+          {
+            "record_id": "rec_cb86ce571d5d",
+            "family_id": "family:156d9db54f6d2df5efd352ddbf3bd612f775a37b",
+            "patent_id": "WO2021081541A1",
+            "title": "Method for thermal energy transmission using water and carbon dioxide",
+            "score": 9.2,
+            "screening_decision": "include",
+            "thematic_cluster": "Thermal Transfer Mechanisms",
+            "route": "deep_extraction",
+            "evidence_snippets": [
+              "AbstractThe invention provides a system for energy distribution that uses liquid carbon dioxide as a working fluid.",
+              "An underground thermal energy storage system is used to store energy flowing into the system that is in excess of the current demand."
+            ]
+          },
+          {
+            "record_id": "rec_8b778603418c",
+            "family_id": "family:28993406c9b2c6d229a02057a6dce31ffbe7c6c7",
+            "patent_id": "US20210123608A1",
+            "title": "Method for thermal energy transmission using water and carbon dioxide",
+            "score": 9.2,
+            "screening_decision": "include",
+            "thematic_cluster": "Thermal Transfer Mechanisms",
+            "route": "deep_extraction",
+            "evidence_snippets": [
+              "AbstractThe invention provides a system for energy distribution that uses liquid carbon dioxide as a working fluid.",
+              "An underground thermal energy storage system is used to store energy flowing into the system that is in excess of the current demand."
+            ]
+          }
+        ],
+        "thematic_clusters": {
+          "clusters": [
+            {
+              "cluster": "Thermal Transfer Mechanisms",
+              "count": 2,
+              "patent_ids": [
+                "WO2021081541A1",
+                "US20210123608A1"
+              ],
+              "titles": [
+                "Method for thermal energy transmission using water and carbon dioxide",
+                "Method for thermal energy transmission using water and carbon dioxide"
+              ],
+              "average_score": 9.2,
+              "average_confidence": 0.95,
+              "evidence_count": 4,
+              "top_patents": [],
+              "summary": "",
+              "record_ids": [
+                "rec_cb86ce571d5d",
+                "rec_8b778603418c"
+              ]
+            },
+            {
+              "cluster": "CO2 Cycle Configurations",
+              "count": 1,
+              "patent_ids": [
+                "CN118934113A"
+              ],
+              "titles": [
+                "An isothermal and isobaric supercritical compressed carbon dioxide energy storage system"
+              ],
+              "average_score": 9.2,
+              "average_confidence": 0.95,
+              "evidence_count": 2,
+              "top_patents": [],
+              "summary": "",
+              "record_ids": [
+                "rec_e9bfd6ecaee9"
+              ]
+            }
+          ],
+          "total_clusters": 2
+        },
+        "route_summary": {
+          "manual_review": 3,
+          "deep_extraction": 3,
+          "screen_only": 4
+        },
+        "feature_flags": {
+          "require_evidence": true,
+          "enable_thematic_clusters": true,
+          "enable_prisma": true,
+          "enable_snapshot": true,
+          "enable_comparative_analysis": true,
+          "enable_manual_review_queue": true
+        },
+        "snapshot_hash": "f31330f1c62c8cfc4ee04fb3b8479e6b2b6b349e9de5cfe5c71db4608ec9d164"
+      },
+      "memory_sidecar": {
+        "run_id": "20260405_000013",
+        "max_items_per_slot": 5,
+        "slots": {
+          "review": [
+            {
+              "record_id": "rec_d32965bf3945",
+              "patent_id": "US20200182095A1",
+              "title": "Carbon dioxide upgrade and energy storage system and method",
+              "route": "manual_review",
+              "score": 7.7
+            },
+            {
+              "record_id": "rec_60aba676d2d1",
+              "patent_id": "CN115234318A",
+              "title": "Carbon dioxide energy storage system matched with thermal power plant deep peak shaving and control method thereof",
+              "route": "manual_review",
+              "score": 8.2
+            },
+            {
+              "record_id": "rec_5cb75be738eb",
+              "patent_id": "AU244427549",
+              "title": "1. AU2019901965 - A System to Improve Performance of Transcritical Carbon Dioxide Cooling by Integration of Ice Thermal Storage for Subcooling",
+              "route": "manual_review",
+              "score": 7.2
+            }
+          ],
+          "writer": [
+            {
+              "top_patents": [
+                {
+                  "record_id": "rec_e9bfd6ecaee9",
+                  "family_id": "family:93e61d9efb570bcdd84ea6254a70ea2c9b769d40",
+                  "patent_id": "CN118934113A",
+                  "title": "An isothermal and isobaric supercritical compressed carbon dioxide energy storage system",
+                  "score": 9.2,
+                  "screening_decision": "include",
+                  "thematic_cluster": "CO2 Cycle Configurations",
+                  "route": "deep_extraction",
+                  "evidence_snippets": [
+                    "æ¬åææ¶åè¶ä¸´çåç¼©äºæ°§åç¢³å¨è½ææ¯é¢åï¼ç­æ¸©ç­åçè¶ä¸´çåç¼©äºæ°§åç¢³å¨è½ç³»ç»ï¼",
+                    "åæ¬ï¼åç¼©æºç»ï¼å©ç¨çµåå°ä½æ¸©ä½åçè¶ä¸´çäºæ°§åç¢³åç¼©ä¸ºé«æ¸©é«åçè¶ä¸´çäºæ°§åç¢³ï¼è¨èæºç»"
+                  ]
+                },
+                {
+                  "record_id": "rec_cb86ce571d5d",
+                  "family_id": "family:156d9db54f6d2df5efd352ddbf3bd612f775a37b",
+                  "patent_id": "WO2021081541A1",
+                  "title": "Method for thermal energy transmission using water and carbon dioxide",
+                  "score": 9.2,
+                  "screening_decision": "include",
+                  "thematic_cluster": "Thermal Transfer Mechanisms",
+                  "route": "deep_extraction",
+                  "evidence_snippets": [
+                    "AbstractThe invention provides a system for energy distribution that uses liquid carbon dioxide as a working fluid.",
+                    "An underground thermal energy storage system is used to store energy flowing into the system that is in excess of the current demand."
+                  ]
+                },
+                {
+                  "record_id": "rec_8b778603418c",
+                  "family_id": "family:28993406c9b2c6d229a02057a6dce31ffbe7c6c7",
+                  "patent_id": "US20210123608A1",
+                  "title": "Method for thermal energy transmission using water and carbon dioxide",
+                  "score": 9.2,
+                  "screening_decision": "include",
+                  "thematic_cluster": "Thermal Transfer Mechanisms",
+                  "route": "deep_extraction",
+                  "evidence_snippets": [
+                    "AbstractThe invention provides a system for energy distribution that uses liquid carbon dioxide as a working fluid.",
+                    "An underground thermal energy storage system is used to store energy flowing into the system that is in excess of the current demand."
+                  ]
+                }
+              ],
+              "route_summary": {
+                "manual_review": 3,
+                "deep_extraction": 3,
+                "screen_only": 4
+              }
+            }
+          ],
+          "screening": [
+            {
+              "record_id": "rec_0d58733a5389",
+              "patent_id": "US433566429",
+              "title": "2. US20240229681 - Calcination system with thermal energy storage system",
+              "route": "screen_only",
+              "score": 3.5
+            },
+            {
+              "record_id": "rec_3da6b58fde67",
+              "patent_id": "US400261922",
+              "title": "3. US20230203968 - Methods for material activation with thermal energy storage system",
+              "route": "screen_only",
+              "score": 3.5
+            },
+            {
+              "record_id": "rec_d53841fc186a",
+              "patent_id": "US433566430",
+              "title": "4. US20240229682 - Methods for material activation with thermal energy storage system",
+              "route": "screen_only",
+              "score": 3.5
+            },
+            {
+              "record_id": "rec_e94308d296fb",
+              "patent_id": "US373267798",
+              "title": "5. US20220282638 - Material activation system with thermal energy storage system",
+              "route": "screen_only",
+              "score": 3.5
+            }
+          ]
+        },
+        "journal": [
+          {
+            "timestamp": "2026-04-05T00:00:15",
+            "stage": "setup",
+            "event": "llm_check",
+            "detail": "Verificação de disponibilidade do Ollama concluída.",
+            "payload": {
+              "llm_available": true,
+              "model": "gemma3:4b"
+            }
+          },
+          {
+            "timestamp": "2026-04-05T00:00:31",
+            "stage": "identification",
+            "event": "scrape_completed",
+            "detail": "GooglePatents retornou patentes.",
+            "payload": {
+              "source": "GooglePatents",
+              "count": 5,
+              "diagnostics": []
+            }
+          },
+          {
+            "timestamp": "2026-04-05T00:01:04",
+            "stage": "identification",
+            "event": "scrape_completed",
+            "detail": "Patentscope retornou patentes.",
+            "payload": {
+              "source": "Patentscope",
+              "count": 5,
+              "diagnostics": [
+                {
+                  "kind": "discovery_empty",
+                  "detail": "DuckDuckGo não retornou links para Patentscope.",
+                  "url": "https://html.duckduckgo.com/html/"
+                }
+              ]
+            }
+          },
+          {
+            "timestamp": "2026-04-05T00:01:05",
+            "stage": "screening",
+            "event": "screening_completed",
+            "detail": "US20200182095A1 roteada para manual_review.",
+            "payload": {
+              "record_id": "rec_d32965bf3945",
+              "patent_id": "US20200182095A1",
+              "decision": "review",
+              "score": 7.7,
+              "route": {
+                "route": "manual_review",
+                "reason": "Triagem indicou revisão humana.",
+                "slot": "review"
+              },
+              "llm_error": ""
+            }
+          },
+          {
+            "timestamp": "2026-04-05T00:01:06",
+            "stage": "screening",
+            "event": "screening_completed",
+            "detail": "CN115234318A roteada para manual_review.",
+            "payload": {
+              "record_id": "rec_60aba676d2d1",
+              "patent_id": "CN115234318A",
+              "decision": "review",
+              "score": 8.2,
+              "route": {
+                "route": "manual_review",
+                "reason": "Triagem indicou revisão humana.",
+                "slot": "review"
+              },
+              "llm_error": ""
+            }
+          },
+          {
+            "timestamp": "2026-04-05T00:01:09",
+            "stage": "screening",
+            "event": "screening_completed",
+            "detail": "CN118934113A roteada para deep_extraction.",
+            "payload": {
+              "record_id": "rec_e9bfd6ecaee9",
+              "patent_id": "CN118934113A",
+              "decision": "include",
+              "score": 9.2,
+              "route": {
+                "route": "deep_extraction",
+                "reason": "Há evidência suficiente para extração detalhada.",
+                "slot": "writer"
+              },
+              "llm_error": ""
+            }
+          },
+          {
+            "timestamp": "2026-04-05T00:01:10",
+            "stage": "screening",
+            "event": "screening_completed",
+            "detail": "WO2021081541A1 roteada para deep_extraction.",
+            "payload": {
+              "record_id": "rec_cb86ce571d5d",
+              "patent_id": "WO2021081541A1",
+              "decision": "include",
+              "score": 9.2,
+              "route": {
+                "route": "deep_extraction",
+                "reason": "Há evidência suficiente para extração detalhada.",
+                "slot": "writer"
+              },
+              "llm_error": ""
+            }
+          },
+          {
+            "timestamp": "2026-04-05T00:01:11",
+            "stage": "screening",
+            "event": "screening_completed",
+            "detail": "US20210123608A1 roteada para deep_extraction.",
+            "payload": {
+              "record_id": "rec_8b778603418c",
+              "patent_id": "US20210123608A1",
+              "decision": "include",
+              "score": 9.2,
+              "route": {
+                "route": "deep_extraction",
+                "reason": "Há evidência suficiente para extração detalhada.",
+                "slot": "writer"
+              },
+              "llm_error": ""
+            }
+          },
+          {
+            "timestamp": "2026-04-05T00:01:12",
+            "stage": "screening",
+            "event": "screening_completed",
+            "detail": "AU244427549 roteada para manual_review.",
+            "payload": {
+              "record_id": "rec_5cb75be738eb",
+              "patent_id": "AU244427549",
+              "decision": "review",
+              "score": 7.2,
+              "route": {
+                "route": "manual_review",
+                "reason": "Triagem indicou revisão humana.",
+                "slot": "review"
+              },
+              "llm_error": ""
+            }
+          },
+          {
+            "timestamp": "2026-04-05T00:01:13",
+            "stage": "screening",
+            "event": "screening_completed",
+            "detail": "US433566429 roteada para screen_only.",
+            "payload": {
+              "record_id": "rec_0d58733a5389",
+              "patent_id": "US433566429",
+              "decision": "exclude",
+              "score": 3.5,
+              "route": {
+                "route": "screen_only",
+                "reason": "Patente excluída na triagem.",
+                "slot": "screening"
+              },
+              "llm_error": ""
+            }
+          },
+          {
+            "timestamp": "2026-04-05T00:01:14",
+            "stage": "screening",
+            "event": "screening_completed",
+            "detail": "US400261922 roteada para screen_only.",
+            "payload": {
+              "record_id": "rec_3da6b58fde67",
+              "patent_id": "US400261922",
+              "decision": "exclude",
+              "score": 3.5,
+              "route": {
+                "route": "screen_only",
+                "reason": "Patente excluída na triagem.",
+                "slot": "screening"
+              },
+              "llm_error": ""
+            }
+          },
+          {
+            "timestamp": "2026-04-05T00:01:16",
+            "stage": "screening",
+            "event": "screening_completed",
+            "detail": "US433566430 roteada para screen_only.",
+            "payload": {
+              "record_id": "rec_d53841fc186a",
+              "patent_id": "US433566430",
+              "decision": "exclude",
+              "score": 3.5,
+              "route": {
+                "route": "screen_only",
+                "reason": "Patente excluída na triagem.",
+                "slot": "screening"
+              },
+              "llm_error": ""
+            }
+          },
+          {
+            "timestamp": "2026-04-05T00:01:17",
+            "stage": "screening",
+            "event": "screening_completed",
+            "detail": "US373267798 roteada para screen_only.",
+            "payload": {
+              "record_id": "rec_e94308d296fb",
+              "patent_id": "US373267798",
+              "decision": "exclude",
+              "score": 3.5,
+              "route": {
+                "route": "screen_only",
+                "reason": "Patente excluída na triagem.",
+                "slot": "screening"
+              },
+              "llm_error": ""
+            }
+          },
+          {
+            "timestamp": "2026-04-05T00:01:20",
+            "stage": "extraction",
+            "event": "detailed_evaluation_completed",
+            "detail": "US20200182095A1 recebeu extração detalhada.",
+            "payload": {
+              "record_id": "rec_d32965bf3945",
+              "patent_id": "US20200182095A1",
+              "route": "manual_review",
+              "confidence": 0.79
+            }
+          },
+          {
+            "timestamp": "2026-04-05T00:01:23",
+            "stage": "extraction",
+            "event": "detailed_evaluation_completed",
+            "detail": "CN115234318A recebeu extração detalhada.",
+            "payload": {
+              "record_id": "rec_60aba676d2d1",
+              "patent_id": "CN115234318A",
+              "route": "manual_review",
+              "confidence": 0.85
+            }
+          },
+          {
+            "timestamp": "2026-04-05T00:01:28",
+            "stage": "extraction",
+            "event": "detailed_evaluation_completed",
+            "detail": "CN118934113A recebeu extração detalhada.",
+            "payload": {
+              "record_id": "rec_e9bfd6ecaee9",
+              "patent_id": "CN118934113A",
+              "route": "deep_extraction",
+              "confidence": 0.95
+            }
+          },
+          {
+            "timestamp": "2026-04-05T00:01:31",
+            "stage": "extraction",
+            "event": "detailed_evaluation_completed",
+            "detail": "WO2021081541A1 recebeu extração detalhada.",
+            "payload": {
+              "record_id": "rec_cb86ce571d5d",
+              "patent_id": "WO2021081541A1",
+              "route": "deep_extraction",
+              "confidence": 0.95
+            }
+          },
+          {
+            "timestamp": "2026-04-05T00:01:33",
+            "stage": "extraction",
+            "event": "detailed_evaluation_completed",
+            "detail": "US20210123608A1 recebeu extração detalhada.",
+            "payload": {
+              "record_id": "rec_8b778603418c",
+              "patent_id": "US20210123608A1",
+              "route": "deep_extraction",
+              "confidence": 0.95
+            }
+          },
+          {
+            "timestamp": "2026-04-05T00:01:36",
+            "stage": "extraction",
+            "event": "detailed_evaluation_completed",
+            "detail": "AU244427549 recebeu extração detalhada.",
+            "payload": {
+              "record_id": "rec_5cb75be738eb",
+              "patent_id": "AU244427549",
+              "route": "manual_review",
+              "confidence": 0.75
+            }
+          },
+          {
+            "timestamp": "2026-04-05T00:01:36",
+            "stage": "extraction",
+            "event": "screening_only",
+            "detail": "US433566429 permaneceu apenas na triagem.",
+            "payload": {
+              "record_id": "rec_0d58733a5389",
+              "patent_id": "US433566429",
+              "route": "screen_only"
+            }
+          },
+          {
+            "timestamp": "2026-04-05T00:01:36",
+            "stage": "extraction",
+            "event": "screening_only",
+            "detail": "US400261922 permaneceu apenas na triagem.",
+            "payload": {
+              "record_id": "rec_3da6b58fde67",
+              "patent_id": "US400261922",
+              "route": "screen_only"
+            }
+          },
+          {
+            "timestamp": "2026-04-05T00:01:36",
+            "stage": "extraction",
+            "event": "screening_only",
+            "detail": "US433566430 permaneceu apenas na triagem.",
+            "payload": {
+              "record_id": "rec_d53841fc186a",
+              "patent_id": "US433566430",
+              "route": "screen_only"
+            }
+          },
+          {
+            "timestamp": "2026-04-05T00:01:36",
+            "stage": "extraction",
+            "event": "screening_only",
+            "detail": "US373267798 permaneceu apenas na triagem.",
+            "payload": {
+              "record_id": "rec_e94308d296fb",
+              "patent_id": "US373267798",
+              "route": "screen_only"
+            }
+          },
+          {
+            "timestamp": "2026-04-05T00:01:36",
+            "stage": "synthesis",
+            "event": "coverage_computed",
+            "detail": "Cobertura e seleção consolidadas após triagem.",
+            "payload": {
+              "raw_scraped": 10,
+              "unique_patents": 10,
+              "duplicates_removed": 0,
+              "screened": 10,
+              "included": 3,
+              "review": 3,
+              "excluded": 4,
+              "manual_review_required": 3,
+              "manual_review_deferred": 0,
+              "full_extractions": 6,
+              "missing_abstract": 1,
+              "missing_id": 0,
+              "records_with_content_identity": 0,
+              "records_with_fallback_identity": 0,
+              "family_duplicates_removed": 0,
+              "llm_screening_failures": 0,
+              "llm_total_failures": 0
+            }
+          },
+          {
+            "timestamp": "2026-04-05T00:01:40",
+            "stage": "synthesis",
+            "event": "comparative_analysis_completed",
+            "detail": "Síntese comparativa gerada via Ollama.",
+            "payload": {
+              "patents_compared": 3
+            }
+          },
+          {
+            "timestamp": "2026-04-05T00:01:40",
+            "stage": "writer",
+            "event": "context_prepared",
+            "detail": "Contexto compartilhado preparado para o writer.",
+            "payload": {
+              "top_patents": 3,
+              "route_summary": {
+                "manual_review": 3,
+                "deep_extraction": 3,
+                "screen_only": 4
+              }
+            }
+          },
+          {
+            "timestamp": "2026-04-05T00:01:40",
+            "stage": "finalization",
+            "event": "report_generated",
+            "detail": "Relatórios finais gerados com sucesso.",
+            "payload": {
+              "markdown": "output/live_eval_round2/patentes_carbon_dioxide_thermal_energy_storage_20260405_000140.md",
+              "json": "output/live_eval_round2/patentes_carbon_dioxide_thermal_energy_storage_20260405_000140.json"
+            }
+          }
+        ]
+      },
+      "memory_journal": [
+        {
+          "timestamp": "2026-04-05T00:00:15",
+          "stage": "setup",
+          "event": "llm_check",
+          "detail": "Verificação de disponibilidade do Ollama concluída.",
+          "payload": {
+            "llm_available": true,
+            "model": "gemma3:4b"
+          }
+        },
+        {
+          "timestamp": "2026-04-05T00:00:31",
+          "stage": "identification",
+          "event": "scrape_completed",
+          "detail": "GooglePatents retornou patentes.",
+          "payload": {
+            "source": "GooglePatents",
+            "count": 5,
+            "diagnostics": []
+          }
+        },
+        {
+          "timestamp": "2026-04-05T00:01:04",
+          "stage": "identification",
+          "event": "scrape_completed",
+          "detail": "Patentscope retornou patentes.",
+          "payload": {
+            "source": "Patentscope",
+            "count": 5,
+            "diagnostics": [
+              {
+                "kind": "discovery_empty",
+                "detail": "DuckDuckGo não retornou links para Patentscope.",
+                "url": "https://html.duckduckgo.com/html/"
+              }
+            ]
+          }
+        },
+        {
+          "timestamp": "2026-04-05T00:01:05",
+          "stage": "screening",
+          "event": "screening_completed",
+          "detail": "US20200182095A1 roteada para manual_review.",
+          "payload": {
+            "record_id": "rec_d32965bf3945",
+            "patent_id": "US20200182095A1",
+            "decision": "review",
+            "score": 7.7,
+            "route": {
+              "route": "manual_review",
+              "reason": "Triagem indicou revisão humana.",
+              "slot": "review"
+            },
+            "llm_error": ""
+          }
+        },
+        {
+          "timestamp": "2026-04-05T00:01:06",
+          "stage": "screening",
+          "event": "screening_completed",
+          "detail": "CN115234318A roteada para manual_review.",
+          "payload": {
+            "record_id": "rec_60aba676d2d1",
+            "patent_id": "CN115234318A",
+            "decision": "review",
+            "score": 8.2,
+            "route": {
+              "route": "manual_review",
+              "reason": "Triagem indicou revisão humana.",
+              "slot": "review"
+            },
+            "llm_error": ""
+          }
+        },
+        {
+          "timestamp": "2026-04-05T00:01:09",
+          "stage": "screening",
+          "event": "screening_completed",
+          "detail": "CN118934113A roteada para deep_extraction.",
+          "payload": {
+            "record_id": "rec_e9bfd6ecaee9",
+            "patent_id": "CN118934113A",
+            "decision": "include",
+            "score": 9.2,
+            "route": {
+              "route": "deep_extraction",
+              "reason": "Há evidência suficiente para extração detalhada.",
+              "slot": "writer"
+            },
+            "llm_error": ""
+          }
+        },
+        {
+          "timestamp": "2026-04-05T00:01:10",
+          "stage": "screening",
+          "event": "screening_completed",
+          "detail": "WO2021081541A1 roteada para deep_extraction.",
+          "payload": {
+            "record_id": "rec_cb86ce571d5d",
+            "patent_id": "WO2021081541A1",
+            "decision": "include",
+            "score": 9.2,
+            "route": {
+              "route": "deep_extraction",
+              "reason": "Há evidência suficiente para extração detalhada.",
+              "slot": "writer"
+            },
+            "llm_error": ""
+          }
+        },
+        {
+          "timestamp": "2026-04-05T00:01:11",
+          "stage": "screening",
+          "event": "screening_completed",
+          "detail": "US20210123608A1 roteada para deep_extraction.",
+          "payload": {
+            "record_id": "rec_8b778603418c",
+            "patent_id": "US20210123608A1",
+            "decision": "include",
+            "score": 9.2,
+            "route": {
+              "route": "deep_extraction",
+              "reason": "Há evidência suficiente para extração detalhada.",
+              "slot": "writer"
+            },
+            "llm_error": ""
+          }
+        },
+        {
+          "timestamp": "2026-04-05T00:01:12",
+          "stage": "screening",
+          "event": "screening_completed",
+          "detail": "AU244427549 roteada para manual_review.",
+          "payload": {
+            "record_id": "rec_5cb75be738eb",
+            "patent_id": "AU244427549",
+            "decision": "review",
+            "score": 7.2,
+            "route": {
+              "route": "manual_review",
+              "reason": "Triagem indicou revisão humana.",
+              "slot": "review"
+            },
+            "llm_error": ""
+          }
+        },
+        {
+          "timestamp": "2026-04-05T00:01:13",
+          "stage": "screening",
+          "event": "screening_completed",
+          "detail": "US433566429 roteada para screen_only.",
+          "payload": {
+            "record_id": "rec_0d58733a5389",
+            "patent_id": "US433566429",
+            "decision": "exclude",
+            "score": 3.5,
+            "route": {
+              "route": "screen_only",
+              "reason": "Patente excluída na triagem.",
+              "slot": "screening"
+            },
+            "llm_error": ""
+          }
+        },
+        {
+          "timestamp": "2026-04-05T00:01:14",
+          "stage": "screening",
+          "event": "screening_completed",
+          "detail": "US400261922 roteada para screen_only.",
+          "payload": {
+            "record_id": "rec_3da6b58fde67",
+            "patent_id": "US400261922",
+            "decision": "exclude",
+            "score": 3.5,
+            "route": {
+              "route": "screen_only",
+              "reason": "Patente excluída na triagem.",
+              "slot": "screening"
+            },
+            "llm_error": ""
+          }
+        },
+        {
+          "timestamp": "2026-04-05T00:01:16",
+          "stage": "screening",
+          "event": "screening_completed",
+          "detail": "US433566430 roteada para screen_only.",
+          "payload": {
+            "record_id": "rec_d53841fc186a",
+            "patent_id": "US433566430",
+            "decision": "exclude",
+            "score": 3.5,
+            "route": {
+              "route": "screen_only",
+              "reason": "Patente excluída na triagem.",
+              "slot": "screening"
+            },
+            "llm_error": ""
+          }
+        },
+        {
+          "timestamp": "2026-04-05T00:01:17",
+          "stage": "screening",
+          "event": "screening_completed",
+          "detail": "US373267798 roteada para screen_only.",
+          "payload": {
+            "record_id": "rec_e94308d296fb",
+            "patent_id": "US373267798",
+            "decision": "exclude",
+            "score": 3.5,
+            "route": {
+              "route": "screen_only",
+              "reason": "Patente excluída na triagem.",
+              "slot": "screening"
+            },
+            "llm_error": ""
+          }
+        },
+        {
+          "timestamp": "2026-04-05T00:01:20",
+          "stage": "extraction",
+          "event": "detailed_evaluation_completed",
+          "detail": "US20200182095A1 recebeu extração detalhada.",
+          "payload": {
+            "record_id": "rec_d32965bf3945",
+            "patent_id": "US20200182095A1",
+            "route": "manual_review",
+            "confidence": 0.79
+          }
+        },
+        {
+          "timestamp": "2026-04-05T00:01:23",
+          "stage": "extraction",
+          "event": "detailed_evaluation_completed",
+          "detail": "CN115234318A recebeu extração detalhada.",
+          "payload": {
+            "record_id": "rec_60aba676d2d1",
+            "patent_id": "CN115234318A",
+            "route": "manual_review",
+            "confidence": 0.85
+          }
+        },
+        {
+          "timestamp": "2026-04-05T00:01:28",
+          "stage": "extraction",
+          "event": "detailed_evaluation_completed",
+          "detail": "CN118934113A recebeu extração detalhada.",
+          "payload": {
+            "record_id": "rec_e9bfd6ecaee9",
+            "patent_id": "CN118934113A",
+            "route": "deep_extraction",
+            "confidence": 0.95
+          }
+        },
+        {
+          "timestamp": "2026-04-05T00:01:31",
+          "stage": "extraction",
+          "event": "detailed_evaluation_completed",
+          "detail": "WO2021081541A1 recebeu extração detalhada.",
+          "payload": {
+            "record_id": "rec_cb86ce571d5d",
+            "patent_id": "WO2021081541A1",
+            "route": "deep_extraction",
+            "confidence": 0.95
+          }
+        },
+        {
+          "timestamp": "2026-04-05T00:01:33",
+          "stage": "extraction",
+          "event": "detailed_evaluation_completed",
+          "detail": "US20210123608A1 recebeu extração detalhada.",
+          "payload": {
+            "record_id": "rec_8b778603418c",
+            "patent_id": "US20210123608A1",
+            "route": "deep_extraction",
+            "confidence": 0.95
+          }
+        },
+        {
+          "timestamp": "2026-04-05T00:01:36",
+          "stage": "extraction",
+          "event": "detailed_evaluation_completed",
+          "detail": "AU244427549 recebeu extração detalhada.",
+          "payload": {
+            "record_id": "rec_5cb75be738eb",
+            "patent_id": "AU244427549",
+            "route": "manual_review",
+            "confidence": 0.75
+          }
+        },
+        {
+          "timestamp": "2026-04-05T00:01:36",
+          "stage": "extraction",
+          "event": "screening_only",
+          "detail": "US433566429 permaneceu apenas na triagem.",
+          "payload": {
+            "record_id": "rec_0d58733a5389",
+            "patent_id": "US433566429",
+            "route": "screen_only"
+          }
+        },
+        {
+          "timestamp": "2026-04-05T00:01:36",
+          "stage": "extraction",
+          "event": "screening_only",
+          "detail": "US400261922 permaneceu apenas na triagem.",
+          "payload": {
+            "record_id": "rec_3da6b58fde67",
+            "patent_id": "US400261922",
+            "route": "screen_only"
+          }
+        },
+        {
+          "timestamp": "2026-04-05T00:01:36",
+          "stage": "extraction",
+          "event": "screening_only",
+          "detail": "US433566430 permaneceu apenas na triagem.",
+          "payload": {
+            "record_id": "rec_d53841fc186a",
+            "patent_id": "US433566430",
+            "route": "screen_only"
+          }
+        },
+        {
+          "timestamp": "2026-04-05T00:01:36",
+          "stage": "extraction",
+          "event": "screening_only",
+          "detail": "US373267798 permaneceu apenas na triagem.",
+          "payload": {
+            "record_id": "rec_e94308d296fb",
+            "patent_id": "US373267798",
+            "route": "screen_only"
+          }
+        },
+        {
+          "timestamp": "2026-04-05T00:01:36",
+          "stage": "synthesis",
+          "event": "coverage_computed",
+          "detail": "Cobertura e seleção consolidadas após triagem.",
+          "payload": {
+            "raw_scraped": 10,
+            "unique_patents": 10,
+            "duplicates_removed": 0,
+            "screened": 10,
+            "included": 3,
+            "review": 3,
+            "excluded": 4,
+            "manual_review_required": 3,
+            "manual_review_deferred": 0,
+            "full_extractions": 6,
+            "missing_abstract": 1,
+            "missing_id": 0,
+            "records_with_content_identity": 0,
+            "records_with_fallback_identity": 0,
+            "family_duplicates_removed": 0,
+            "llm_screening_failures": 0,
+            "llm_total_failures": 0
+          }
+        },
+        {
+          "timestamp": "2026-04-05T00:01:40",
+          "stage": "synthesis",
+          "event": "comparative_analysis_completed",
+          "detail": "Síntese comparativa gerada via Ollama.",
+          "payload": {
+            "patents_compared": 3
+          }
+        },
+        {
+          "timestamp": "2026-04-05T00:01:40",
+          "stage": "writer",
+          "event": "context_prepared",
+          "detail": "Contexto compartilhado preparado para o writer.",
+          "payload": {
+            "top_patents": 3,
+            "route_summary": {
+              "manual_review": 3,
+              "deep_extraction": 3,
+              "screen_only": 4
+            }
+          }
+        },
+        {
+          "timestamp": "2026-04-05T00:01:40",
+          "stage": "finalization",
+          "event": "report_generated",
+          "detail": "Relatórios finais gerados com sucesso.",
+          "payload": {
+            "markdown": "output/live_eval_round2/patentes_carbon_dioxide_thermal_energy_storage_20260405_000140.md",
+            "json": "output/live_eval_round2/patentes_carbon_dioxide_thermal_energy_storage_20260405_000140.json"
+          }
+        }
+      ],
+      "stage_metrics": [
+        {
+          "stage": "setup",
+          "status": "ok",
+          "duration_seconds": 1.964,
+          "items_processed": 1,
+          "detail": "Verificação do modelo Ollama"
+        },
+        {
+          "stage": "search",
+          "status": "ok",
+          "duration_seconds": 48.801,
+          "items_processed": 10,
+          "detail": "10 patentes únicas após dedupe"
+        },
+        {
+          "stage": "screening",
+          "status": "ok",
+          "duration_seconds": 31.894,
+          "items_processed": 10,
+          "detail": "3 incluídas, 3 revisão"
+        },
+        {
+          "stage": "comparative_analysis",
+          "status": "ok",
+          "duration_seconds": 4.466,
+          "items_processed": 10,
+          "detail": "Síntese comparativa gerada"
+        },
+        {
+          "stage": "reporting",
+          "status": "ok",
+          "duration_seconds": 0.003,
+          "items_processed": 10,
+          "detail": "Relatórios Markdown e JSON"
+        },
+        {
+          "stage": "finalization",
+          "status": "ok",
+          "duration_seconds": 0.001,
+          "items_processed": 7,
+          "detail": "Persistência de artefatos e estado"
+        }
+      ],
+      "llm_cache_stats": {
+        "hits": 0,
+        "misses": 17,
+        "entries": 17
+      },
+      "llm_telemetry": {
+        "degraded": false,
+        "total_failures": 0,
+        "consecutive_failures": 0,
+        "recent_errors": [],
+        "operations": {
+          "healthcheck": {
+            "calls": 1,
+            "successes": 1,
+            "failures": 0,
+            "retries": 0,
+            "cache_hits": 0,
+            "degraded_skips": 0,
+            "prompt_chars": 35,
+            "response_chars": 15,
+            "total_duration_seconds": 1.962,
+            "max_duration_seconds": 1.962,
+            "average_duration_seconds": 1.962
+          },
+          "screening": {
+            "calls": 10,
+            "successes": 10,
+            "failures": 0,
+            "retries": 0,
+            "cache_hits": 0,
+            "degraded_skips": 0,
+            "prompt_chars": 26340,
+            "response_chars": 8776,
+            "total_duration_seconds": 12.924,
+            "max_duration_seconds": 2.187,
+            "average_duration_seconds": 1.292
+          },
+          "evaluation": {
+            "calls": 6,
+            "successes": 6,
+            "failures": 0,
+            "retries": 0,
+            "cache_hits": 0,
+            "degraded_skips": 0,
+            "prompt_chars": 20312,
+            "response_chars": 15322,
+            "total_duration_seconds": 18.966,
+            "max_duration_seconds": 5.371,
+            "average_duration_seconds": 3.161
+          },
+          "comparative": {
+            "calls": 1,
+            "successes": 1,
+            "failures": 0,
+            "retries": 0,
+            "cache_hits": 0,
+            "degraded_skips": 0,
+            "prompt_chars": 2337,
+            "response_chars": 4429,
+            "total_duration_seconds": 4.466,
+            "max_duration_seconds": 4.466,
+            "average_duration_seconds": 4.466
+          }
+        }
+      },
+      "run_id": "20260405_000013",
+      "started_at": "2026-04-05T00:00:13",
+      "finished_at": "2026-04-05T00:01:40",
+      "status": "completed",
+      "llm_available": true,
+      "patents": [
+        {
+          "record_id": "rec_d32965bf3945",
+          "family_id": "family:1065f16bddea8989ffd25dd50703f560a5611777",
+          "title": "Carbon dioxide upgrade and energy storage system and method",
+          "patent_id": "US20200182095A1",
+          "abstract": "AbstractA method for producing work is disclosed. The method includes increasing the pressure of a working fluid including carbon dioxide from a first pressure at least equal to a triple point pressure to a second pressure above the triple point pressure. The method also includes heating the working fluid, extracting mechanical work by expanding a first portion of the heated working fluid to a third pressure, supplying a second portion of the heated working fluid as a motive fluid to an ejector, increasing the pressure of the expanded working fluid by supplying the expanded working fluid to the ejector to combine with the motive fluid and form an output fluid at the fourth pressure, the fourth pressure at least equal to the triple point pressure of the working fluid. The method also includes refrigerating the output fluid to condense a vapor phase into a liquid phase.",
+          "inventors": [
+            "John Frederick Cirucci",
+            "Klaus Stephan Lackner"
+          ],
+          "assignee": "Arizona State University Downtown Phoenix campus",
+          "filing_date": "2018-08-29",
+          "publication_date": "2020-06-11",
+          "url": "https://patents.google.com/patent/US20200182095A1/en",
+          "snippet": "",
+          "source": "Google Patents"
+        },
+        {
+          "record_id": "rec_60aba676d2d1",
+          "family_id": "family:e199d77fe5f85343c72bd55fe064233f9c8b31ec",
+          "title": "Carbon dioxide energy storage system matched with thermal power plant deep peak shaving and control method thereof",
+          "patent_id": "CN115234318A",
+          "abstract": "AbstractThe invention provides a carbon dioxide energy storage system matched with deep peak shaving of a thermal power plant and a control method thereof, and relates to the technical field of energy storage. The energy storage system includes: the gas storage, the energy storage component, the liquid storage tank and the energy release component are sequentially connected in a closed loop manner, and the energy release component comprises an expander; the coupling assembly comprises a steam extraction bypass and a first heat storage module; the steam extraction bypass is used for guiding high-temperature steam in the steam turbine to the first heat storage module when the thermal power plant is in a deep peak shaving working condition; the first heat storage module is connected with the energy release assembly and used for storing heat contained in the high-temperature steam and providing heat for the energy release assembly when the energy release assembly works so as to improve the temperature of carbon dioxide at the inlet of the expansion machine. The carbon dioxide energy storage system and the control method can improve the peak regulation flexibility and safety of the thermal power plant and can also improve the work efficiency of the carbon dioxide.",
+          "inventors": [
+            "è°¢æ°¸æ§",
+            "çç§¦",
+            "çé¼",
+            "å­ç£",
+            "å¼ è»",
+            "æ±ªæå",
+            "æ¨å½ª"
+          ],
+          "assignee": "Baihe New Energy Technology Shenzhen Co ltd",
+          "filing_date": "2022-09-22",
+          "publication_date": "2022-10-25",
+          "url": "https://patents.google.com/patent/CN115234318A/en",
+          "snippet": "",
+          "source": "Google Patents"
+        },
+        {
+          "record_id": "rec_e9bfd6ecaee9",
+          "family_id": "family:93e61d9efb570bcdd84ea6254a70ea2c9b769d40",
+          "title": "An isothermal and isobaric supercritical compressed carbon dioxide energy storage system",
+          "patent_id": "CN118934113A",
+          "abstract": "AbstractTranslated fromChineseæ¬åææ¶åè¶ä¸´çåç¼©äºæ°§åç¢³å¨è½ææ¯é¢åï¼ç­æ¸©ç­åçè¶ä¸´çåç¼©äºæ°§åç¢³å¨è½ç³»ç»ï¼åæ¬ï¼åç¼©æºç»ï¼å©ç¨çµåå°ä½æ¸©ä½åçè¶ä¸´çäºæ°§åç¢³åç¼©ä¸ºé«æ¸©é«åçè¶ä¸´çäºæ°§åç¢³ï¼è¨èæºç»ï¼å©ç¨é«æ¸©é«åçè¶ä¸´çäºæ°§åç¢³åååçµï¼é«åå¨æ°å®¤ï¼è®¾ç½®å¨æ°´ä¸æå°ä¸çé«åç¯å¢ä¸­ï¼ç¨äºå¨å­åç¼©æºç»åç¼©çè¶ä¸´çäºæ°§åç¢³ï¼ä½åå¨æ°å®¤ï¼è®¾ç½®å¨æ°´ä¸æå°ä¸çä½åç¯å¢ä¸­ç¨äºå¨å­è¨èæºç»åååçµä¸­äº§ççè¶ä¸´çäºæ°§åç¢³ï¼ç¬¬ä¸æ¢ç­å¨ï¼å¸æ¶åç¼©æºç»å·¥ä½è¿ç¨ä¸­äº§ççåç¼©ç­å¹¶å¨å­å¨å¨ç­ç½ä¸­ï¼ç¬¬äºæ¢ç­å¨ï¼å ç­é«åå¨æ°å®¤æåºçè¶ä¸´çäºæ°§åç¢³ãéè¿å°é«åå¨æ°å®¤åä½åå¨æ°å®¤è®¾ç½®å¨æ°´ä¸ï¼å¹¶éåæ¢ç­å¨ï¼å®ç°ç»´æå¨æ°å®¤ç­ååæ°ç¨³å®çè¶ä¸´çåç¼©äºæ°§åç¢³å¨è½ç³»ç»ãThe present invention relates to the technical field of supercritical compressed carbon dioxide energy storage, and an isothermal and isobaric supercritical compressed carbon dioxide energy storage system, comprising: a compressor unit, which compresses low-temperature and low-pressure supercritical carbon dioxide into high-temperature and high-pressure supercritical carbon dioxide by using electricity; an expansion unit, which uses high-temperature and high-pressure supercritical carbon dioxide to generate electricity; a high-pressure gas storage chamber, which is arranged in an underwater or underground high-pressure environment, and is used to store supercritical carbon dioxide compressed by the compressor unit; a low-pressure gas storage chamber, which is arranged in an underwater or underground low-pressure environment, and is used to store supercritical carbon dioxide generated by the expansion unit in generating electricity; a first heat exchanger, which absorbs compression heat generated during the operation of the compressor unit and stores it in a heat storage tank; and a second heat exchanger, which heats the supercritical carbon dioxide discharged from the high-pressure gas storage chamber. By arranging the high-pressure gas storage chamber and the low-pressure gas storage chamber underwater and cooperating with the heat exchanger, a supercritical compressed carbon dioxide energy storage system that maintains stable thermal parameters of the gas storage chamber is realized.",
+          "inventors": [
+            "å¾çæ°",
+            "æ±è½¶æ",
+            "èµµææº",
+            "æå£æ",
+            "ç¨æ³",
+            "è¡ä¸å­",
+            "å¨å­¦å¿",
+            "å¼ åè¯",
+            "éæµ·ç"
+          ],
+          "assignee": "Institute of Engineering Thermophysics of CAS",
+          "filing_date": "2024-09-04",
+          "publication_date": "2024-11-12",
+          "url": "https://patents.google.com/patent/CN118934113A/en",
+          "snippet": "",
+          "source": "Google Patents"
+        },
+        {
+          "record_id": "rec_cb86ce571d5d",
+          "family_id": "family:156d9db54f6d2df5efd352ddbf3bd612f775a37b",
+          "title": "Method for thermal energy transmission using water and carbon dioxide",
+          "patent_id": "WO2021081541A1",
+          "abstract": "AbstractThe invention provides a system for energy distribution that uses liquid carbon dioxide as a working fluid. Evaporation of the carbon dioxide provides cooling, and compression of the carbon dioxide gas back to the liquid state provides heat. The amount of heat transferred at both stages is sufficient to provide environmental heating and cooling. Waste thermal energy from a power plant, in the form of hot water, is fed into the system and used to drive the overall process. An underground thermal energy storage system is used to store energy flowing into the system that is in excess of the current demand.",
+          "inventors": [
+            "Francois Ignace GEINOZ",
+            "Marcel CUENI",
+            "Kameran Yakob"
+          ],
+          "assignee": "MED Energy Inc",
+          "filing_date": "2020-10-26",
+          "publication_date": "2021-04-29",
+          "url": "https://patents.google.com/patent/WO2021081541A1/en",
+          "snippet": "",
+          "source": "Google Patents"
+        },
+        {
+          "record_id": "rec_8b778603418c",
+          "family_id": "family:28993406c9b2c6d229a02057a6dce31ffbe7c6c7",
+          "title": "Method for thermal energy transmission using water and carbon dioxide",
+          "patent_id": "US20210123608A1",
+          "abstract": "AbstractThe invention provides a system for energy distribution that uses liquid carbon dioxide as a working fluid. Evaporation of the carbon dioxide provides cooling, and compression of the carbon dioxide gas back to the liquid state provides heat. The amount of heat transferred at both stages is sufficient to provide environmental heating and cooling. Waste thermal energy from a power plant, in the form of hot water, is fed into the system and used to drive the overall process. An underground thermal energy storage system is used to store energy flowing into the system that is in excess of the current demand.",
+          "inventors": [
+            "Francois Ignace Geinoz",
+            "Marcel Cueni",
+            "Kameran Yakob"
+          ],
+          "assignee": "MED Energy Inc",
+          "filing_date": "2019-10-25",
+          "publication_date": "2021-04-29",
+          "url": "https://patents.google.com/patent/US20210123608A1/en",
+          "snippet": "",
+          "source": "Google Patents"
+        },
+        {
+          "record_id": "rec_5cb75be738eb",
+          "family_id": "family:f2562110d58e9c2be7e7177585da03af0dd8bffa",
+          "title": "1. AU2019901965 - A System to Improve Performance of Transcritical Carbon Dioxide Cooling by Integration of Ice Thermal Storage for Subcooling",
+          "patent_id": "AU244427549",
+          "abstract": "",
+          "inventors": [],
+          "assignee": "IceCap; Thermal; Energy; Pty Ltd; KALDORBULL PTY LTD",
+          "filing_date": "",
+          "publication_date": "20.06.2019",
+          "url": "https://patentscope.wipo.int/search/en/detail.jsf;jsessionid=061A8F2C0328FF803CEE5A27EBBAD475.wapp1nB?docId=AU244427549&_cid=P11-MNL6C1-71764-1",
+          "snippet": "",
+          "source": "Patentscope"
+        },
+        {
+          "record_id": "rec_0d58733a5389",
+          "family_id": "family:a5909788b69b641216917fdfccb844df018cba89",
+          "title": "2. US20240229681 - Calcination system with thermal energy storage system",
+          "patent_id": "US433566429",
+          "abstract": "(EN)Anenergystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C. Intermittent electricalenergyheats a solid medium. Heat from the solid medium is delivered continuously on demand. An array of bricks incorporating internal radiation cavities is directly heated bythermalradiation. The cavities facilitate rapid, uniform heating via reradiation. Heat delivery via flowing gas establishes a thermocline which maintains high outlet temperature throughout discharge. Gas flows through structured pathways within the array, delivering heat which may be used for processes including calcination, hydrogen electrolysis, steam generation, andthermalpower generation and cogeneration. Groups ofthermalstoragearrays may be controlled and operated at high temperatures withoutthermalrunaway via deep-discharge sequencing. Forecast-based control enables continuous, year-round heat supply using current and advance information of weather and VRE availability. High-voltage DC power conversion and distribution circuitry improves the efficiency of VRE power transfer into the system.",
+          "inventors": [
+            "John Setel O'Donnell",
+            "Peter Emery von Behrens",
+            "Chiaki Treynor",
+            "Matthieu Jonemann",
+            "Robert Ratz",
+            "Yusef Desjardins Ferhani"
+          ],
+          "assignee": "Rondo; Energy; , Inc.",
+          "filing_date": "",
+          "publication_date": "11.07.2024",
+          "url": "https://patentscope.wipo.int/search/en/detail.jsf;jsessionid=061A8F2C0328FF803CEE5A27EBBAD475.wapp1nB?docId=US433566429&_cid=P11-MNL6C1-71764-1",
+          "snippet": "",
+          "source": "Patentscope"
+        },
+        {
+          "record_id": "rec_3da6b58fde67",
+          "family_id": "family:05206822f399c166b617cf99088b736afdf59e4b",
+          "title": "3. US20230203968 - Methods for material activation with thermal energy storage system",
+          "patent_id": "US400261922",
+          "abstract": "(EN)Anenergystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C. Intermittent electricalenergyheats a solid medium. Heat from the solid medium is delivered continuously on demand. An array of bricks incorporating internal radiation cavities is directly heated bythermalradiation. The cavities facilitate rapid, uniform heating via reradiation. Heat delivery via flowing gas establishes a thermocline which maintains high outlet temperature throughout discharge. Gas flows through structured pathways within the array, delivering heat which may be used for processes including calcination, hydrogen electrolysis, steam generation, andthermalpower generation and cogeneration. Groups ofthermalstoragearrays may be controlled and operated at high temperatures withoutthermalrunaway via deep-discharge sequencing. Forecast-based control enables continuous, year-round heat supply using current and advance information of weather and VRE availability. High-voltage DC power conversion and distribution circuitry improves the efficiency of VRE power transfer into the system.",
+          "inventors": [
+            "John Setel O'Donnell",
+            "Peter Emery von Behrens",
+            "Chiaki Treynor",
+            "Jeremy Quentin Keller",
+            "Matthieu Jonemann",
+            "Robert Ratz",
+            "Yusef Desjardins Ferhani"
+          ],
+          "assignee": "Rondo; Energy; , Inc.",
+          "filing_date": "",
+          "publication_date": "29.06.2023",
+          "url": "https://patentscope.wipo.int/search/en/detail.jsf;jsessionid=061A8F2C0328FF803CEE5A27EBBAD475.wapp1nB?docId=US400261922&_cid=P11-MNL6C1-71764-1",
+          "snippet": "",
+          "source": "Patentscope"
+        },
+        {
+          "record_id": "rec_d53841fc186a",
+          "family_id": "family:5759c6bc508072e5f9d303a96f846c77f3fcfe07",
+          "title": "4. US20240229682 - Methods for material activation with thermal energy storage system",
+          "patent_id": "US433566430",
+          "abstract": "(EN)Anenergystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C. Intermittent electricalenergyheats a solid medium. Heat from the solid medium is delivered continuously on demand. An array of bricks incorporating internal radiation cavities is directly heated bythermalradiation. The cavities facilitate rapid, uniform heating via reradiation. Heat delivery via flowing gas establishes a thermocline which maintains high outlet temperature throughout discharge. Gas flows through structured pathways within the array, delivering heat which may be used for processes including calcination, hydrogen electrolysis, steam generation, andthermalpower generation and cogeneration. Groups ofthermalstoragearrays may be controlled and operated at high temperatures withoutthermalrunaway via deep-discharge sequencing. Forecast-based control enables continuous, year-round heat supply using current and advance information of weather and VRE availability. High-voltage DC power conversion and distribution circuitry improves the efficiency of VRE power transfer into the system.",
+          "inventors": [
+            "John Setel O'Donnell",
+            "Peter Emery von Behrens",
+            "Matthieu Jonemann",
+            "Yusef Desjardins Ferhani"
+          ],
+          "assignee": "Rondo; Energy; , Inc.",
+          "filing_date": "",
+          "publication_date": "11.07.2024",
+          "url": "https://patentscope.wipo.int/search/en/detail.jsf;jsessionid=061A8F2C0328FF803CEE5A27EBBAD475.wapp1nB?docId=US433566430&_cid=P11-MNL6C1-71764-1",
+          "snippet": "",
+          "source": "Patentscope"
+        },
+        {
+          "record_id": "rec_e94308d296fb",
+          "family_id": "family:edd5cd46beac8cd878fb34bf81f89eeab14f618e",
+          "title": "5. US20220282638 - Material activation system with thermal energy storage system",
+          "patent_id": "US373267798",
+          "abstract": "(EN)Anenergystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C. Intermittent electricalenergyheats a solid medium. Heat from the solid medium is delivered continuously on demand. An array of bricks incorporating internal radiation cavities is directly heated bythermalradiation. The cavities facilitate rapid, uniform heating via reradiation. Heat delivery via flowing gas establishes a thermocline which maintains high outlet temperature throughout discharge. Gas flows through structured pathways within the array, delivering heat which may be used for processes including calcination, hydrogen electrolysis, steam generation, andthermalpower generation and cogeneration. Groups ofthermalstoragearrays may be controlled and operated at high temperatures withoutthermalrunaway via deep-discharge sequencing. Forecast-based control enables continuous, year-round heat supply using current and advance information of weather and VRE availability. High-voltage DC power conversion and distribution circuitry improves the efficiency of VRE power transfer into the system.",
+          "inventors": [
+            "John Setel O'Donnell",
+            "Peter Emery von Behrens",
+            "Chiaki Treynor",
+            "Jeremy Quentin Keller",
+            "Matthieu Jonemann",
+            "Robert Ratz",
+            "Yusef Desjardins Ferhani"
+          ],
+          "assignee": "Rondo; Energy; , Inc.",
+          "filing_date": "",
+          "publication_date": "08.09.2022",
+          "url": "https://patentscope.wipo.int/search/en/detail.jsf;jsessionid=061A8F2C0328FF803CEE5A27EBBAD475.wapp1nB?docId=US373267798&_cid=P11-MNL6C1-71764-1",
+          "snippet": "",
+          "source": "Patentscope"
+        }
+      ],
+      "evaluations": [
+        {
+          "record_id": "rec_d32965bf3945",
+          "patent_id": "US20200182095A1",
+          "analysis_route": "manual_review",
+          "route_reason": "Triagem indicou revisão humana.",
+          "screening_score": 7.7,
+          "screening_decision": "review",
+          "screening_reason": "A patente foca em armazenamento de energia usando dióxido de carbono e pressão, o que se alinha com a busca. No entanto, o processo detalhado de aquecimento, expansão e condensação requer uma análise mais aprofundada para determinar a relevância completa para o conceito de 'armazenamento de energia térmica por dióxido de carbono'.",
+          "evidence_snippets": [
+            "The method includes increasing the pressure of a working fluid including carbon dioxide from a first pressure at least equal to a triple point pressure to a second pressure above the triple point pressure.",
+            "extracting mechanical work by expanding a first portion of the heated working fluid to a third pressure"
+          ],
+          "thematic_cluster": "Armazenamento de Energia Térmica com Dióxido de Carbono",
+          "relevance_score": 6.5,
+          "summary": "Esta patente descreve um sistema e método para a produção de trabalho utilizando dióxido de carbono, envolvendo aquecimento, expansão e condensação para converter energia térmica em trabalho mecânico. O sistema utiliza ciclos de pressão e temperatura controlados com o CO2, explorando a sua capacidade de armazenamento de energia térmica. A patente foca em um processo específico de ciclo termodinâmico com CO2.",
+          "key_findings": [
+            "O sistema utiliza um ciclo termodinâmico que envolve aquecimento, expansão e condensação do dióxido de carbono.",
+            "A patente detalha o uso de um ejector para extrair trabalho mecânico do fluido aquecido de CO2.",
+            "O processo inclui a refrigeração do fluido de saída para condensar o vapor de CO2 de volta em líquido."
+          ],
+          "potential_applications": [
+            "Sistemas de armazenamento de energia térmica.",
+            "Geração de energia a partir de fontes de calor residual.",
+            "Sistemas de refrigeração e aquecimento."
+          ],
+          "technical_domain": "Termodinâmica, Armazenamento de Energia, Ciclos Termodinâmicos",
+          "innovation_level": "Incremental",
+          "problem_statement": "O problema abordado é a necessidade de um sistema eficiente para a produção de trabalho a partir de energia térmica, utilizando um fluido de trabalho adequado.",
+          "solution_summary": "A solução proposta é um sistema que aumenta a pressão do dióxido de carbono, o aquece, extrai trabalho através da expansão, utiliza o fluido aquecido como um fluido de sucção em um ejector e, finalmente, refrigera o fluido para condensar o vapor em líquido, completando um ciclo termodinâmico.",
+          "claimed_advantages": [
+            "Potencial para a produção de trabalho a partir de energia térmica.",
+            "Utilização de dióxido de carbono como fluido de trabalho, que possui propriedades adequadas para armazenamento de energia térmica.",
+            "Possibilidade de controle preciso da pressão e temperatura para otimizar o processo."
+          ],
+          "limitations": [
+            "A eficiência do sistema depende da otimização do ciclo termodinâmico e das condições de operação.",
+            "O sistema pode ser complexo e requerer componentes especializados para garantir o funcionamento adequado."
+          ],
+          "maturity_level": "Inicial",
+          "confidence": 0.79,
+          "manual_review_required": true,
+          "llm_error": ""
+        },
+        {
+          "record_id": "rec_60aba676d2d1",
+          "patent_id": "CN115234318A",
+          "analysis_route": "manual_review",
+          "route_reason": "Triagem indicou revisão humana.",
+          "screening_score": 8.2,
+          "screening_decision": "review",
+          "screening_reason": "A patente se concentra em um sistema de armazenamento de dióxido de carbono acoplado a uma usina termelétrica, com ênfase no 'deep peak shaving' e no uso de um expander para melhorar a temperatura do CO2. Embora relevante para 'carbon dioxide thermal energy storage', a descrição detalhada do sistema e seu funcionamento requer uma análise mais aprofundada.",
+          "evidence_snippets": [
+            "The invention provides a carbon dioxide energy storage system matched with deep peak shaving of a thermal power plant...",
+            "The energy release component comprises an expander; the coupling assembly comprises a steam extraction bypass and a first heat storage module."
+          ],
+          "thematic_cluster": "Armazenamento de Energia em Ciclos Termodinâmicos com CO2",
+          "relevance_score": 6.5,
+          "summary": "Esta patente descreve um sistema de armazenamento de dióxido de carbono acoplado a uma usina termelétrica, utilizando um ciclo fechado com um expander para otimizar a temperatura do CO2 e realizar 'deep peak shaving'. O sistema visa melhorar a flexibilidade e a segurança da usina termelétrica, além de aumentar a eficiência do armazenamento de energia.",
+          "key_findings": [
+            "O sistema utiliza um expander para melhorar a temperatura do CO2 na entrada da máquina de expansão.",
+            "Um bypass de extração de vapor é usado para direcionar vapor de alta temperatura para um primeiro módulo de armazenamento de calor."
+          ],
+          "potential_applications": [
+            "Usinas termelétricas com capacidade de armazenamento de energia.",
+            "Sistemas de gestão de energia em redes elétricas."
+          ],
+          "technical_domain": "Armazenamento de Energia, Termodinâmica, Engenharia de Usinas Termelétricas",
+          "innovation_level": "Incremental",
+          "problem_statement": "O problema abordado é a necessidade de flexibilidade e segurança na regulação de pico de energia de usinas termelétricas, juntamente com a busca por métodos mais eficientes para o armazenamento de energia.",
+          "solution_summary": "A solução proposta é um sistema de armazenamento de CO2 que utiliza um ciclo fechado, incluindo um expander, para armazenar e liberar calor de alta temperatura, permitindo o 'deep peak shaving' e otimizando a temperatura do CO2.",
+          "claimed_advantages": [
+            "Melhora a flexibilidade e a segurança da regulação de pico da usina termelétrica.",
+            "Aumenta a eficiência do armazenamento de energia do CO2."
+          ],
+          "limitations": [
+            "A patente não detalha os aspectos de custo ou escalabilidade do sistema.",
+            "A dependência de um ciclo termodinâmico específico pode limitar a aplicabilidade em outros contextos de armazenamento de energia."
+          ],
+          "maturity_level": "Intermediária",
+          "confidence": 0.85,
+          "manual_review_required": true,
+          "llm_error": ""
+        },
+        {
+          "record_id": "rec_e9bfd6ecaee9",
+          "patent_id": "CN118934113A",
+          "analysis_route": "deep_extraction",
+          "route_reason": "Há evidência suficiente para extração detalhada.",
+          "screening_score": 9.2,
+          "screening_decision": "include",
+          "screening_reason": "A patente descreve um sistema de armazenamento de energia usando dióxido de carbono supercrítico em condições isobáricas e isotérmicas, o que corresponde diretamente à busca por 'carbon dioxide thermal energy storage'. O resumo detalha componentes específicos e o funcionamento do sistema, demonstrando relevância.",
+          "evidence_snippets": [
+            "æ¬åææ¶åè¶ä¸´çåç¼©äºæ°§åç¢³å¨è½ææ¯é¢åï¼ç­æ¸©ç­åçè¶ä¸´çåç¼©äºæ°§åç¢³å¨è½ç³»ç»ï¼",
+            "åæ¬ï¼åç¼©æºç»ï¼å©ç¨çµåå°ä½æ¸©ä½åçè¶ä¸´çäºæ°§åç¢³åç¼©ä¸ºé«æ¸©é«åçè¶ä¸´çäºæ°§åç¢³ï¼è¨èæºç»"
+          ],
+          "thematic_cluster": "CO2 Cycle Configurations",
+          "relevance_score": 9.2,
+          "summary": "Esta patente descreve um sistema de armazenamento de energia utilizando dióxido de carbono supercrítico em condições isobáricas e isotérmicas, focado na utilização de um compressor e expansão para gerar e armazenar energia térmica. O sistema inclui câmaras de armazenamento de alta e baixa pressão, bem como trocadores de calor para manter a temperatura estável. A inovação reside na otimização do uso do CO2 supercrítico para armazenamento térmico.",
+          "key_findings": [
+            "O sistema utiliza um compressor para aumentar a temperatura e a pressão do CO2 supercrítico, e um expansor para converter energia térmica de volta em energia elétrica.",
+            "A configuração subaquática das câmaras de armazenamento de alta e baixa pressão visa manter a estabilidade térmica do sistema."
+          ],
+          "potential_applications": [
+            "Armazenamento de energia renovável (solar, eólica).",
+            "Geração de energia de pico.",
+            "Aquecimento industrial e residencial."
+          ],
+          "technical_domain": "Engenharia Termodinâmica, Armazenamento de Energia",
+          "innovation_level": "Significativa",
+          "problem_statement": "O problema abordado é a necessidade de um sistema eficiente e estável para o armazenamento de energia térmica, explorando as propriedades do dióxido de carbono supercrítico.",
+          "solution_summary": "A solução proposta é um sistema de armazenamento de energia que utiliza dióxido de carbono supercrítico em condições isobáricas e isotérmicas, com um compressor e expansão para converter energia elétrica em energia térmica e vice-versa, armazenada em câmaras de alta e baixa pressão, controladas por trocadores de calor.",
+          "claimed_advantages": [
+            "Eficiência no armazenamento e recuperação de energia térmica.",
+            "Estabilidade térmica através da configuração subaquática e do controle de temperatura com trocadores de calor."
+          ],
+          "limitations": [
+            "A complexidade do sistema devido à necessidade de controle preciso da temperatura e pressão.",
+            "Potenciais desafios relacionados à corrosão e ao desempenho do CO2 supercrítico em condições subaquáticas."
+          ],
+          "maturity_level": "Inicial",
+          "confidence": 0.95,
+          "manual_review_required": false,
+          "llm_error": ""
+        },
+        {
+          "record_id": "rec_cb86ce571d5d",
+          "patent_id": "WO2021081541A1",
+          "analysis_route": "deep_extraction",
+          "route_reason": "Há evidência suficiente para extração detalhada.",
+          "screening_score": 9.2,
+          "screening_decision": "include",
+          "screening_reason": "A patente trata especificamente de armazenamento de energia térmica usando dióxido de carbono como fluido de trabalho e um sistema de armazenamento subterrâneo, que são elementos-chave na busca original.",
+          "evidence_snippets": [
+            "AbstractThe invention provides a system for energy distribution that uses liquid carbon dioxide as a working fluid.",
+            "An underground thermal energy storage system is used to store energy flowing into the system that is in excess of the current demand."
+          ],
+          "thematic_cluster": "Thermal Transfer Mechanisms",
+          "relevance_score": 9.2,
+          "summary": "Esta patente descreve um sistema para distribuição de energia que utiliza dióxido de carbono como fluido de trabalho, aproveitando a evaporação e compressão para transferência de calor. O sistema incorpora um armazenamento subterrâneo de energia térmica para otimizar o uso de energia excedente, particularmente de fontes como usinas termelétricas.",
+          "key_findings": [
+            "Utilização de dióxido de carbono como fluido de trabalho para transferência de calor.",
+            "Implementação de um sistema de armazenamento subterrâneo de energia térmica para otimizar o uso de energia.",
+            "Aproveitamento de resíduos de energia térmica de usinas termelétricas."
+          ],
+          "potential_applications": [
+            "Armazenamento de energia térmica em usinas termelétricas.",
+            "Integração de sistemas de energia renovável com armazenamento de energia.",
+            "Aquecimento e resfriamento de edifícios utilizando energia térmica armazenada."
+          ],
+          "technical_domain": "Armazenamento de Energia, Termodinâmica, Fluidos de Trabalho",
+          "innovation_level": "Significativa",
+          "problem_statement": "O problema abordado é a gestão e utilização de resíduos de energia térmica, especificamente calor de água quente proveniente de usinas termelétricas, que podem ser desperdiçados.",
+          "solution_summary": "A solução proposta é um sistema que utiliza o dióxido de carbono para absorver e liberar calor, armazenando o excesso de energia em um sistema de armazenamento subterrâneo de energia térmica.",
+          "claimed_advantages": [
+            "Otimização do uso de energia térmica.",
+            "Redução do desperdício de energia.",
+            "Possibilidade de integrar fontes de energia renováveis com sistemas de armazenamento."
+          ],
+          "limitations": [
+            "A patente não detalha especificamente os desafios técnicos relacionados à eficiência do armazenamento subterrâneo de energia térmica em larga escala.",
+            "A viabilidade econômica do sistema depende de fatores como custos de instalação e operação."
+          ],
+          "maturity_level": "Intermediária",
+          "confidence": 0.95,
+          "manual_review_required": false,
+          "llm_error": ""
+        },
+        {
+          "record_id": "rec_8b778603418c",
+          "patent_id": "US20210123608A1",
+          "analysis_route": "deep_extraction",
+          "route_reason": "Há evidência suficiente para extração detalhada.",
+          "screening_score": 9.2,
+          "screening_decision": "include",
+          "screening_reason": "A patente trata especificamente de armazenamento de energia térmica usando dióxido de carbono como fluido de trabalho e integração com sistemas de armazenamento subterrâneo, o que se alinha diretamente com a busca 'carbon dioxide thermal energy storage'.",
+          "evidence_snippets": [
+            "AbstractThe invention provides a system for energy distribution that uses liquid carbon dioxide as a working fluid.",
+            "An underground thermal energy storage system is used to store energy flowing into the system that is in excess of the current demand."
+          ],
+          "thematic_cluster": "Thermal Transfer Mechanisms",
+          "relevance_score": 9.2,
+          "summary": "Esta patente descreve um sistema para distribuição de energia que utiliza dióxido de carbono como fluido de trabalho, aproveitando a evaporação e compressão para transferência de calor. O sistema integra armazenamento subterrâneo de energia térmica para otimizar o uso de energia excedente, particularmente de fontes como usinas termelétricas.",
+          "key_findings": [
+            "Utilização de dióxido de carbono como fluido de trabalho para transferência de energia térmica.",
+            "Integração com um sistema de armazenamento subterrâneo de energia térmica para otimizar o uso de energia excedente."
+          ],
+          "potential_applications": [
+            "Armazenamento de energia térmica em usinas termelétricas.",
+            "Sistemas de aquecimento e resfriamento de edifícios.",
+            "Integração com redes de energia renovável."
+          ],
+          "technical_domain": "Armazenamento de Energia Térmica, Termodinâmica, Engenharia de Sistemas",
+          "innovation_level": "Significativa",
+          "problem_statement": "O problema abordado é a utilização de energia térmica residual, como a de usinas termelétricas, de forma eficiente, permitindo seu armazenamento e reutilização.",
+          "solution_summary": "A solução proposta é um sistema que utiliza dióxido de carbono para absorver e liberar calor, combinando a evaporação e compressão do fluido com um sistema de armazenamento subterrâneo de energia térmica.",
+          "claimed_advantages": [
+            "Utilização eficiente de energia térmica residual.",
+            "Possibilidade de armazenamento de energia para uso posterior."
+          ],
+          "limitations": [
+            "Dependência de condições específicas para o armazenamento subterrâneo (e.g., geologia adequada).",
+            "Potenciais desafios na eficiência da transferência de calor entre o fluido e o armazenamento."
+          ],
+          "maturity_level": "Intermediária",
+          "confidence": 0.95,
+          "manual_review_required": false,
+          "llm_error": ""
+        },
+        {
+          "record_id": "rec_5cb75be738eb",
+          "patent_id": "AU244427549",
+          "analysis_route": "manual_review",
+          "route_reason": "Triagem indicou revisão humana.",
+          "screening_score": 7.2,
+          "screening_decision": "review",
+          "screening_reason": "A patente foca em armazenamento térmico de dióxido de carbono utilizando armazenamento de gelo para sub-resfriamento, o que se relaciona com o armazenamento de energia térmica por meio de calor. No entanto, o resumo não está disponível, necessitando de uma análise mais aprofundada para determinar a relevância completa.",
+          "evidence_snippets": [
+            "A System to Improve Performance of Transcritical Carbon Dioxide Cooling by Integration of Ice Thermal Storage for Subcooling"
+          ],
+          "thematic_cluster": "Armazenamento Térmico com Gelo para Otimização de Ciclos de Refrigeração",
+          "relevance_score": 6.5,
+          "summary": "Esta patente descreve um sistema para melhorar o desempenho de sistemas de resfriamento de dióxido de carbono transcrítico através da integração de armazenamento térmico de gelo para sub-resfriamento. A patente utiliza gelo para reduzir a temperatura do CO2, otimizando o ciclo de resfriamento. A relevância para o armazenamento de energia térmica de CO2 é evidente, embora o foco principal seja o resfriamento.",
+          "key_findings": [
+            "Utilização de gelo para sub-resfriamento do dióxido de carbono.",
+            "Integração do armazenamento de gelo com um sistema de resfriamento de CO2 transcrítico.",
+            "O sistema visa melhorar o desempenho do ciclo de resfriamento."
+          ],
+          "potential_applications": [
+            "Sistemas de refrigeração industrial.",
+            "Resfriamento de equipamentos eletrônicos.",
+            "Aplicações de resfriamento de alimentos e bebidas."
+          ],
+          "technical_domain": "Resfriamento e Armazenamento de Energia",
+          "innovation_level": "Incremental",
+          "problem_statement": "O sistema de resfriamento de dióxido de carbono transcrítico enfrenta desafios na manutenção da eficiência do ciclo de resfriamento, particularmente na etapa de sub-resfriamento.",
+          "solution_summary": "A solução proposta é integrar um sistema de armazenamento de gelo para fornecer sub-resfriamento ao CO2, permitindo um ciclo de resfriamento mais eficiente e com maior capacidade de resfriamento.",
+          "claimed_advantages": [
+            "Melhora do desempenho do sistema de resfriamento de CO2 transcrítico.",
+            "Aumento da capacidade de resfriamento.",
+            "Potencial para maior eficiência energética."
+          ],
+          "limitations": [
+            "Dependência da disponibilidade e gestão do gelo para o armazenamento.",
+            "Potenciais perdas de calor devido à transferência entre o CO2 e o gelo."
+          ],
+          "maturity_level": "Intermediária",
+          "confidence": 0.75,
+          "manual_review_required": true,
+          "llm_error": ""
+        },
+        {
+          "record_id": "rec_0d58733a5389",
+          "patent_id": "US433566429",
+          "analysis_route": "screen_only",
+          "route_reason": "Patente excluída na triagem.",
+          "screening_score": 3.5,
+          "screening_decision": "exclude",
+          "screening_reason": "A patente descreve um sistema de armazenamento de energia térmica que utiliza calor de mais de 1000°C para processos como calcinação e geração de calor, o que se alinha com o termo de busca 'carbon dioxide thermal energy storage'. No entanto, a descrição detalhada do sistema e seu foco em aplicações específicas requerem uma revisão mais aprofundada. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+          "evidence_snippets": [
+            "An energystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C.",
+            "Heat from the solid medium is delivered continuously on demand. An array of bricks incorporating internal radiation cavities is directly heated by thermal radiation."
+          ],
+          "thematic_cluster": "Armazenamento de Energia em Meio Sólido para Aplicações de Alta Temperatura",
+          "relevance_score": 0.0,
+          "summary": "",
+          "key_findings": [],
+          "potential_applications": [],
+          "technical_domain": "Armazenamento de Energia Térmica, Geração de Calor",
+          "innovation_level": "",
+          "problem_statement": "",
+          "solution_summary": "",
+          "claimed_advantages": [],
+          "limitations": [],
+          "maturity_level": "",
+          "confidence": 0.7,
+          "manual_review_required": false,
+          "llm_error": ""
+        },
+        {
+          "record_id": "rec_3da6b58fde67",
+          "patent_id": "US400261922",
+          "analysis_route": "screen_only",
+          "route_reason": "Patente excluída na triagem.",
+          "screening_score": 3.5,
+          "screening_decision": "exclude",
+          "screening_reason": "A patente descreve um sistema de armazenamento de energia térmica que utiliza calor gerado por eletricidade renovável, incluindo aquecimento de um meio sólido e entrega de calor sob demanda para processos como calcinação e produção de hidrogênio, o que se alinha diretamente com a busca por 'carbon dioxide thermal energy storage'. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+          "evidence_snippets": [
+            "An energystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C.",
+            "Heat from the solid medium is delivered continuously on demand."
+          ],
+          "thematic_cluster": "Armazenamento de Energia em Meios Sólidos e Aplicações de Alta Temperatura",
+          "relevance_score": 0.0,
+          "summary": "",
+          "key_findings": [],
+          "potential_applications": [],
+          "technical_domain": "Armazenamento de Energia Térmica, Geração de Energia",
+          "innovation_level": "",
+          "problem_statement": "",
+          "solution_summary": "",
+          "claimed_advantages": [],
+          "limitations": [],
+          "maturity_level": "",
+          "confidence": 0.79,
+          "manual_review_required": false,
+          "llm_error": ""
+        },
+        {
+          "record_id": "rec_d53841fc186a",
+          "patent_id": "US433566430",
+          "analysis_route": "screen_only",
+          "route_reason": "Patente excluída na triagem.",
+          "screening_score": 3.5,
+          "screening_decision": "exclude",
+          "screening_reason": "A patente descreve um sistema de armazenamento de energia térmica que utiliza calor em alta temperatura (acima de 1000°C) para processos como calcinação e produção de hidrogênio, diretamente relacionado ao armazenamento de energia de CO2. A utilização de 'thermal energy storage system' e a aplicação em processos específicos de utilização do calor gerado indicam relevância direta. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+          "evidence_snippets": [
+            "An energystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C.",
+            "Heat from the solid medium is delivered continuously on demand. Gas flows through structured pathways within the array, delivering heat which may be used for processes including calcination, hydrogen electrolysis,..."
+          ],
+          "thematic_cluster": "Armazenamento de Energia de CO2 e Aplicações de Calor",
+          "relevance_score": 0.0,
+          "summary": "",
+          "key_findings": [],
+          "potential_applications": [],
+          "technical_domain": "Armazenamento de Energia Térmica, Engenharia de Calor",
+          "innovation_level": "",
+          "problem_statement": "",
+          "solution_summary": "",
+          "claimed_advantages": [],
+          "limitations": [],
+          "maturity_level": "",
+          "confidence": 0.79,
+          "manual_review_required": false,
+          "llm_error": ""
+        },
+        {
+          "record_id": "rec_e94308d296fb",
+          "patent_id": "US373267798",
+          "analysis_route": "screen_only",
+          "route_reason": "Patente excluída na triagem.",
+          "screening_score": 3.5,
+          "screening_decision": "exclude",
+          "screening_reason": "A patente descreve um sistema de armazenamento de energia térmica que utiliza calor gerado por eletricidade renovável, incluindo aquecimento de um meio sólido e transferência de calor via gás. Embora não seja explicitamente sobre 'carbon dioxide', o foco em altas temperaturas (acima de 1000°C) e aplicações como calcinação e produção de hidrogênio se alinha com o tema da busca, necessitando de uma análise mais aprofundada para determinar a relevância específica para o armazenamento de energia de CO2. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+          "evidence_snippets": [
+            "An energystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C.",
+            "Heat from the solid medium is delivered continuously on demand."
+          ],
+          "thematic_cluster": "Armazenamento de Energia de Fontes Renováveis, Aquecimento de Processos",
+          "relevance_score": 0.0,
+          "summary": "",
+          "key_findings": [],
+          "potential_applications": [],
+          "technical_domain": "Armazenamento de Energia Térmica, Engenharia de Calor",
+          "innovation_level": "",
+          "problem_statement": "",
+          "solution_summary": "",
+          "claimed_advantages": [],
+          "limitations": [],
+          "maturity_level": "",
+          "confidence": 0.66,
+          "manual_review_required": false,
+          "llm_error": ""
+        }
+      ],
+      "patents_by_source": {
+        "GooglePatents": 5,
+        "Patentscope": 5
+      },
+      "scraper_diagnostics": {
+        "GooglePatents": [],
+        "Patentscope": [
+          {
+            "kind": "discovery_empty",
+            "detail": "DuckDuckGo não retornou links para Patentscope.",
+            "url": "https://html.duckduckgo.com/html/"
+          }
+        ]
+      },
+      "coverage_metrics": {
+        "raw_scraped": 10,
+        "unique_patents": 10,
+        "duplicates_removed": 0,
+        "screened": 10,
+        "included": 3,
+        "review": 3,
+        "excluded": 4,
+        "manual_review_required": 3,
+        "manual_review_deferred": 0,
+        "full_extractions": 6,
+        "missing_abstract": 1,
+        "missing_id": 0,
+        "records_with_content_identity": 0,
+        "records_with_fallback_identity": 0,
+        "family_duplicates_removed": 0,
+        "llm_screening_failures": 0,
+        "llm_total_failures": 0
+      },
+      "manual_review_queue": [
+        {
+          "record_id": "rec_60aba676d2d1",
+          "patent_id": "CN115234318A",
+          "family_id": "family:e199d77fe5f85343c72bd55fe064233f9c8b31ec",
+          "title": "Carbon dioxide energy storage system matched with thermal power plant deep peak shaving and control method thereof",
+          "reason": "Triagem indicou revisão humana.",
+          "route": "manual_review",
+          "screening_score": 8.2,
+          "screening_decision": "review",
+          "llm_error": ""
+        },
+        {
+          "record_id": "rec_d32965bf3945",
+          "patent_id": "US20200182095A1",
+          "family_id": "family:1065f16bddea8989ffd25dd50703f560a5611777",
+          "title": "Carbon dioxide upgrade and energy storage system and method",
+          "reason": "Triagem indicou revisão humana.",
+          "route": "manual_review",
+          "screening_score": 7.7,
+          "screening_decision": "review",
+          "llm_error": ""
+        },
+        {
+          "record_id": "rec_5cb75be738eb",
+          "patent_id": "AU244427549",
+          "family_id": "family:f2562110d58e9c2be7e7177585da03af0dd8bffa",
+          "title": "1. AU2019901965 - A System to Improve Performance of Transcritical Carbon Dioxide Cooling by Integration of Ice Thermal Storage for Subcooling",
+          "reason": "Triagem indicou revisão humana.",
+          "route": "manual_review",
+          "screening_score": 7.2,
+          "screening_decision": "review",
+          "llm_error": ""
+        }
+      ],
+      "prisma_flow": {
+        "flow": {
+          "identification": {
+            "raw_records": 10,
+            "unique_records": 10,
+            "duplicates_removed": 0
+          },
+          "screening": {
+            "screened": 10,
+            "included": 3,
+            "review": 3,
+            "excluded": 4
+          },
+          "eligibility": {
+            "full_extractions": 6,
+            "manual_review_required": 3,
+            "manual_review_deferred": 0
+          },
+          "coverage": {
+            "missing_abstract": 1,
+            "missing_id": 0
+          },
+          "synthesis": {
+            "analyzed_records": 6,
+            "comparative_analysis_generated": true
+          }
+        },
+        "criteria": {
+          "include": [
+            "Alinhamento claro com a query ou seus sinônimos técnicos.",
+            "Documento com título, resumo ou snippet suficientes para análise.",
+            "Potencial técnico relevante para o domínio pesquisado."
+          ],
+          "exclude": [
+            "Documentos sem relação técnica com a query.",
+            "Duplicatas de outra fonte ou publicação equivalente.",
+            "Registro sem metadados mínimos para avaliação."
+          ]
+        },
+        "thresholds": {
+          "include_score": 7.0,
+          "review_score": 4.5,
+          "max_items_for_manual_review": 20
+        },
+        "version": "1.0"
+      },
+      "thematic_clusters": {
+        "clusters": [
+          {
+            "cluster": "Thermal Transfer Mechanisms",
+            "count": 2,
+            "patent_ids": [
+              "WO2021081541A1",
+              "US20210123608A1"
+            ],
+            "titles": [
+              "Method for thermal energy transmission using water and carbon dioxide",
+              "Method for thermal energy transmission using water and carbon dioxide"
+            ],
+            "average_score": 9.2,
+            "average_confidence": 0.95,
+            "evidence_count": 4,
+            "top_patents": [],
+            "summary": "",
+            "record_ids": [
+              "rec_cb86ce571d5d",
+              "rec_8b778603418c"
+            ]
+          },
+          {
+            "cluster": "CO2 Cycle Configurations",
+            "count": 1,
+            "patent_ids": [
+              "CN118934113A"
+            ],
+            "titles": [
+              "An isothermal and isobaric supercritical compressed carbon dioxide energy storage system"
+            ],
+            "average_score": 9.2,
+            "average_confidence": 0.95,
+            "evidence_count": 2,
+            "top_patents": [],
+            "summary": "",
+            "record_ids": [
+              "rec_e9bfd6ecaee9"
+            ]
+          }
+        ],
+        "total_clusters": 2
+      },
+      "scraper_durations": {
+        "GooglePatents": 15.872,
+        "Patentscope": 32.928
+      },
+      "evaluation_duration_seconds": 18.967,
+      "comparative_analysis_duration_seconds": 4.466,
+      "total_duration_seconds": 87.13,
+      "comparative_analysis": "## Análise Comparativa de Patentes: Armazenamento Térmico de Energia com Dióxido de Carbono\n\n### 1. Panorama Geral\n\nA análise das três patentes avaliadas revela um estado da arte promissor e em rápido desenvolvimento no campo do armazenamento térmico de energia (ATE) utilizando dióxido de carbono (CO2). Todas as patentes compartilham o foco na utilização de CO2 como fluido de trabalho, explorando os ciclos de evaporação e compressão para transferência e armazenamento de calor. A inovação central reside na integração de sistemas de armazenamento subterrâneo de energia térmica (UTES) para otimizar a eficiência e a capacidade do sistema.  A diversidade entre as patentes reside principalmente na abordagem de implementação e nos detalhes do sistema, mas o objetivo comum de utilizar CO2 para ATE permanece constante.\n\n### 2. Tendências Identificadas\n\n* **Fluido de Trabalho CO2:** A utilização de CO2 supercrítico como fluido de trabalho é uma tendência dominante, impulsionada pelas suas propriedades termodinâmicas favoráveis (alta densidade de energia, capacidade de absorção de calor) e disponibilidade.\n* **Ciclos de Evaporação e Compressão:**  A combinação de evaporação e compressão do CO2 é a base para a transferência e armazenamento de calor em todas as patentes. Essa abordagem permite a utilização de calor residual e a otimização da eficiência do sistema.\n* **Armazenamento Subterrâneo de Energia Térmica (UTES):** A integração de UTES é uma tendência crescente, visando aumentar a capacidade de armazenamento e melhorar a eficiência do sistema, aproveitando a estabilidade térmica do solo.\n* **Condições Isobáricas e Isotérmicas:** A patente CN118934113A destaca a exploração de condições isobáricas e isotérmicas, indicando um interesse em otimizar o processo de armazenamento e recuperação de energia.\n\n### 3. Lacunas e Oportunidades\n\n* **Controle de Fase do CO2:** A patentes focam na utilização do CO2 em fase supercrítica, mas a exploração de outras fases (líquida ou gasosa) e o controle preciso da transição de fase podem oferecer oportunidades para aumentar a densidade de energia armazenada e a eficiência do sistema.\n* **Materiais de Absorção e Refrigeração:** A patentes não detalham suficientemente os materiais utilizados para absorver e refrigeração o calor. A pesquisa em novos materiais com alta capacidade de absorção e refrigeração pode melhorar significativamente o desempenho do sistema.\n* **Integração com Fontes Renováveis:** A integração com fontes de energia renovável (solar, eólica) ainda não é totalmente explorada nas patentes. O desenvolvimento de sistemas que combinem ATE com a geração de energia renovável pode aumentar a eficiência e a sustentabilidade do sistema.\n* **Modelagem e Otimização:** A otimização do sistema, incluindo o dimensionamento dos componentes e a seleção dos parâmetros operacionais, ainda carece de maior detalhamento.\n\n### 4. Recomendações\n\n* **Foco em Materiais:** Concentrar a pesquisa em materiais avançados para absorção e refrigeração de calor, com ênfase em materiais com alta capacidade termodinâmica e durabilidade.\n* **Modelagem e Simulação:** Utilizar ferramentas de modelagem e simulação para otimizar o design do sistema, considerando diferentes cenários de operação e fontes de energia.\n* **Integração com Fontes Renováveis:** Explorar a integração do sistema de ATE com fontes de energia renovável, como sistemas de armazenamento de energia solar concentrada (CSP) ou eólica.\n* **Análise de Ciclo de Vida:** Realizar uma análise completa do ciclo de vida do sistema, considerando os impactos ambientais e a sustentabilidade do processo.\n\n### 5. Ranking Final\n\n1. **An isothermal and isobaric supercritical compressed carbon dioxide energy storage system** (CN118934113A):  Obtem um score alto (9.2) devido à sua abordagem específica de condições isobáricas e isotérmicas, que representa uma otimização do processo de armazenamento.\n2. **Method for thermal energy transmission using water and carbon dioxide** (US20210123608A1) & **Method for thermal energy transmission using water and carbon dioxide** (WO2021081541A1):  Ambas as patentes recebem o mesmo score (9.2) devido à sua abordagem similar de utilização de CO2 como fluido de trabalho e integração com armazenamento subterrâneo de energia térmica. A diferença reside na especificidade do detalhamento técnico, que é similar.\n\n**Justificativa:** Todas as patentes apresentam um alto",
+      "output_paths": {
+        "markdown": "/home/murilo/Documentos/RevisaoTecnica/output/live_eval_round2/patentes_carbon_dioxide_thermal_energy_storage_20260405_000140.md",
+        "json": "/home/murilo/Documentos/RevisaoTecnica/output/live_eval_round2/patentes_carbon_dioxide_thermal_energy_storage_20260405_000140.json",
+        "state": "/home/murilo/Documentos/RevisaoTecnica/output/live_eval_round2/run_state_20260405_000013.json",
+        "prisma": "/home/murilo/Documentos/RevisaoTecnica/output/live_eval_round2/prisma_flow_20260405_000013.json",
+        "snapshot": "/home/murilo/Documentos/RevisaoTecnica/output/live_eval_round2/config_snapshot_20260405_000013.json",
+        "memory_journal": "/home/murilo/Documentos/RevisaoTecnica/output/live_eval_round2/memory_journal_20260405_000013.json",
+        "memory_sidecar": "/home/murilo/Documentos/RevisaoTecnica/output/live_eval_round2/memory_sidecar_20260405_000013.json"
+      },
+      "errors": []
+    },
+    "feature_flags": {
+      "require_evidence": true,
+      "enable_thematic_clusters": true,
+      "enable_prisma": true,
+      "enable_snapshot": true,
+      "enable_comparative_analysis": true,
+      "enable_manual_review_queue": true
+    },
+    "writing_context": {
+      "protocol": {
+        "version": "1.0",
+        "query": "carbon dioxide thermal energy storage",
+        "sources": [
+          "Google Patents",
+          "Patentscope"
+        ],
+        "stages": [
+          "identification",
+          "deduplication",
+          "screening",
+          "manual_review",
+          "full_extraction",
+          "synthesis"
+        ],
+        "criteria": {
+          "include": [
+            "Alinhamento claro com a query ou seus sinônimos técnicos.",
+            "Documento com título, resumo ou snippet suficientes para análise.",
+            "Potencial técnico relevante para o domínio pesquisado."
+          ],
+          "exclude": [
+            "Documentos sem relação técnica com a query.",
+            "Duplicatas de outra fonte ou publicação equivalente.",
+            "Registro sem metadados mínimos para avaliação."
+          ]
+        },
+        "thresholds": {
+          "include_score": 7.0,
+          "review_score": 4.5,
+          "max_items_for_manual_review": 20
+        },
+        "limits": {
+          "max_results": 5
+        },
+        "model": "gemma3:4b"
+      },
+      "coverage_metrics": {
+        "raw_scraped": 10,
+        "unique_patents": 10,
+        "duplicates_removed": 0,
+        "screened": 10,
+        "included": 3,
+        "review": 3,
+        "excluded": 4,
+        "manual_review_required": 3,
+        "manual_review_deferred": 0,
+        "full_extractions": 6,
+        "missing_abstract": 1,
+        "missing_id": 0,
+        "records_with_content_identity": 0,
+        "records_with_fallback_identity": 0,
+        "family_duplicates_removed": 0,
+        "llm_screening_failures": 0,
+        "llm_total_failures": 0
+      },
+      "top_patents": [
+        {
+          "record_id": "rec_e9bfd6ecaee9",
+          "family_id": "family:93e61d9efb570bcdd84ea6254a70ea2c9b769d40",
+          "patent_id": "CN118934113A",
+          "title": "An isothermal and isobaric supercritical compressed carbon dioxide energy storage system",
+          "score": 9.2,
+          "screening_decision": "include",
+          "thematic_cluster": "CO2 Cycle Configurations",
+          "route": "deep_extraction",
+          "evidence_snippets": [
+            "æ¬åææ¶åè¶ä¸´çåç¼©äºæ°§åç¢³å¨è½ææ¯é¢åï¼ç­æ¸©ç­åçè¶ä¸´çåç¼©äºæ°§åç¢³å¨è½ç³»ç»ï¼",
+            "åæ¬ï¼åç¼©æºç»ï¼å©ç¨çµåå°ä½æ¸©ä½åçè¶ä¸´çäºæ°§åç¢³åç¼©ä¸ºé«æ¸©é«åçè¶ä¸´çäºæ°§åç¢³ï¼è¨èæºç»"
+          ]
+        },
+        {
+          "record_id": "rec_cb86ce571d5d",
+          "family_id": "family:156d9db54f6d2df5efd352ddbf3bd612f775a37b",
+          "patent_id": "WO2021081541A1",
+          "title": "Method for thermal energy transmission using water and carbon dioxide",
+          "score": 9.2,
+          "screening_decision": "include",
+          "thematic_cluster": "Thermal Transfer Mechanisms",
+          "route": "deep_extraction",
+          "evidence_snippets": [
+            "AbstractThe invention provides a system for energy distribution that uses liquid carbon dioxide as a working fluid.",
+            "An underground thermal energy storage system is used to store energy flowing into the system that is in excess of the current demand."
+          ]
+        },
+        {
+          "record_id": "rec_8b778603418c",
+          "family_id": "family:28993406c9b2c6d229a02057a6dce31ffbe7c6c7",
+          "patent_id": "US20210123608A1",
+          "title": "Method for thermal energy transmission using water and carbon dioxide",
+          "score": 9.2,
+          "screening_decision": "include",
+          "thematic_cluster": "Thermal Transfer Mechanisms",
+          "route": "deep_extraction",
+          "evidence_snippets": [
+            "AbstractThe invention provides a system for energy distribution that uses liquid carbon dioxide as a working fluid.",
+            "An underground thermal energy storage system is used to store energy flowing into the system that is in excess of the current demand."
+          ]
+        }
+      ],
+      "thematic_clusters": {
+        "clusters": [
+          {
+            "cluster": "Thermal Transfer Mechanisms",
+            "count": 2,
+            "patent_ids": [
+              "WO2021081541A1",
+              "US20210123608A1"
+            ],
+            "titles": [
+              "Method for thermal energy transmission using water and carbon dioxide",
+              "Method for thermal energy transmission using water and carbon dioxide"
+            ],
+            "average_score": 9.2,
+            "average_confidence": 0.95,
+            "evidence_count": 4,
+            "top_patents": [],
+            "summary": "",
+            "record_ids": [
+              "rec_cb86ce571d5d",
+              "rec_8b778603418c"
+            ]
+          },
+          {
+            "cluster": "CO2 Cycle Configurations",
+            "count": 1,
+            "patent_ids": [
+              "CN118934113A"
+            ],
+            "titles": [
+              "An isothermal and isobaric supercritical compressed carbon dioxide energy storage system"
+            ],
+            "average_score": 9.2,
+            "average_confidence": 0.95,
+            "evidence_count": 2,
+            "top_patents": [],
+            "summary": "",
+            "record_ids": [
+              "rec_e9bfd6ecaee9"
+            ]
+          }
+        ],
+        "total_clusters": 2
+      },
+      "route_summary": {
+        "manual_review": 3,
+        "deep_extraction": 3,
+        "screen_only": 4
+      },
+      "feature_flags": {
+        "require_evidence": true,
+        "enable_thematic_clusters": true,
+        "enable_prisma": true,
+        "enable_snapshot": true,
+        "enable_comparative_analysis": true,
+        "enable_manual_review_queue": true
+      },
+      "snapshot_hash": "f31330f1c62c8cfc4ee04fb3b8479e6b2b6b349e9de5cfe5c71db4608ec9d164"
+    },
+    "stage_metrics": [
+      {
+        "stage": "setup",
+        "status": "ok",
+        "duration_seconds": 1.964,
+        "items_processed": 1,
+        "detail": "Verificação do modelo Ollama"
+      },
+      {
+        "stage": "search",
+        "status": "ok",
+        "duration_seconds": 48.801,
+        "items_processed": 10,
+        "detail": "10 patentes únicas após dedupe"
+      },
+      {
+        "stage": "screening",
+        "status": "ok",
+        "duration_seconds": 31.894,
+        "items_processed": 10,
+        "detail": "3 incluídas, 3 revisão"
+      },
+      {
+        "stage": "comparative_analysis",
+        "status": "ok",
+        "duration_seconds": 4.466,
+        "items_processed": 10,
+        "detail": "Síntese comparativa gerada"
+      },
+      {
+        "stage": "reporting",
+        "status": "ok",
+        "duration_seconds": 0.003,
+        "items_processed": 10,
+        "detail": "Relatórios Markdown e JSON"
+      },
+      {
+        "stage": "finalization",
+        "status": "ok",
+        "duration_seconds": 0.001,
+        "items_processed": 7,
+        "detail": "Persistência de artefatos e estado"
+      }
+    ],
+    "llm_cache_stats": {
+      "hits": 0,
+      "misses": 17,
+      "entries": 17
+    },
+    "llm_telemetry": {
+      "degraded": false,
+      "total_failures": 0,
+      "consecutive_failures": 0,
+      "recent_errors": [],
+      "operations": {
+        "healthcheck": {
+          "calls": 1,
+          "successes": 1,
+          "failures": 0,
+          "retries": 0,
+          "cache_hits": 0,
+          "degraded_skips": 0,
+          "prompt_chars": 35,
+          "response_chars": 15,
+          "total_duration_seconds": 1.962,
+          "max_duration_seconds": 1.962,
+          "average_duration_seconds": 1.962
+        },
+        "screening": {
+          "calls": 10,
+          "successes": 10,
+          "failures": 0,
+          "retries": 0,
+          "cache_hits": 0,
+          "degraded_skips": 0,
+          "prompt_chars": 26340,
+          "response_chars": 8776,
+          "total_duration_seconds": 12.924,
+          "max_duration_seconds": 2.187,
+          "average_duration_seconds": 1.292
+        },
+        "evaluation": {
+          "calls": 6,
+          "successes": 6,
+          "failures": 0,
+          "retries": 0,
+          "cache_hits": 0,
+          "degraded_skips": 0,
+          "prompt_chars": 20312,
+          "response_chars": 15322,
+          "total_duration_seconds": 18.966,
+          "max_duration_seconds": 5.371,
+          "average_duration_seconds": 3.161
+        },
+        "comparative": {
+          "calls": 1,
+          "successes": 1,
+          "failures": 0,
+          "retries": 0,
+          "cache_hits": 0,
+          "degraded_skips": 0,
+          "prompt_chars": 2337,
+          "response_chars": 4429,
+          "total_duration_seconds": 4.466,
+          "max_duration_seconds": 4.466,
+          "average_duration_seconds": 4.466
+        }
+      }
+    },
+    "scraper_diagnostics": {
+      "GooglePatents": [],
+      "Patentscope": [
+        {
+          "kind": "discovery_empty",
+          "detail": "DuckDuckGo não retornou links para Patentscope.",
+          "url": "https://html.duckduckgo.com/html/"
+        }
+      ]
+    },
+    "prisma_flow": {
+      "flow": {
+        "identification": {
+          "raw_records": 10,
+          "unique_records": 10,
+          "duplicates_removed": 0
+        },
+        "screening": {
+          "screened": 10,
+          "included": 3,
+          "review": 3,
+          "excluded": 4
+        },
+        "eligibility": {
+          "full_extractions": 6,
+          "manual_review_required": 3,
+          "manual_review_deferred": 0
+        },
+        "coverage": {
+          "missing_abstract": 1,
+          "missing_id": 0
+        },
+        "synthesis": {
+          "analyzed_records": 6,
+          "comparative_analysis_generated": true
+        }
+      },
+      "criteria": {
+        "include": [
+          "Alinhamento claro com a query ou seus sinônimos técnicos.",
+          "Documento com título, resumo ou snippet suficientes para análise.",
+          "Potencial técnico relevante para o domínio pesquisado."
+        ],
+        "exclude": [
+          "Documentos sem relação técnica com a query.",
+          "Duplicatas de outra fonte ou publicação equivalente.",
+          "Registro sem metadados mínimos para avaliação."
+        ]
+      },
+      "thresholds": {
+        "include_score": 7.0,
+        "review_score": 4.5,
+        "max_items_for_manual_review": 20
+      },
+      "version": "1.0"
+    },
+    "thematic_clusters": {
+      "clusters": [
+        {
+          "cluster": "Thermal Transfer Mechanisms",
+          "count": 2,
+          "patent_ids": [
+            "WO2021081541A1",
+            "US20210123608A1"
+          ],
+          "titles": [
+            "Method for thermal energy transmission using water and carbon dioxide",
+            "Method for thermal energy transmission using water and carbon dioxide"
+          ],
+          "average_score": 9.2,
+          "average_confidence": 0.95,
+          "evidence_count": 4,
+          "top_patents": [],
+          "summary": "",
+          "record_ids": [
+            "rec_cb86ce571d5d",
+            "rec_8b778603418c"
+          ]
+        },
+        {
+          "cluster": "CO2 Cycle Configurations",
+          "count": 1,
+          "patent_ids": [
+            "CN118934113A"
+          ],
+          "titles": [
+            "An isothermal and isobaric supercritical compressed carbon dioxide energy storage system"
+          ],
+          "average_score": 9.2,
+          "average_confidence": 0.95,
+          "evidence_count": 2,
+          "top_patents": [],
+          "summary": "",
+          "record_ids": [
+            "rec_e9bfd6ecaee9"
+          ]
+        }
+      ],
+      "total_clusters": 2
+    },
+    "config_snapshot": {
+      "pipeline_version": "1.1",
+      "timestamp": "2026-04-05T00:00:13",
+      "query": "carbon dioxide thermal energy storage",
+      "max_results": 5,
+      "model": "gemma3:4b",
+      "output_dir": "output/live_eval_round2",
+      "feature_flags": {
+        "require_evidence": true,
+        "enable_thematic_clusters": true,
+        "enable_prisma": true,
+        "enable_snapshot": true,
+        "enable_comparative_analysis": true,
+        "enable_manual_review_queue": true
+      },
+      "thresholds": {
+        "include": 7.0,
+        "review": 4.5,
+        "manual_review_limit": 20
+      },
+      "runtime": {
+        "ollama_base_url": "http://localhost:11434",
+        "ollama_timeout": 600
+      },
+      "sources": [
+        "Google Patents",
+        "Patentscope"
+      ]
+    },
+    "snapshot_hash": "f31330f1c62c8cfc4ee04fb3b8479e6b2b6b349e9de5cfe5c71db4608ec9d164",
+    "draft_status": {
+      "status": "ready",
+      "warnings": [],
+      "substantive_patents": 3
+    }
+  },
+  "results": [
+    {
+      "patent": {
+        "record_id": "rec_e9bfd6ecaee9",
+        "family_id": "family:93e61d9efb570bcdd84ea6254a70ea2c9b769d40",
+        "title": "An isothermal and isobaric supercritical compressed carbon dioxide energy storage system",
+        "patent_id": "CN118934113A",
+        "abstract": "AbstractTranslated fromChineseæ¬åææ¶åè¶ä¸´çåç¼©äºæ°§åç¢³å¨è½ææ¯é¢åï¼ç­æ¸©ç­åçè¶ä¸´çåç¼©äºæ°§åç¢³å¨è½ç³»ç»ï¼åæ¬ï¼åç¼©æºç»ï¼å©ç¨çµåå°ä½æ¸©ä½åçè¶ä¸´çäºæ°§åç¢³åç¼©ä¸ºé«æ¸©é«åçè¶ä¸´çäºæ°§åç¢³ï¼è¨èæºç»ï¼å©ç¨é«æ¸©é«åçè¶ä¸´çäºæ°§åç¢³åååçµï¼é«åå¨æ°å®¤ï¼è®¾ç½®å¨æ°´ä¸æå°ä¸çé«åç¯å¢ä¸­ï¼ç¨äºå¨å­åç¼©æºç»åç¼©çè¶ä¸´çäºæ°§åç¢³ï¼ä½åå¨æ°å®¤ï¼è®¾ç½®å¨æ°´ä¸æå°ä¸çä½åç¯å¢ä¸­ç¨äºå¨å­è¨èæºç»åååçµä¸­äº§ççè¶ä¸´çäºæ°§åç¢³ï¼ç¬¬ä¸æ¢ç­å¨ï¼å¸æ¶åç¼©æºç»å·¥ä½è¿ç¨ä¸­äº§ççåç¼©ç­å¹¶å¨å­å¨å¨ç­ç½ä¸­ï¼ç¬¬äºæ¢ç­å¨ï¼å ç­é«åå¨æ°å®¤æåºçè¶ä¸´çäºæ°§åç¢³ãéè¿å°é«åå¨æ°å®¤åä½åå¨æ°å®¤è®¾ç½®å¨æ°´ä¸ï¼å¹¶éåæ¢ç­å¨ï¼å®ç°ç»´æå¨æ°å®¤ç­ååæ°ç¨³å®çè¶ä¸´çåç¼©äºæ°§åç¢³å¨è½ç³»ç»ãThe present invention relates to the technical field of supercritical compressed carbon dioxide energy storage, and an isothermal and isobaric supercritical compressed carbon dioxide energy storage system, comprising: a compressor unit, which compresses low-temperature and low-pressure supercritical carbon dioxide into high-temperature and high-pressure supercritical carbon dioxide by using electricity; an expansion unit, which uses high-temperature and high-pressure supercritical carbon dioxide to generate electricity; a high-pressure gas storage chamber, which is arranged in an underwater or underground high-pressure environment, and is used to store supercritical carbon dioxide compressed by the compressor unit; a low-pressure gas storage chamber, which is arranged in an underwater or underground low-pressure environment, and is used to store supercritical carbon dioxide generated by the expansion unit in generating electricity; a first heat exchanger, which absorbs compression heat generated during the operation of the compressor unit and stores it in a heat storage tank; and a second heat exchanger, which heats the supercritical carbon dioxide discharged from the high-pressure gas storage chamber. By arranging the high-pressure gas storage chamber and the low-pressure gas storage chamber underwater and cooperating with the heat exchanger, a supercritical compressed carbon dioxide energy storage system that maintains stable thermal parameters of the gas storage chamber is realized.",
+        "inventors": [
+          "å¾çæ°",
+          "æ±è½¶æ",
+          "èµµææº",
+          "æå£æ",
+          "ç¨æ³",
+          "è¡ä¸å­",
+          "å¨å­¦å¿",
+          "å¼ åè¯",
+          "éæµ·ç"
+        ],
+        "assignee": "Institute of Engineering Thermophysics of CAS",
+        "filing_date": "2024-09-04",
+        "publication_date": "2024-11-12",
+        "url": "https://patents.google.com/patent/CN118934113A/en",
+        "snippet": "",
+        "source": "Google Patents"
+      },
+      "evaluation": {
+        "record_id": "rec_e9bfd6ecaee9",
+        "patent_id": "CN118934113A",
+        "analysis_route": "deep_extraction",
+        "route_reason": "Há evidência suficiente para extração detalhada.",
+        "screening_score": 9.2,
+        "screening_decision": "include",
+        "screening_reason": "A patente descreve um sistema de armazenamento de energia usando dióxido de carbono supercrítico em condições isobáricas e isotérmicas, o que corresponde diretamente à busca por 'carbon dioxide thermal energy storage'. O resumo detalha componentes específicos e o funcionamento do sistema, demonstrando relevância.",
+        "evidence_snippets": [
+          "æ¬åææ¶åè¶ä¸´çåç¼©äºæ°§åç¢³å¨è½ææ¯é¢åï¼ç­æ¸©ç­åçè¶ä¸´çåç¼©äºæ°§åç¢³å¨è½ç³»ç»ï¼",
+          "åæ¬ï¼åç¼©æºç»ï¼å©ç¨çµåå°ä½æ¸©ä½åçè¶ä¸´çäºæ°§åç¢³åç¼©ä¸ºé«æ¸©é«åçè¶ä¸´çäºæ°§åç¢³ï¼è¨èæºç»"
+        ],
+        "thematic_cluster": "CO2 Cycle Configurations",
+        "relevance_score": 9.2,
+        "summary": "Esta patente descreve um sistema de armazenamento de energia utilizando dióxido de carbono supercrítico em condições isobáricas e isotérmicas, focado na utilização de um compressor e expansão para gerar e armazenar energia térmica. O sistema inclui câmaras de armazenamento de alta e baixa pressão, bem como trocadores de calor para manter a temperatura estável. A inovação reside na otimização do uso do CO2 supercrítico para armazenamento térmico.",
+        "key_findings": [
+          "O sistema utiliza um compressor para aumentar a temperatura e a pressão do CO2 supercrítico, e um expansor para converter energia térmica de volta em energia elétrica.",
+          "A configuração subaquática das câmaras de armazenamento de alta e baixa pressão visa manter a estabilidade térmica do sistema."
+        ],
+        "potential_applications": [
+          "Armazenamento de energia renovável (solar, eólica).",
+          "Geração de energia de pico.",
+          "Aquecimento industrial e residencial."
+        ],
+        "technical_domain": "Engenharia Termodinâmica, Armazenamento de Energia",
+        "innovation_level": "Significativa",
+        "problem_statement": "O problema abordado é a necessidade de um sistema eficiente e estável para o armazenamento de energia térmica, explorando as propriedades do dióxido de carbono supercrítico.",
+        "solution_summary": "A solução proposta é um sistema de armazenamento de energia que utiliza dióxido de carbono supercrítico em condições isobáricas e isotérmicas, com um compressor e expansão para converter energia elétrica em energia térmica e vice-versa, armazenada em câmaras de alta e baixa pressão, controladas por trocadores de calor.",
+        "claimed_advantages": [
+          "Eficiência no armazenamento e recuperação de energia térmica.",
+          "Estabilidade térmica através da configuração subaquática e do controle de temperatura com trocadores de calor."
+        ],
+        "limitations": [
+          "A complexidade do sistema devido à necessidade de controle preciso da temperatura e pressão.",
+          "Potenciais desafios relacionados à corrosão e ao desempenho do CO2 supercrítico em condições subaquáticas."
+        ],
+        "maturity_level": "Inicial",
+        "confidence": 0.95,
+        "manual_review_required": false,
+        "llm_error": ""
+      }
+    },
+    {
+      "patent": {
+        "record_id": "rec_cb86ce571d5d",
+        "family_id": "family:156d9db54f6d2df5efd352ddbf3bd612f775a37b",
+        "title": "Method for thermal energy transmission using water and carbon dioxide",
+        "patent_id": "WO2021081541A1",
+        "abstract": "AbstractThe invention provides a system for energy distribution that uses liquid carbon dioxide as a working fluid. Evaporation of the carbon dioxide provides cooling, and compression of the carbon dioxide gas back to the liquid state provides heat. The amount of heat transferred at both stages is sufficient to provide environmental heating and cooling. Waste thermal energy from a power plant, in the form of hot water, is fed into the system and used to drive the overall process. An underground thermal energy storage system is used to store energy flowing into the system that is in excess of the current demand.",
+        "inventors": [
+          "Francois Ignace GEINOZ",
+          "Marcel CUENI",
+          "Kameran Yakob"
+        ],
+        "assignee": "MED Energy Inc",
+        "filing_date": "2020-10-26",
+        "publication_date": "2021-04-29",
+        "url": "https://patents.google.com/patent/WO2021081541A1/en",
+        "snippet": "",
+        "source": "Google Patents"
+      },
+      "evaluation": {
+        "record_id": "rec_cb86ce571d5d",
+        "patent_id": "WO2021081541A1",
+        "analysis_route": "deep_extraction",
+        "route_reason": "Há evidência suficiente para extração detalhada.",
+        "screening_score": 9.2,
+        "screening_decision": "include",
+        "screening_reason": "A patente trata especificamente de armazenamento de energia térmica usando dióxido de carbono como fluido de trabalho e um sistema de armazenamento subterrâneo, que são elementos-chave na busca original.",
+        "evidence_snippets": [
+          "AbstractThe invention provides a system for energy distribution that uses liquid carbon dioxide as a working fluid.",
+          "An underground thermal energy storage system is used to store energy flowing into the system that is in excess of the current demand."
+        ],
+        "thematic_cluster": "Thermal Transfer Mechanisms",
+        "relevance_score": 9.2,
+        "summary": "Esta patente descreve um sistema para distribuição de energia que utiliza dióxido de carbono como fluido de trabalho, aproveitando a evaporação e compressão para transferência de calor. O sistema incorpora um armazenamento subterrâneo de energia térmica para otimizar o uso de energia excedente, particularmente de fontes como usinas termelétricas.",
+        "key_findings": [
+          "Utilização de dióxido de carbono como fluido de trabalho para transferência de calor.",
+          "Implementação de um sistema de armazenamento subterrâneo de energia térmica para otimizar o uso de energia.",
+          "Aproveitamento de resíduos de energia térmica de usinas termelétricas."
+        ],
+        "potential_applications": [
+          "Armazenamento de energia térmica em usinas termelétricas.",
+          "Integração de sistemas de energia renovável com armazenamento de energia.",
+          "Aquecimento e resfriamento de edifícios utilizando energia térmica armazenada."
+        ],
+        "technical_domain": "Armazenamento de Energia, Termodinâmica, Fluidos de Trabalho",
+        "innovation_level": "Significativa",
+        "problem_statement": "O problema abordado é a gestão e utilização de resíduos de energia térmica, especificamente calor de água quente proveniente de usinas termelétricas, que podem ser desperdiçados.",
+        "solution_summary": "A solução proposta é um sistema que utiliza o dióxido de carbono para absorver e liberar calor, armazenando o excesso de energia em um sistema de armazenamento subterrâneo de energia térmica.",
+        "claimed_advantages": [
+          "Otimização do uso de energia térmica.",
+          "Redução do desperdício de energia.",
+          "Possibilidade de integrar fontes de energia renováveis com sistemas de armazenamento."
+        ],
+        "limitations": [
+          "A patente não detalha especificamente os desafios técnicos relacionados à eficiência do armazenamento subterrâneo de energia térmica em larga escala.",
+          "A viabilidade econômica do sistema depende de fatores como custos de instalação e operação."
+        ],
+        "maturity_level": "Intermediária",
+        "confidence": 0.95,
+        "manual_review_required": false,
+        "llm_error": ""
+      }
+    },
+    {
+      "patent": {
+        "record_id": "rec_8b778603418c",
+        "family_id": "family:28993406c9b2c6d229a02057a6dce31ffbe7c6c7",
+        "title": "Method for thermal energy transmission using water and carbon dioxide",
+        "patent_id": "US20210123608A1",
+        "abstract": "AbstractThe invention provides a system for energy distribution that uses liquid carbon dioxide as a working fluid. Evaporation of the carbon dioxide provides cooling, and compression of the carbon dioxide gas back to the liquid state provides heat. The amount of heat transferred at both stages is sufficient to provide environmental heating and cooling. Waste thermal energy from a power plant, in the form of hot water, is fed into the system and used to drive the overall process. An underground thermal energy storage system is used to store energy flowing into the system that is in excess of the current demand.",
+        "inventors": [
+          "Francois Ignace Geinoz",
+          "Marcel Cueni",
+          "Kameran Yakob"
+        ],
+        "assignee": "MED Energy Inc",
+        "filing_date": "2019-10-25",
+        "publication_date": "2021-04-29",
+        "url": "https://patents.google.com/patent/US20210123608A1/en",
+        "snippet": "",
+        "source": "Google Patents"
+      },
+      "evaluation": {
+        "record_id": "rec_8b778603418c",
+        "patent_id": "US20210123608A1",
+        "analysis_route": "deep_extraction",
+        "route_reason": "Há evidência suficiente para extração detalhada.",
+        "screening_score": 9.2,
+        "screening_decision": "include",
+        "screening_reason": "A patente trata especificamente de armazenamento de energia térmica usando dióxido de carbono como fluido de trabalho e integração com sistemas de armazenamento subterrâneo, o que se alinha diretamente com a busca 'carbon dioxide thermal energy storage'.",
+        "evidence_snippets": [
+          "AbstractThe invention provides a system for energy distribution that uses liquid carbon dioxide as a working fluid.",
+          "An underground thermal energy storage system is used to store energy flowing into the system that is in excess of the current demand."
+        ],
+        "thematic_cluster": "Thermal Transfer Mechanisms",
+        "relevance_score": 9.2,
+        "summary": "Esta patente descreve um sistema para distribuição de energia que utiliza dióxido de carbono como fluido de trabalho, aproveitando a evaporação e compressão para transferência de calor. O sistema integra armazenamento subterrâneo de energia térmica para otimizar o uso de energia excedente, particularmente de fontes como usinas termelétricas.",
+        "key_findings": [
+          "Utilização de dióxido de carbono como fluido de trabalho para transferência de energia térmica.",
+          "Integração com um sistema de armazenamento subterrâneo de energia térmica para otimizar o uso de energia excedente."
+        ],
+        "potential_applications": [
+          "Armazenamento de energia térmica em usinas termelétricas.",
+          "Sistemas de aquecimento e resfriamento de edifícios.",
+          "Integração com redes de energia renovável."
+        ],
+        "technical_domain": "Armazenamento de Energia Térmica, Termodinâmica, Engenharia de Sistemas",
+        "innovation_level": "Significativa",
+        "problem_statement": "O problema abordado é a utilização de energia térmica residual, como a de usinas termelétricas, de forma eficiente, permitindo seu armazenamento e reutilização.",
+        "solution_summary": "A solução proposta é um sistema que utiliza dióxido de carbono para absorver e liberar calor, combinando a evaporação e compressão do fluido com um sistema de armazenamento subterrâneo de energia térmica.",
+        "claimed_advantages": [
+          "Utilização eficiente de energia térmica residual.",
+          "Possibilidade de armazenamento de energia para uso posterior."
+        ],
+        "limitations": [
+          "Dependência de condições específicas para o armazenamento subterrâneo (e.g., geologia adequada).",
+          "Potenciais desafios na eficiência da transferência de calor entre o fluido e o armazenamento."
+        ],
+        "maturity_level": "Intermediária",
+        "confidence": 0.95,
+        "manual_review_required": false,
+        "llm_error": ""
+      }
+    },
+    {
+      "patent": {
+        "record_id": "rec_d32965bf3945",
+        "family_id": "family:1065f16bddea8989ffd25dd50703f560a5611777",
+        "title": "Carbon dioxide upgrade and energy storage system and method",
+        "patent_id": "US20200182095A1",
+        "abstract": "AbstractA method for producing work is disclosed. The method includes increasing the pressure of a working fluid including carbon dioxide from a first pressure at least equal to a triple point pressure to a second pressure above the triple point pressure. The method also includes heating the working fluid, extracting mechanical work by expanding a first portion of the heated working fluid to a third pressure, supplying a second portion of the heated working fluid as a motive fluid to an ejector, increasing the pressure of the expanded working fluid by supplying the expanded working fluid to the ejector to combine with the motive fluid and form an output fluid at the fourth pressure, the fourth pressure at least equal to the triple point pressure of the working fluid. The method also includes refrigerating the output fluid to condense a vapor phase into a liquid phase.",
+        "inventors": [
+          "John Frederick Cirucci",
+          "Klaus Stephan Lackner"
+        ],
+        "assignee": "Arizona State University Downtown Phoenix campus",
+        "filing_date": "2018-08-29",
+        "publication_date": "2020-06-11",
+        "url": "https://patents.google.com/patent/US20200182095A1/en",
+        "snippet": "",
+        "source": "Google Patents"
+      },
+      "evaluation": {
+        "record_id": "rec_d32965bf3945",
+        "patent_id": "US20200182095A1",
+        "analysis_route": "manual_review",
+        "route_reason": "Triagem indicou revisão humana.",
+        "screening_score": 7.7,
+        "screening_decision": "review",
+        "screening_reason": "A patente foca em armazenamento de energia usando dióxido de carbono e pressão, o que se alinha com a busca. No entanto, o processo detalhado de aquecimento, expansão e condensação requer uma análise mais aprofundada para determinar a relevância completa para o conceito de 'armazenamento de energia térmica por dióxido de carbono'.",
+        "evidence_snippets": [
+          "The method includes increasing the pressure of a working fluid including carbon dioxide from a first pressure at least equal to a triple point pressure to a second pressure above the triple point pressure.",
+          "extracting mechanical work by expanding a first portion of the heated working fluid to a third pressure"
+        ],
+        "thematic_cluster": "Armazenamento de Energia Térmica com Dióxido de Carbono",
+        "relevance_score": 6.5,
+        "summary": "Esta patente descreve um sistema e método para a produção de trabalho utilizando dióxido de carbono, envolvendo aquecimento, expansão e condensação para converter energia térmica em trabalho mecânico. O sistema utiliza ciclos de pressão e temperatura controlados com o CO2, explorando a sua capacidade de armazenamento de energia térmica. A patente foca em um processo específico de ciclo termodinâmico com CO2.",
+        "key_findings": [
+          "O sistema utiliza um ciclo termodinâmico que envolve aquecimento, expansão e condensação do dióxido de carbono.",
+          "A patente detalha o uso de um ejector para extrair trabalho mecânico do fluido aquecido de CO2.",
+          "O processo inclui a refrigeração do fluido de saída para condensar o vapor de CO2 de volta em líquido."
+        ],
+        "potential_applications": [
+          "Sistemas de armazenamento de energia térmica.",
+          "Geração de energia a partir de fontes de calor residual.",
+          "Sistemas de refrigeração e aquecimento."
+        ],
+        "technical_domain": "Termodinâmica, Armazenamento de Energia, Ciclos Termodinâmicos",
+        "innovation_level": "Incremental",
+        "problem_statement": "O problema abordado é a necessidade de um sistema eficiente para a produção de trabalho a partir de energia térmica, utilizando um fluido de trabalho adequado.",
+        "solution_summary": "A solução proposta é um sistema que aumenta a pressão do dióxido de carbono, o aquece, extrai trabalho através da expansão, utiliza o fluido aquecido como um fluido de sucção em um ejector e, finalmente, refrigera o fluido para condensar o vapor em líquido, completando um ciclo termodinâmico.",
+        "claimed_advantages": [
+          "Potencial para a produção de trabalho a partir de energia térmica.",
+          "Utilização de dióxido de carbono como fluido de trabalho, que possui propriedades adequadas para armazenamento de energia térmica.",
+          "Possibilidade de controle preciso da pressão e temperatura para otimizar o processo."
+        ],
+        "limitations": [
+          "A eficiência do sistema depende da otimização do ciclo termodinâmico e das condições de operação.",
+          "O sistema pode ser complexo e requerer componentes especializados para garantir o funcionamento adequado."
+        ],
+        "maturity_level": "Inicial",
+        "confidence": 0.79,
+        "manual_review_required": true,
+        "llm_error": ""
+      }
+    },
+    {
+      "patent": {
+        "record_id": "rec_60aba676d2d1",
+        "family_id": "family:e199d77fe5f85343c72bd55fe064233f9c8b31ec",
+        "title": "Carbon dioxide energy storage system matched with thermal power plant deep peak shaving and control method thereof",
+        "patent_id": "CN115234318A",
+        "abstract": "AbstractThe invention provides a carbon dioxide energy storage system matched with deep peak shaving of a thermal power plant and a control method thereof, and relates to the technical field of energy storage. The energy storage system includes: the gas storage, the energy storage component, the liquid storage tank and the energy release component are sequentially connected in a closed loop manner, and the energy release component comprises an expander; the coupling assembly comprises a steam extraction bypass and a first heat storage module; the steam extraction bypass is used for guiding high-temperature steam in the steam turbine to the first heat storage module when the thermal power plant is in a deep peak shaving working condition; the first heat storage module is connected with the energy release assembly and used for storing heat contained in the high-temperature steam and providing heat for the energy release assembly when the energy release assembly works so as to improve the temperature of carbon dioxide at the inlet of the expansion machine. The carbon dioxide energy storage system and the control method can improve the peak regulation flexibility and safety of the thermal power plant and can also improve the work efficiency of the carbon dioxide.",
+        "inventors": [
+          "è°¢æ°¸æ§",
+          "çç§¦",
+          "çé¼",
+          "å­ç£",
+          "å¼ è»",
+          "æ±ªæå",
+          "æ¨å½ª"
+        ],
+        "assignee": "Baihe New Energy Technology Shenzhen Co ltd",
+        "filing_date": "2022-09-22",
+        "publication_date": "2022-10-25",
+        "url": "https://patents.google.com/patent/CN115234318A/en",
+        "snippet": "",
+        "source": "Google Patents"
+      },
+      "evaluation": {
+        "record_id": "rec_60aba676d2d1",
+        "patent_id": "CN115234318A",
+        "analysis_route": "manual_review",
+        "route_reason": "Triagem indicou revisão humana.",
+        "screening_score": 8.2,
+        "screening_decision": "review",
+        "screening_reason": "A patente se concentra em um sistema de armazenamento de dióxido de carbono acoplado a uma usina termelétrica, com ênfase no 'deep peak shaving' e no uso de um expander para melhorar a temperatura do CO2. Embora relevante para 'carbon dioxide thermal energy storage', a descrição detalhada do sistema e seu funcionamento requer uma análise mais aprofundada.",
+        "evidence_snippets": [
+          "The invention provides a carbon dioxide energy storage system matched with deep peak shaving of a thermal power plant...",
+          "The energy release component comprises an expander; the coupling assembly comprises a steam extraction bypass and a first heat storage module."
+        ],
+        "thematic_cluster": "Armazenamento de Energia em Ciclos Termodinâmicos com CO2",
+        "relevance_score": 6.5,
+        "summary": "Esta patente descreve um sistema de armazenamento de dióxido de carbono acoplado a uma usina termelétrica, utilizando um ciclo fechado com um expander para otimizar a temperatura do CO2 e realizar 'deep peak shaving'. O sistema visa melhorar a flexibilidade e a segurança da usina termelétrica, além de aumentar a eficiência do armazenamento de energia.",
+        "key_findings": [
+          "O sistema utiliza um expander para melhorar a temperatura do CO2 na entrada da máquina de expansão.",
+          "Um bypass de extração de vapor é usado para direcionar vapor de alta temperatura para um primeiro módulo de armazenamento de calor."
+        ],
+        "potential_applications": [
+          "Usinas termelétricas com capacidade de armazenamento de energia.",
+          "Sistemas de gestão de energia em redes elétricas."
+        ],
+        "technical_domain": "Armazenamento de Energia, Termodinâmica, Engenharia de Usinas Termelétricas",
+        "innovation_level": "Incremental",
+        "problem_statement": "O problema abordado é a necessidade de flexibilidade e segurança na regulação de pico de energia de usinas termelétricas, juntamente com a busca por métodos mais eficientes para o armazenamento de energia.",
+        "solution_summary": "A solução proposta é um sistema de armazenamento de CO2 que utiliza um ciclo fechado, incluindo um expander, para armazenar e liberar calor de alta temperatura, permitindo o 'deep peak shaving' e otimizando a temperatura do CO2.",
+        "claimed_advantages": [
+          "Melhora a flexibilidade e a segurança da regulação de pico da usina termelétrica.",
+          "Aumenta a eficiência do armazenamento de energia do CO2."
+        ],
+        "limitations": [
+          "A patente não detalha os aspectos de custo ou escalabilidade do sistema.",
+          "A dependência de um ciclo termodinâmico específico pode limitar a aplicabilidade em outros contextos de armazenamento de energia."
+        ],
+        "maturity_level": "Intermediária",
+        "confidence": 0.85,
+        "manual_review_required": true,
+        "llm_error": ""
+      }
+    },
+    {
+      "patent": {
+        "record_id": "rec_5cb75be738eb",
+        "family_id": "family:f2562110d58e9c2be7e7177585da03af0dd8bffa",
+        "title": "1. AU2019901965 - A System to Improve Performance of Transcritical Carbon Dioxide Cooling by Integration of Ice Thermal Storage for Subcooling",
+        "patent_id": "AU244427549",
+        "abstract": "",
+        "inventors": [],
+        "assignee": "IceCap; Thermal; Energy; Pty Ltd; KALDORBULL PTY LTD",
+        "filing_date": "",
+        "publication_date": "20.06.2019",
+        "url": "https://patentscope.wipo.int/search/en/detail.jsf;jsessionid=061A8F2C0328FF803CEE5A27EBBAD475.wapp1nB?docId=AU244427549&_cid=P11-MNL6C1-71764-1",
+        "snippet": "",
+        "source": "Patentscope"
+      },
+      "evaluation": {
+        "record_id": "rec_5cb75be738eb",
+        "patent_id": "AU244427549",
+        "analysis_route": "manual_review",
+        "route_reason": "Triagem indicou revisão humana.",
+        "screening_score": 7.2,
+        "screening_decision": "review",
+        "screening_reason": "A patente foca em armazenamento térmico de dióxido de carbono utilizando armazenamento de gelo para sub-resfriamento, o que se relaciona com o armazenamento de energia térmica por meio de calor. No entanto, o resumo não está disponível, necessitando de uma análise mais aprofundada para determinar a relevância completa.",
+        "evidence_snippets": [
+          "A System to Improve Performance of Transcritical Carbon Dioxide Cooling by Integration of Ice Thermal Storage for Subcooling"
+        ],
+        "thematic_cluster": "Armazenamento Térmico com Gelo para Otimização de Ciclos de Refrigeração",
+        "relevance_score": 6.5,
+        "summary": "Esta patente descreve um sistema para melhorar o desempenho de sistemas de resfriamento de dióxido de carbono transcrítico através da integração de armazenamento térmico de gelo para sub-resfriamento. A patente utiliza gelo para reduzir a temperatura do CO2, otimizando o ciclo de resfriamento. A relevância para o armazenamento de energia térmica de CO2 é evidente, embora o foco principal seja o resfriamento.",
+        "key_findings": [
+          "Utilização de gelo para sub-resfriamento do dióxido de carbono.",
+          "Integração do armazenamento de gelo com um sistema de resfriamento de CO2 transcrítico.",
+          "O sistema visa melhorar o desempenho do ciclo de resfriamento."
+        ],
+        "potential_applications": [
+          "Sistemas de refrigeração industrial.",
+          "Resfriamento de equipamentos eletrônicos.",
+          "Aplicações de resfriamento de alimentos e bebidas."
+        ],
+        "technical_domain": "Resfriamento e Armazenamento de Energia",
+        "innovation_level": "Incremental",
+        "problem_statement": "O sistema de resfriamento de dióxido de carbono transcrítico enfrenta desafios na manutenção da eficiência do ciclo de resfriamento, particularmente na etapa de sub-resfriamento.",
+        "solution_summary": "A solução proposta é integrar um sistema de armazenamento de gelo para fornecer sub-resfriamento ao CO2, permitindo um ciclo de resfriamento mais eficiente e com maior capacidade de resfriamento.",
+        "claimed_advantages": [
+          "Melhora do desempenho do sistema de resfriamento de CO2 transcrítico.",
+          "Aumento da capacidade de resfriamento.",
+          "Potencial para maior eficiência energética."
+        ],
+        "limitations": [
+          "Dependência da disponibilidade e gestão do gelo para o armazenamento.",
+          "Potenciais perdas de calor devido à transferência entre o CO2 e o gelo."
+        ],
+        "maturity_level": "Intermediária",
+        "confidence": 0.75,
+        "manual_review_required": true,
+        "llm_error": ""
+      }
+    },
+    {
+      "patent": {
+        "record_id": "rec_0d58733a5389",
+        "family_id": "family:a5909788b69b641216917fdfccb844df018cba89",
+        "title": "2. US20240229681 - Calcination system with thermal energy storage system",
+        "patent_id": "US433566429",
+        "abstract": "(EN)Anenergystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C. Intermittent electricalenergyheats a solid medium. Heat from the solid medium is delivered continuously on demand. An array of bricks incorporating internal radiation cavities is directly heated bythermalradiation. The cavities facilitate rapid, uniform heating via reradiation. Heat delivery via flowing gas establishes a thermocline which maintains high outlet temperature throughout discharge. Gas flows through structured pathways within the array, delivering heat which may be used for processes including calcination, hydrogen electrolysis, steam generation, andthermalpower generation and cogeneration. Groups ofthermalstoragearrays may be controlled and operated at high temperatures withoutthermalrunaway via deep-discharge sequencing. Forecast-based control enables continuous, year-round heat supply using current and advance information of weather and VRE availability. High-voltage DC power conversion and distribution circuitry improves the efficiency of VRE power transfer into the system.",
+        "inventors": [
+          "John Setel O'Donnell",
+          "Peter Emery von Behrens",
+          "Chiaki Treynor",
+          "Matthieu Jonemann",
+          "Robert Ratz",
+          "Yusef Desjardins Ferhani"
+        ],
+        "assignee": "Rondo; Energy; , Inc.",
+        "filing_date": "",
+        "publication_date": "11.07.2024",
+        "url": "https://patentscope.wipo.int/search/en/detail.jsf;jsessionid=061A8F2C0328FF803CEE5A27EBBAD475.wapp1nB?docId=US433566429&_cid=P11-MNL6C1-71764-1",
+        "snippet": "",
+        "source": "Patentscope"
+      },
+      "evaluation": {
+        "record_id": "rec_0d58733a5389",
+        "patent_id": "US433566429",
+        "analysis_route": "screen_only",
+        "route_reason": "Patente excluída na triagem.",
+        "screening_score": 3.5,
+        "screening_decision": "exclude",
+        "screening_reason": "A patente descreve um sistema de armazenamento de energia térmica que utiliza calor de mais de 1000°C para processos como calcinação e geração de calor, o que se alinha com o termo de busca 'carbon dioxide thermal energy storage'. No entanto, a descrição detalhada do sistema e seu foco em aplicações específicas requerem uma revisão mais aprofundada. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+        "evidence_snippets": [
+          "An energystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C.",
+          "Heat from the solid medium is delivered continuously on demand. An array of bricks incorporating internal radiation cavities is directly heated by thermal radiation."
+        ],
+        "thematic_cluster": "Armazenamento de Energia em Meio Sólido para Aplicações de Alta Temperatura",
+        "relevance_score": 0.0,
+        "summary": "",
+        "key_findings": [],
+        "potential_applications": [],
+        "technical_domain": "Armazenamento de Energia Térmica, Geração de Calor",
+        "innovation_level": "",
+        "problem_statement": "",
+        "solution_summary": "",
+        "claimed_advantages": [],
+        "limitations": [],
+        "maturity_level": "",
+        "confidence": 0.7,
+        "manual_review_required": false,
+        "llm_error": ""
+      }
+    },
+    {
+      "patent": {
+        "record_id": "rec_3da6b58fde67",
+        "family_id": "family:05206822f399c166b617cf99088b736afdf59e4b",
+        "title": "3. US20230203968 - Methods for material activation with thermal energy storage system",
+        "patent_id": "US400261922",
+        "abstract": "(EN)Anenergystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C. Intermittent electricalenergyheats a solid medium. Heat from the solid medium is delivered continuously on demand. An array of bricks incorporating internal radiation cavities is directly heated bythermalradiation. The cavities facilitate rapid, uniform heating via reradiation. Heat delivery via flowing gas establishes a thermocline which maintains high outlet temperature throughout discharge. Gas flows through structured pathways within the array, delivering heat which may be used for processes including calcination, hydrogen electrolysis, steam generation, andthermalpower generation and cogeneration. Groups ofthermalstoragearrays may be controlled and operated at high temperatures withoutthermalrunaway via deep-discharge sequencing. Forecast-based control enables continuous, year-round heat supply using current and advance information of weather and VRE availability. High-voltage DC power conversion and distribution circuitry improves the efficiency of VRE power transfer into the system.",
+        "inventors": [
+          "John Setel O'Donnell",
+          "Peter Emery von Behrens",
+          "Chiaki Treynor",
+          "Jeremy Quentin Keller",
+          "Matthieu Jonemann",
+          "Robert Ratz",
+          "Yusef Desjardins Ferhani"
+        ],
+        "assignee": "Rondo; Energy; , Inc.",
+        "filing_date": "",
+        "publication_date": "29.06.2023",
+        "url": "https://patentscope.wipo.int/search/en/detail.jsf;jsessionid=061A8F2C0328FF803CEE5A27EBBAD475.wapp1nB?docId=US400261922&_cid=P11-MNL6C1-71764-1",
+        "snippet": "",
+        "source": "Patentscope"
+      },
+      "evaluation": {
+        "record_id": "rec_3da6b58fde67",
+        "patent_id": "US400261922",
+        "analysis_route": "screen_only",
+        "route_reason": "Patente excluída na triagem.",
+        "screening_score": 3.5,
+        "screening_decision": "exclude",
+        "screening_reason": "A patente descreve um sistema de armazenamento de energia térmica que utiliza calor gerado por eletricidade renovável, incluindo aquecimento de um meio sólido e entrega de calor sob demanda para processos como calcinação e produção de hidrogênio, o que se alinha diretamente com a busca por 'carbon dioxide thermal energy storage'. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+        "evidence_snippets": [
+          "An energystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C.",
+          "Heat from the solid medium is delivered continuously on demand."
+        ],
+        "thematic_cluster": "Armazenamento de Energia em Meios Sólidos e Aplicações de Alta Temperatura",
+        "relevance_score": 0.0,
+        "summary": "",
+        "key_findings": [],
+        "potential_applications": [],
+        "technical_domain": "Armazenamento de Energia Térmica, Geração de Energia",
+        "innovation_level": "",
+        "problem_statement": "",
+        "solution_summary": "",
+        "claimed_advantages": [],
+        "limitations": [],
+        "maturity_level": "",
+        "confidence": 0.79,
+        "manual_review_required": false,
+        "llm_error": ""
+      }
+    },
+    {
+      "patent": {
+        "record_id": "rec_d53841fc186a",
+        "family_id": "family:5759c6bc508072e5f9d303a96f846c77f3fcfe07",
+        "title": "4. US20240229682 - Methods for material activation with thermal energy storage system",
+        "patent_id": "US433566430",
+        "abstract": "(EN)Anenergystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C. Intermittent electricalenergyheats a solid medium. Heat from the solid medium is delivered continuously on demand. An array of bricks incorporating internal radiation cavities is directly heated bythermalradiation. The cavities facilitate rapid, uniform heating via reradiation. Heat delivery via flowing gas establishes a thermocline which maintains high outlet temperature throughout discharge. Gas flows through structured pathways within the array, delivering heat which may be used for processes including calcination, hydrogen electrolysis, steam generation, andthermalpower generation and cogeneration. Groups ofthermalstoragearrays may be controlled and operated at high temperatures withoutthermalrunaway via deep-discharge sequencing. Forecast-based control enables continuous, year-round heat supply using current and advance information of weather and VRE availability. High-voltage DC power conversion and distribution circuitry improves the efficiency of VRE power transfer into the system.",
+        "inventors": [
+          "John Setel O'Donnell",
+          "Peter Emery von Behrens",
+          "Matthieu Jonemann",
+          "Yusef Desjardins Ferhani"
+        ],
+        "assignee": "Rondo; Energy; , Inc.",
+        "filing_date": "",
+        "publication_date": "11.07.2024",
+        "url": "https://patentscope.wipo.int/search/en/detail.jsf;jsessionid=061A8F2C0328FF803CEE5A27EBBAD475.wapp1nB?docId=US433566430&_cid=P11-MNL6C1-71764-1",
+        "snippet": "",
+        "source": "Patentscope"
+      },
+      "evaluation": {
+        "record_id": "rec_d53841fc186a",
+        "patent_id": "US433566430",
+        "analysis_route": "screen_only",
+        "route_reason": "Patente excluída na triagem.",
+        "screening_score": 3.5,
+        "screening_decision": "exclude",
+        "screening_reason": "A patente descreve um sistema de armazenamento de energia térmica que utiliza calor em alta temperatura (acima de 1000°C) para processos como calcinação e produção de hidrogênio, diretamente relacionado ao armazenamento de energia de CO2. A utilização de 'thermal energy storage system' e a aplicação em processos específicos de utilização do calor gerado indicam relevância direta. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+        "evidence_snippets": [
+          "An energystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C.",
+          "Heat from the solid medium is delivered continuously on demand. Gas flows through structured pathways within the array, delivering heat which may be used for processes including calcination, hydrogen electrolysis,..."
+        ],
+        "thematic_cluster": "Armazenamento de Energia de CO2 e Aplicações de Calor",
+        "relevance_score": 0.0,
+        "summary": "",
+        "key_findings": [],
+        "potential_applications": [],
+        "technical_domain": "Armazenamento de Energia Térmica, Engenharia de Calor",
+        "innovation_level": "",
+        "problem_statement": "",
+        "solution_summary": "",
+        "claimed_advantages": [],
+        "limitations": [],
+        "maturity_level": "",
+        "confidence": 0.79,
+        "manual_review_required": false,
+        "llm_error": ""
+      }
+    },
+    {
+      "patent": {
+        "record_id": "rec_e94308d296fb",
+        "family_id": "family:edd5cd46beac8cd878fb34bf81f89eeab14f618e",
+        "title": "5. US20220282638 - Material activation system with thermal energy storage system",
+        "patent_id": "US373267798",
+        "abstract": "(EN)Anenergystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C. Intermittent electricalenergyheats a solid medium. Heat from the solid medium is delivered continuously on demand. An array of bricks incorporating internal radiation cavities is directly heated bythermalradiation. The cavities facilitate rapid, uniform heating via reradiation. Heat delivery via flowing gas establishes a thermocline which maintains high outlet temperature throughout discharge. Gas flows through structured pathways within the array, delivering heat which may be used for processes including calcination, hydrogen electrolysis, steam generation, andthermalpower generation and cogeneration. Groups ofthermalstoragearrays may be controlled and operated at high temperatures withoutthermalrunaway via deep-discharge sequencing. Forecast-based control enables continuous, year-round heat supply using current and advance information of weather and VRE availability. High-voltage DC power conversion and distribution circuitry improves the efficiency of VRE power transfer into the system.",
+        "inventors": [
+          "John Setel O'Donnell",
+          "Peter Emery von Behrens",
+          "Chiaki Treynor",
+          "Jeremy Quentin Keller",
+          "Matthieu Jonemann",
+          "Robert Ratz",
+          "Yusef Desjardins Ferhani"
+        ],
+        "assignee": "Rondo; Energy; , Inc.",
+        "filing_date": "",
+        "publication_date": "08.09.2022",
+        "url": "https://patentscope.wipo.int/search/en/detail.jsf;jsessionid=061A8F2C0328FF803CEE5A27EBBAD475.wapp1nB?docId=US373267798&_cid=P11-MNL6C1-71764-1",
+        "snippet": "",
+        "source": "Patentscope"
+      },
+      "evaluation": {
+        "record_id": "rec_e94308d296fb",
+        "patent_id": "US373267798",
+        "analysis_route": "screen_only",
+        "route_reason": "Patente excluída na triagem.",
+        "screening_score": 3.5,
+        "screening_decision": "exclude",
+        "screening_reason": "A patente descreve um sistema de armazenamento de energia térmica que utiliza calor gerado por eletricidade renovável, incluindo aquecimento de um meio sólido e transferência de calor via gás. Embora não seja explicitamente sobre 'carbon dioxide', o foco em altas temperaturas (acima de 1000°C) e aplicações como calcinação e produção de hidrogênio se alinha com o tema da busca, necessitando de uma análise mais aprofundada para determinar a relevância específica para o armazenamento de energia de CO2. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+        "evidence_snippets": [
+          "An energystoragesystem converts variable renewable electricity (VRE) to continuous heat at over 1000° C.",
+          "Heat from the solid medium is delivered continuously on demand."
+        ],
+        "thematic_cluster": "Armazenamento de Energia de Fontes Renováveis, Aquecimento de Processos",
+        "relevance_score": 0.0,
+        "summary": "",
+        "key_findings": [],
+        "potential_applications": [],
+        "technical_domain": "Armazenamento de Energia Térmica, Engenharia de Calor",
+        "innovation_level": "",
+        "problem_statement": "",
+        "solution_summary": "",
+        "claimed_advantages": [],
+        "limitations": [],
+        "maturity_level": "",
+        "confidence": 0.66,
+        "manual_review_required": false,
+        "llm_error": ""
+      }
+    }
+  ],
+  "comparative_analysis": "## Análise Comparativa de Patentes: Armazenamento Térmico de Energia com Dióxido de Carbono\n\n### 1. Panorama Geral\n\nA análise das três patentes avaliadas revela um estado da arte promissor e em rápido desenvolvimento no campo do armazenamento térmico de energia (ATE) utilizando dióxido de carbono (CO2). Todas as patentes compartilham o foco na utilização de CO2 como fluido de trabalho, explorando os ciclos de evaporação e compressão para transferência e armazenamento de calor. A inovação central reside na integração de sistemas de armazenamento subterrâneo de energia térmica (UTES) para otimizar a eficiência e a capacidade do sistema.  A diversidade entre as patentes reside principalmente na abordagem de implementação e nos detalhes do sistema, mas o objetivo comum de utilizar CO2 para ATE permanece constante.\n\n### 2. Tendências Identificadas\n\n* **Fluido de Trabalho CO2:** A utilização de CO2 supercrítico como fluido de trabalho é uma tendência dominante, impulsionada pelas suas propriedades termodinâmicas favoráveis (alta densidade de energia, capacidade de absorção de calor) e disponibilidade.\n* **Ciclos de Evaporação e Compressão:**  A combinação de evaporação e compressão do CO2 é a base para a transferência e armazenamento de calor em todas as patentes. Essa abordagem permite a utilização de calor residual e a otimização da eficiência do sistema.\n* **Armazenamento Subterrâneo de Energia Térmica (UTES):** A integração de UTES é uma tendência crescente, visando aumentar a capacidade de armazenamento e melhorar a eficiência do sistema, aproveitando a estabilidade térmica do solo.\n* **Condições Isobáricas e Isotérmicas:** A patente CN118934113A destaca a exploração de condições isobáricas e isotérmicas, indicando um interesse em otimizar o processo de armazenamento e recuperação de energia.\n\n### 3. Lacunas e Oportunidades\n\n* **Controle de Fase do CO2:** A patentes focam na utilização do CO2 em fase supercrítica, mas a exploração de outras fases (líquida ou gasosa) e o controle preciso da transição de fase podem oferecer oportunidades para aumentar a densidade de energia armazenada e a eficiência do sistema.\n* **Materiais de Absorção e Refrigeração:** A patentes não detalham suficientemente os materiais utilizados para absorver e refrigeração o calor. A pesquisa em novos materiais com alta capacidade de absorção e refrigeração pode melhorar significativamente o desempenho do sistema.\n* **Integração com Fontes Renováveis:** A integração com fontes de energia renovável (solar, eólica) ainda não é totalmente explorada nas patentes. O desenvolvimento de sistemas que combinem ATE com a geração de energia renovável pode aumentar a eficiência e a sustentabilidade do sistema.\n* **Modelagem e Otimização:** A otimização do sistema, incluindo o dimensionamento dos componentes e a seleção dos parâmetros operacionais, ainda carece de maior detalhamento.\n\n### 4. Recomendações\n\n* **Foco em Materiais:** Concentrar a pesquisa em materiais avançados para absorção e refrigeração de calor, com ênfase em materiais com alta capacidade termodinâmica e durabilidade.\n* **Modelagem e Simulação:** Utilizar ferramentas de modelagem e simulação para otimizar o design do sistema, considerando diferentes cenários de operação e fontes de energia.\n* **Integração com Fontes Renováveis:** Explorar a integração do sistema de ATE com fontes de energia renovável, como sistemas de armazenamento de energia solar concentrada (CSP) ou eólica.\n* **Análise de Ciclo de Vida:** Realizar uma análise completa do ciclo de vida do sistema, considerando os impactos ambientais e a sustentabilidade do processo.\n\n### 5. Ranking Final\n\n1. **An isothermal and isobaric supercritical compressed carbon dioxide energy storage system** (CN118934113A):  Obtem um score alto (9.2) devido à sua abordagem específica de condições isobáricas e isotérmicas, que representa uma otimização do processo de armazenamento.\n2. **Method for thermal energy transmission using water and carbon dioxide** (US20210123608A1) & **Method for thermal energy transmission using water and carbon dioxide** (WO2021081541A1):  Ambas as patentes recebem o mesmo score (9.2) devido à sua abordagem similar de utilização de CO2 como fluido de trabalho e integração com armazenamento subterrâneo de energia térmica. A diferença reside na especificidade do detalhamento técnico, que é similar.\n\n**Justificativa:** Todas as patentes apresentam um alto"
+}

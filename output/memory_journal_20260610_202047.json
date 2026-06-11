@@ -1,0 +1,176 @@
+[
+  {
+    "timestamp": "2026-06-10T20:20:54",
+    "stage": "setup",
+    "event": "llm_check",
+    "detail": "Verificação de disponibilidade do Ollama concluída.",
+    "payload": {
+      "llm_available": true,
+      "model": "gemma3:27b"
+    }
+  },
+  {
+    "timestamp": "2026-06-10T20:21:00",
+    "stage": "identification",
+    "event": "scrape_completed",
+    "detail": "GooglePatents retornou patentes.",
+    "payload": {
+      "source": "GooglePatents",
+      "count": 2,
+      "diagnostics": []
+    }
+  },
+  {
+    "timestamp": "2026-06-10T20:21:27",
+    "stage": "identification",
+    "event": "scrape_completed",
+    "detail": "Patentscope retornou patentes.",
+    "payload": {
+      "source": "Patentscope",
+      "count": 0,
+      "diagnostics": [
+        {
+          "kind": "discovery_empty",
+          "detail": "DuckDuckGo não retornou links para Patentscope.",
+          "url": "https://html.duckduckgo.com/html/"
+        },
+        {
+          "kind": "layout_break",
+          "detail": "Não foi possível extrair o título da página de detalhe do Patentscope.",
+          "url": "https://patentscope.wipo.int/search/en/detail.jsf;jsessionid=CD58DDB7F0D1D78D981AE9A5DDA2EC95.wapp1nB?docId=AU244427549&_cid=P11-MQ8OZT-00319-1"
+        },
+        {
+          "kind": "layout_break",
+          "detail": "Não foi possível extrair o título da página de detalhe do Patentscope.",
+          "url": "https://patentscope.wipo.int/search/en/detail.jsf;jsessionid=CD58DDB7F0D1D78D981AE9A5DDA2EC95.wapp1nB?docId=US433566429&_cid=P11-MQ8OZT-00319-1"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-06-10T20:23:54",
+    "stage": "screening",
+    "event": "screening_completed",
+    "detail": "US20250122779A1 roteada para screen_only.",
+    "payload": {
+      "record_id": "rec_4fd359f22bee",
+      "patent_id": "US20250122779A1",
+      "decision": "exclude",
+      "score": 2.8,
+      "route": {
+        "route": "screen_only",
+        "reason": "Patente excluída na triagem.",
+        "slot": "screening"
+      },
+      "llm_error": ""
+    }
+  },
+  {
+    "timestamp": "2026-06-10T20:28:43",
+    "stage": "screening",
+    "event": "screening_completed",
+    "detail": "WO2024040002A1 roteada para manual_review.",
+    "payload": {
+      "record_id": "rec_5383df610488",
+      "patent_id": "WO2024040002A1",
+      "decision": "review",
+      "score": 5.0,
+      "route": {
+        "route": "manual_review",
+        "reason": "Triagem indicou revisão humana.",
+        "slot": "review"
+      },
+      "llm_error": ""
+    }
+  },
+  {
+    "timestamp": "2026-06-10T20:28:43",
+    "stage": "extraction",
+    "event": "screening_only",
+    "detail": "US20250122779A1 permaneceu apenas na triagem.",
+    "payload": {
+      "record_id": "rec_4fd359f22bee",
+      "patent_id": "US20250122779A1",
+      "route": "screen_only"
+    }
+  },
+  {
+    "timestamp": "2026-06-10T20:33:33",
+    "stage": "extraction",
+    "event": "detailed_evaluation_completed",
+    "detail": "WO2024040002A1 recebeu extração detalhada.",
+    "payload": {
+      "record_id": "rec_5383df610488",
+      "patent_id": "WO2024040002A1",
+      "route": "manual_review",
+      "confidence": 0.65
+    }
+  },
+  {
+    "timestamp": "2026-06-10T20:33:33",
+    "stage": "synthesis",
+    "event": "coverage_computed",
+    "detail": "Cobertura e seleção consolidadas após triagem.",
+    "payload": {
+      "raw_scraped": 2,
+      "unique_patents": 2,
+      "duplicates_removed": 0,
+      "screened": 2,
+      "included": 0,
+      "review": 1,
+      "excluded": 1,
+      "manual_review_required": 1,
+      "manual_review_deferred": 0,
+      "full_extractions": 1,
+      "missing_abstract": 0,
+      "missing_id": 0,
+      "records_with_content_identity": 0,
+      "records_with_fallback_identity": 0,
+      "family_duplicates_removed": 0,
+      "llm_screening_failures": 0,
+      "llm_total_failures": 0
+    }
+  },
+  {
+    "timestamp": "2026-06-10T20:41:56",
+    "stage": "synthesis",
+    "event": "comparative_analysis_completed",
+    "detail": "Síntese comparativa gerada via Ollama.",
+    "payload": {
+      "patents_compared": 2
+    }
+  },
+  {
+    "timestamp": "2026-06-10T20:41:56",
+    "stage": "synthesis",
+    "event": "whitespace_analysis_completed",
+    "detail": "Matriz estruturada de whitespace gerada.",
+    "payload": {
+      "selected_patents": 2,
+      "candidates": 0
+    }
+  },
+  {
+    "timestamp": "2026-06-10T20:41:56",
+    "stage": "writer",
+    "event": "context_prepared",
+    "detail": "Contexto compartilhado preparado para o writer.",
+    "payload": {
+      "top_patents": 0,
+      "route_summary": {
+        "screen_only": 1,
+        "manual_review": 1
+      }
+    }
+  },
+  {
+    "timestamp": "2026-06-10T20:41:56",
+    "stage": "finalization",
+    "event": "report_generated",
+    "detail": "Relatórios finais gerados com sucesso.",
+    "payload": {
+      "markdown": "output/patentes_carbon_dioxide_thermal_energy_storage_20260610_204156.md",
+      "json": "output/patentes_carbon_dioxide_thermal_energy_storage_20260610_204156.json"
+    }
+  }
+]

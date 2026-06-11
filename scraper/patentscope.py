@@ -18,13 +18,11 @@ import config
 from models.patent import Patent
 from scraper.base import BaseScraper
 
-logger = logging.getLogger(__name__)
-
-
 class PatentscopeScraper(BaseScraper):
     """Scraper para buscar patentes no Patentscope."""
 
     def __init__(self):
+        super().__init__()
         self.session = requests.Session()
         self.ua = random.choice(config.USER_AGENTS)
         self._update_headers()
@@ -50,17 +48,66 @@ class PatentscopeScraper(BaseScraper):
                     allow_redirects=True
                 )
                 response.raise_for_status()
+                if self._contains_block_signal(response.text):
+                    self._add_diagnostic(
+                        "blocked_or_captcha",
+                        "Sinal de bloqueio/CAPTCHA detectado no Patentscope.",
+                        response.url,
+                    )
                 return response
-            except requests.exceptions.RequestException as e:
+            except requests.exceptions.HTTPError as e:
+                status_code = e.response.status_code if e.response is not None else "N/A"
+                if status_code in {403, 429}:
+                    self._add_diagnostic(
+                        "blocked_http",
+                        f"HTTP {status_code} ao acessar a origem.",
+                        url,
+                    )
                 wait_time = config.RETRY_DELAY * (2 ** attempt)
-                logger.warning(
-                    f"Tentativa {attempt + 1}/{config.RETRY_ATTEMPTS} falhou para {url}: {e}. "
-                    f"Aguardando {wait_time}s..."
+                self._log(
+                    logging.WARNING,
+                    "scraper_request_retry",
+                    url=url,
+                    attempt=attempt + 1,
+                    max_attempts=config.RETRY_ATTEMPTS,
+                    status_code=status_code,
+                    wait_time_seconds=wait_time,
+                    detail=str(e),
                 )
                 if attempt < config.RETRY_ATTEMPTS - 1:
                     time.sleep(wait_time)
                 else:
-                    logger.error(f"Todas as tentativas falharam para URL: {url}")
+                    self._log(
+                        logging.ERROR,
+                        "scraper_request_failed",
+                        url=url,
+                        attempt=attempt + 1,
+                        max_attempts=config.RETRY_ATTEMPTS,
+                        detail=str(e),
+                    )
+                    return None
+            except requests.exceptions.RequestException as e:
+                wait_time = config.RETRY_DELAY * (2 ** attempt)
+                self._log(
+                    logging.WARNING,
+                    "scraper_request_retry",
+                    url=url,
+                    attempt=attempt + 1,
+                    max_attempts=config.RETRY_ATTEMPTS,
+                    wait_time_seconds=wait_time,
+                    detail=str(e),
+                )
+                if attempt < config.RETRY_ATTEMPTS - 1:
+                    time.sleep(wait_time)
+                else:
+                    self._log(
+                        logging.ERROR,
+                        "scraper_request_failed",
+                        url=url,
+                        attempt=attempt + 1,
+                        max_attempts=config.RETRY_ATTEMPTS,
+                        detail=str(e),
+                    )
                     return None
 
     def search(self, query: str, max_results: int = 10) -> List[Patent]:
@@ -69,23 +116,52 @@ class PatentscopeScraper(BaseScraper):
         Usa busca direta como primária para garantir persistência de sessão JSF.
         """
         patents = []
-        logger.info(f"Buscando patentes no Patentscope para: '{query}'")
+        self._log(
+            logging.INFO,
+            "scraper_search_started",
+            query=query,
+            max_results=max_results,
+            strategy="duckduckgo_then_patentscope_direct",
+        )
 
         # 1. Tenta DuckDuckGo primeiro (mais resiliente e menos chance de CAPTCHA imediato)
         links = self._search_duckduckgo(query, max_results)
         
         # 2. Se DDG falhar, tenta busca direta no Patentscope
         if not links:
-            logger.warning("DuckDuckGo não retornou resultados. Tentando busca direta no Patentscope...")
+            self._log(
+                logging.WARNING,
+                "scraper_search_fallback",
+                query=query,
+                reason="duckduckgo_empty",
+                fallback="patentscope_direct",
+            )
+            self._add_diagnostic(
+                "discovery_empty",
+                "DuckDuckGo não retornou links para Patentscope.",
+                "https://html.duckduckgo.com/html/",
+            )
             links = self._search_direct(query, max_results)
 
         if not links:
-            logger.warning("Nenhum link do Patentscope encontrado por nenhum método.")
+            self._log(
+                logging.WARNING,
+                "scraper_search_empty",
+                query=query,
+                source="patentscope",
+            )
             return []
 
         # 3. Visita cada link para obter detalhes (reusando a mesma sessão)
         for i, url in enumerate(links[:max_results]):
-            logger.info(f"Processando Patentscope {i+1}/{len(links[:max_results])}: {url}")
+            self._log(
+                logging.INFO,
+                "scraper_detail_fetch_started",
+                query=query,
+                index=i + 1,
+                total=min(len(links), max_results),
+                url=url,
+            )
             try:
                 patent = self.get_patent_details(url)
                 if patent and patent.title:
@@ -94,7 +170,21 @@ class PatentscopeScraper(BaseScraper):
                 # Delay amigável
                 time.sleep(random.uniform(2.0, 4.0))
             except Exception as e:
-                logger.error(f"Erro ao obter detalhes de {url}: {e}")
+                self._log(
+                    logging.ERROR,
+                    "scraper_detail_fetch_error",
+                    query=query,
+                    url=url,
+                    detail=str(e),
+                )
+
+        self._log(
+            logging.INFO,
+            "scraper_search_completed",
+            query=query,
+            max_results=max_results,
+            patents_found=len(patents),
+        )
 
         return patents
 
@@ -112,7 +202,19 @@ class PatentscopeScraper(BaseScraper):
             soup = BeautifulSoup(response.text, "lxml")
             # Usa seletores que ignoram o jsessionid no meio do href
             results = soup.select('a[href*="detail.jsf"][href*="docId="]')
-            logger.info(f"Encontrados {len(results)} links de resultados via busca direta")
+            if not results and self._contains_block_signal(response.text):
+                self._add_diagnostic(
+                    "blocked_or_captcha",
+                    "Busca direta do Patentscope retornou página com sinal de bloqueio.",
+                    response.url,
+                )
+            self._log(
+                logging.INFO,
+                "scraper_direct_results_found",
+                query=query,
+                results=len(results),
+                url=url,
+            )
             
             for res in results:
                 href = res.get("href", "")
@@ -131,7 +233,18 @@ class PatentscopeScraper(BaseScraper):
                     break
                     
         except Exception as e:
-            logger.error(f"Erro na busca direta Patentscope: {e}")
+            self._log(
+                logging.ERROR,
+                "scraper_direct_search_error",
+                query=query,
+                url=url,
+                detail=str(e),
+            )
+            self._add_diagnostic(
+                "search_error",
+                f"Erro na busca direta do Patentscope: {e}",
+                url,
+            )
             
         return links
 
@@ -161,6 +274,12 @@ class PatentscopeScraper(BaseScraper):
                 
             soup = BeautifulSoup(response.text, "lxml")
             results = soup.select(".result__a")
+            if not results and self._contains_block_signal(response.text):
+                self._add_diagnostic(
+                    "blocked_or_captcha",
+                    "DuckDuckGo retornou página com sinal de bloqueio.",
+                    response.url,
+                )
             
             for res in results:
                 href = res.get("href", "")
@@ -174,7 +293,13 @@ class PatentscopeScraper(BaseScraper):
                 if len(links) >= max_results:
                     break
         except Exception as e:
-            logger.error(f"Erro na busca DuckDuckGo: {e}")
+            self._log(
+                logging.ERROR,
+                "scraper_duckduckgo_error",
+                query=search_query,
+                url=url,
+                detail=str(e),
+            )
         return links
 
     def get_patent_details(self, patent_url: str) -> Patent:
@@ -187,7 +312,13 @@ class PatentscopeScraper(BaseScraper):
         if response is None:
             return patent
 
-        logger.debug(f"Detail status: {response.status_code}, tamanho: {len(response.text)}")
+        self._log(
+            logging.DEBUG,
+            "scraper_detail_response",
+            url=patent_url,
+            status_code=response.status_code,
+            response_chars=len(response.text),
+        )
         soup = BeautifulSoup(response.text, "lxml")
 
         # Extrai ID da URL se possível (como fallback)
@@ -201,6 +332,12 @@ class PatentscopeScraper(BaseScraper):
         title_elem = soup.select_one(".ps-biblio-data--title, [id*='biblio-title'], .patent-title, h1")
         if title_elem:
             patent.title = title_elem.get_text(strip=True).replace("(EN)", "").strip()
+        else:
+            self._add_diagnostic(
+                "layout_break",
+                "Não foi possível extrair o título da página de detalhe do Patentscope.",
+                patent_url,
+            )
 
         # Abstract
         abstract_elem = soup.select_one(".ps-biblio-data--abstract, .patent-abstract, [id*='abstract']")

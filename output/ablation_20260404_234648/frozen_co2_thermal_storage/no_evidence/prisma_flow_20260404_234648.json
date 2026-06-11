@@ -1,0 +1,46 @@
+{
+  "flow": {
+    "identification": {
+      "raw_records": 2,
+      "unique_records": 2,
+      "duplicates_removed": 0
+    },
+    "screening": {
+      "screened": 2,
+      "included": 2,
+      "review": 0,
+      "excluded": 0
+    },
+    "eligibility": {
+      "full_extractions": 2,
+      "manual_review_required": 0,
+      "manual_review_deferred": 0
+    },
+    "coverage": {
+      "missing_abstract": 0,
+      "missing_id": 0
+    },
+    "synthesis": {
+      "analyzed_records": 2,
+      "comparative_analysis_generated": true
+    }
+  },
+  "criteria": {
+    "include": [
+      "Alinhamento claro com a query ou seus sinônimos técnicos.",
+      "Documento com título, resumo ou snippet suficientes para análise.",
+      "Potencial técnico relevante para o domínio pesquisado."
+    ],
+    "exclude": [
+      "Documentos sem relação técnica com a query.",
+      "Duplicatas de outra fonte ou publicação equivalente.",
+      "Registro sem metadados mínimos para avaliação."
+    ]
+  },
+  "thresholds": {
+    "include_score": 7.0,
+    "review_score": 4.5,
+    "max_items_for_manual_review": 20
+  },
+  "version": "1.0"
+}

@@ -4,213 +4,28 @@ Agente de Web Scraping de Patentes
 ===================================
 
 Recebe uma string de busca, realiza scraping de patentes no Google Patents,
-e utiliza Ollama gemma3:4b para avaliar e analisar os resultados.
+e utiliza Ollama gemma3:27b para avaliar e analisar os resultados.
 
 Uso:
     python main.py --query "biodiesel production from waste oil"
     python main.py --query "solar cell efficiency" --max-results 15
-    python main.py -q "machine learning drug discovery" -n 5 --model gemma3:4b
+    python main.py -q "machine learning drug discovery" -n 5 --model gemma3:27b
+    python main.py -q "carbon dioxide thermal energy storage" --upgrade-benchmark --corpus-run-state output/smoke_whitespace_20260409/run_state_latest.json
 """
 
 import argparse
 import logging
 import os
 import sys
-import time
 
 # Adiciona o diretório raiz ao path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import config
+from logging_utils import configure_structured_logging, log_event
+from pipeline.features import PipelineFeatures
 
-# Configura logging
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
-    datefmt="%H:%M:%S",
-)
 logger = logging.getLogger("patent-agent")
-
-
-def print_banner():
-    """Imprime banner do agente."""
-    banner = """
-╔══════════════════════════════════════════════════════════════════╗
-║                                                                  ║
-║   🔬  AGENTE DE WEB SCRAPING DE PATENTES  🔬                    ║
-║                                                                  ║
-║   Busca, extrai e avalia patentes usando IA (Ollama)             ║
-║                                                                  ║
-╚══════════════════════════════════════════════════════════════════╝
-"""
-    print(banner)
-
-
-def print_progress(step: str, current: int = 0, total: int = 0):
-    """Imprime progresso formatado."""
-    if total > 0:
-        bar_len = 30
-        filled = int(bar_len * current / total)
-        bar = "█" * filled + "░" * (bar_len - filled)
-        pct = current / total * 100
-        print(f"\r  [{bar}] {pct:.0f}% — {step}", end="", flush=True)
-        if current == total:
-            print()  # Nova linha ao completar
-    else:
-        print(f"  ⏳ {step}...")
-
-
-def run_agent(query: str, max_results: int, model: str, output_dir: str):
-    """Executa o fluxo completo do agente."""
-    from scraper.google_patents import GooglePatentsScraper
-    from scraper.patentscope import PatentscopeScraper
-    from evaluator.llm_evaluator import OllamaEvaluator
-    from report.generator import ReportGenerator
-
-    start_time = time.time()
-
-    # --- Etapa 1: Verificação do Ollama ---
-    print("\n" + "=" * 60)
-    print("  📡 ETAPA 1: Verificando conexão com Ollama")
-    print("=" * 60)
-
-    evaluator = OllamaEvaluator(model=model)
-
-    if not evaluator.check_connection():
-        print(f"\n  ⚠️  Modelo '{model}' não disponível no Ollama.")
-        print(f"  Execute: ollama pull {model}")
-        print(f"  Continuando sem avaliação por LLM...\n")
-        use_llm = False
-    else:
-        print(f"  ✅ Ollama conectado — modelo: {model}")
-        use_llm = True
-
-    # --- Etapa 2: Scraping ---
-    print("\n" + "=" * 60)
-    print("  🔍 ETAPA 2: Buscando patentes")
-    print("=" * 60)
-    print(f"  Query: \"{query}\"")
-    print(f"  Máximo de resultados: {max_results}")
-    print()
-
-    scrapers = [
-        GooglePatentsScraper(),
-        PatentscopeScraper(),
-    ]
-
-    patents = []
-    for scraper in scrapers:
-        source_name = scraper.__class__.__name__.replace("Scraper", "")
-        print_progress(f"Iniciando scraping no {source_name}")
-        try:
-            results = scraper.search(query, max_results=max_results)
-            patents.extend(results)
-            print(f"    → {len(results)} patentes encontradas no {source_name}")
-        except Exception as e:
-            logger.error(f"Erro no scraper {source_name}: {e}")
-
-    if not patents:
-        print("\n  ❌ Nenhuma patente encontrada para a busca.")
-        print("  Tente termos diferentes ou mais genéricos.")
-        return
-
-    print(f"\n  ✅ {len(patents)} patente(s) encontrada(s)!\n")
-
-    # Lista patentes encontradas
-    for i, patent in enumerate(patents, 1):
-        print(f"  {i}. [{patent.patent_id}] {patent.title[:80]}")
-        if patent.assignee:
-            print(f"     Titular: {patent.assignee}")
-        print()
-
-    # --- Etapa 3: Avaliação com LLM ---
-    evaluations = []
-    if use_llm:
-        print("=" * 60)
-        print("  🤖 ETAPA 3: Avaliando patentes com IA")
-        print("=" * 60)
-        print(f"  Modelo: {model}")
-        print()
-
-        for i, patent in enumerate(patents, 1):
-            print_progress(
-                f"Avaliando: {patent.patent_id} — {patent.title[:40]}...",
-                i, len(patents)
-            )
-            evaluation = evaluator.evaluate_patent(patent, query)
-            evaluations.append(evaluation)
-
-            if evaluation.relevance_score > 0:
-                print(
-                    f"    → Score: {evaluation.relevance_score:.1f}/10 | "
-                    f"Inovação: {evaluation.innovation_level}"
-                )
-
-        print(f"\n  ✅ Avaliação concluída para {len(evaluations)} patente(s)!")
-    else:
-        print("\n  ⏭️  Etapa de avaliação pulada (Ollama não disponível)")
-        from models.patent import PatentEvaluation
-        evaluations = [
-            PatentEvaluation(patent_id=p.patent_id) for p in patents
-        ]
-
-    # --- Etapa 4: Análise Comparativa ---
-    comparative_analysis = ""
-    if use_llm and len(patents) > 1:
-        print("\n" + "=" * 60)
-        print("  📊 ETAPA 4: Gerando análise comparativa")
-        print("=" * 60)
-
-        print_progress("Gerando análise comparativa com IA")
-        comparative_analysis = evaluator.generate_comparative_analysis(
-            patents, evaluations, query
-        )
-        print("  ✅ Análise comparativa gerada!")
-
-    # --- Etapa 5: Geração de Relatório ---
-    print("\n" + "=" * 60)
-    print("  📝 ETAPA 5: Gerando relatórios")
-    print("=" * 60)
-
-    reporter = ReportGenerator(output_dir=output_dir)
-    md_path, json_path = reporter.generate_report(
-        query, patents, evaluations, comparative_analysis
-    )
-
-    elapsed = time.time() - start_time
-
-    print(f"\n  ✅ Relatórios gerados com sucesso!")
-    print(f"  📄 Markdown: {os.path.abspath(md_path)}")
-    print(f"  📋 JSON:     {os.path.abspath(json_path)}")
-
-    # --- Resumo Final ---
-    print("\n" + "=" * 60)
-    print("  📋 RESUMO FINAL")
-    print("=" * 60)
-    print(f"  🔍 Query: \"{query}\"")
-    print(f"  📊 Patentes encontradas: {len(patents)}")
-    if use_llm:
-        avg_score = (
-            sum(e.relevance_score for e in evaluations) / len(evaluations)
-            if evaluations else 0
-        )
-        print(f"  ⭐ Score médio de relevância: {avg_score:.1f}/10")
-
-        top_patents = sorted(
-            zip(patents, evaluations),
-            key=lambda x: x[1].relevance_score,
-            reverse=True,
-        )[:3]
-
-        if top_patents:
-            print(f"\n  🏆 Top 3 Patentes mais relevantes:")
-            for i, (p, e) in enumerate(top_patents, 1):
-                print(
-                    f"     {i}. [{e.relevance_score:.1f}] {p.title[:60]}"
-                )
-
-    print(f"\n  ⏱️  Tempo total: {elapsed:.1f}s")
-    print(f"  ✅ Concluído!\n")
 
 
 def main():
@@ -222,8 +37,9 @@ def main():
 Exemplos de uso:
   python main.py --query "biodiesel production from waste oil"
   python main.py -q "solar cell perovskite" --max-results 15
-  python main.py -q "CRISPR gene therapy" -n 5 --model gemma3:4b
+  python main.py -q "CRISPR gene therapy" -n 5 --model gemma3:27b
   python main.py -q "lithium battery recycling" --output-dir ./resultados
+  python main.py -q "carbon dioxide thermal energy storage" --upgrade-benchmark --corpus-run-state output/smoke_whitespace_20260409/run_state_latest.json
         """,
     )
 
@@ -256,19 +72,166 @@ Exemplos de uso:
         action="store_true",
         help="Ativa logs detalhados (modo debug)",
     )
+    parser.add_argument(
+        "--include-threshold",
+        type=float,
+        default=config.SCREEN_INCLUDE_THRESHOLD,
+        help=f"Score mínimo para inclusão automática (padrão: {config.SCREEN_INCLUDE_THRESHOLD})",
+    )
+    parser.add_argument(
+        "--review-threshold",
+        type=float,
+        default=config.SCREEN_REVIEW_THRESHOLD,
+        help=f"Score mínimo para fila de revisão manual (padrão: {config.SCREEN_REVIEW_THRESHOLD})",
+    )
+    parser.add_argument(
+        "--disable-evidence",
+        action="store_true",
+        help="Desliga a exigência de evidências textuais no LLM",
+    )
+    parser.add_argument(
+        "--disable-clusters",
+        action="store_true",
+        help="Desliga a síntese temática por cluster",
+    )
+    parser.add_argument(
+        "--disable-structural-roles",
+        action="store_true",
+        help="Desliga a extração de papéis técnicos estruturados",
+    )
+    parser.add_argument(
+        "--disable-rerank",
+        action="store_true",
+        help="Desliga o segundo passe de triagem para casos limítrofes",
+    )
+    parser.add_argument(
+        "--disable-prisma",
+        action="store_true",
+        help="Desliga os artefatos PRISMA-like",
+    )
+    parser.add_argument(
+        "--disable-snapshot",
+        action="store_true",
+        help="Desliga o snapshot versionado da execução",
+    )
+    parser.add_argument(
+        "--disable-comparative-analysis",
+        action="store_true",
+        help="Desliga a etapa de análise comparativa",
+    )
+    parser.add_argument(
+        "--disable-whitespace-analysis",
+        action="store_true",
+        help="Desliga a etapa estruturada de whitespace",
+    )
+    parser.add_argument(
+        "--disable-manual-review",
+        action="store_true",
+        help="Desliga a fila de revisão manual",
+    )
+    parser.add_argument(
+        "--ablation",
+        action="store_true",
+        help="Executa o benchmark de ablation com variantes pré-definidas",
+    )
+    parser.add_argument(
+        "--benchmark-file",
+        type=str,
+        default=os.path.join("benchmarks", "ablation_benchmark.json"),
+        help="Arquivo JSON com casos fixos para o benchmark de ablation",
+    )
+    parser.add_argument(
+        "--upgrade-benchmark",
+        action="store_true",
+        help="Compara o pipeline atual contra uma baseline sem as melhorias técnicas do dia",
+    )
+    parser.add_argument(
+        "--corpus-run-state",
+        type=str,
+        default="",
+        help="Run state JSON usado como corpus congelado para o benchmark de melhorias",
+    )
+    parser.add_argument(
+        "--model-comparison-summary",
+        type=str,
+        default="",
+        help="Resumo JSON opcional de comparação entre modelos para embutir recomendação no relatório",
+    )
 
     args = parser.parse_args()
 
-    if args.verbose:
-        logging.getLogger().setLevel(logging.DEBUG)
+    configure_structured_logging(logging.DEBUG if args.verbose else logging.INFO)
+
+    config.SCREEN_INCLUDE_THRESHOLD = args.include_threshold
+    config.SCREEN_REVIEW_THRESHOLD = args.review_threshold
+    features = PipelineFeatures(
+        require_evidence=not args.disable_evidence,
+        enable_thematic_clusters=not args.disable_clusters,
+        enable_structural_roles=not args.disable_structural_roles,
+        enable_screening_rerank=not args.disable_rerank,
+        enable_prisma=not args.disable_prisma,
+        enable_snapshot=not args.disable_snapshot,
+        enable_comparative_analysis=not args.disable_comparative_analysis,
+        enable_whitespace_analysis=not args.disable_whitespace_analysis,
+        enable_manual_review_queue=not args.disable_manual_review,
+    )
+
+    from pipeline.orchestrator import print_banner, run_agent
+    from pipeline.ablation import run_ablation_suite
+    from pipeline.upgrade_benchmark import run_today_upgrade_benchmark
 
     print_banner()
-    run_agent(
+    log_event(
+        logger,
+        logging.INFO,
+        "cli_invocation",
         query=args.query,
         max_results=args.max_results,
         model=args.model,
         output_dir=args.output_dir,
+        ablation=args.ablation,
+        upgrade_benchmark=args.upgrade_benchmark,
+        feature_flags=features.to_dict(),
     )
+    if args.upgrade_benchmark:
+        summary = run_today_upgrade_benchmark(
+            query=args.query,
+            max_results=args.max_results,
+            model=args.model,
+            output_dir=args.output_dir,
+            corpus_run_state=args.corpus_run_state,
+            model_comparison_summary=args.model_comparison_summary,
+        )
+        log_event(
+            logger,
+            logging.INFO,
+            "upgrade_benchmark_completed",
+            summary_paths=summary.get("summary_paths", {}),
+            suite_root=summary.get("suite_root", ""),
+        )
+    elif args.ablation:
+        summary = run_ablation_suite(
+            query=args.query,
+            max_results=args.max_results,
+            model=args.model,
+            output_dir=args.output_dir,
+            benchmark_file=args.benchmark_file,
+        )
+        log_event(
+            logger,
+            logging.INFO,
+            "ablation_completed",
+            summary_paths=summary.get("summary_paths", {}),
+            suite_root=summary.get("suite_root", ""),
+        )
+    else:
+        run_agent(
+            query=args.query,
+            max_results=args.max_results,
+            model=args.model,
+            output_dir=args.output_dir,
+            features=features,
+        )
 
 
 if __name__ == "__main__":

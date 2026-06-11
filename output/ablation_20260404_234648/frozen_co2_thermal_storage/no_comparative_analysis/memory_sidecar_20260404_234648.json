@@ -1,0 +1,182 @@
+{
+  "run_id": "20260404_234648",
+  "max_items_per_slot": 5,
+  "slots": {
+    "writer": [
+      {
+        "top_patents": [
+          {
+            "record_id": "rec_a8bedaa72b07",
+            "family_id": "family:57bacd52d7b33d724fba064e12083f402a48d5a6",
+            "patent_id": "WO2024000001",
+            "title": "Supercritical CO2 thermal storage system",
+            "score": 9.2,
+            "screening_decision": "include",
+            "thematic_cluster": "CO2 Cycle Configurations",
+            "route": "deep_extraction",
+            "evidence_snippets": [
+              "supercritical CO2"
+            ]
+          },
+          {
+            "record_id": "rec_f6fb7a2061b1",
+            "family_id": "family:9f0a99be7d639c23f467eccf61a4d374f765e9ec",
+            "patent_id": "US1234567A",
+            "title": "Thermal storage assembly for industrial energy shifting",
+            "score": 8.1,
+            "screening_decision": "include",
+            "thematic_cluster": "Thermal Transfer Mechanisms",
+            "route": "deep_extraction",
+            "evidence_snippets": [
+              "packed-bed thermal storage assembly"
+            ]
+          }
+        ],
+        "route_summary": {
+          "deep_extraction": 2
+        }
+      }
+    ]
+  },
+  "journal": [
+    {
+      "timestamp": "2026-04-04T23:46:48",
+      "stage": "setup",
+      "event": "llm_check",
+      "detail": "Verificação de disponibilidade do Ollama concluída.",
+      "payload": {
+        "llm_available": true,
+        "model": "gemma3:4b"
+      }
+    },
+    {
+      "timestamp": "2026-04-04T23:46:48",
+      "stage": "identification",
+      "event": "scrape_completed",
+      "detail": "Frozen retornou patentes.",
+      "payload": {
+        "source": "Frozen",
+        "count": 1,
+        "diagnostics": []
+      }
+    },
+    {
+      "timestamp": "2026-04-04T23:46:48",
+      "stage": "identification",
+      "event": "scrape_completed",
+      "detail": "Frozen retornou patentes.",
+      "payload": {
+        "source": "Frozen",
+        "count": 1,
+        "diagnostics": []
+      }
+    },
+    {
+      "timestamp": "2026-04-04T23:46:48",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "US1234567A roteada para deep_extraction.",
+      "payload": {
+        "record_id": "rec_f6fb7a2061b1",
+        "patent_id": "US1234567A",
+        "decision": "include",
+        "score": 7.8,
+        "route": {
+          "route": "deep_extraction",
+          "reason": "Há evidência suficiente para extração detalhada.",
+          "slot": "writer"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-04-04T23:46:48",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "WO2024000001 roteada para deep_extraction.",
+      "payload": {
+        "record_id": "rec_a8bedaa72b07",
+        "patent_id": "WO2024000001",
+        "decision": "include",
+        "score": 9.0,
+        "route": {
+          "route": "deep_extraction",
+          "reason": "Há evidência suficiente para extração detalhada.",
+          "slot": "writer"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-04-04T23:46:48",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "US1234567A recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_f6fb7a2061b1",
+        "patent_id": "US1234567A",
+        "route": "deep_extraction",
+        "confidence": 0.82
+      }
+    },
+    {
+      "timestamp": "2026-04-04T23:46:48",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "WO2024000001 recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_a8bedaa72b07",
+        "patent_id": "WO2024000001",
+        "route": "deep_extraction",
+        "confidence": 0.91
+      }
+    },
+    {
+      "timestamp": "2026-04-04T23:46:48",
+      "stage": "synthesis",
+      "event": "coverage_computed",
+      "detail": "Cobertura e seleção consolidadas após triagem.",
+      "payload": {
+        "raw_scraped": 2,
+        "unique_patents": 2,
+        "duplicates_removed": 0,
+        "screened": 2,
+        "included": 2,
+        "review": 0,
+        "excluded": 0,
+        "manual_review_required": 0,
+        "manual_review_deferred": 0,
+        "full_extractions": 2,
+        "missing_abstract": 0,
+        "missing_id": 0,
+        "records_with_content_identity": 0,
+        "records_with_fallback_identity": 0,
+        "family_duplicates_removed": 0,
+        "llm_screening_failures": 0,
+        "llm_total_failures": 0
+      }
+    },
+    {
+      "timestamp": "2026-04-04T23:46:48",
+      "stage": "writer",
+      "event": "context_prepared",
+      "detail": "Contexto compartilhado preparado para o writer.",
+      "payload": {
+        "top_patents": 2,
+        "route_summary": {
+          "deep_extraction": 2
+        }
+      }
+    },
+    {
+      "timestamp": "2026-04-04T23:46:48",
+      "stage": "finalization",
+      "event": "report_generated",
+      "detail": "Relatórios finais gerados com sucesso.",
+      "payload": {
+        "markdown": "output/ablation_20260404_234648/frozen_co2_thermal_storage/no_comparative_analysis/patentes_carbon_dioxide_thermal_energy_storage_20260404_234648.md",
+        "json": "output/ablation_20260404_234648/frozen_co2_thermal_storage/no_comparative_analysis/patentes_carbon_dioxide_thermal_energy_storage_20260404_234648.json"
+      }
+    }
+  ]
+}

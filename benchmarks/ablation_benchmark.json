@@ -1,0 +1,21 @@
+{
+  "name": "revisao_tecnica_patent_ablation",
+  "description": "Benchmark fixo para comparar variantes do pipeline de revisão técnica.",
+  "cases": [
+    {
+      "name": "CO2 thermal storage",
+      "query": "carbon dioxide thermal energy storage",
+      "max_results": 10
+    },
+    {
+      "name": "Phase change materials",
+      "query": "phase change material thermal storage",
+      "max_results": 10
+    },
+    {
+      "name": "Transcritical CO2 cycle",
+      "query": "transcritical CO2 refrigeration cycle",
+      "max_results": 10
+    }
+  ]
+}

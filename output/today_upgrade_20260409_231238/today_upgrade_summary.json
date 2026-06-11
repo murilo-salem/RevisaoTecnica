@@ -1,0 +1,456 @@
+{
+  "generated_at": "2026-04-09T23:15:10",
+  "query": "carbon dioxide thermal energy storage",
+  "max_results": 4,
+  "model": "gemma3:27b",
+  "suite_root": "/home/murilo/Documentos/RevisaoTecnica/output/today_upgrade_20260409_231238",
+  "corpus_run_state": "/home/murilo/Documentos/RevisaoTecnica/output/smoke_whitespace_20260409/run_state_latest.json",
+  "corpus_fixture": "",
+  "variants": [
+    {
+      "name": "pre_today_baseline",
+      "description": "Desliga papéis estruturados, rerank de triagem e whitespace estruturado.",
+      "features": {
+        "require_evidence": true,
+        "enable_thematic_clusters": true,
+        "enable_structural_roles": false,
+        "enable_screening_rerank": false,
+        "enable_prisma": true,
+        "enable_snapshot": true,
+        "enable_comparative_analysis": true,
+        "enable_whitespace_analysis": false,
+        "enable_manual_review_queue": true
+      }
+    },
+    {
+      "name": "today_updates",
+      "description": "Mantém ativas as melhorias técnicas implementadas hoje.",
+      "features": {
+        "require_evidence": true,
+        "enable_thematic_clusters": true,
+        "enable_structural_roles": true,
+        "enable_screening_rerank": true,
+        "enable_prisma": true,
+        "enable_snapshot": true,
+        "enable_comparative_analysis": true,
+        "enable_whitespace_analysis": true,
+        "enable_manual_review_queue": true
+      }
+    }
+  ],
+  "today_changes": [
+    {
+      "title": "Pivot do modelo padrão para gemma3:27b",
+      "why": "Aumentar profundidade técnica na triagem e na síntese sem migrar para API externa.",
+      "files": [
+        "/home/murilo/Documentos/RevisaoTecnica/config.py",
+        "/home/murilo/Documentos/RevisaoTecnica/main.py",
+        "/home/murilo/Documentos/RevisaoTecnica/README.md"
+      ]
+    },
+    {
+      "title": "Resolução de alias e detecção robusta do modelo ativo",
+      "why": "Evitar falsos negativos quando o Ollama expõe variantes compatíveis do mesmo modelo.",
+      "files": [
+        "/home/murilo/Documentos/RevisaoTecnica/evaluator/llm_evaluator.py"
+      ]
+    },
+    {
+      "title": "Ampliação do corpus comparativo para include + review + adjacentes",
+      "why": "Whitespace real aparece na borda técnica, não apenas no núcleo incluído.",
+      "files": [
+        "/home/murilo/Documentos/RevisaoTecnica/evaluator/llm_evaluator.py",
+        "/home/murilo/Documentos/RevisaoTecnica/pipeline/orchestrator.py",
+        "/home/murilo/Documentos/RevisaoTecnica/analysis_utils.py"
+      ]
+    },
+    {
+      "title": "Schema técnico estruturado de papéis do CO2 e do armazenamento",
+      "why": "Separar working fluid, meio armazenado, refrigeração e integração de processo com menos ambiguidade.",
+      "files": [
+        "/home/murilo/Documentos/RevisaoTecnica/models/patent.py",
+        "/home/murilo/Documentos/RevisaoTecnica/evaluator/llm_evaluator.py",
+        "/home/murilo/Documentos/RevisaoTecnica/report/generator.py"
+      ]
+    },
+    {
+      "title": "Rerank para zona cinzenta de triagem",
+      "why": "Forçar um segundo passe nos casos limítrofes antes do roteamento final.",
+      "files": [
+        "/home/murilo/Documentos/RevisaoTecnica/config.py",
+        "/home/murilo/Documentos/RevisaoTecnica/evaluator/llm_evaluator.py",
+        "/home/murilo/Documentos/RevisaoTecnica/pipeline/orchestrator.py"
+      ]
+    },
+    {
+      "title": "Whitespace estruturado em JSON e persistência de artefato",
+      "why": "Transformar hipótese de whitespace em matriz de cobertura auditável e reutilizável.",
+      "files": [
+        "/home/murilo/Documentos/RevisaoTecnica/evaluator/llm_evaluator.py",
+        "/home/murilo/Documentos/RevisaoTecnica/pipeline/state.py",
+        "/home/murilo/Documentos/RevisaoTecnica/pipeline/orchestrator.py",
+        "/home/murilo/Documentos/RevisaoTecnica/report/generator.py"
+      ]
+    },
+    {
+      "title": "Cobertura de regressão para os novos mecanismos",
+      "why": "Evitar regressão silenciosa no schema técnico, rerank e artefatos do benchmark.",
+      "files": [
+        "/home/murilo/Documentos/RevisaoTecnica/tests/test_architecture.py",
+        "/home/murilo/Documentos/RevisaoTecnica/tests/test_frozen_pipeline.py",
+        "/home/murilo/Documentos/RevisaoTecnica/pipeline/frozen_benchmark.py"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "variant": {
+        "name": "pre_today_baseline",
+        "description": "Desliga papéis estruturados, rerank de triagem e whitespace estruturado.",
+        "features": {
+          "require_evidence": true,
+          "enable_thematic_clusters": true,
+          "enable_structural_roles": false,
+          "enable_screening_rerank": false,
+          "enable_prisma": true,
+          "enable_snapshot": true,
+          "enable_comparative_analysis": true,
+          "enable_whitespace_analysis": false,
+          "enable_manual_review_queue": true
+        }
+      },
+      "summary": {
+        "run_id": "20260409_231238",
+        "status": "completed",
+        "model": "gemma3:27b",
+        "feature_flags": {
+          "require_evidence": true,
+          "enable_thematic_clusters": true,
+          "enable_structural_roles": false,
+          "enable_screening_rerank": false,
+          "enable_prisma": true,
+          "enable_snapshot": true,
+          "enable_comparative_analysis": true,
+          "enable_whitespace_analysis": false,
+          "enable_manual_review_queue": true
+        },
+        "coverage_metrics": {
+          "raw_scraped": 4,
+          "unique_patents": 4,
+          "duplicates_removed": 0,
+          "screened": 4,
+          "included": 1,
+          "review": 2,
+          "excluded": 1,
+          "manual_review_required": 2,
+          "manual_review_deferred": 0,
+          "full_extractions": 3,
+          "missing_abstract": 1,
+          "missing_id": 0,
+          "records_with_content_identity": 0,
+          "records_with_fallback_identity": 0,
+          "family_duplicates_removed": 0,
+          "llm_screening_failures": 0,
+          "llm_total_failures": 0
+        },
+        "average_relevance": 7.13,
+        "total_duration_seconds": 66.207,
+        "evaluation_duration_seconds": 30.831,
+        "comparative_analysis_duration_seconds": 16.306,
+        "rerank_duration_seconds": 0.0,
+        "reranked_items": 0,
+        "rerank_decision_changes": 0,
+        "structural_summary": {
+          "filled_fields": 0,
+          "total_fields": 28,
+          "fill_ratio": 0.0,
+          "by_field": {
+            "co2_role": 0,
+            "storage_role": 0,
+            "system_boundary": 0,
+            "cycle_type": 0,
+            "heat_source_sink": 0,
+            "claim_focus": 0,
+            "exclusion_category": 0
+          }
+        },
+        "whitespace_status": "",
+        "whitespace_candidates": 0,
+        "top_patent": "CN118934113A",
+        "decision_map": {
+          "US20200182095A1": {
+            "decision": "review",
+            "screening_score": 6.8,
+            "relevance_score": 6.1,
+            "co2_role": "",
+            "storage_role": "",
+            "claim_focus": "",
+            "exclusion_category": "",
+            "rerank_applied": false,
+            "rerank_reason": ""
+          },
+          "CN118934113A": {
+            "decision": "include",
+            "screening_score": 9.2,
+            "relevance_score": 10.0,
+            "co2_role": "",
+            "storage_role": "",
+            "claim_focus": "",
+            "exclusion_category": "",
+            "rerank_applied": false,
+            "rerank_reason": ""
+          },
+          "AU244427549": {
+            "decision": "review",
+            "screening_score": 6.2,
+            "relevance_score": 5.3,
+            "co2_role": "",
+            "storage_role": "",
+            "claim_focus": "",
+            "exclusion_category": "",
+            "rerank_applied": false,
+            "rerank_reason": ""
+          },
+          "US433566429": {
+            "decision": "exclude",
+            "screening_score": 3.5,
+            "relevance_score": 0.0,
+            "co2_role": "",
+            "storage_role": "",
+            "claim_focus": "",
+            "exclusion_category": "",
+            "rerank_applied": false,
+            "rerank_reason": ""
+          }
+        },
+        "output_paths": {
+          "markdown": "/home/murilo/Documentos/RevisaoTecnica/output/today_upgrade_20260409_231238/pre_today_baseline/patentes_carbon_dioxide_thermal_energy_storage_20260409_231344.md",
+          "json": "/home/murilo/Documentos/RevisaoTecnica/output/today_upgrade_20260409_231238/pre_today_baseline/patentes_carbon_dioxide_thermal_energy_storage_20260409_231344.json",
+          "state": "/home/murilo/Documentos/RevisaoTecnica/output/today_upgrade_20260409_231238/pre_today_baseline/run_state_20260409_231238.json",
+          "prisma": "/home/murilo/Documentos/RevisaoTecnica/output/today_upgrade_20260409_231238/pre_today_baseline/prisma_flow_20260409_231238.json",
+          "snapshot": "/home/murilo/Documentos/RevisaoTecnica/output/today_upgrade_20260409_231238/pre_today_baseline/config_snapshot_20260409_231238.json",
+          "memory_journal": "/home/murilo/Documentos/RevisaoTecnica/output/today_upgrade_20260409_231238/pre_today_baseline/memory_journal_20260409_231238.json",
+          "memory_sidecar": "/home/murilo/Documentos/RevisaoTecnica/output/today_upgrade_20260409_231238/pre_today_baseline/memory_sidecar_20260409_231238.json"
+        }
+      }
+    },
+    {
+      "variant": {
+        "name": "today_updates",
+        "description": "Mantém ativas as melhorias técnicas implementadas hoje.",
+        "features": {
+          "require_evidence": true,
+          "enable_thematic_clusters": true,
+          "enable_structural_roles": true,
+          "enable_screening_rerank": true,
+          "enable_prisma": true,
+          "enable_snapshot": true,
+          "enable_comparative_analysis": true,
+          "enable_whitespace_analysis": true,
+          "enable_manual_review_queue": true
+        }
+      },
+      "summary": {
+        "run_id": "20260409_231344",
+        "status": "completed",
+        "model": "gemma3:27b",
+        "feature_flags": {
+          "require_evidence": true,
+          "enable_thematic_clusters": true,
+          "enable_structural_roles": true,
+          "enable_screening_rerank": true,
+          "enable_prisma": true,
+          "enable_snapshot": true,
+          "enable_comparative_analysis": true,
+          "enable_whitespace_analysis": true,
+          "enable_manual_review_queue": true
+        },
+        "coverage_metrics": {
+          "raw_scraped": 4,
+          "unique_patents": 4,
+          "duplicates_removed": 0,
+          "screened": 4,
+          "included": 1,
+          "review": 2,
+          "excluded": 1,
+          "manual_review_required": 2,
+          "manual_review_deferred": 0,
+          "full_extractions": 3,
+          "missing_abstract": 1,
+          "missing_id": 0,
+          "records_with_content_identity": 0,
+          "records_with_fallback_identity": 0,
+          "family_duplicates_removed": 0,
+          "llm_screening_failures": 0,
+          "llm_total_failures": 0
+        },
+        "average_relevance": 6.8,
+        "total_duration_seconds": 85.377,
+        "evaluation_duration_seconds": 34.486,
+        "comparative_analysis_duration_seconds": 21.417,
+        "rerank_duration_seconds": 9.422,
+        "reranked_items": 2,
+        "rerank_decision_changes": 0,
+        "structural_summary": {
+          "filled_fields": 28,
+          "total_fields": 28,
+          "fill_ratio": 1.0,
+          "by_field": {
+            "co2_role": 4,
+            "storage_role": 4,
+            "system_boundary": 4,
+            "cycle_type": 4,
+            "heat_source_sink": 4,
+            "claim_focus": 4,
+            "exclusion_category": 4
+          }
+        },
+        "whitespace_status": "ok",
+        "whitespace_candidates": 1,
+        "top_patent": "CN118934113A",
+        "decision_map": {
+          "US20200182095A1": {
+            "decision": "review",
+            "screening_score": 5.3,
+            "relevance_score": 5.1,
+            "co2_role": "working_fluid",
+            "storage_role": "explicit_thermal_storage",
+            "claim_focus": "system_architecture",
+            "exclusion_category": "None",
+            "rerank_applied": true,
+            "rerank_reason": "reranked:decision_confirmed"
+          },
+          "CN118934113A": {
+            "decision": "include",
+            "screening_score": 9.2,
+            "relevance_score": 10.0,
+            "co2_role": "stored_thermodynamic_medium",
+            "storage_role": "explicit_thermal_storage",
+            "claim_focus": "system_architecture",
+            "exclusion_category": "None",
+            "rerank_applied": false,
+            "rerank_reason": ""
+          },
+          "AU244427549": {
+            "decision": "review",
+            "screening_score": 4.8,
+            "relevance_score": 5.3,
+            "co2_role": "refrigerant_loop",
+            "storage_role": "explicit_thermal_storage",
+            "claim_focus": "system_architecture",
+            "exclusion_category": "None",
+            "rerank_applied": true,
+            "rerank_reason": "reranked:decision_confirmed"
+          },
+          "US433566429": {
+            "decision": "exclude",
+            "screening_score": 3.5,
+            "relevance_score": 0.0,
+            "co2_role": "co2_not_central",
+            "storage_role": "explicit_thermal_storage",
+            "claim_focus": "system_architecture",
+            "exclusion_category": "generic_tes",
+            "rerank_applied": false,
+            "rerank_reason": ""
+          }
+        },
+        "output_paths": {
+          "markdown": "/home/murilo/Documentos/RevisaoTecnica/output/today_upgrade_20260409_231238/today_updates/patentes_carbon_dioxide_thermal_energy_storage_20260409_231510.md",
+          "json": "/home/murilo/Documentos/RevisaoTecnica/output/today_upgrade_20260409_231238/today_updates/patentes_carbon_dioxide_thermal_energy_storage_20260409_231510.json",
+          "state": "/home/murilo/Documentos/RevisaoTecnica/output/today_upgrade_20260409_231238/today_updates/run_state_20260409_231344.json",
+          "prisma": "/home/murilo/Documentos/RevisaoTecnica/output/today_upgrade_20260409_231238/today_updates/prisma_flow_20260409_231344.json",
+          "snapshot": "/home/murilo/Documentos/RevisaoTecnica/output/today_upgrade_20260409_231238/today_updates/config_snapshot_20260409_231344.json",
+          "whitespace_json": "/home/murilo/Documentos/RevisaoTecnica/output/today_upgrade_20260409_231238/today_updates/whitespace_analysis_20260409_231344.json",
+          "memory_journal": "/home/murilo/Documentos/RevisaoTecnica/output/today_upgrade_20260409_231238/today_updates/memory_journal_20260409_231344.json",
+          "memory_sidecar": "/home/murilo/Documentos/RevisaoTecnica/output/today_upgrade_20260409_231238/today_updates/memory_sidecar_20260409_231344.json"
+        }
+      }
+    }
+  ],
+  "model_comparison_summary": "/home/murilo/Documentos/RevisaoTecnica/output/model_compare_20260409_captured/model_comparison_summary.json",
+  "delta": {
+    "average_relevance_delta": -0.33,
+    "included_delta": 0,
+    "review_delta": 0,
+    "excluded_delta": 0,
+    "manual_review_delta": 0,
+    "total_duration_delta_seconds": 19.17,
+    "rerank_items_delta": 2,
+    "structural_fill_ratio_delta": 1.0,
+    "whitespace_candidates_delta": 1,
+    "decision_changes": [
+      {
+        "patent_id": "AU244427549",
+        "baseline_decision": "review",
+        "updated_decision": "review",
+        "baseline_screening_score": 6.2,
+        "updated_screening_score": 4.8,
+        "baseline_relevance_score": 5.3,
+        "updated_relevance_score": 5.3,
+        "rerank_applied": true,
+        "co2_role": "refrigerant_loop",
+        "storage_role": "explicit_thermal_storage",
+        "claim_focus": "system_architecture",
+        "exclusion_category": "None"
+      },
+      {
+        "patent_id": "CN118934113A",
+        "baseline_decision": "include",
+        "updated_decision": "include",
+        "baseline_screening_score": 9.2,
+        "updated_screening_score": 9.2,
+        "baseline_relevance_score": 10.0,
+        "updated_relevance_score": 10.0,
+        "rerank_applied": false,
+        "co2_role": "stored_thermodynamic_medium",
+        "storage_role": "explicit_thermal_storage",
+        "claim_focus": "system_architecture",
+        "exclusion_category": "None"
+      },
+      {
+        "patent_id": "US20200182095A1",
+        "baseline_decision": "review",
+        "updated_decision": "review",
+        "baseline_screening_score": 6.8,
+        "updated_screening_score": 5.3,
+        "baseline_relevance_score": 6.1,
+        "updated_relevance_score": 5.1,
+        "rerank_applied": true,
+        "co2_role": "working_fluid",
+        "storage_role": "explicit_thermal_storage",
+        "claim_focus": "system_architecture",
+        "exclusion_category": "None"
+      },
+      {
+        "patent_id": "US433566429",
+        "baseline_decision": "exclude",
+        "updated_decision": "exclude",
+        "baseline_screening_score": 3.5,
+        "updated_screening_score": 3.5,
+        "baseline_relevance_score": 0.0,
+        "updated_relevance_score": 0.0,
+        "rerank_applied": false,
+        "co2_role": "co2_not_central",
+        "storage_role": "explicit_thermal_storage",
+        "claim_focus": "system_architecture",
+        "exclusion_category": "generic_tes"
+      }
+    ]
+  },
+  "model_recommendation": {
+    "recommended_model": "gemma3:27b",
+    "keep_current_default": true,
+    "rationale": "Manter gemma3:27b como default. No corpus comparado, ele entregou o mesmo roteamento agregado e o mesmo top patent do qwen2.5:32b, mas com menor tempo total.",
+    "evidence": {
+      "gemma3:27b_total_duration_seconds": 83.363,
+      "qwen2.5:32b_total_duration_seconds": 134.017,
+      "same_routing": true,
+      "gemma_top_patent": "CN118934113A",
+      "qwen_top_patent": "CN118934113A"
+    }
+  },
+  "summary_paths": {
+    "json": "/home/murilo/Documentos/RevisaoTecnica/output/today_upgrade_20260409_231238/today_upgrade_summary.json",
+    "markdown": "/home/murilo/Documentos/RevisaoTecnica/output/today_upgrade_20260409_231238/today_upgrade_report.md"
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "status": "ok",
+  "query": "carbon dioxide thermal energy storage",
+  "corpus_summary": {
+    "considered_patents": 4,
+    "selected_patents": 3,
+    "core": 1,
+    "frontier": 2,
+    "adjacent": 0
+  },
+  "coverage_matrix": [
+    {
+      "patent_id": "CN118934113A",
+      "record_id": "rec_e9bfd6ecaee9",
+      "title": "An isothermal and isobaric supercritical compressed carbon dioxide energy storage system",
+      "screening_decision": "include",
+      "screening_score": 9.2,
+      "relevance_score": 10.0,
+      "bucket": "core",
+      "technical_domain": "Armazenamento de Energia Térmica",
+      "thematic_cluster": "CO2 Cycle Configurations",
+      "co2_role": "stored_thermodynamic_medium",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "dedicated_storage_system",
+      "cycle_type": "supercritical_or_transcritical_co2",
+      "heat_source_sink": "heat_storage_tank",
+      "claim_focus": "Sistema de armazenamento de energia isotérmico e isobárico com CO2 supercrítico.",
+      "exclusion_category": ""
+    },
+    {
+      "patent_id": "AU244427549",
+      "record_id": "rec_5cb75be738eb",
+      "title": "1. AU2019901965 - A System to Improve Performance of Transcritical Carbon Dioxide Cooling by Integration of Ice Thermal Storage for Subcooling",
+      "screening_decision": "review",
+      "screening_score": 6.7,
+      "relevance_score": 6.5,
+      "bucket": "frontier",
+      "technical_domain": "Refrigeração e Armazenamento de Energia Térmica",
+      "thematic_cluster": "Ciclos de Refrigeração Transcriticos de CO2 com Armazenamento Térmico",
+      "co2_role": "refrigerant_loop",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "cycle_or_transfer_subsystem",
+      "cycle_type": "supercritical_or_transcritical_co2",
+      "heat_source_sink": "ambiente/fonte de calor para produção de gelo",
+      "claim_focus": "Integração de armazenamento térmico de gelo para sub-resfriamento em ciclos de CO2 transcriticos.",
+      "exclusion_category": ""
+    },
+    {
+      "patent_id": "US20200182095A1",
+      "record_id": "rec_d32965bf3945",
+      "title": "Carbon dioxide upgrade and energy storage system and method",
+      "screening_decision": "review",
+      "screening_score": 5.3,
+      "relevance_score": 5.4,
+      "bucket": "frontier",
+      "technical_domain": "Thermodynamic Cycles & Energy Conversion",
+      "thematic_cluster": "Ciclos termodinâmicos com CO2 e recuperação de energia.",
+      "co2_role": "working_fluid",
+      "storage_role": "implicit_or_support_storage",
+      "system_boundary": "cycle_or_transfer_subsystem",
+      "cycle_type": "power_or_work_cycle",
+      "heat_source_sink": "Não especificado",
+      "claim_focus": "Método para produção de trabalho utilizando dióxido de carbono.",
+      "exclusion_category": ""
+    }
+  ],
+  "axes": {
+    "co2_role": {
+      "stored_thermodynamic_medium": {
+        "core": [
+          "CN118934113A"
+        ],
+        "frontier": [],
+        "adjacent": []
+      },
+      "refrigerant_loop": {
+        "core": [],
+        "frontier": [
+          "AU244427549"
+        ],
+        "adjacent": []
+      },
+      "working_fluid": {
+        "core": [],
+        "frontier": [
+          "US20200182095A1"
+        ],
+        "adjacent": []
+      }
+    },
+    "storage_role": {
+      "explicit_thermal_storage": {
+        "core": [
+          "CN118934113A"
+        ],
+        "frontier": [
+          "AU244427549"
+        ],
+        "adjacent": []
+      },
+      "implicit_or_support_storage": {
+        "core": [],
+        "frontier": [
+          "US20200182095A1"
+        ],
+        "adjacent": []
+      }
+    },
+    "system_boundary": {
+      "dedicated_storage_system": {
+        "core": [
+          "CN118934113A"
+        ],
+        "frontier": [],
+        "adjacent": []
+      },
+      "cycle_or_transfer_subsystem": {
+        "core": [],
+        "frontier": [
+          "AU244427549",
+          "US20200182095A1"
+        ],
+        "adjacent": []
+      }
+    },
+    "cycle_type": {
+      "supercritical_or_transcritical_co2": {
+        "core": [
+          "CN118934113A"
+        ],
+        "frontier": [
+          "AU244427549"
+        ],
+        "adjacent": []
+      },
+      "power_or_work_cycle": {
+        "core": [],
+        "frontier": [
+          "US20200182095A1"
+        ],
+        "adjacent": []
+      }
+    },
+    "heat_source_sink": {
+      "heat_storage_tank": {
+        "core": [
+          "CN118934113A"
+        ],
+        "frontier": [],
+        "adjacent": []
+      },
+      "ambiente/fonte de calor para produção de gelo": {
+        "core": [],
+        "frontier": [
+          "AU244427549"
+        ],
+        "adjacent": []
+      },
+      "Não especificado": {
+        "core": [],
+        "frontier": [
+          "US20200182095A1"
+        ],
+        "adjacent": []
+      }
+    },
+    "claim_focus": {
+      "Sistema de armazenamento de energia isotérmico e isobárico com CO2 supercrítico.": {
+        "core": [
+          "CN118934113A"
+        ],
+        "frontier": [],
+        "adjacent": []
+      },
+      "Integração de armazenamento térmico de gelo para sub-resfriamento em ciclos de CO2 transcriticos.": {
+        "core": [],
+        "frontier": [
+          "AU244427549"
+        ],
+        "adjacent": []
+      },
+      "Método para produção de trabalho utilizando dióxido de carbono.": {
+        "core": [],
+        "frontier": [
+          "US20200182095A1"
+        ],
+        "adjacent": []
+      }
+    },
+    "exclusion_category": {
+      "not_clear": {
+        "core": [
+          "CN118934113A"
+        ],
+        "frontier": [
+          "AU244427549",
+          "US20200182095A1"
+        ],
+        "adjacent": []
+      }
+    }
+  },
+  "whitespace_candidates": [
+    {
+      "opportunity": "hybrid_cycle_storage_architecture",
+      "confidence": "medium",
+      "rationale": "Combinar ciclos/transferencia com CO2 e armazenamento termico explicitamente reivindicado ainda aparece fragmentado entre nucleo e borda tecnica.",
+      "core_ids": [
+        "CN118934113A"
+      ],
+      "frontier_ids": [
+        "AU244427549",
+        "US20200182095A1"
+      ],
+      "adjacent_ids": []
+    }
+  ],
+  "markdown_summary": "### 3. Whitespaces e Oportunidades\n\n- O whitespace mais promissor esta na combinacao entre arquiteturas de ciclo/transferencia termica com CO2 e armazenamento explicito do inventario termico, porque esses elementos ainda aparecem fragmentados entre nucleo, fronteira e adjacencia [IDs: CN118934113A, AU244427549, US20200182095A1]\n- Gestao termica transiente, subresfriamento e acoplamentos com captura/reatores aparecem de forma lateral; isso sugere oportunidade em claims de controle, operacao multi-regime e integracao de processo ainda pouco amarradas ao armazenamento central [IDs: AU244427549, US20200182095A1, CN118934113A]\n- As patentes em review delimitam fronteiras tecnicas onde o papel do CO2 ainda esta ambiguo entre meio armazenado, fluido de trabalho e interface de troca termica; esse tipo de ambiguidade costuma ser um bom proxy para whitespace exploravel com recorte arquitetural mais especifico [IDs: AU244427549, US20200182095A1, CN118934113A]"
+}

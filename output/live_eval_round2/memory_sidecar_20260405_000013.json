@@ -1,0 +1,506 @@
+{
+  "run_id": "20260405_000013",
+  "max_items_per_slot": 5,
+  "slots": {
+    "review": [
+      {
+        "record_id": "rec_d32965bf3945",
+        "patent_id": "US20200182095A1",
+        "title": "Carbon dioxide upgrade and energy storage system and method",
+        "route": "manual_review",
+        "score": 7.7
+      },
+      {
+        "record_id": "rec_60aba676d2d1",
+        "patent_id": "CN115234318A",
+        "title": "Carbon dioxide energy storage system matched with thermal power plant deep peak shaving and control method thereof",
+        "route": "manual_review",
+        "score": 8.2
+      },
+      {
+        "record_id": "rec_5cb75be738eb",
+        "patent_id": "AU244427549",
+        "title": "1. AU2019901965 - A System to Improve Performance of Transcritical Carbon Dioxide Cooling by Integration of Ice Thermal Storage for Subcooling",
+        "route": "manual_review",
+        "score": 7.2
+      }
+    ],
+    "writer": [
+      {
+        "top_patents": [
+          {
+            "record_id": "rec_e9bfd6ecaee9",
+            "family_id": "family:93e61d9efb570bcdd84ea6254a70ea2c9b769d40",
+            "patent_id": "CN118934113A",
+            "title": "An isothermal and isobaric supercritical compressed carbon dioxide energy storage system",
+            "score": 9.2,
+            "screening_decision": "include",
+            "thematic_cluster": "CO2 Cycle Configurations",
+            "route": "deep_extraction",
+            "evidence_snippets": [
+              "æ¬åææ¶åè¶ä¸´çåç¼©äºæ°§åç¢³å¨è½ææ¯é¢åï¼ç­æ¸©ç­åçè¶ä¸´çåç¼©äºæ°§åç¢³å¨è½ç³»ç»ï¼",
+              "åæ¬ï¼åç¼©æºç»ï¼å©ç¨çµåå°ä½æ¸©ä½åçè¶ä¸´çäºæ°§åç¢³åç¼©ä¸ºé«æ¸©é«åçè¶ä¸´çäºæ°§åç¢³ï¼è¨èæºç»"
+            ]
+          },
+          {
+            "record_id": "rec_cb86ce571d5d",
+            "family_id": "family:156d9db54f6d2df5efd352ddbf3bd612f775a37b",
+            "patent_id": "WO2021081541A1",
+            "title": "Method for thermal energy transmission using water and carbon dioxide",
+            "score": 9.2,
+            "screening_decision": "include",
+            "thematic_cluster": "Thermal Transfer Mechanisms",
+            "route": "deep_extraction",
+            "evidence_snippets": [
+              "AbstractThe invention provides a system for energy distribution that uses liquid carbon dioxide as a working fluid.",
+              "An underground thermal energy storage system is used to store energy flowing into the system that is in excess of the current demand."
+            ]
+          },
+          {
+            "record_id": "rec_8b778603418c",
+            "family_id": "family:28993406c9b2c6d229a02057a6dce31ffbe7c6c7",
+            "patent_id": "US20210123608A1",
+            "title": "Method for thermal energy transmission using water and carbon dioxide",
+            "score": 9.2,
+            "screening_decision": "include",
+            "thematic_cluster": "Thermal Transfer Mechanisms",
+            "route": "deep_extraction",
+            "evidence_snippets": [
+              "AbstractThe invention provides a system for energy distribution that uses liquid carbon dioxide as a working fluid.",
+              "An underground thermal energy storage system is used to store energy flowing into the system that is in excess of the current demand."
+            ]
+          }
+        ],
+        "route_summary": {
+          "manual_review": 3,
+          "deep_extraction": 3,
+          "screen_only": 4
+        }
+      }
+    ],
+    "screening": [
+      {
+        "record_id": "rec_0d58733a5389",
+        "patent_id": "US433566429",
+        "title": "2. US20240229681 - Calcination system with thermal energy storage system",
+        "route": "screen_only",
+        "score": 3.5
+      },
+      {
+        "record_id": "rec_3da6b58fde67",
+        "patent_id": "US400261922",
+        "title": "3. US20230203968 - Methods for material activation with thermal energy storage system",
+        "route": "screen_only",
+        "score": 3.5
+      },
+      {
+        "record_id": "rec_d53841fc186a",
+        "patent_id": "US433566430",
+        "title": "4. US20240229682 - Methods for material activation with thermal energy storage system",
+        "route": "screen_only",
+        "score": 3.5
+      },
+      {
+        "record_id": "rec_e94308d296fb",
+        "patent_id": "US373267798",
+        "title": "5. US20220282638 - Material activation system with thermal energy storage system",
+        "route": "screen_only",
+        "score": 3.5
+      }
+    ]
+  },
+  "journal": [
+    {
+      "timestamp": "2026-04-05T00:00:15",
+      "stage": "setup",
+      "event": "llm_check",
+      "detail": "Verificação de disponibilidade do Ollama concluída.",
+      "payload": {
+        "llm_available": true,
+        "model": "gemma3:4b"
+      }
+    },
+    {
+      "timestamp": "2026-04-05T00:00:31",
+      "stage": "identification",
+      "event": "scrape_completed",
+      "detail": "GooglePatents retornou patentes.",
+      "payload": {
+        "source": "GooglePatents",
+        "count": 5,
+        "diagnostics": []
+      }
+    },
+    {
+      "timestamp": "2026-04-05T00:01:04",
+      "stage": "identification",
+      "event": "scrape_completed",
+      "detail": "Patentscope retornou patentes.",
+      "payload": {
+        "source": "Patentscope",
+        "count": 5,
+        "diagnostics": [
+          {
+            "kind": "discovery_empty",
+            "detail": "DuckDuckGo não retornou links para Patentscope.",
+            "url": "https://html.duckduckgo.com/html/"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-04-05T00:01:05",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "US20200182095A1 roteada para manual_review.",
+      "payload": {
+        "record_id": "rec_d32965bf3945",
+        "patent_id": "US20200182095A1",
+        "decision": "review",
+        "score": 7.7,
+        "route": {
+          "route": "manual_review",
+          "reason": "Triagem indicou revisão humana.",
+          "slot": "review"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-04-05T00:01:06",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "CN115234318A roteada para manual_review.",
+      "payload": {
+        "record_id": "rec_60aba676d2d1",
+        "patent_id": "CN115234318A",
+        "decision": "review",
+        "score": 8.2,
+        "route": {
+          "route": "manual_review",
+          "reason": "Triagem indicou revisão humana.",
+          "slot": "review"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-04-05T00:01:09",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "CN118934113A roteada para deep_extraction.",
+      "payload": {
+        "record_id": "rec_e9bfd6ecaee9",
+        "patent_id": "CN118934113A",
+        "decision": "include",
+        "score": 9.2,
+        "route": {
+          "route": "deep_extraction",
+          "reason": "Há evidência suficiente para extração detalhada.",
+          "slot": "writer"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-04-05T00:01:10",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "WO2021081541A1 roteada para deep_extraction.",
+      "payload": {
+        "record_id": "rec_cb86ce571d5d",
+        "patent_id": "WO2021081541A1",
+        "decision": "include",
+        "score": 9.2,
+        "route": {
+          "route": "deep_extraction",
+          "reason": "Há evidência suficiente para extração detalhada.",
+          "slot": "writer"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-04-05T00:01:11",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "US20210123608A1 roteada para deep_extraction.",
+      "payload": {
+        "record_id": "rec_8b778603418c",
+        "patent_id": "US20210123608A1",
+        "decision": "include",
+        "score": 9.2,
+        "route": {
+          "route": "deep_extraction",
+          "reason": "Há evidência suficiente para extração detalhada.",
+          "slot": "writer"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-04-05T00:01:12",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "AU244427549 roteada para manual_review.",
+      "payload": {
+        "record_id": "rec_5cb75be738eb",
+        "patent_id": "AU244427549",
+        "decision": "review",
+        "score": 7.2,
+        "route": {
+          "route": "manual_review",
+          "reason": "Triagem indicou revisão humana.",
+          "slot": "review"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-04-05T00:01:13",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "US433566429 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_0d58733a5389",
+        "patent_id": "US433566429",
+        "decision": "exclude",
+        "score": 3.5,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-04-05T00:01:14",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "US400261922 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_3da6b58fde67",
+        "patent_id": "US400261922",
+        "decision": "exclude",
+        "score": 3.5,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-04-05T00:01:16",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "US433566430 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_d53841fc186a",
+        "patent_id": "US433566430",
+        "decision": "exclude",
+        "score": 3.5,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-04-05T00:01:17",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "US373267798 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_e94308d296fb",
+        "patent_id": "US373267798",
+        "decision": "exclude",
+        "score": 3.5,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-04-05T00:01:20",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "US20200182095A1 recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_d32965bf3945",
+        "patent_id": "US20200182095A1",
+        "route": "manual_review",
+        "confidence": 0.79
+      }
+    },
+    {
+      "timestamp": "2026-04-05T00:01:23",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "CN115234318A recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_60aba676d2d1",
+        "patent_id": "CN115234318A",
+        "route": "manual_review",
+        "confidence": 0.85
+      }
+    },
+    {
+      "timestamp": "2026-04-05T00:01:28",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "CN118934113A recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_e9bfd6ecaee9",
+        "patent_id": "CN118934113A",
+        "route": "deep_extraction",
+        "confidence": 0.95
+      }
+    },
+    {
+      "timestamp": "2026-04-05T00:01:31",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "WO2021081541A1 recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_cb86ce571d5d",
+        "patent_id": "WO2021081541A1",
+        "route": "deep_extraction",
+        "confidence": 0.95
+      }
+    },
+    {
+      "timestamp": "2026-04-05T00:01:33",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "US20210123608A1 recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_8b778603418c",
+        "patent_id": "US20210123608A1",
+        "route": "deep_extraction",
+        "confidence": 0.95
+      }
+    },
+    {
+      "timestamp": "2026-04-05T00:01:36",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "AU244427549 recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_5cb75be738eb",
+        "patent_id": "AU244427549",
+        "route": "manual_review",
+        "confidence": 0.75
+      }
+    },
+    {
+      "timestamp": "2026-04-05T00:01:36",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "US433566429 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_0d58733a5389",
+        "patent_id": "US433566429",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-04-05T00:01:36",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "US400261922 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_3da6b58fde67",
+        "patent_id": "US400261922",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-04-05T00:01:36",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "US433566430 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_d53841fc186a",
+        "patent_id": "US433566430",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-04-05T00:01:36",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "US373267798 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_e94308d296fb",
+        "patent_id": "US373267798",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-04-05T00:01:36",
+      "stage": "synthesis",
+      "event": "coverage_computed",
+      "detail": "Cobertura e seleção consolidadas após triagem.",
+      "payload": {
+        "raw_scraped": 10,
+        "unique_patents": 10,
+        "duplicates_removed": 0,
+        "screened": 10,
+        "included": 3,
+        "review": 3,
+        "excluded": 4,
+        "manual_review_required": 3,
+        "manual_review_deferred": 0,
+        "full_extractions": 6,
+        "missing_abstract": 1,
+        "missing_id": 0,
+        "records_with_content_identity": 0,
+        "records_with_fallback_identity": 0,
+        "family_duplicates_removed": 0,
+        "llm_screening_failures": 0,
+        "llm_total_failures": 0
+      }
+    },
+    {
+      "timestamp": "2026-04-05T00:01:40",
+      "stage": "synthesis",
+      "event": "comparative_analysis_completed",
+      "detail": "Síntese comparativa gerada via Ollama.",
+      "payload": {
+        "patents_compared": 3
+      }
+    },
+    {
+      "timestamp": "2026-04-05T00:01:40",
+      "stage": "writer",
+      "event": "context_prepared",
+      "detail": "Contexto compartilhado preparado para o writer.",
+      "payload": {
+        "top_patents": 3,
+        "route_summary": {
+          "manual_review": 3,
+          "deep_extraction": 3,
+          "screen_only": 4
+        }
+      }
+    },
+    {
+      "timestamp": "2026-04-05T00:01:40",
+      "stage": "finalization",
+      "event": "report_generated",
+      "detail": "Relatórios finais gerados com sucesso.",
+      "payload": {
+        "markdown": "output/live_eval_round2/patentes_carbon_dioxide_thermal_energy_storage_20260405_000140.md",
+        "json": "output/live_eval_round2/patentes_carbon_dioxide_thermal_energy_storage_20260405_000140.json"
+      }
+    }
+  ]
+}

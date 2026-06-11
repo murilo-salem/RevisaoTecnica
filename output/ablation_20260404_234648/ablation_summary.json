@@ -1,0 +1,752 @@
+{
+  "generated_at": "2026-04-04T23:46:48",
+  "benchmark_file": "/home/murilo/Documentos/RevisaoTecnica/benchmarks/frozen_ablation_benchmark.json",
+  "suite_root": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648",
+  "cases": [
+    {
+      "name": "Frozen CO2 thermal storage",
+      "query": "carbon dioxide thermal energy storage",
+      "max_results": 5,
+      "model": "",
+      "fixture_file": "benchmarks/frozen_pipeline_fixture.json"
+    }
+  ],
+  "variants": [
+    {
+      "name": "baseline",
+      "description": "Pipeline completo com todas as features habilitadas.",
+      "features": {
+        "require_evidence": true,
+        "enable_thematic_clusters": true,
+        "enable_prisma": true,
+        "enable_snapshot": true,
+        "enable_comparative_analysis": true,
+        "enable_manual_review_queue": true
+      }
+    },
+    {
+      "name": "no_evidence",
+      "description": "Remove a exigência de evidência textual.",
+      "features": {
+        "require_evidence": false,
+        "enable_thematic_clusters": true,
+        "enable_prisma": true,
+        "enable_snapshot": true,
+        "enable_comparative_analysis": true,
+        "enable_manual_review_queue": true
+      }
+    },
+    {
+      "name": "no_clusters",
+      "description": "Desliga a síntese temática por cluster.",
+      "features": {
+        "require_evidence": true,
+        "enable_thematic_clusters": false,
+        "enable_prisma": true,
+        "enable_snapshot": true,
+        "enable_comparative_analysis": true,
+        "enable_manual_review_queue": true
+      }
+    },
+    {
+      "name": "no_prisma",
+      "description": "Desliga os artefatos PRISMA-like.",
+      "features": {
+        "require_evidence": true,
+        "enable_thematic_clusters": true,
+        "enable_prisma": false,
+        "enable_snapshot": true,
+        "enable_comparative_analysis": true,
+        "enable_manual_review_queue": true
+      }
+    },
+    {
+      "name": "no_snapshot",
+      "description": "Desliga o snapshot versionado da execução.",
+      "features": {
+        "require_evidence": true,
+        "enable_thematic_clusters": true,
+        "enable_prisma": true,
+        "enable_snapshot": false,
+        "enable_comparative_analysis": true,
+        "enable_manual_review_queue": true
+      }
+    },
+    {
+      "name": "no_comparative_analysis",
+      "description": "Desliga a análise comparativa gerada pelo LLM.",
+      "features": {
+        "require_evidence": true,
+        "enable_thematic_clusters": true,
+        "enable_prisma": true,
+        "enable_snapshot": true,
+        "enable_comparative_analysis": false,
+        "enable_manual_review_queue": true
+      }
+    },
+    {
+      "name": "no_manual_review",
+      "description": "Desliga a fila de revisão manual.",
+      "features": {
+        "require_evidence": true,
+        "enable_thematic_clusters": true,
+        "enable_prisma": true,
+        "enable_snapshot": true,
+        "enable_comparative_analysis": true,
+        "enable_manual_review_queue": false
+      }
+    }
+  ],
+  "results": [
+    {
+      "case": {
+        "name": "Frozen CO2 thermal storage",
+        "query": "carbon dioxide thermal energy storage",
+        "max_results": 5,
+        "model": "",
+        "fixture_file": "benchmarks/frozen_pipeline_fixture.json"
+      },
+      "variant": {
+        "name": "baseline",
+        "description": "Pipeline completo com todas as features habilitadas.",
+        "features": {
+          "require_evidence": true,
+          "enable_thematic_clusters": true,
+          "enable_prisma": true,
+          "enable_snapshot": true,
+          "enable_comparative_analysis": true,
+          "enable_manual_review_queue": true
+        }
+      },
+      "summary": {
+        "run_id": "20260404_234648",
+        "status": "completed",
+        "query": "carbon dioxide thermal energy storage",
+        "model": "gemma3:4b",
+        "snapshot_hash": "7b8f8a35dcd367492e35f438e77cb7332a0e7dd79f1a39c37e3368b8e3498c22",
+        "feature_flags": {
+          "require_evidence": true,
+          "enable_thematic_clusters": true,
+          "enable_prisma": true,
+          "enable_snapshot": true,
+          "enable_comparative_analysis": true,
+          "enable_manual_review_queue": true
+        },
+        "coverage_metrics": {
+          "raw_scraped": 2,
+          "unique_patents": 2,
+          "duplicates_removed": 0,
+          "screened": 2,
+          "included": 2,
+          "review": 0,
+          "excluded": 0,
+          "manual_review_required": 0,
+          "manual_review_deferred": 0,
+          "full_extractions": 2,
+          "missing_abstract": 0,
+          "missing_id": 0,
+          "records_with_content_identity": 0,
+          "records_with_fallback_identity": 0,
+          "family_duplicates_removed": 0,
+          "llm_screening_failures": 0,
+          "llm_total_failures": 0
+        },
+        "average_relevance": 8.65,
+        "total_duration_seconds": 0.009,
+        "evaluation_duration_seconds": 0.0,
+        "comparative_analysis_duration_seconds": 0.0,
+        "output_paths": {
+          "markdown": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/baseline/patentes_carbon_dioxide_thermal_energy_storage_20260404_234648.md",
+          "json": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/baseline/patentes_carbon_dioxide_thermal_energy_storage_20260404_234648.json",
+          "state": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/baseline/run_state_20260404_234648.json",
+          "prisma": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/baseline/prisma_flow_20260404_234648.json",
+          "snapshot": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/baseline/config_snapshot_20260404_234648.json",
+          "memory_journal": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/baseline/memory_journal_20260404_234648.json",
+          "memory_sidecar": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/baseline/memory_sidecar_20260404_234648.json"
+        },
+        "errors": [],
+        "manual_review_queue_size": 0,
+        "clusters": 2,
+        "stage_metrics_count": 6,
+        "llm_cache_stats": {
+          "hits": 0,
+          "misses": 0,
+          "entries": 0
+        }
+      }
+    },
+    {
+      "case": {
+        "name": "Frozen CO2 thermal storage",
+        "query": "carbon dioxide thermal energy storage",
+        "max_results": 5,
+        "model": "",
+        "fixture_file": "benchmarks/frozen_pipeline_fixture.json"
+      },
+      "variant": {
+        "name": "no_evidence",
+        "description": "Remove a exigência de evidência textual.",
+        "features": {
+          "require_evidence": false,
+          "enable_thematic_clusters": true,
+          "enable_prisma": true,
+          "enable_snapshot": true,
+          "enable_comparative_analysis": true,
+          "enable_manual_review_queue": true
+        }
+      },
+      "summary": {
+        "run_id": "20260404_234648",
+        "status": "completed",
+        "query": "carbon dioxide thermal energy storage",
+        "model": "gemma3:4b",
+        "snapshot_hash": "f80d65d97088fffaef1bed50dec009e2ab62446a57558bc67024fbf4a1c4d81d",
+        "feature_flags": {
+          "require_evidence": false,
+          "enable_thematic_clusters": true,
+          "enable_prisma": true,
+          "enable_snapshot": true,
+          "enable_comparative_analysis": true,
+          "enable_manual_review_queue": true
+        },
+        "coverage_metrics": {
+          "raw_scraped": 2,
+          "unique_patents": 2,
+          "duplicates_removed": 0,
+          "screened": 2,
+          "included": 2,
+          "review": 0,
+          "excluded": 0,
+          "manual_review_required": 0,
+          "manual_review_deferred": 0,
+          "full_extractions": 2,
+          "missing_abstract": 0,
+          "missing_id": 0,
+          "records_with_content_identity": 0,
+          "records_with_fallback_identity": 0,
+          "family_duplicates_removed": 0,
+          "llm_screening_failures": 0,
+          "llm_total_failures": 0
+        },
+        "average_relevance": 8.65,
+        "total_duration_seconds": 0.002,
+        "evaluation_duration_seconds": 0.0,
+        "comparative_analysis_duration_seconds": 0.0,
+        "output_paths": {
+          "markdown": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_evidence/patentes_carbon_dioxide_thermal_energy_storage_20260404_234648.md",
+          "json": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_evidence/patentes_carbon_dioxide_thermal_energy_storage_20260404_234648.json",
+          "state": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_evidence/run_state_20260404_234648.json",
+          "prisma": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_evidence/prisma_flow_20260404_234648.json",
+          "snapshot": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_evidence/config_snapshot_20260404_234648.json",
+          "memory_journal": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_evidence/memory_journal_20260404_234648.json",
+          "memory_sidecar": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_evidence/memory_sidecar_20260404_234648.json"
+        },
+        "errors": [],
+        "manual_review_queue_size": 0,
+        "clusters": 2,
+        "stage_metrics_count": 6,
+        "llm_cache_stats": {
+          "hits": 0,
+          "misses": 0,
+          "entries": 0
+        }
+      }
+    },
+    {
+      "case": {
+        "name": "Frozen CO2 thermal storage",
+        "query": "carbon dioxide thermal energy storage",
+        "max_results": 5,
+        "model": "",
+        "fixture_file": "benchmarks/frozen_pipeline_fixture.json"
+      },
+      "variant": {
+        "name": "no_clusters",
+        "description": "Desliga a síntese temática por cluster.",
+        "features": {
+          "require_evidence": true,
+          "enable_thematic_clusters": false,
+          "enable_prisma": true,
+          "enable_snapshot": true,
+          "enable_comparative_analysis": true,
+          "enable_manual_review_queue": true
+        }
+      },
+      "summary": {
+        "run_id": "20260404_234648",
+        "status": "completed",
+        "query": "carbon dioxide thermal energy storage",
+        "model": "gemma3:4b",
+        "snapshot_hash": "756c15260500b6a17fd50a2b620a57cd20c2f995881dc9d4448a50cc94d5664f",
+        "feature_flags": {
+          "require_evidence": true,
+          "enable_thematic_clusters": false,
+          "enable_prisma": true,
+          "enable_snapshot": true,
+          "enable_comparative_analysis": true,
+          "enable_manual_review_queue": true
+        },
+        "coverage_metrics": {
+          "raw_scraped": 2,
+          "unique_patents": 2,
+          "duplicates_removed": 0,
+          "screened": 2,
+          "included": 2,
+          "review": 0,
+          "excluded": 0,
+          "manual_review_required": 0,
+          "manual_review_deferred": 0,
+          "full_extractions": 2,
+          "missing_abstract": 0,
+          "missing_id": 0,
+          "records_with_content_identity": 0,
+          "records_with_fallback_identity": 0,
+          "family_duplicates_removed": 0,
+          "llm_screening_failures": 0,
+          "llm_total_failures": 0
+        },
+        "average_relevance": 8.65,
+        "total_duration_seconds": 0.002,
+        "evaluation_duration_seconds": 0.0,
+        "comparative_analysis_duration_seconds": 0.0,
+        "output_paths": {
+          "markdown": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_clusters/patentes_carbon_dioxide_thermal_energy_storage_20260404_234648.md",
+          "json": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_clusters/patentes_carbon_dioxide_thermal_energy_storage_20260404_234648.json",
+          "state": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_clusters/run_state_20260404_234648.json",
+          "prisma": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_clusters/prisma_flow_20260404_234648.json",
+          "snapshot": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_clusters/config_snapshot_20260404_234648.json",
+          "memory_journal": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_clusters/memory_journal_20260404_234648.json",
+          "memory_sidecar": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_clusters/memory_sidecar_20260404_234648.json"
+        },
+        "errors": [],
+        "manual_review_queue_size": 0,
+        "clusters": 0,
+        "stage_metrics_count": 6,
+        "llm_cache_stats": {
+          "hits": 0,
+          "misses": 0,
+          "entries": 0
+        }
+      }
+    },
+    {
+      "case": {
+        "name": "Frozen CO2 thermal storage",
+        "query": "carbon dioxide thermal energy storage",
+        "max_results": 5,
+        "model": "",
+        "fixture_file": "benchmarks/frozen_pipeline_fixture.json"
+      },
+      "variant": {
+        "name": "no_prisma",
+        "description": "Desliga os artefatos PRISMA-like.",
+        "features": {
+          "require_evidence": true,
+          "enable_thematic_clusters": true,
+          "enable_prisma": false,
+          "enable_snapshot": true,
+          "enable_comparative_analysis": true,
+          "enable_manual_review_queue": true
+        }
+      },
+      "summary": {
+        "run_id": "20260404_234648",
+        "status": "completed",
+        "query": "carbon dioxide thermal energy storage",
+        "model": "gemma3:4b",
+        "snapshot_hash": "f37ffb731b795a4f8dc42aa55f7b7c7747819ff9e0883db94304bd85c0da803e",
+        "feature_flags": {
+          "require_evidence": true,
+          "enable_thematic_clusters": true,
+          "enable_prisma": false,
+          "enable_snapshot": true,
+          "enable_comparative_analysis": true,
+          "enable_manual_review_queue": true
+        },
+        "coverage_metrics": {
+          "raw_scraped": 2,
+          "unique_patents": 2,
+          "duplicates_removed": 0,
+          "screened": 2,
+          "included": 2,
+          "review": 0,
+          "excluded": 0,
+          "manual_review_required": 0,
+          "manual_review_deferred": 0,
+          "full_extractions": 2,
+          "missing_abstract": 0,
+          "missing_id": 0,
+          "records_with_content_identity": 0,
+          "records_with_fallback_identity": 0,
+          "family_duplicates_removed": 0,
+          "llm_screening_failures": 0,
+          "llm_total_failures": 0
+        },
+        "average_relevance": 8.65,
+        "total_duration_seconds": 0.002,
+        "evaluation_duration_seconds": 0.0,
+        "comparative_analysis_duration_seconds": 0.0,
+        "output_paths": {
+          "markdown": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_prisma/patentes_carbon_dioxide_thermal_energy_storage_20260404_234648.md",
+          "json": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_prisma/patentes_carbon_dioxide_thermal_energy_storage_20260404_234648.json",
+          "state": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_prisma/run_state_20260404_234648.json",
+          "snapshot": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_prisma/config_snapshot_20260404_234648.json",
+          "memory_journal": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_prisma/memory_journal_20260404_234648.json",
+          "memory_sidecar": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_prisma/memory_sidecar_20260404_234648.json"
+        },
+        "errors": [],
+        "manual_review_queue_size": 0,
+        "clusters": 2,
+        "stage_metrics_count": 6,
+        "llm_cache_stats": {
+          "hits": 0,
+          "misses": 0,
+          "entries": 0
+        }
+      }
+    },
+    {
+      "case": {
+        "name": "Frozen CO2 thermal storage",
+        "query": "carbon dioxide thermal energy storage",
+        "max_results": 5,
+        "model": "",
+        "fixture_file": "benchmarks/frozen_pipeline_fixture.json"
+      },
+      "variant": {
+        "name": "no_snapshot",
+        "description": "Desliga o snapshot versionado da execução.",
+        "features": {
+          "require_evidence": true,
+          "enable_thematic_clusters": true,
+          "enable_prisma": true,
+          "enable_snapshot": false,
+          "enable_comparative_analysis": true,
+          "enable_manual_review_queue": true
+        }
+      },
+      "summary": {
+        "run_id": "20260404_234648",
+        "status": "completed",
+        "query": "carbon dioxide thermal energy storage",
+        "model": "gemma3:4b",
+        "snapshot_hash": "",
+        "feature_flags": {
+          "require_evidence": true,
+          "enable_thematic_clusters": true,
+          "enable_prisma": true,
+          "enable_snapshot": false,
+          "enable_comparative_analysis": true,
+          "enable_manual_review_queue": true
+        },
+        "coverage_metrics": {
+          "raw_scraped": 2,
+          "unique_patents": 2,
+          "duplicates_removed": 0,
+          "screened": 2,
+          "included": 2,
+          "review": 0,
+          "excluded": 0,
+          "manual_review_required": 0,
+          "manual_review_deferred": 0,
+          "full_extractions": 2,
+          "missing_abstract": 0,
+          "missing_id": 0,
+          "records_with_content_identity": 0,
+          "records_with_fallback_identity": 0,
+          "family_duplicates_removed": 0,
+          "llm_screening_failures": 0,
+          "llm_total_failures": 0
+        },
+        "average_relevance": 8.65,
+        "total_duration_seconds": 0.002,
+        "evaluation_duration_seconds": 0.0,
+        "comparative_analysis_duration_seconds": 0.0,
+        "output_paths": {
+          "markdown": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_snapshot/patentes_carbon_dioxide_thermal_energy_storage_20260404_234648.md",
+          "json": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_snapshot/patentes_carbon_dioxide_thermal_energy_storage_20260404_234648.json",
+          "state": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_snapshot/run_state_20260404_234648.json",
+          "prisma": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_snapshot/prisma_flow_20260404_234648.json",
+          "memory_journal": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_snapshot/memory_journal_20260404_234648.json",
+          "memory_sidecar": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_snapshot/memory_sidecar_20260404_234648.json"
+        },
+        "errors": [],
+        "manual_review_queue_size": 0,
+        "clusters": 2,
+        "stage_metrics_count": 6,
+        "llm_cache_stats": {
+          "hits": 0,
+          "misses": 0,
+          "entries": 0
+        }
+      }
+    },
+    {
+      "case": {
+        "name": "Frozen CO2 thermal storage",
+        "query": "carbon dioxide thermal energy storage",
+        "max_results": 5,
+        "model": "",
+        "fixture_file": "benchmarks/frozen_pipeline_fixture.json"
+      },
+      "variant": {
+        "name": "no_comparative_analysis",
+        "description": "Desliga a análise comparativa gerada pelo LLM.",
+        "features": {
+          "require_evidence": true,
+          "enable_thematic_clusters": true,
+          "enable_prisma": true,
+          "enable_snapshot": true,
+          "enable_comparative_analysis": false,
+          "enable_manual_review_queue": true
+        }
+      },
+      "summary": {
+        "run_id": "20260404_234648",
+        "status": "completed",
+        "query": "carbon dioxide thermal energy storage",
+        "model": "gemma3:4b",
+        "snapshot_hash": "c62730aa51481759a6a60e3a7b3645b6c6b2a7a422645811cabaa4a01ad4767e",
+        "feature_flags": {
+          "require_evidence": true,
+          "enable_thematic_clusters": true,
+          "enable_prisma": true,
+          "enable_snapshot": true,
+          "enable_comparative_analysis": false,
+          "enable_manual_review_queue": true
+        },
+        "coverage_metrics": {
+          "raw_scraped": 2,
+          "unique_patents": 2,
+          "duplicates_removed": 0,
+          "screened": 2,
+          "included": 2,
+          "review": 0,
+          "excluded": 0,
+          "manual_review_required": 0,
+          "manual_review_deferred": 0,
+          "full_extractions": 2,
+          "missing_abstract": 0,
+          "missing_id": 0,
+          "records_with_content_identity": 0,
+          "records_with_fallback_identity": 0,
+          "family_duplicates_removed": 0,
+          "llm_screening_failures": 0,
+          "llm_total_failures": 0
+        },
+        "average_relevance": 8.65,
+        "total_duration_seconds": 0.002,
+        "evaluation_duration_seconds": 0.0,
+        "comparative_analysis_duration_seconds": 0.0,
+        "output_paths": {
+          "markdown": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_comparative_analysis/patentes_carbon_dioxide_thermal_energy_storage_20260404_234648.md",
+          "json": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_comparative_analysis/patentes_carbon_dioxide_thermal_energy_storage_20260404_234648.json",
+          "state": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_comparative_analysis/run_state_20260404_234648.json",
+          "prisma": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_comparative_analysis/prisma_flow_20260404_234648.json",
+          "snapshot": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_comparative_analysis/config_snapshot_20260404_234648.json",
+          "memory_journal": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_comparative_analysis/memory_journal_20260404_234648.json",
+          "memory_sidecar": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_comparative_analysis/memory_sidecar_20260404_234648.json"
+        },
+        "errors": [],
+        "manual_review_queue_size": 0,
+        "clusters": 2,
+        "stage_metrics_count": 6,
+        "llm_cache_stats": {
+          "hits": 0,
+          "misses": 0,
+          "entries": 0
+        }
+      }
+    },
+    {
+      "case": {
+        "name": "Frozen CO2 thermal storage",
+        "query": "carbon dioxide thermal energy storage",
+        "max_results": 5,
+        "model": "",
+        "fixture_file": "benchmarks/frozen_pipeline_fixture.json"
+      },
+      "variant": {
+        "name": "no_manual_review",
+        "description": "Desliga a fila de revisão manual.",
+        "features": {
+          "require_evidence": true,
+          "enable_thematic_clusters": true,
+          "enable_prisma": true,
+          "enable_snapshot": true,
+          "enable_comparative_analysis": true,
+          "enable_manual_review_queue": false
+        }
+      },
+      "summary": {
+        "run_id": "20260404_234648",
+        "status": "completed",
+        "query": "carbon dioxide thermal energy storage",
+        "model": "gemma3:4b",
+        "snapshot_hash": "5e621effd3c0f721601ef1e99098adadcf5a7b392dc59dee077eda51705e654e",
+        "feature_flags": {
+          "require_evidence": true,
+          "enable_thematic_clusters": true,
+          "enable_prisma": true,
+          "enable_snapshot": true,
+          "enable_comparative_analysis": true,
+          "enable_manual_review_queue": false
+        },
+        "coverage_metrics": {
+          "raw_scraped": 2,
+          "unique_patents": 2,
+          "duplicates_removed": 0,
+          "screened": 2,
+          "included": 2,
+          "review": 0,
+          "excluded": 0,
+          "manual_review_required": 0,
+          "manual_review_deferred": 0,
+          "full_extractions": 2,
+          "missing_abstract": 0,
+          "missing_id": 0,
+          "records_with_content_identity": 0,
+          "records_with_fallback_identity": 0,
+          "family_duplicates_removed": 0,
+          "llm_screening_failures": 0,
+          "llm_total_failures": 0
+        },
+        "average_relevance": 8.65,
+        "total_duration_seconds": 0.002,
+        "evaluation_duration_seconds": 0.0,
+        "comparative_analysis_duration_seconds": 0.0,
+        "output_paths": {
+          "markdown": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_manual_review/patentes_carbon_dioxide_thermal_energy_storage_20260404_234648.md",
+          "json": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_manual_review/patentes_carbon_dioxide_thermal_energy_storage_20260404_234648.json",
+          "state": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_manual_review/run_state_20260404_234648.json",
+          "prisma": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_manual_review/prisma_flow_20260404_234648.json",
+          "snapshot": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_manual_review/config_snapshot_20260404_234648.json",
+          "memory_journal": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_manual_review/memory_journal_20260404_234648.json",
+          "memory_sidecar": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/frozen_co2_thermal_storage/no_manual_review/memory_sidecar_20260404_234648.json"
+        },
+        "errors": [],
+        "manual_review_queue_size": 0,
+        "clusters": 2,
+        "stage_metrics_count": 6,
+        "llm_cache_stats": {
+          "hits": 0,
+          "misses": 0,
+          "entries": 0
+        }
+      }
+    }
+  ],
+  "comparison": {
+    "baseline": {
+      "avg_relevance": 8.65,
+      "avg_total_time": 0.01,
+      "avg_eval_time": 0.0
+    },
+    "rows": [
+      {
+        "variant": "no_evidence",
+        "cases": 1,
+        "avg_relevance": 8.65,
+        "avg_total_time": 0.0,
+        "avg_eval_time": 0.0,
+        "avg_included": 2.0,
+        "avg_manual_review": 0.0,
+        "avg_clusters": 2.0,
+        "avg_full_extractions": 2.0,
+        "delta_relevance_vs_baseline": 0.0,
+        "delta_total_time_vs_baseline": -0.01,
+        "delta_eval_time_vs_baseline": 0.0
+      },
+      {
+        "variant": "no_clusters",
+        "cases": 1,
+        "avg_relevance": 8.65,
+        "avg_total_time": 0.0,
+        "avg_eval_time": 0.0,
+        "avg_included": 2.0,
+        "avg_manual_review": 0.0,
+        "avg_clusters": 0.0,
+        "avg_full_extractions": 2.0,
+        "delta_relevance_vs_baseline": 0.0,
+        "delta_total_time_vs_baseline": -0.01,
+        "delta_eval_time_vs_baseline": 0.0
+      },
+      {
+        "variant": "no_prisma",
+        "cases": 1,
+        "avg_relevance": 8.65,
+        "avg_total_time": 0.0,
+        "avg_eval_time": 0.0,
+        "avg_included": 2.0,
+        "avg_manual_review": 0.0,
+        "avg_clusters": 2.0,
+        "avg_full_extractions": 2.0,
+        "delta_relevance_vs_baseline": 0.0,
+        "delta_total_time_vs_baseline": -0.01,
+        "delta_eval_time_vs_baseline": 0.0
+      },
+      {
+        "variant": "no_snapshot",
+        "cases": 1,
+        "avg_relevance": 8.65,
+        "avg_total_time": 0.0,
+        "avg_eval_time": 0.0,
+        "avg_included": 2.0,
+        "avg_manual_review": 0.0,
+        "avg_clusters": 2.0,
+        "avg_full_extractions": 2.0,
+        "delta_relevance_vs_baseline": 0.0,
+        "delta_total_time_vs_baseline": -0.01,
+        "delta_eval_time_vs_baseline": 0.0
+      },
+      {
+        "variant": "no_comparative_analysis",
+        "cases": 1,
+        "avg_relevance": 8.65,
+        "avg_total_time": 0.0,
+        "avg_eval_time": 0.0,
+        "avg_included": 2.0,
+        "avg_manual_review": 0.0,
+        "avg_clusters": 2.0,
+        "avg_full_extractions": 2.0,
+        "delta_relevance_vs_baseline": 0.0,
+        "delta_total_time_vs_baseline": -0.01,
+        "delta_eval_time_vs_baseline": 0.0
+      },
+      {
+        "variant": "no_manual_review",
+        "cases": 1,
+        "avg_relevance": 8.65,
+        "avg_total_time": 0.0,
+        "avg_eval_time": 0.0,
+        "avg_included": 2.0,
+        "avg_manual_review": 0.0,
+        "avg_clusters": 2.0,
+        "avg_full_extractions": 2.0,
+        "delta_relevance_vs_baseline": 0.0,
+        "delta_total_time_vs_baseline": -0.01,
+        "delta_eval_time_vs_baseline": 0.0
+      },
+      {
+        "variant": "baseline",
+        "cases": 1,
+        "avg_relevance": 8.65,
+        "avg_total_time": 0.01,
+        "avg_eval_time": 0.0,
+        "avg_included": 2.0,
+        "avg_manual_review": 0.0,
+        "avg_clusters": 2.0,
+        "avg_full_extractions": 2.0,
+        "delta_relevance_vs_baseline": 0.0,
+        "delta_total_time_vs_baseline": 0.0,
+        "delta_eval_time_vs_baseline": 0.0
+      }
+    ],
+    "best_quality": "no_evidence",
+    "fastest": "no_evidence"
+  },
+  "summary_paths": {
+    "json": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/ablation_summary.json",
+    "markdown": "/home/murilo/Documentos/RevisaoTecnica/output/ablation_20260404_234648/ablation_summary.md"
+  }
+}
