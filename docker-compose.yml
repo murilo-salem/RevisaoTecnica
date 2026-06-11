@@ -30,6 +30,22 @@ services:
     networks:
       - revisao_net
 
+  streamlit:
+    build: .
+    command: streamlit run streamlit_app.py --server.port=8501 --server.address=0.0.0.0
+    ports:
+      - "8501:8501"
+    depends_on:
+      - app
+    environment:
+      API_BASE_URL: http://app:8000
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-gemma3:27b}
+      OUTPUT_DIR: /app/output
+    volumes:
+      - ./output:/app/output
+    networks:
+      - revisao_net
+
 volumes:
   ollama_models:
 

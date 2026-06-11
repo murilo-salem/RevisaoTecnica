@@ -53,6 +53,8 @@ class RunRequest(BaseModel):
     query: str
     max_results: int = Field(default=10, ge=1, le=50)
     model: str = Field(default_factory=lambda: config.OLLAMA_MODEL)
+    include_threshold: float = Field(default_factory=lambda: config.SCREEN_INCLUDE_THRESHOLD)
+    review_threshold: float = Field(default_factory=lambda: config.SCREEN_REVIEW_THRESHOLD)
     features: FeaturesRequest = Field(default_factory=FeaturesRequest)
 
 
@@ -64,6 +66,8 @@ class RunRequest(BaseModel):
 def _execute_run(job_id: str, req: RunRequest) -> None:
     _jobs[job_id]["status"] = "running"
     try:
+        config.SCREEN_INCLUDE_THRESHOLD = req.include_threshold
+        config.SCREEN_REVIEW_THRESHOLD = req.review_threshold
         features = PipelineFeatures(
             require_evidence=req.features.require_evidence,
             enable_thematic_clusters=req.features.enable_thematic_clusters,
@@ -122,6 +126,19 @@ def _job_summary(job_id: str, state: Any) -> dict:
 # --------------------------------------------------------------------------- #
 # Endpoints                                                                     #
 # --------------------------------------------------------------------------- #
+
+
+@app.get("/models")
+def list_models():
+    """Retorna os modelos disponíveis no Ollama."""
+    import httpx
+    try:
+        resp = httpx.get(f"{config.OLLAMA_BASE_URL}/api/tags", timeout=5)
+        resp.raise_for_status()
+        models = [m["name"] for m in resp.json().get("models", [])]
+    except Exception:
+        models = [config.OLLAMA_MODEL]
+    return {"models": models}
 
 
 @app.get("/health")

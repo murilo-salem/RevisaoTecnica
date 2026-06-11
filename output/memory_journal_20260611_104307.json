@@ -1,0 +1,79 @@
+[
+  {
+    "timestamp": "2026-06-11T10:43:37",
+    "stage": "setup",
+    "event": "llm_check",
+    "detail": "Verificação de disponibilidade do Ollama concluída.",
+    "payload": {
+      "llm_available": false,
+      "model": "gemma3:27b"
+    }
+  },
+  {
+    "timestamp": "2026-06-11T10:44:05",
+    "stage": "identification",
+    "event": "scrape_completed",
+    "detail": "GooglePatents retornou patentes.",
+    "payload": {
+      "source": "GooglePatents",
+      "count": 9,
+      "diagnostics": []
+    }
+  },
+  {
+    "timestamp": "2026-06-11T10:44:14",
+    "stage": "identification",
+    "event": "scrape_completed",
+    "detail": "Patentscope retornou patentes.",
+    "payload": {
+      "source": "Patentscope",
+      "count": 0,
+      "diagnostics": [
+        {
+          "kind": "blocked_or_captcha",
+          "detail": "Sinal de bloqueio/CAPTCHA detectado no Patentscope.",
+          "url": "https://patentscope.wipo.int/search/en/result.jsf?queryString=carbon+dioxide&pageSize=20"
+        },
+        {
+          "kind": "jsf_empty_results",
+          "detail": "Nenhum resultado em result.jsf para query: carbon dioxide",
+          "url": "https://patentscope.wipo.int/search/en/result.jsf"
+        },
+        {
+          "kind": "discovery_empty",
+          "detail": "DuckDuckGo não retornou links para Patentscope.",
+          "url": "https://html.duckduckgo.com/html/"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-06-11T10:44:14",
+    "stage": "synthesis",
+    "event": "llm_unavailable",
+    "detail": "Síntese temática desativada porque o LLM não está disponível.",
+    "payload": {}
+  },
+  {
+    "timestamp": "2026-06-11T10:44:14",
+    "stage": "writer",
+    "event": "context_prepared",
+    "detail": "Contexto compartilhado preparado para o writer.",
+    "payload": {
+      "top_patents": 0,
+      "route_summary": {
+        "unrouted": 9
+      }
+    }
+  },
+  {
+    "timestamp": "2026-06-11T10:44:14",
+    "stage": "finalization",
+    "event": "report_generated",
+    "detail": "Relatórios finais gerados com sucesso.",
+    "payload": {
+      "markdown": "output/patentes_carbon_dioxide_20260611_104414.md",
+      "json": "output/patentes_carbon_dioxide_20260611_104414.json"
+    }
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "pipeline_version": "1.1",
+  "timestamp": "2026-06-11T09:49:16",
+  "query": "carbon dioxide",
+  "max_results": 10,
+  "model": "gemma3:27b",
+  "output_dir": "output",
+  "feature_flags": {
+    "require_evidence": true,
+    "enable_thematic_clusters": true,
+    "enable_structural_roles": true,
+    "enable_screening_rerank": true,
+    "enable_prisma": true,
+    "enable_snapshot": true,
+    "enable_comparative_analysis": true,
+    "enable_whitespace_analysis": true,
+    "enable_manual_review_queue": true
+  },
+  "thresholds": {
+    "include": 7.0,
+    "review": 4.5,
+    "manual_review_limit": 20
+  },
+  "runtime": {
+    "ollama_base_url": "http://localhost:11434",
+    "ollama_timeout": 600
+  },
+  "sources": [
+    "Google Patents",
+    "Patentscope"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "status": "no_input",
+  "query": "carbon dioxide",
+  "corpus_summary": {
+    "considered_patents": 9,
+    "selected_patents": 0,
+    "core": 0,
+    "frontier": 0,
+    "adjacent": 0
+  },
+  "coverage_matrix": [],
+  "axes": {},
+  "whitespace_candidates": [],
+  "markdown_summary": ""
+}

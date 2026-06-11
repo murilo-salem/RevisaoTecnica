@@ -1,0 +1,465 @@
+{
+  "status": "ok",
+  "query": "carbon dioxide",
+  "corpus_summary": {
+    "considered_patents": 19,
+    "selected_patents": 11,
+    "core": 8,
+    "frontier": 1,
+    "adjacent": 2
+  },
+  "coverage_matrix": [
+    {
+      "patent_id": "US20260008008A1",
+      "record_id": "rec_b16b4420296f",
+      "title": "Method and apparatus for carbon dioxide sequestration",
+      "screening_decision": "include",
+      "screening_score": 9.2,
+      "relevance_score": 8.6,
+      "bucket": "core",
+      "technical_domain": "Sequestro de Carbono",
+      "thematic_cluster": "Sequestro de Carbono",
+      "co2_role": "capture_process_stream",
+      "storage_role": "implicit_or_support_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "not_applicable",
+      "claim_focus": "Método e aparato para sequestro de dióxido de carbono",
+      "exclusion_category": "None"
+    },
+    {
+      "patent_id": "US20240228419A1",
+      "record_id": "rec_53f1ec4a61a1",
+      "title": "The production of formic acid or formaldehyde from carbon dioxide",
+      "screening_decision": "include",
+      "screening_score": 9.2,
+      "relevance_score": 8.4,
+      "bucket": "core",
+      "technical_domain": "Química, Engenharia Química",
+      "thematic_cluster": "CO2 Cycle Configurations",
+      "co2_role": "capture_process_stream",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "not_clear",
+      "claim_focus": "process_integration",
+      "exclusion_category": "None"
+    },
+    {
+      "patent_id": "US20220072471A1",
+      "record_id": "rec_bf9199489578",
+      "title": "Direct carbon dioxide capture from air",
+      "screening_decision": "include",
+      "screening_score": 9.2,
+      "relevance_score": 8.2,
+      "bucket": "core",
+      "technical_domain": "Captura de Carbono",
+      "thematic_cluster": "Economic Optimization",
+      "co2_role": "capture_process_stream",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "dedicated_storage_system",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "power_generation",
+      "claim_focus": "process_integration",
+      "exclusion_category": "None"
+    },
+    {
+      "patent_id": "US8500855B2",
+      "record_id": "rec_1d2f62aad7c7",
+      "title": "System and method for carbon dioxide capture and sequestration",
+      "screening_decision": "include",
+      "screening_score": 9.2,
+      "relevance_score": 8.2,
+      "bucket": "core",
+      "technical_domain": "Captura e Sequestro de Carbono",
+      "thematic_cluster": "Captura e Sequestro de Carbono",
+      "co2_role": "capture_process_stream",
+      "storage_role": "implicit_or_support_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "industrial_heat",
+      "claim_focus": "system_architecture",
+      "exclusion_category": "None"
+    },
+    {
+      "patent_id": "US7132090B2",
+      "record_id": "rec_654cb5b98f3f",
+      "title": "Sequestration of carbon dioxide",
+      "screening_decision": "include",
+      "screening_score": 8.2,
+      "relevance_score": 7.8,
+      "bucket": "core",
+      "technical_domain": "Engenharia Química, Captura e Sequestro de Carbono",
+      "thematic_cluster": "Engenharia Química, Captura e Sequestro de Carbono",
+      "co2_role": "capture_process_stream",
+      "storage_role": "implicit_or_support_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "not_clear",
+      "claim_focus": "process_integration",
+      "exclusion_category": "None"
+    },
+    {
+      "patent_id": "WO2022235708A1",
+      "record_id": "rec_9db979686474",
+      "title": "Systems and methods for capturing carbon dioxide and regenerating a capture solution",
+      "screening_decision": "include",
+      "screening_score": 8.2,
+      "relevance_score": 7.4,
+      "bucket": "core",
+      "technical_domain": "Captura e Sequestro de Carbono",
+      "thematic_cluster": "Captura e Sequestro de Carbono",
+      "co2_role": "capture_process_stream",
+      "storage_role": "implicit_or_support_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "not_clear",
+      "claim_focus": "system_architecture",
+      "exclusion_category": "None"
+    },
+    {
+      "patent_id": "US8119091B2",
+      "record_id": "rec_bb7ef455d20e",
+      "title": "Carbon dioxide capture",
+      "screening_decision": "include",
+      "screening_score": 8.2,
+      "relevance_score": 7.1,
+      "bucket": "core",
+      "technical_domain": "Engenharia Química",
+      "thematic_cluster": "Engenharia Química",
+      "co2_role": "capture_process_stream",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "not_clear",
+      "claim_focus": "process_integration",
+      "exclusion_category": "None"
+    },
+    {
+      "patent_id": "WO2025230882A1",
+      "record_id": "rec_42a3a58fa795",
+      "title": "Capture and release of carbon dioxide using electrogenerated acids and bases",
+      "screening_decision": "include",
+      "screening_score": 9.2,
+      "relevance_score": 5.0,
+      "bucket": "core",
+      "technical_domain": "",
+      "thematic_cluster": "CO2 Cycle Configurations",
+      "co2_role": "capture_process_stream",
+      "storage_role": "storage_not_explicit",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "general_thermal_management",
+      "claim_focus": "process_integration",
+      "exclusion_category": "None"
+    },
+    {
+      "patent_id": "GB135599119",
+      "record_id": "rec_8b168382e70e",
+      "title": "1. GB1429678 - APPARATUS FOR SUPPLYING LIQUID CARBON DIOXIDE",
+      "screening_decision": "review",
+      "screening_score": 5.7,
+      "relevance_score": 6.5,
+      "bucket": "frontier",
+      "technical_domain": "Fluid Dynamics & Control Systems",
+      "thematic_cluster": "Controle de fluxo e reutilização de CO2 líquido em sistemas de refrigeração e aplicações industriais.",
+      "co2_role": "working_fluid",
+      "storage_role": "implicit_or_support_storage",
+      "system_boundary": "cycle_or_transfer_subsystem",
+      "cycle_type": "refrigeration_cycle",
+      "heat_source_sink": "ambiente",
+      "claim_focus": "system_architecture",
+      "exclusion_category": "None"
+    },
+    {
+      "patent_id": "GB135308953",
+      "record_id": "rec_f9a115b06b66",
+      "title": "9. GB1125505 - Production of carbon dioxide and argon",
+      "screening_decision": "exclude",
+      "screening_score": 5.7,
+      "relevance_score": 0.0,
+      "bucket": "adjacent",
+      "technical_domain": "Industrial Gas Production",
+      "thematic_cluster": "CO2/Argon separation from combustion gases",
+      "co2_role": "co2_present_unclear_role",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "industrial_heat",
+      "claim_focus": "process_integration",
+      "exclusion_category": "industrial_heat_adjacent"
+    },
+    {
+      "patent_id": "GB135860928",
+      "record_id": "rec_41383e272fc3",
+      "title": "4. GB2047588 - Reclamation of foundry sand",
+      "screening_decision": "exclude",
+      "screening_score": 4.0,
+      "relevance_score": 0.0,
+      "bucket": "adjacent",
+      "technical_domain": "Materials Science/Foundry Processes",
+      "thematic_cluster": "Sand Reclamation & Binder Removal",
+      "co2_role": "co2_present_unclear_role",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "not_clear",
+      "claim_focus": "process_integration",
+      "exclusion_category": "industrial_heat_adjacent"
+    }
+  ],
+  "axes": {
+    "co2_role": {
+      "capture_process_stream": {
+        "core": [
+          "US20260008008A1",
+          "US20240228419A1",
+          "US20220072471A1",
+          "US8500855B2",
+          "US7132090B2",
+          "WO2022235708A1",
+          "US8119091B2",
+          "WO2025230882A1"
+        ],
+        "frontier": [],
+        "adjacent": []
+      },
+      "working_fluid": {
+        "core": [],
+        "frontier": [
+          "GB135599119"
+        ],
+        "adjacent": []
+      },
+      "co2_present_unclear_role": {
+        "core": [],
+        "frontier": [],
+        "adjacent": [
+          "GB135308953",
+          "GB135860928"
+        ]
+      }
+    },
+    "storage_role": {
+      "implicit_or_support_storage": {
+        "core": [
+          "US20260008008A1",
+          "US8500855B2",
+          "US7132090B2",
+          "WO2022235708A1"
+        ],
+        "frontier": [
+          "GB135599119"
+        ],
+        "adjacent": []
+      },
+      "explicit_thermal_storage": {
+        "core": [
+          "US20240228419A1",
+          "US20220072471A1",
+          "US8119091B2"
+        ],
+        "frontier": [],
+        "adjacent": [
+          "GB135308953",
+          "GB135860928"
+        ]
+      },
+      "storage_not_explicit": {
+        "core": [
+          "WO2025230882A1"
+        ],
+        "frontier": [],
+        "adjacent": []
+      }
+    },
+    "system_boundary": {
+      "process_integration": {
+        "core": [
+          "US20260008008A1",
+          "US20240228419A1",
+          "US8500855B2",
+          "US7132090B2",
+          "WO2022235708A1",
+          "US8119091B2",
+          "WO2025230882A1"
+        ],
+        "frontier": [],
+        "adjacent": [
+          "GB135308953",
+          "GB135860928"
+        ]
+      },
+      "dedicated_storage_system": {
+        "core": [
+          "US20220072471A1"
+        ],
+        "frontier": [],
+        "adjacent": []
+      },
+      "cycle_or_transfer_subsystem": {
+        "core": [],
+        "frontier": [
+          "GB135599119"
+        ],
+        "adjacent": []
+      }
+    },
+    "cycle_type": {
+      "not_clear": {
+        "core": [
+          "US20260008008A1",
+          "US20240228419A1",
+          "US20220072471A1",
+          "US8500855B2",
+          "US7132090B2",
+          "WO2022235708A1",
+          "US8119091B2",
+          "WO2025230882A1"
+        ],
+        "frontier": [],
+        "adjacent": [
+          "GB135308953",
+          "GB135860928"
+        ]
+      },
+      "refrigeration_cycle": {
+        "core": [],
+        "frontier": [
+          "GB135599119"
+        ],
+        "adjacent": []
+      }
+    },
+    "heat_source_sink": {
+      "not_applicable": {
+        "core": [
+          "US20260008008A1"
+        ],
+        "frontier": [],
+        "adjacent": []
+      },
+      "not_clear": {
+        "core": [
+          "US20240228419A1",
+          "US7132090B2",
+          "WO2022235708A1",
+          "US8119091B2"
+        ],
+        "frontier": [],
+        "adjacent": [
+          "GB135860928"
+        ]
+      },
+      "power_generation": {
+        "core": [
+          "US20220072471A1"
+        ],
+        "frontier": [],
+        "adjacent": []
+      },
+      "industrial_heat": {
+        "core": [
+          "US8500855B2"
+        ],
+        "frontier": [],
+        "adjacent": [
+          "GB135308953"
+        ]
+      },
+      "general_thermal_management": {
+        "core": [
+          "WO2025230882A1"
+        ],
+        "frontier": [],
+        "adjacent": []
+      },
+      "ambiente": {
+        "core": [],
+        "frontier": [
+          "GB135599119"
+        ],
+        "adjacent": []
+      }
+    },
+    "claim_focus": {
+      "Método e aparato para sequestro de dióxido de carbono": {
+        "core": [
+          "US20260008008A1"
+        ],
+        "frontier": [],
+        "adjacent": []
+      },
+      "process_integration": {
+        "core": [
+          "US20240228419A1",
+          "US20220072471A1",
+          "US7132090B2",
+          "US8119091B2",
+          "WO2025230882A1"
+        ],
+        "frontier": [],
+        "adjacent": [
+          "GB135308953",
+          "GB135860928"
+        ]
+      },
+      "system_architecture": {
+        "core": [
+          "US8500855B2",
+          "WO2022235708A1"
+        ],
+        "frontier": [
+          "GB135599119"
+        ],
+        "adjacent": []
+      }
+    },
+    "exclusion_category": {
+      "None": {
+        "core": [
+          "US20260008008A1",
+          "US20240228419A1",
+          "US20220072471A1",
+          "US8500855B2",
+          "US7132090B2",
+          "WO2022235708A1",
+          "US8119091B2",
+          "WO2025230882A1"
+        ],
+        "frontier": [
+          "GB135599119"
+        ],
+        "adjacent": []
+      },
+      "industrial_heat_adjacent": {
+        "core": [],
+        "frontier": [],
+        "adjacent": [
+          "GB135308953",
+          "GB135860928"
+        ]
+      }
+    }
+  },
+  "whitespace_candidates": [
+    {
+      "opportunity": "hybrid_cycle_storage_architecture",
+      "confidence": "medium",
+      "rationale": "Combinar ciclos/transferencia com CO2 e armazenamento termico explicitamente reivindicado ainda aparece fragmentado entre nucleo e borda tecnica.",
+      "core_ids": [
+        "US20260008008A1",
+        "US20240228419A1",
+        "US20220072471A1"
+      ],
+      "frontier_ids": [
+        "GB135599119"
+      ],
+      "adjacent_ids": [
+        "GB135308953",
+        "GB135860928"
+      ]
+    }
+  ],
+  "markdown_summary": "### 3. Whitespaces e Oportunidades\n\n- O whitespace mais promissor esta na combinacao entre arquiteturas de ciclo/transferencia termica com CO2 e armazenamento explicito do inventario termico, porque esses elementos ainda aparecem fragmentados entre nucleo, fronteira e adjacencia [IDs: US20260008008A1, US20240228419A1, US20220072471A1, US8500855B2]\n- Gestao termica transiente, subresfriamento e acoplamentos com captura/reatores aparecem de forma lateral; isso sugere oportunidade em claims de controle, operacao multi-regime e integracao de processo ainda pouco amarradas ao armazenamento central [IDs: GB135308953, US20240228419A1, US20220072471A1, US8500855B2]\n- As patentes em review delimitam fronteiras tecnicas onde o papel do CO2 ainda esta ambiguo entre meio armazenado, fluido de trabalho e interface de troca termica; esse tipo de ambiguidade costuma ser um bom proxy para whitespace exploravel com recorte arquitetural mais especifico [IDs: GB135599119, US20260008008A1, US20240228419A1, US20220072471A1]"
+}

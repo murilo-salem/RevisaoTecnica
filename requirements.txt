@@ -5,3 +5,5 @@ tqdm>=4.66.0
 rich>=13.0.0
 fastapi>=0.111.0
 uvicorn[standard]>=0.29.0
+streamlit>=1.35.0
+plotly>=5.20.0

@@ -49,3 +49,9 @@ GOOGLE_PATENTS_SEARCH_URL = f"{GOOGLE_PATENTS_BASE_URL}/xhr/query"
 # --- Output ---
 OUTPUT_DIR = os.getenv("OUTPUT_DIR", "output")
 LLM_CACHE_DIR = os.path.join(OUTPUT_DIR, "cache")
+
+# --- PatentScope ---
+PATENTSCOPE_BASE_URL = "https://patentscope.wipo.int/search/en"
+PATENTSCOPE_PAGE_SIZE = 50
+PATENTSCOPE_DETAIL_DELAY = (3.0, 6.0)
+PATENTSCOPE_SEARCH_DELAY = (1.5, 3.0)
