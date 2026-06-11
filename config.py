@@ -46,6 +46,16 @@ USER_AGENTS = [
 GOOGLE_PATENTS_BASE_URL = "https://patents.google.com"
 GOOGLE_PATENTS_SEARCH_URL = f"{GOOGLE_PATENTS_BASE_URL}/xhr/query"
 
+# --- EPO Open Patent Services ---
+EPO_CONSUMER_KEY = os.getenv("EPO_CONSUMER_KEY", "")
+EPO_CONSUMER_SECRET = os.getenv("EPO_CONSUMER_SECRET", "")
+
+# --- Pipeline de Análise de Artigo ---
+OLLAMA_EXTRACTION_MODEL = os.getenv("OLLAMA_EXTRACTION_MODEL", "gemma3:12b")
+ARTICLE_MAX_SEARCH_QUERIES = int(os.getenv("ARTICLE_MAX_SEARCH_QUERIES", "4"))
+ARTICLE_MAX_RESULTS_PER_QUERY = int(os.getenv("ARTICLE_MAX_RESULTS_PER_QUERY", "5"))
+ARTICLE_TEXT_MAX_CHARS = 15000
+
 # --- Output ---
 OUTPUT_DIR = os.getenv("OUTPUT_DIR", "output")
 LLM_CACHE_DIR = os.path.join(OUTPUT_DIR, "cache")

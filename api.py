@@ -16,14 +16,16 @@ import glob
 import json
 import os
 from datetime import datetime
-from typing import Any
+from typing import Any, List, Optional
 
 import config
 from evaluator.llm_evaluator import OllamaEvaluator
 from fastapi import BackgroundTasks, FastAPI, HTTPException
+from pipeline.article_orchestrator import run_article_analysis
 from pipeline.features import PipelineFeatures
 from pipeline.orchestrator import run_agent
 from pipeline.state import RunState
+from models.article_state import ArticleRunState
 from pydantic import BaseModel, Field
 
 app = FastAPI(title="RevisaoTecnica API", version="1.0.0")
@@ -31,10 +33,23 @@ app = FastAPI(title="RevisaoTecnica API", version="1.0.0")
 # run_id → RunState (completed) | dict {"status": "queued"|"running"|"error", ...}
 _jobs: dict[str, Any] = {}
 
+# article_run_id → ArticleRunState | dict
+_article_jobs: dict[str, Any] = {}
+
 
 # --------------------------------------------------------------------------- #
 # Schemas                                                                      #
 # --------------------------------------------------------------------------- #
+
+
+class ArticleRunRequest(BaseModel):
+    article_text: str
+    innovation_description: str
+    analysis_model: str = Field(default_factory=lambda: config.OLLAMA_MODEL)
+    extraction_model: str = Field(default_factory=lambda: config.OLLAMA_EXTRACTION_MODEL)
+    max_results_per_query: int = Field(default=5, ge=1, le=20)
+    max_queries: int = Field(default=4, ge=1, le=8)
+    user_queries: Optional[List[str]] = None
 
 
 class FeaturesRequest(BaseModel):
@@ -63,6 +78,27 @@ class RunRequest(BaseModel):
 # --------------------------------------------------------------------------- #
 
 
+def _execute_article_run(job_id: str, req: ArticleRunRequest) -> None:
+    _article_jobs[job_id]["status"] = "running"
+    try:
+        def _state_sink(state):
+            _article_jobs[job_id] = state
+
+        state = run_article_analysis(
+            article_text=req.article_text,
+            innovation_description=req.innovation_description,
+            analysis_model=req.analysis_model,
+            extraction_model=req.extraction_model,
+            max_results_per_query=req.max_results_per_query,
+            max_queries=req.max_queries,
+            state_sink=_state_sink,
+            user_queries=req.user_queries,
+        )
+        _article_jobs[job_id] = state
+    except Exception as exc:
+        _article_jobs[job_id] = {"status": "error", "error": str(exc)}
+
+
 def _execute_run(job_id: str, req: RunRequest) -> None:
     _jobs[job_id]["status"] = "running"
     try:
@@ -79,12 +115,17 @@ def _execute_run(job_id: str, req: RunRequest) -> None:
             enable_whitespace_analysis=req.features.enable_whitespace_analysis,
             enable_manual_review_queue=req.features.enable_manual_review_queue,
         )
+
+        def _state_sink(state):
+            _jobs[job_id] = state
+
         state = run_agent(
             query=req.query,
             max_results=req.max_results,
             model=req.model,
             output_dir=config.OUTPUT_DIR,
             features=features,
+            state_sink=_state_sink,
         )
         _jobs[job_id] = state
     except Exception as exc:
@@ -233,3 +274,58 @@ def get_run_evaluations(run_id: str):
     if data is None:
         raise HTTPException(status_code=404, detail="Run not found")
     return data.get("evaluations", [])
+
+
+# --------------------------------------------------------------------------- #
+# Article analysis endpoints                                                    #
+# --------------------------------------------------------------------------- #
+
+
+@app.post("/article-runs", status_code=202)
+def create_article_run(req: ArticleRunRequest, background_tasks: BackgroundTasks):
+    job_id = datetime.now().strftime("%Y%m%d_%H%M%S") + "_article"
+    _article_jobs[job_id] = {
+        "status": "queued",
+        "run_id": job_id,
+        "run_type": "article",
+        "innovation_description": req.innovation_description,
+        "started_at": datetime.now().isoformat(timespec="seconds"),
+    }
+    background_tasks.add_task(_execute_article_run, job_id, req)
+    return {"run_id": job_id, "status": "queued"}
+
+
+@app.get("/article-runs")
+def list_article_runs():
+    return [
+        {
+            "run_id": jid,
+            "run_type": "article",
+            "article_title": (
+                state.article_title
+                if isinstance(state, ArticleRunState)
+                else state.get("article_title", "")
+            ),
+            "status": (
+                state.status
+                if isinstance(state, ArticleRunState)
+                else state.get("status", "unknown")
+            ),
+            "started_at": (
+                state.started_at
+                if isinstance(state, ArticleRunState)
+                else state.get("started_at", "")
+            ),
+        }
+        for jid, state in _article_jobs.items()
+    ]
+
+
+@app.get("/article-runs/{run_id}")
+def get_article_run(run_id: str):
+    if run_id not in _article_jobs:
+        raise HTTPException(status_code=404, detail="Article run not found")
+    state = _article_jobs[run_id]
+    if isinstance(state, ArticleRunState):
+        return state.to_dict()
+    return state

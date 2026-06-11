@@ -34,6 +34,8 @@ class RunState:
     )
     finished_at: str = ""
     status: str = "running"
+    current_stage: str = ""
+    screened_count: int = 0
     llm_available: bool = False
     patents: List[Patent] = field(default_factory=list)
     evaluations: List[PatentEvaluation] = field(default_factory=list)
@@ -75,6 +77,8 @@ class RunState:
             "started_at": self.started_at,
             "finished_at": self.finished_at,
             "status": self.status,
+            "current_stage": self.current_stage,
+            "screened_count": self.screened_count,
             "llm_available": self.llm_available,
             "patents": [patent.to_dict() for patent in self.patents],
             "evaluations": [evaluation.to_dict() for evaluation in self.evaluations],

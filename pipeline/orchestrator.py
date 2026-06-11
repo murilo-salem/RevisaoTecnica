@@ -26,6 +26,7 @@ from pipeline.state import RunState
 from pipeline.protocol import build_review_protocol
 from report.generator import ReportGenerator
 from scraper.base import BaseScraper
+from scraper.epo import EPOScraper
 from scraper.google_patents import GooglePatentsScraper
 from scraper.patentscope import PatentscopeScraper
 
@@ -618,6 +619,7 @@ def run_agent(
     features: PipelineFeatures | None = None,
     scrapers: List[BaseScraper] | None = None,
     evaluator_factory: Callable[..., OllamaEvaluator] | None = None,
+    state_sink: Callable | None = None,
 ) -> RunState:
     """Executa o fluxo completo do agente com estado persistido."""
     start_time = time.perf_counter()
@@ -641,6 +643,10 @@ def run_agent(
     memory = MemorySidecar(run_id=state.run_id)
     router = ThemeRouter()
 
+    if state_sink is not None:
+        state_sink(state)
+
+    state.current_stage = "setup"
     _log_stage("setup", "Verificando conexão com Ollama", model=state.model)
 
     setup_start = time.perf_counter()
@@ -681,6 +687,7 @@ def run_agent(
             model=state.model,
         )
 
+    state.current_stage = "search"
     _log_stage(
         "search",
         "Buscando patentes",
@@ -692,6 +699,7 @@ def run_agent(
     scrapers = scrapers or [
         GooglePatentsScraper(),
         PatentscopeScraper(),
+        EPOScraper(),
     ]
 
     patents: List[Patent] = []
@@ -862,6 +870,7 @@ def run_agent(
     llm_screening_failures = 0
     llm_circuit_open_logged = False
     screening_start = time.perf_counter()
+    state.current_stage = "screening"
     if state.llm_available:
         _log_stage(
             "screening",
@@ -910,6 +919,7 @@ def run_agent(
             screening.analysis_route = route.route
             screening.route_reason = route.reason
             screenings.append(screening)
+            state.screened_count += 1
             memory.append(
                 "screening",
                 "screening_completed",
@@ -1169,6 +1179,7 @@ def run_agent(
     )
     store.save(state)
 
+    state.current_stage = "comparative_analysis"
     synthesis_start = time.perf_counter()
     comparative_status = "disabled_or_skipped"
     comparative_detail = "Síntese comparativa"
@@ -1298,6 +1309,7 @@ def run_agent(
         items_processed=len(state.evaluations),
         detail=comparative_detail,
     )
+    state.current_stage = "whitespace_analysis"
     whitespace_start = time.perf_counter()
     whitespace_status = "skipped"
     whitespace_detail = "Whitespace analysis indisponível"
@@ -1354,6 +1366,7 @@ def run_agent(
     )
     state.observability_metrics = _build_observability_metrics(state)
 
+    state.current_stage = "reporting"
     _log_stage("reporting", "Gerando relatórios", output_dir=output_dir)
 
     report_start = time.perf_counter()
